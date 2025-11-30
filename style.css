@@ -216,6 +216,39 @@ textarea:focus {
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
 }
 
+/* ===== フッター ===== */
+footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav li {
+    margin: 8px 0;
+}
+
+footer nav a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+footer nav a:hover {
+    background-color: #ecf0f1;
+    color: #2980b9;
+}
+
 /* ===== レスポンシブ ===== */
 @media (max-width: 768px) {
     .container {
