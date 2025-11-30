@@ -8,8 +8,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'ヒラギノ角ゴ Pro', 'ヒラギノ角ゴ ProN', メイリオ, Meiryo;
     line-height: 1.8;
-    color: #333;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #5a4a3a;
+    background: linear-gradient(135deg, #fffef5 0%, #fff9e6 100%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -18,10 +18,11 @@ body {
 .container {
     max-width: 900px;
     margin: 30px auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(218, 190, 110, 0.3);
     animation: fadeIn 0.5s ease-in;
 }
 
@@ -38,8 +39,8 @@ body {
 
 /* ===== タイトル ===== */
 h1 {
-    color: #2c3e50;
-    border-bottom: 3px solid #3498db;
+    color: #c9941f;
+    border-bottom: 3px solid #dab60e;
     padding-bottom: 15px;
     margin-bottom: 30px;
     font-size: 2.2em;
@@ -47,8 +48,8 @@ h1 {
 }
 
 h2 {
-    color: #34495e;
-    border-left: 5px solid #3498db;
+    color: #b8860b;
+    border-left: 5px solid #f0c535;
     padding-left: 15px;
     margin-top: 35px;
     margin-bottom: 20px;
@@ -57,7 +58,7 @@ h2 {
 }
 
 h3 {
-    color: #555;
+    color: #d4a855;
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 1.3em;
@@ -65,18 +66,18 @@ h3 {
 
 /* ===== テキスト ===== */
 p {
-    color: #555;
+    color: #5a4a3a;
     margin-bottom: 15px;
     line-height: 1.9;
 }
 
 strong {
-    color: #e74c3c;
+    color: #d4a855;
     font-weight: 600;
 }
 
 em {
-    color: #7f8c8d;
+    color: #8b7355;
     font-style: italic;
 }
 
@@ -87,7 +88,7 @@ ul, ol {
 }
 
 li {
-    color: #555;
+    color: #5a4a3a;
     margin-bottom: 10px;
     line-height: 1.8;
 }
@@ -104,7 +105,7 @@ nav li {
 }
 
 nav a {
-    color: #3498db;
+    color: #c9941f;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.05em;
@@ -115,8 +116,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ecf0f1;
-    color: #2980b9;
+    background-color: #fff9e6;
+    color: #d4a855;
     transform: translateX(5px);
 }
 
@@ -202,18 +203,19 @@ textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #dab60e;
     border-radius: 6px;
     font-family: inherit;
     font-size: 1em;
+    background-color: #fffef5;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
     outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    border-color: #c9941f;
+    box-shadow: 0 0 8px rgba(201, 148, 31, 0.2);
 }
 
 /* ===== レスポンシブ ===== */
@@ -271,9 +273,9 @@ textarea:focus {
 
 /* ===== ヘッダー ===== */
 header {
-    background-color: #2c3e50;
+    background-color: #c9941f;
     padding: 15px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(201, 148, 31, 0.2);
     margin-bottom: 40px;
 }
 
@@ -297,12 +299,12 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #3498db;
+    color: #fff9e6;
 }
 
 /* ===== フッター ===== */
 footer {
-    background-color: #2c3e50;
+    background-color: #c9941f;
     color: white;
     text-align: center;
     padding: 30px 20px;
@@ -330,12 +332,12 @@ footer p {
 }
 
 .sitemap-list a {
-    color: #3498db;
+    color: #c9941f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .sitemap-list a:hover {
-    color: #2980b9;
+    color: #d4a855;
     text-decoration: underline;
 }
