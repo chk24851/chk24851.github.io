@@ -314,3 +314,28 @@ footer p {
     color: white;
     margin: 0;
 }
+
+/* ===== サイトマップ ===== */
+.sitemap-list {
+    margin-left: 20px;
+}
+
+.sitemap-list li {
+    margin-bottom: 15px;
+}
+
+.sitemap-list strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.sitemap-list a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sitemap-list a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
