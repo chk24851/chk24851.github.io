@@ -12,6 +12,14 @@ body {
     background: linear-gradient(135deg, #fff8f3 0%, #ffe8d6 100%);
     background-attachment: fixed;
     min-height: 100vh;
+    transition: background-color 0.3s ease, background-image 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #d4c5b9;
+        background: linear-gradient(135deg, #1a1410 0%, #2d2217 100%);
+    }
 }
 
 /* ===== コンテナ ===== */
@@ -24,6 +32,15 @@ body {
     box-shadow: 0 4px 15px rgba(232, 153, 127, 0.2);
     border: 1px solid rgba(232, 160, 100, 0.3);
     animation: fadeIn 0.5s ease-in;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background-color: rgba(32, 24, 18, 0.9);
+        box-shadow: 0 4px 15px rgba(228, 128, 80, 0.15);
+        border: 1px solid rgba(228, 128, 80, 0.2);
+    }
 }
 
 @keyframes fadeIn {
@@ -45,6 +62,14 @@ h1 {
     margin-bottom: 30px;
     font-size: 2.2em;
     font-weight: 700;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: #e8996f;
+        border-bottom: 3px solid #c85a1a;
+    }
 }
 
 h2 {
@@ -55,6 +80,30 @@ h2 {
     margin-bottom: 20px;
     font-size: 1.6em;
     font-weight: 600;
+    transition: color 0.3s ease, border-left-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: #d9a373;
+        border-left: 5px solid #c85a1a;
+    }
+}
+
+h2 a {
+    color: #c85a1a;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    h2 a {
+        color: #d9a373;
+    }
+}
+
+h2 a:hover {
+    text-decoration: underline;
 }
 
 h3 {
@@ -62,6 +111,13 @@ h3 {
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    h3 {
+        color: #d9a373;
+    }
 }
 
 /* ===== テキスト ===== */
@@ -69,16 +125,53 @@ p {
     color: #5a3a2a;
     margin-bottom: 15px;
     line-height: 1.9;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    p {
+        color: #d4c5b9;
+    }
 }
 
 strong {
     color: #e8996f;
     font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    strong {
+        color: #d9a373;
+    }
+}
+
+strong a {
+    color: #e8996f;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    strong a {
+        color: #d9a373;
+    }
+}
+
+strong a:hover {
+    text-decoration: underline;
 }
 
 em {
     color: #8a5a3a;
     font-style: italic;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    em {
+        color: #b39b8f;
+    }
 }
 
 /* ===== リスト ===== */
@@ -91,6 +184,13 @@ li {
     color: #5a3a2a;
     margin-bottom: 10px;
     line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    li {
+        color: #d4c5b9;
+    }
 }
 
 /* ===== ナビゲーション ===== */
@@ -115,10 +215,24 @@ nav a {
     display: inline-block;
 }
 
+@media (prefers-color-scheme: dark) {
+    nav a {
+        color: #d9a373;
+    }
+}
+
 nav a:hover {
     background-color: #ffe8d6;
-    color: #e8996f;
+    color: #d97037;
     transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    nav a:hover {
+        background-color: rgba(228, 128, 80, 0.2);
+        color: #d9a373;
+    }
 }
 
 /* ===== 区切り線 ===== */
@@ -126,6 +240,13 @@ hr {
     border: none;
     border-top: 2px dashed #bdc3c7;
     margin: 30px 0;
+    transition: border-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-top: 2px dashed #6b5a4f;
+    }
 }
 
 /* ===== コードブロック ===== */
@@ -135,6 +256,14 @@ code {
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Courier New', monospace;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    code {
+        background-color: #3a2f28;
+        color: #e8996f;
+    }
 }
 
 pre {
@@ -145,12 +274,26 @@ pre {
     overflow-x: auto;
     margin-bottom: 20px;
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre {
+        background-color: #1a1410;
+        color: #d4c5b9;
+    }
 }
 
 pre code {
     background-color: transparent;
     color: #ecf0f1;
     padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre code {
+        color: #d4c5b9;
+    }
 }
 
 /* ===== テーブル ===== */
@@ -166,15 +309,38 @@ table th {
     padding: 12px;
     text-align: left;
     font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    table th {
+        background-color: #5a4033;
+        color: #f5f5f5;
+    }
 }
 
 table td {
     padding: 12px;
     border-bottom: 1px solid #ecf0f1;
+    transition: border-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    table td {
+        border-bottom: 1px solid #5a4033;
+        color: #d4c5b9;
+    }
 }
 
 table tr:hover {
     background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    table tr:hover {
+        background-color: #3a2f28;
+    }
 }
 
 /* ===== ボタン ===== */
@@ -190,10 +356,23 @@ button, .btn {
     font-weight: 600;
 }
 
+@media (prefers-color-scheme: dark) {
+    button, .btn {
+        background-color: #d97037;
+    }
+}
+
 button:hover, .btn:hover {
     background-color: #2980b9;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+    button:hover, .btn:hover {
+        background-color: #c85a1a;
+        box-shadow: 0 4px 8px rgba(228, 128, 80, 0.3);
+    }
 }
 
 /* ===== フォーム ===== */
@@ -208,6 +387,18 @@ textarea {
     font-family: inherit;
     font-size: 1em;
     background-color: #fff8f3;
+    color: #5a3a2a;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        background-color: #3a2f28;
+        border: 1px solid #c85a1a;
+        color: #d4c5b9;
+    }
 }
 
 input[type="text"]:focus,
@@ -216,6 +407,15 @@ textarea:focus {
     outline: none;
     border-color: #d97037;
     box-shadow: 0 0 8px rgba(217, 112, 55, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #d9a373;
+        box-shadow: 0 0 8px rgba(217, 163, 115, 0.3);
+    }
 }
 
 /* ===== レスポンシブ ===== */
@@ -277,6 +477,16 @@ header {
     padding: 15px 0;
     box-shadow: 0 2px 8px rgba(217, 112, 55, 0.2);
     margin-bottom: 40px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #8a5a3a;
+        box-shadow: 0 2px 8px rgba(217, 163, 115, 0.2);
+    }
 }
 
 header nav ul {
@@ -295,11 +505,15 @@ header nav a {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
 header nav a:hover {
-    color: #fff8f3;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
 }
 
 /* ===== フッター ===== */
@@ -310,6 +524,15 @@ footer {
     padding: 30px 20px;
     margin-top: 60px;
     font-size: 0.95em;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    transition: background-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: #8a5a3a;
+    }
 }
 
 footer p {
@@ -329,6 +552,13 @@ footer p {
 .sitemap-list strong {
     color: #2c3e50;
     font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sitemap-list strong {
+        color: #d9a373;
+    }
 }
 
 .sitemap-list a {
@@ -337,7 +567,19 @@ footer p {
     transition: color 0.3s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+    .sitemap-list a {
+        color: #d9a373;
+    }
+}
+
 .sitemap-list a:hover {
     color: #e8996f;
     text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sitemap-list a:hover {
+        color: #e8b89f;
+    }
 }
