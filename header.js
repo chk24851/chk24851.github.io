@@ -7,6 +7,17 @@ const headerHTML = `<header><nav><ul>
     <li><a href="/sitemap.html">サイトマップ</a></li>
 </ul></nav></header>`;
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.insertAdjacentHTML('afterbegin', headerHTML);
-});
+// DOMContentLoaded と window.onload の両方で実行
+function injectHeader() {
+    const body = document.body;
+    if (body) {
+        body.insertAdjacentHTML('afterbegin', headerHTML);
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectHeader);
+} else {
+    injectHeader();
+}
+

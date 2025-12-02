@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>�������A�[�J�C�u</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\'/>">
+    <title>東方妖々夢 - Normal 博麗 霊夢 | ちこいアーカイブ</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y="75" font-size="75" text-anchor="middle" x="50"></text></svg>">
     <link rel="stylesheet" href="/style.css">
     <script src="/header.js"></script>
 </head>
 <body>
 
     <div class="container">
-        <h1>�yNORMAL�z���� �얲</h1>
-
+        <h1>東方妖々夢 - Normal 博麗 霊夢</h1>
+        
         <div class="video-container">
             <div class="video-panel">
                 <div class="video-wrapper">
-                    <iframe id="videoFrame" data-video-id="ujmtniAMzek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="videoFrame" data-video-id="ujmtniAMzek" src="https://www.youtube.com/embed/ujmtniAMzek" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
             </div>
-
             <div class="timestamps-panel">
                 <div class="timestamps-list">
                     <ul>
-                        <li><a href="#" class="timestamp-link" data-time="60" tabindex="0">�X�^���v1</a></li>
-                        <li><a href="#" class="timestamp-link" data-time="120" tabindex="0">�X�^���v2</a></li>
+                        <li><a class="timestamp-link" data-time="60">スタンプ1</a></li>
+                        <li><a class="timestamp-link" data-time="120">スタンプ2</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,52 +31,44 @@
 
         <div class="content-panel">
             <div id="content-60" class="stamp-content">
-                <h3>�X�^���v1</h3>
-                <p>�X�^���v1�Ɋւ�����</p>
+                <h3>スタンプ1 (1:00)</h3>
+                <p>攻略情報のプレースホルダーです。</p>
             </div>
             <div id="content-120" class="stamp-content hidden">
-                <h3>�X�^���v2</h3>
-                <p>�X�^���v2�Ɋւ�����</p>
+                <h3>スタンプ2 (2:00)</h3>
+                <p>攻略情報のプレースホルダーです。</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 ������. All rights reserved.</p>
+        <p>&copy; 2025 ちこい. All rights reserved.</p>
     </footer>
 
     <script>
         const videoFrame = document.getElementById('videoFrame');
-        const videoId = videoFrame.dataset.videoId;
-        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        
         const timestampLinks = document.querySelectorAll('.timestamp-link');
+        
         function jumpToTimestamp(link) {
-            const seconds = parseInt(link.dataset.time);
-            videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
-            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
-            const selectedContent = document.getElementById('content-' + seconds);
-            if (selectedContent) selectedContent.classList.remove('hidden');
+            const time = parseInt(link.getAttribute('data-time'));
+            const videoId = videoFrame.getAttribute('data-video-id');
+            videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + time;
+            
+            // コンテンツパネルの表示/非表示を切り替え
+            document.querySelectorAll('.stamp-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.getElementById('content-' + time).classList.remove('hidden');
         }
-
+        
         timestampLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
+            link.addEventListener('click', function(e) {
                 e.preventDefault();
-                jumpToTimestamp(link);
+                jumpToTimestamp(this);
             });
-            link.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    jumpToTimestamp(link);
-                }
-            });
-        });
-
-        timestampLinks[0]?.addEventListener('click', (e) => {
-            e.preventDefault();
-            jumpToTimestamp(timestampLinks[0]);
         });
     </script>
+
 </body>
 </html>
 
