@@ -20,31 +20,27 @@
             </div>
 
             <div class="timestamps-panel">
-                <div class="timestamps-list">
+                <div class="timestamps-list" id="timestamps-list">
                     <ul>
-                        <li><a href="#" class="timestamp-link" data-time="47" tabindex="0">弾消し</a></li>
-                        <li><a href="#" class="timestamp-link" data-time="216" tabindex="0">クランベリートラップ</a></li>
-                        <li><a href="#" class="timestamp-link" data-time="60" tabindex="0">中盤</a></li>
-                        <li><a href="#" class="timestamp-link" data-time="120" tabindex="0">ボス戦</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="content-panel">
-            <div id="content-47" class="stamp-content">
+        <div class="content-panel" id="content-panel">
+            <div id="content-0" class="stamp-content">
                 <h3>弾消し</h3>
                 <p>前のチャプターまでにPowerを120～127に調整し，中央の妖精を倒したときに出る大Pをタイミングよく拾うことで，両端の妖精からの攻撃を無効化できます。</p>
             </div>
-            <div id="content-216" class="stamp-content hidden">
+            <div id="content-1" class="stamp-content hidden">
                 <h3>クランベリートラップ</h3>
                 <p>ホーミングが使い魔を狙ってしまうせいで撃破までに時間がかかりますが，避け方は同じです。</p>
             </div>
-            <div id="content-60" class="stamp-content hidden">
+            <div id="content-2" class="stamp-content hidden">
                 <h3>中盤</h3>
                 <p>中盤の難易度上昇に対する対応策を説明します。</p>
             </div>
-            <div id="content-120" class="stamp-content hidden">
+            <div id="content-3" class="stamp-content hidden">
                 <h3>ボス戦</h3>
                 <p>ボス戦での攻略ポイントと重要な立ち回りについて解説します。</p>
             </div>
@@ -52,40 +48,67 @@
     </div>
 
     <script>
+        // タイムスタンプデータを管理
+        const timestamps = [
+            { time: 47, label: '弾消し' },
+            { time: 216, label: 'クランベリートラップ' },
+            { time: 60, label: '中盤' },
+            { time: 120, label: 'ボス戦' }
+        ];
+
         const videoFrame = document.getElementById('videoFrame');
         const videoId = videoFrame.dataset.videoId;
-        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        
-        const timestampLinks = document.querySelectorAll('.timestamp-link');
-        
-        function jumpToTimestamp(link) {
-            const seconds = parseInt(link.dataset.time);
+
+        // タイムスタンプリストをレンダリング
+        function renderTimestamps() {
+            const listContainer = document.querySelector('#timestamps-list ul');
+            listContainer.innerHTML = '';
+            
+            timestamps.forEach((ts, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'timestamp-link';
+                a.dataset.index = index;
+                a.textContent = ts.label;
+                a.tabIndex = 0;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    jumpToTimestamp(index);
+                });
+                
+                a.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        jumpToTimestamp(index);
+                    }
+                });
+                
+                li.appendChild(a);
+                listContainer.appendChild(li);
+            });
+        }
+
+        // タイムスタンプにジャンプ
+        function jumpToTimestamp(index) {
+            const ts = timestamps[index];
+            const seconds = ts.time;
+            
             videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
             
+            // コンテンツを表示
             document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
             
-            const selectedContent = document.getElementById('content-' + seconds);
-            if (selectedContent) selectedContent.classList.remove('hidden');
+            const selectedContent = document.getElementById(`content-${index}`);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
         }
-        
-        timestampLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                jumpToTimestamp(link);
-            });
-            
-            link.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    jumpToTimestamp(link);
-                }
-            });
-        });
-        
-        timestampLinks[0]?.addEventListener('click', (e) => {
-            e.preventDefault();
-            jumpToTimestamp(timestampLinks[0]);
-        });
+
+        // 初期ロード
+        renderTimestamps();
+        document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
     </script>
     <script src="../../components/loader.js"></script>
 </body>

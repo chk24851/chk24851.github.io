@@ -12,10 +12,221 @@
     <div class="container">
         <h1>【Normal】博麗 霊夢（霊の御札）</h1>
 
-        <h3>感想</h3>
-        <p>ここに感想を書きます。</p>
+        <!-- ステージ選択 -->
+        <div class="stage-selector">
+            <button class="stage-btn active" data-stage="1">1面</button>
+            <button class="stage-btn" data-stage="2">2面</button>
+            <button class="stage-btn" data-stage="3">3面</button>
+            <button class="stage-btn" data-stage="4">4面</button>
+            <button class="stage-btn" data-stage="5">5面</button>
+            <button class="stage-btn" data-stage="6">6面</button>
+        </div>
+
+        <div class="video-container">
+            <div class="video-panel">
+                <div class="video-wrapper">
+                    <iframe id="videoFrame" data-video-id="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="timestamps-panel">
+                <div class="timestamps-list" id="timestamps-list">
+                    <ul>
+                        <li><a href="#" class="timestamp-link" data-time="0" data-stage="1" tabindex="0">タイムスタンプ1</a></li>
+                        <li><a href="#" class="timestamp-link" data-time="0" data-stage="1" tabindex="0">タイムスタンプ2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-panel" id="content-panel">
+            <!-- ステージ1 -->
+            <div id="content-1-0" class="stamp-content">
+                <h3>タイムスタンプ1</h3>
+                <p>【ステージ1】ここに説明を書きます。</p>
+            </div>
+            <div id="content-1-1" class="stamp-content hidden">
+                <h3>タイムスタンプ2</h3>
+                <p>【ステージ1】ここに説明を書きます。</p>
+            </div>
+            
+            <!-- ステージ2 -->
+            <div id="content-2-0" class="stamp-content hidden">
+                <h3>タイムスタンプ3</h3>
+                <p>【ステージ2】ここに説明を書きます。</p>
+            </div>
+            <div id="content-2-1" class="stamp-content hidden">
+                <h3>タイムスタンプ4</h3>
+                <p>【ステージ2】ここに説明を書きます。</p>
+            </div>
+            
+            <!-- ステージ3 -->
+            <div id="content-3-0" class="stamp-content hidden">
+                <h3>タイムスタンプ5</h3>
+                <p>【ステージ3】ここに説明を書きます。</p>
+            </div>
+            <div id="content-3-1" class="stamp-content hidden">
+                <h3>タイムスタンプ6</h3>
+                <p>【ステージ3】ここに説明を書きます。</p>
+            </div>
+            
+            <!-- ステージ4 -->
+            <div id="content-4-0" class="stamp-content hidden">
+                <h3>タイムスタンプ7</h3>
+                <p>【ステージ4】ここに説明を書きます。</p>
+            </div>
+            <div id="content-4-1" class="stamp-content hidden">
+                <h3>タイムスタンプ8</h3>
+                <p>【ステージ4】ここに説明を書きます。</p>
+            </div>
+            
+            <!-- ステージ5 -->
+            <div id="content-5-0" class="stamp-content hidden">
+                <h3>タイムスタンプ9</h3>
+                <p>【ステージ5】ここに説明を書きます。</p>
+            </div>
+            <div id="content-5-1" class="stamp-content hidden">
+                <h3>タイムスタンプ10</h3>
+                <p>【ステージ5】ここに説明を書きます。</p>
+            </div>
+            
+            <!-- ステージ6 -->
+            <div id="content-6-0" class="stamp-content hidden">
+                <h3>タイムスタンプ11</h3>
+                <p>【ステージ6】ここに説明を書きます。</p>
+            </div>
+            <div id="content-6-1" class="stamp-content hidden">
+                <h3>タイムスタンプ12</h3>
+                <p>【ステージ6】ここに説明を書きます。</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        // ステージごとのタイムスタンプデータを管理
+        const stageData = {
+            1: {
+                timestamps: [
+                    { time: 10, label: 'タイムスタンプ1' },
+                    { time: 30, label: 'タイムスタンプ2' }
+                ]
+            },
+            2: {
+                timestamps: [
+                    { time: 20, label: 'タイムスタンプ3' },
+                    { time: 40, label: 'タイムスタンプ4' }
+                ]
+            },
+            3: {
+                timestamps: [
+                    { time: 50, label: 'タイムスタンプ5' },
+                    { time: 70, label: 'タイムスタンプ6' }
+                ]
+            },
+            4: {
+                timestamps: [
+                    { time: 80, label: 'タイムスタンプ7' },
+                    { time: 100, label: 'タイムスタンプ8' }
+                ]
+            },
+            5: {
+                timestamps: [
+                    { time: 120, label: 'タイムスタンプ9' },
+                    { time: 140, label: 'タイムスタンプ10' }
+                ]
+            },
+            6: {
+                timestamps: [
+                    { time: 160, label: 'タイムスタンプ11' },
+                    { time: 180, label: 'タイムスタンプ12' }
+                ]
+            }
+        };
+
+        const videoFrame = document.getElementById('videoFrame');
+        const videoId = videoFrame.dataset.videoId;
+        let currentStage = 1;
+
+        // タイムスタンプリストをレンダリング
+        function renderTimestamps(stage) {
+            const timestamps = stageData[stage].timestamps;
+            const listContainer = document.querySelector('#timestamps-list ul');
+            listContainer.innerHTML = '';
+            
+            timestamps.forEach((ts, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'timestamp-link';
+                a.dataset.time = ts.time;
+                a.dataset.stage = stage;
+                a.dataset.index = index;
+                a.textContent = ts.label;
+                a.tabIndex = 0;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    jumpToTimestamp(stage, index);
+                });
+                
+                a.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        jumpToTimestamp(stage, index);
+                    }
+                });
+                
+                li.appendChild(a);
+                listContainer.appendChild(li);
+            });
+        }
+
+        // コンテンツを切り替え
+        function switchStage(stage) {
+            currentStage = stage;
+            
+            // ボタンのアクティブ状態を更新
+            document.querySelectorAll('.stage-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.stage == stage);
+            });
+            
+            // タイムスタンプリストをレンダリング
+            renderTimestamps(stage);
+            
+            // コンテンツをクリア
+            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+        }
+
+        // タイムスタンプにジャンプ
+        function jumpToTimestamp(stage, index) {
+            const ts = stageData[stage].timestamps[index];
+            const seconds = ts.time;
+            
+            if (videoId) {
+                videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
+            }
+            
+            // コンテンツを表示
+            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+            
+            const selectedContent = document.getElementById(`content-${stage}-${index}`);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+        }
+
+        // ステージボタンのイベントリスナー
+        document.querySelectorAll('.stage-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const stage = parseInt(btn.dataset.stage);
+                switchStage(stage);
+            });
+        });
+
+        // 初期ロード
+        renderTimestamps(1);
+        document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+    </script>
     <script src="../../components/loader.js"></script>
 </body>
 </html>

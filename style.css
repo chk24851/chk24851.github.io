@@ -595,6 +595,77 @@ footer p {
     }
 }
 
+/* ===== ステージセレクター ===== */
+.stage-selector {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 30px 0;
+    flex-wrap: wrap;
+}
+
+.stage-btn {
+    padding: 10px 16px;
+    border: 2px solid #d97037;
+    background-color: transparent;
+    color: #d97037;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.stage-btn:hover {
+    background-color: #f0935f;
+    color: white;
+    box-shadow: 0 2px 8px rgba(217, 112, 55, 0.3);
+}
+
+.stage-btn.active {
+    background-color: #d97037;
+    color: white;
+    box-shadow: 0 2px 12px rgba(217, 112, 55, 0.5);
+}
+
+.stage-btn:focus {
+    outline: 2px solid #d97037;
+    outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .stage-btn {
+        border-color: #d9a373;
+        color: #d9a373;
+    }
+
+    .stage-btn:hover {
+        background-color: #c85a1a;
+        color: white;
+        box-shadow: 0 2px 8px rgba(200, 90, 26, 0.4);
+    }
+
+    .stage-btn.active {
+        background-color: #c85a1a;
+        color: white;
+        box-shadow: 0 2px 12px rgba(200, 90, 26, 0.5);
+    }
+
+    .stage-btn:focus {
+        outline-color: #d9a373;
+    }
+}
+
+@media (max-width: 480px) {
+    .stage-selector {
+        gap: 8px;
+    }
+
+    .stage-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
 /* ===== ビデオプレイヤー & タイムスタンプ ===== */
 .video-container {
     display: flex;
