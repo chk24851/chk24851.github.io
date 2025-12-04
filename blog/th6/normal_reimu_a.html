@@ -44,8 +44,14 @@
         </div>
 
         <div class="content-panel" id="content-panel">
+            <!-- デフォルト表示 -->
+            <div id="content-default" class="stamp-content">
+                <h3>【Normal】博麗 霊夢（霊の御札）</h3>
+                <p>このページは【Normal】難度での攻略解説です。タイムスタンプを選択して、各シーンの詳細を確認してください。</p>
+            </div>
+            
             <!-- ステージ1 -->
-            <div id="content-1-0" class="stamp-content">
+            <div id="content-1-0" class="stamp-content hidden">
                 <h3>タイムスタンプ1</h3>
                 <p>【ステージ1】ここに説明を書きます。</p>
             </div>
@@ -236,7 +242,14 @@
 
         // 初期ロード
         renderTimestamps(1);
-        document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+        
+        // 動画を初期表示（時間指定なし、自動再生）
+        if (videoId) {
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        }
+        
+        // デフォルトコンテンツを表示
+        document.getElementById('content-default').classList.remove('hidden');
     </script>
     <script src="../../components/loader.js"></script>
 </body>
