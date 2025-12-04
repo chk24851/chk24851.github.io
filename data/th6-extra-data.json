@@ -1,0 +1,51 @@
+{
+    "reimu_a": {
+        "title": "【Extra】博麗 霊夢（霊の御札）",
+        "videoId": "ujmtniAMzek",
+        "timestamps": [
+            {
+                "time": 47,
+                "label": "弾消し",
+                "content": "前のチャプターまでにPowerを120～127に調整し，中央の妖精を倒したときに出る大Pをタイミングよく拾うことで，両端の妖精からの攻撃を無効化できます。"
+            },
+            {
+                "time": 216,
+                "label": "クランベリートラップ",
+                "content": "ホーミングが使い魔を狙ってしまうせいで撃破までに時間がかかりますが，避け方は同じです。"
+            }
+        ]
+    },
+    "reimu_b": {
+        "title": "【Extra】博麗 霊夢（夢の御札）",
+        "videoId": "PLACEHOLDER_VIDEO_ID",
+        "timestamps": [
+            {
+                "time": 0,
+                "label": "スタンプ名",
+                "content": "解説を入力してください。"
+            }
+        ]
+    },
+    "marisa_a": {
+        "title": "【Extra】霧雨 魔理沙（魔の御札）",
+        "videoId": "PLACEHOLDER_VIDEO_ID",
+        "timestamps": [
+            {
+                "time": 0,
+                "label": "スタンプ名",
+                "content": "解説を入力してください。"
+            }
+        ]
+    },
+    "marisa_b": {
+        "title": "【Extra】霧雨 魔理沙（恋の御札）",
+        "videoId": "PLACEHOLDER_VIDEO_ID",
+        "timestamps": [
+            {
+                "time": 0,
+                "label": "スタンプ名",
+                "content": "解説を入力してください。"
+            }
+        ]
+    }
+}
