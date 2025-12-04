@@ -95,6 +95,8 @@
         </div>
     </div>
 
+    <script src="../../components/loader.js"></script>
+    <script src="../../components/explanation-normal.js"></script>
     <script>
         // ステージごとのタイムスタンプデータを管理
         const stageData = {
@@ -136,108 +138,8 @@
             }
         };
 
-        const videoFrame = document.getElementById('videoFrame');
-        const videoId = videoFrame.dataset.videoId;
-        let currentStage = 1;
-
-        // タイムスタンプリストをレンダリング
-        function renderTimestamps(stage) {
-            const timestamps = stageData[stage].timestamps;
-            const listContainer = document.querySelector('#timestamps-list ul');
-            listContainer.innerHTML = '';
-            
-            timestamps.forEach((ts, index) => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = '#';
-                a.className = 'timestamp-link';
-                a.dataset.time = ts.time;
-                a.dataset.stage = stage;
-                a.dataset.index = index;
-                a.textContent = ts.label;
-                a.tabIndex = 0;
-                
-                a.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    jumpToTimestamp(stage, index);
-                });
-                
-                a.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        jumpToTimestamp(stage, index);
-                    }
-                });
-                
-                li.appendChild(a);
-                listContainer.appendChild(li);
-            });
-        }
-
-        // コンテンツを切り替え
-        function switchStage(stage) {
-            currentStage = stage;
-            
-            // ドロップダウンを更新
-            document.getElementById('stage-dropdown').value = stage;
-            
-            // タイムスタンプリストをレンダリング
-            renderTimestamps(stage);
-            
-            // コンテンツをクリア
-            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
-            
-            // デフォルトコンテンツを表示
-            document.getElementById('content-default').classList.remove('hidden');
-        }
-
-        // タイムスタンプにジャンプ
-        function jumpToTimestamp(stage, index) {
-            const ts = stageData[stage].timestamps[index];
-            const seconds = ts.time;
-            
-            if (videoId) {
-                videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
-            }
-            
-            // コンテンツを表示
-            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
-            
-            const selectedContent = document.getElementById(`content-${stage}-${index}`);
-            if (selectedContent) {
-                selectedContent.classList.remove('hidden');
-            }
-        }
-
-        // ドロップダウンのイベントリスナー
-        document.getElementById('stage-dropdown').addEventListener('change', (e) => {
-            const stage = parseInt(e.target.value);
-            switchStage(stage);
-        });
-
-        // 矢印ボタンのイベントリスナー
-        document.getElementById('prev-stage').addEventListener('click', () => {
-            const prevStage = Math.max(1, currentStage - 1);
-            switchStage(prevStage);
-        });
-
-        document.getElementById('next-stage').addEventListener('click', () => {
-            const nextStage = Math.min(6, currentStage + 1);
-            switchStage(nextStage);
-        });
-
-        // 初期ロード
-        renderTimestamps(1);
-        
-        // 動画を初期表示（時間指定なし、自動再生）
-        if (videoId) {
-            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        }
-        
-        // デフォルトコンテンツを表示
-        document.getElementById('content-default').classList.remove('hidden');
+        initializeExplanationPage(stageData, {});
     </script>
-    <script src="../../components/loader.js"></script>
 </body>
 </html>
 

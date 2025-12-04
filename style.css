@@ -333,14 +333,65 @@ table td {
 }
 
 /* ===== 実績表 ===== */
-.achievements-table th:nth-child(1) {
-    width: 25%;
+.achievements-table {
+    border: 1px solid #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .achievements-table {
+        border-color: #5a4033;
+    }
+}
+
+.achievements-table td:nth-child(1) {
+    width: 11.5%;
+    text-align: center;
+    border-right: 1px solid #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .achievements-table td:nth-child(1) {
+        border-right-color: #5a4033;
+    }
+}
+
+.achievements-table td:nth-child(2) {
+    width: 13.5%;
+    text-align: center;
+    border-right: 1px solid #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .achievements-table td:nth-child(2) {
+        border-right-color: #5a4033;
+    }
+}
+
+.achievements-table td:nth-child(3) {
+    width: 70%;
+}
+
+.achievements-table .date-header {
+    text-align: center;
+    border-right: 1px solid #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .achievements-table .date-header {
+        border-right-color: #5a4033;
+    }
+}
+
+.achievements-table .content-header {
     text-align: center;
 }
 
-.achievements-table th:nth-child(2) {
-    width: 75%;
-    text-align: center;
+.achievements-table td.no-border-bottom {
+    border-bottom: none;
+}
+
+.achievements-table td.no-border-bottom {
+    border-bottom: none;
 }
 
 /* ===== ボタン ===== */
