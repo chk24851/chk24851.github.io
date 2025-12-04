@@ -229,6 +229,12 @@ nav a:hover {
     }
 }
 
+a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
 hr {
     border: none;
     border-top: 2px dashed #bdc3c7;
