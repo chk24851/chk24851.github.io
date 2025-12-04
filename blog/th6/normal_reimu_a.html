@@ -12,16 +12,6 @@
     <div class="container">
         <h1>【Normal】博麗 霊夢（霊の御札）</h1>
 
-        <!-- ステージ選択 -->
-        <div class="stage-selector">
-            <button class="stage-btn active" data-stage="1">1面</button>
-            <button class="stage-btn" data-stage="2">2面</button>
-            <button class="stage-btn" data-stage="3">3面</button>
-            <button class="stage-btn" data-stage="4">4面</button>
-            <button class="stage-btn" data-stage="5">5面</button>
-            <button class="stage-btn" data-stage="6">6面</button>
-        </div>
-
         <div class="video-container">
             <div class="video-panel">
                 <div class="video-wrapper">
@@ -30,6 +20,20 @@
             </div>
 
             <div class="timestamps-panel">
+                <!-- ステージ選択 -->
+                <div class="stage-selector">
+                    <button class="stage-arrow" id="prev-stage">←</button>
+                    <select id="stage-dropdown">
+                        <option value="1">1面</option>
+                        <option value="2">2面</option>
+                        <option value="3">3面</option>
+                        <option value="4">4面</option>
+                        <option value="5">5面</option>
+                        <option value="6">6面</option>
+                    </select>
+                    <button class="stage-arrow" id="next-stage">→</button>
+                </div>
+
                 <div class="timestamps-list" id="timestamps-list">
                     <ul>
                         <li><a href="#" class="timestamp-link" data-time="0" data-stage="1" tabindex="0">タイムスタンプ1</a></li>
@@ -185,10 +189,8 @@
         function switchStage(stage) {
             currentStage = stage;
             
-            // ボタンのアクティブ状態を更新
-            document.querySelectorAll('.stage-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.stage == stage);
-            });
+            // ドロップダウンを更新
+            document.getElementById('stage-dropdown').value = stage;
             
             // タイムスタンプリストをレンダリング
             renderTimestamps(stage);
@@ -215,12 +217,21 @@
             }
         }
 
-        // ステージボタンのイベントリスナー
-        document.querySelectorAll('.stage-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const stage = parseInt(btn.dataset.stage);
-                switchStage(stage);
-            });
+        // ドロップダウンのイベントリスナー
+        document.getElementById('stage-dropdown').addEventListener('change', (e) => {
+            const stage = parseInt(e.target.value);
+            switchStage(stage);
+        });
+
+        // 矢印ボタンのイベントリスナー
+        document.getElementById('prev-stage').addEventListener('click', () => {
+            const prevStage = Math.max(1, currentStage - 1);
+            switchStage(prevStage);
+        });
+
+        document.getElementById('next-stage').addEventListener('click', () => {
+            const nextStage = Math.min(6, currentStage + 1);
+            switchStage(nextStage);
         });
 
         // 初期ロード
