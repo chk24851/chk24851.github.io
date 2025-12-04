@@ -1,4 +1,3 @@
-/* ===== グローバルスタイル ===== */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,6 @@ body {
     }
 }
 
-/* ===== コンテナ ===== */
 .container {
     max-width: 900px;
     margin: 30px auto;
@@ -54,7 +52,6 @@ body {
     }
 }
 
-/* ===== タイトル ===== */
 h1 {
     color: #d97037;
     border-bottom: 3px solid #f0935f;
@@ -120,7 +117,6 @@ h3 {
     }
 }
 
-/* ===== テキスト ===== */
 p {
     color: #5a3a2a;
     margin-bottom: 15px;
@@ -174,7 +170,6 @@ em {
     }
 }
 
-/* ===== リスト ===== */
 ul, ol {
     margin-left: 30px;
     margin-bottom: 20px;
@@ -193,7 +188,6 @@ li {
     }
 }
 
-/* ===== ナビゲーション ===== */
 nav ul {
     list-style: none;
     padding: 0;
@@ -235,7 +229,6 @@ nav a:hover {
     }
 }
 
-/* ===== 区切り線 ===== */
 hr {
     border: none;
     border-top: 2px dashed #bdc3c7;
@@ -249,7 +242,6 @@ hr {
     }
 }
 
-/* ===== コードブロック ===== */
 code {
     background-color: #ecf0f1;
     color: #c0392b;
@@ -296,7 +288,6 @@ pre code {
     }
 }
 
-/* ===== テーブル ===== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -332,7 +323,6 @@ table td {
     }
 }
 
-/* ===== 実績表 ===== */
 .achievements-table {
     border: 1px solid #ecf0f1;
 }
@@ -344,8 +334,8 @@ table td {
 }
 
 .achievements-table td:nth-child(1) {
-    width: 11.5%;
-    text-align: center;
+    width: 10%;
+    text-align: right;
     border-right: 1px solid #ecf0f1;
 }
 
@@ -356,8 +346,8 @@ table td {
 }
 
 .achievements-table td:nth-child(2) {
-    width: 13.5%;
-    text-align: center;
+    width: 12.5%;
+    text-align: right;
     border-right: 1px solid #ecf0f1;
 }
 
@@ -368,7 +358,7 @@ table td {
 }
 
 .achievements-table td:nth-child(3) {
-    width: 70%;
+    width: 77.5%;
 }
 
 .achievements-table .date-header {
@@ -390,11 +380,27 @@ table td {
     border-bottom: none;
 }
 
-.achievements-table td.no-border-bottom {
-    border-bottom: none;
+/* 実績表内のリンク */
+.achievements-table a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: inherit;
+    margin: -12px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
 }
 
-/* ===== ボタン ===== */
+.achievements-table a:hover {
+    background-color: #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+    .achievements-table a:hover {
+        background-color: #3e2723;
+    }
+}
+
 button, .btn {
     background-color: #3498db;
     color: white;
@@ -426,7 +432,6 @@ button:hover, .btn:hover {
     }
 }
 
-/* ===== フォーム ===== */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -469,7 +474,6 @@ textarea:focus {
     }
 }
 
-/* ===== レスポンシブ ===== */
 @media (max-width: 768px) {
     .container {
         margin: 15px;
@@ -522,7 +526,6 @@ textarea:focus {
     }
 }
 
-/* ===== ヘッダー ===== */
 header {
     background-color: #d97037;
     padding: 15px 0;
@@ -567,7 +570,6 @@ header nav a:hover {
     text-decoration: none;
 }
 
-/* ===== フッター ===== */
 footer {
     background-color: #d97037;
     color: white;
@@ -591,7 +593,6 @@ footer p {
     margin: 0;
 }
 
-/* ===== サイトマップ ===== */
 .sitemap-list {
     margin-left: 20px;
 }
@@ -635,7 +636,6 @@ footer p {
     }
 }
 
-/* ===== ステージセレクター ===== */
 .stage-selector {
     display: flex;
     gap: 8px;
@@ -722,7 +722,6 @@ footer p {
     }
 }
 
-/* ===== ビデオプレイヤー & タイムスタンプ ===== */
 .video-container {
     display: flex;
     gap: 20px;

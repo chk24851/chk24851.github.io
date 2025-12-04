@@ -1,13 +1,3 @@
-/**
- * Normal難度用解説ページ共通JavaScript
- * 6ステージ対応
- * 
- * 使用方法:
- * 1. HTMLの末尾で読み込む: <script src="../../components/explanation-normal.js"></script>
- * 2. data-video-idを設定
- * 3. stageDataとcontentIdsを定義して、initializeExplanationPage()を呼び出す
- */
-
 function initializeExplanationPage(stageData, contentIds) {
     if (typeof contentIds === 'undefined') contentIds = {};
     
@@ -15,7 +5,6 @@ function initializeExplanationPage(stageData, contentIds) {
     const videoId = videoFrame ? videoFrame.dataset.videoId : null;
     let currentStage = 1;
 
-    // タイムスタンプリストをレンダリング
     function renderTimestamps(stage) {
         const timestamps = stageData[stage] ? stageData[stage].timestamps : [];
         const listContainer = document.querySelector('#timestamps-list ul');
@@ -51,28 +40,22 @@ function initializeExplanationPage(stageData, contentIds) {
         });
     }
 
-    // コンテンツを切り替え
     function switchStage(stage) {
         currentStage = stage;
         
-        // ドロップダウンを更新
         const dropdown = document.getElementById('stage-dropdown');
         if (dropdown) dropdown.value = stage;
         
-        // タイムスタンプリストをレンダリング
         renderTimestamps(stage);
         
-        // コンテンツをクリア
         document.querySelectorAll('.stamp-content').forEach(function(el) {
             el.classList.add('hidden');
         });
         
-        // デフォルトコンテンツを表示
         const defaultContent = document.getElementById('content-default');
         if (defaultContent) defaultContent.classList.remove('hidden');
     }
 
-    // タイムスタンプにジャンプ
     function jumpToTimestamp(stage, index) {
         const ts = stageData[stage] ? stageData[stage].timestamps[index] : null;
         if (!ts) return;
@@ -83,7 +66,6 @@ function initializeExplanationPage(stageData, contentIds) {
             videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + seconds + '&autoplay=1';
         }
         
-        // コンテンツを表示
         document.querySelectorAll('.stamp-content').forEach(function(el) {
             el.classList.add('hidden');
         });
@@ -95,7 +77,6 @@ function initializeExplanationPage(stageData, contentIds) {
         }
     }
 
-    // ドロップダウンのイベントリスナー
     const dropdown = document.getElementById('stage-dropdown');
     if (dropdown) {
         dropdown.addEventListener('change', function(e) {
@@ -104,7 +85,6 @@ function initializeExplanationPage(stageData, contentIds) {
         });
     }
 
-    // 矢印ボタンのイベントリスナー
     const prevBtn = document.getElementById('prev-stage');
     const nextBtn = document.getElementById('next-stage');
     
@@ -123,15 +103,12 @@ function initializeExplanationPage(stageData, contentIds) {
         });
     }
 
-    // 初期ロード
     renderTimestamps(1);
     
-    // 動画を初期表示（時間指定なし、自動再生）
     if (videoId && videoFrame) {
         videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
     }
     
-    // デフォルトコンテンツを表示
     const defaultContent = document.getElementById('content-default');
     if (defaultContent) defaultContent.classList.remove('hidden');
 }

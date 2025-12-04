@@ -52,7 +52,6 @@
     </div>
 
     <script>
-        // タイムスタンプデータを管理
         const timestamps = [
             { time: 10, label: 'タイムスタンプ1' },
             { time: 30, label: 'タイムスタンプ2' },
@@ -63,7 +62,6 @@
         const videoFrame = document.getElementById('videoFrame');
         const videoId = videoFrame.dataset.videoId;
 
-        // タイムスタンプリストをレンダリング
         function renderTimestamps() {
             const listContainer = document.querySelector('#timestamps-list ul');
             listContainer.innerHTML = '';
@@ -94,14 +92,12 @@
             });
         }
 
-        // タイムスタンプにジャンプ
         function jumpToTimestamp(index) {
             const ts = timestamps[index];
             const seconds = ts.time;
             
             videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
             
-            // コンテンツを表示
             document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
             
             const selectedContent = document.getElementById(`content-${index}`);
@@ -110,15 +106,12 @@
             }
         }
 
-        // 初期ロード
         renderTimestamps();
         
-        // 動画を初期表示（時間指定なし、自動再生）
         if (videoId) {
             videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
         }
         
-        // デフォルトコンテンツを表示
         document.getElementById('content-default').classList.remove('hidden');
     </script>
     <script src="../../components/loader.js"></script>
