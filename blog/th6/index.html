@@ -3,36 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ちこいアーカイブ</title>
+    <title></title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>">
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>東方紅魔郷　～ the Embodiment of Scarlet Devil.</h1>
-
-        <h2>Normal</h2>
-        <nav>
-            <ul>
-                <li><a href="normal_reimu_a.html">博麗 霊夢（霊の御札）</a></li>
-                <li><a href="normal_reimu_b.html">博麗 霊夢（夢の御札）</a></li>
-                <li><a href="normal_marisa_a.html">霧雨 魔理沙（魔の御札）</a></li>
-                <li><a href="normal_marisa_b.html">霧雨 魔理沙（恋の御札）</a></li>
-            </ul>
-        </nav>
-
-        <h2>Extra</h2>
-        <nav>
-            <ul>
-                <li><a href="extra_reimu_a.html">博麗 霊夢（霊の御札）</a></li>
-                <li><a href="extra_reimu_b.html">博麗 霊夢（夢の御札）</a></li>
-                <li><a href="extra_marisa_a.html">霧雨 魔理沙（魔の御札）</a></li>
-                <li><a href="extra_marisa_b.html">霧雨 魔理沙（恋の御札）</a></li>
-            </ul>
-        </nav>
+    <div class="container" id="container">
+        <!-- コンテンツはJavaScriptで動的生成 -->
     </div>
 
     <script src="../../components/loader.js"></script>
+    <script>
+        // URL パラメータを取得
+        const params = new URLSearchParams(window.location.search);
+        const difficulty = params.get('difficulty');
+        const character = params.get('character');
+
+        // パラメータがなければ一覧表示、あれば解説ページ表示
+        if (difficulty && character) {
+            // 必要なスクリプトを動的に読み込む
+            const script = document.createElement('script');
+            script.src = difficulty === 'normal' 
+                ? '../../components/explanation-normal.js'
+                : '../../components/explanation-extra.js';
+            
+            script.onload = function() {
+                // スクリプト読み込み完了後に HTML 生成と初期化を実行
+                const dataUrl = difficulty === 'normal' 
+                    ? '../../data/th6-normal-data.json' 
+                    : '../../data/th6-extra-data.json';
+                
+                // 動的に video-container と content-panel を追加
+                const container = document.getElementById('container');
+                container.innerHTML = `
+                    <h1></h1>
+                    <div class="video-container">
+                        <div class="video-panel">
+                            <div class="video-wrapper">
+                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="timestamps-panel">
+                            ${difficulty === 'normal' ? `
+                            <div class="stage-selector">
+                                <button class="stage-arrow" id="prev-stage">←</button>
+                                <select id="stage-dropdown"></select>
+                                <button class="stage-arrow" id="next-stage">→</button>
+                            </div>
+                            ` : ''}
+                            <div class="timestamps-list" id="timestamps-list">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-panel" id="content-panel">
+                        <div id="content-default" class="stamp-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                `;
+                
+                // DOM の再フロー完了後に初期化
+                requestAnimationFrame(() => {
+                    // 解説ページを初期化
+                    if (difficulty === 'normal') {
+                        loadAndInitializeNormal(dataUrl, character);
+                    } else {
+                        loadAndInitializeExtra(dataUrl, character);
+                    }
+                });
+            };
+            
+            document.body.appendChild(script);
+        } else {
+            // 一覧表示モード
+            const container = document.getElementById('container');
+            container.innerHTML = `
+                <h1>東方紅魔郷　～ the Embodiment of Scarlet Devil.</h1>
+                <h2>Normal</h2>
+                <nav>
+                    <ul>
+                        <li><a href="?difficulty=normal&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
+                    </ul>
+                </nav>
+                <h2>Extra</h2>
+                <nav>
+                    <ul>
+                        <li><a href="?difficulty=extra&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
+                    </ul>
+                </nav>
+            `;
+            document.title = '東方紅魔郷 - ちこいアーカイブ';
+        }
+    </script>
 </body>
 </html>
 

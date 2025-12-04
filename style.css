@@ -848,3 +848,11 @@ footer p {
 .stamp-content.hidden {
     display: none !important;
 }
+
+.sitemap-list li {
+    margin-top: 10px;
+}
+
+.sitemap-list li:first-child {
+    margin-top: 15px;
+}

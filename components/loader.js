@@ -1,39 +1,37 @@
-function getNavigationLinks() {
+function loadHeader() {
     const pathname = window.location.pathname;
+    let links;
     
     if (pathname.includes('/blog/th')) {
-        return {
+        links = {
             home: '../../index.html',
             about: '../../about/index.html',
             blog: '../index.html',
             sitemap: '../../sitemap.html'
         };
     } else if (pathname.includes('/blog/')) {
-        return {
+        links = {
             home: '../index.html',
             about: '../about/index.html',
             blog: 'index.html',
             sitemap: '../sitemap.html'
         };
     } else if (pathname.includes('/about/') || pathname.includes('/gallery/')) {
-        return {
+        links = {
             home: '../index.html',
             about: 'index.html',
             blog: '../blog/index.html',
             sitemap: '../sitemap.html'
         };
     } else {
-        return {
+        links = {
             home: 'index.html',
             about: 'about/index.html',
             blog: 'blog/index.html',
             sitemap: 'sitemap.html'
         };
     }
-}
-
-function loadHeader() {
-    const links = getNavigationLinks();
+    
     const headerHTML = `
     <header>
         <nav>
