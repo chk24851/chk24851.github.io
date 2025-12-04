@@ -2,12 +2,16 @@
 <html lang="ja">
 <head>
   <title></title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="../../style.css">
+  <script src="../../components/loader.js"></script>
 </head>
 <body>
   <div class="container" id="container">
   </div>
 
-  <script src="../../components/loader.js"></script>
   <script>
     const params = new URLSearchParams(window.location.search);
     const difficulty = params.get('difficulty');
@@ -87,6 +91,9 @@
       `;
       document.title = '東方神霊廟 - ちこいアーカイブ';
     }
+  </script>
+  <script>
+    document.body.style.display = 'block';
   </script>
 </body>
 </html>

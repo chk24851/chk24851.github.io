@@ -2,6 +2,11 @@
 <html lang="ja">
 <head>
   <title>ちこいアーカイブ</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../components/loader.js"></script>
 </head>
 <body>
   <div class="container">
@@ -22,7 +27,9 @@
       </tbody>
     </table>
   </div>
-  <script src="../components/loader.js"></script>
   <script src="../components/achievements-generator.js"></script>
+  <script>
+    document.body.style.display = 'block';
+  </script>
 </body>
 </html>

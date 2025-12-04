@@ -2,12 +2,16 @@
 <html lang="ja">
 <head>
   <title></title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="../../style.css">
+  <script src="../../components/loader.js"></script>
 </head>
 <body>
   <div class="container" id="container">
   </div>
 
-  <script src="../../components/loader.js"></script>
   <script>
     const params = new URLSearchParams(window.location.search);
     const difficulty = params.get('difficulty');
@@ -69,32 +73,30 @@
         <h2>Normal</h2>
         <nav>
           <ul>
-            <li style="font-weight: bold; margin-top: 10px;">2キャラクター</li>
-            <li><a href="?difficulty=normal&character=reimu_yukari_final_a">　博麗 霊夢＆八雲 紫（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=reimu_yukari_final_b">　博麗 霊夢＆八雲 紫（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=marisa_alice_final_a">　霧雨 魔理沙＆アリス・マーガトロイド（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=marisa_alice_final_b">　霧雨 魔理沙＆アリス・マーガトロイド（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=remilia_sakuya_final_a">　レミリア・スカーレット＆十六夜 咲夜（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=remilia_sakuya_final_b">　レミリア・スカーレット＆十六夜 咲夜（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=youmu_yuyuko_final_a">　魂魄 妖夢＆幽幽子（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=youmu_yuyuko_final_b">　魂魄 妖夢＆幽幽子（Final B）</a></li>
-            <li style="font-weight: bold; margin-top: 10px;">1キャラクター</li>
-            <li><a href="?difficulty=normal&character=reimu_final_a">　博麗 霊夢（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=reimu_final_b">　博麗 霊夢（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=yukari_final_a">　八雲 紫（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=yukari_final_b">　八雲 紫（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=marisa_final_a">　霧雨 魔理沙（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=marisa_final_b">　霧雨 魔理沙（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=alice_final_a">　アリス・マーガトロイド（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=alice_final_b">　アリス・マーガトロイド（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=remilia_final_a">　レミリア・スカーレット（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=remilia_final_b">　レミリア・スカーレット（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=sakuya_final_a">　十六夜 咲夜（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=sakuya_final_b">　十六夜 咲夜（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=youmu_final_a">　魂魄 妖夢（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=youmu_final_b">　魂魄 妖夢（Final B）</a></li>
-            <li><a href="?difficulty=normal&character=yuyuko_final_a">　幽幽子（Final A）</a></li>
-            <li><a href="?difficulty=normal&character=yuyuko_final_b">　幽幽子（Final B）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_yukari_final_a">博麗 霊夢＆八雲 紫（Final A）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_yukari_final_b">博麗 霊夢＆八雲 紫（Final B）</a></li>
+            <li>霧雨 魔理沙＆アリス・マーガトロイド（Final A）</li>
+            <li>霧雨 魔理沙＆アリス・マーガトロイド（Final B）</li>
+            <li>レミリア・スカーレット＆十六夜 咲夜（Final A）</li>
+            <li>レミリア・スカーレット＆十六夜 咲夜（Final B）</li>
+            <li><a href="?difficulty=normal&character=youmu_yuyuko_final_a">魂魄 妖夢＆幽幽子（Final A）</a></li>
+            <li><a href="?difficulty=normal&character=youmu_yuyuko_final_b">魂魄 妖夢＆幽幽子（Final B）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_final_a">博麗 霊夢（Final A）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_final_b">博麗 霊夢（Final B）</a></li>
+            <li><a href="?difficulty=normal&character=yukari_final_a">八雲 紫（Final A）</a></li>
+            <li><a href="?difficulty=normal&character=yukari_final_b">八雲 紫（Final B）</a></li>
+            <li>霧雨 魔理沙（Final A）</li>
+            <li>霧雨 魔理沙（Final B）</li>
+            <li>アリス・マーガトロイド（Final A）</li>
+            <li>アリス・マーガトロイド（Final B）</li>
+            <li>レミリア・スカーレット（Final A）</li>
+            <li>レミリア・スカーレット（Final B）</li>
+            <li>十六夜 咲夜（Final A）</li>
+            <li>十六夜 咲夜（Final B）</li>
+            <li>魂魄 妖夢（Final A）</li>
+            <li>魂魄 妖夢（Final B）</li>
+            <li><a href="?difficulty=normal&character=yuyuko_final_a">幽幽子（Final A）</a></li>
+            <li><a href="?difficulty=normal&character=yuyuko_final_b">幽幽子（Final B）</a></li>
           </ul>
         </nav>
         <h2>Extra</h2>
@@ -117,6 +119,9 @@
       `;
       document.title = '東方永夜抄 - ちこいアーカイブ';
     }
+  </script>
+  <script>
+    document.body.style.display = 'block';
   </script>
 </body>
 </html>

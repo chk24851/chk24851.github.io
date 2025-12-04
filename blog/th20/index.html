@@ -2,12 +2,16 @@
 <html lang="ja">
 <head>
   <title></title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="../../style.css">
+  <script src="../../components/loader.js"></script>
 </head>
 <body>
   <div class="container" id="container">
   </div>
 
-  <script src="../../components/loader.js"></script>
   <script>
     const params = new URLSearchParams(window.location.search);
     const difficulty = params.get('difficulty');
@@ -69,52 +73,51 @@
         <h2>Normal</h2>
         <nav>
           <ul>
-            <li style="font-weight: bold; margin-top: 10px;">博麗 霊夢</li>
-            <li><a href="?difficulty=normal&character=reimu_red">　Red</a></li>
-            <li><a href="?difficulty=normal&character=reimu_red2">　Red2</a></li>
-            <li><a href="?difficulty=normal&character=reimu_blue">　Blue</a></li>
-            <li><a href="?difficulty=normal&character=reimu_blue2">　Blue2</a></li>
-            <li><a href="?difficulty=normal&character=reimu_yellow">　Yellow</a></li>
-            <li><a href="?difficulty=normal&character=reimu_yellow2">　Yellow2</a></li>
-            <li><a href="?difficulty=normal&character=reimu_green">　Green</a></li>
-            <li><a href="?difficulty=normal&character=reimu_green2">　Green2</a></li>
-            <li style="font-weight: bold; margin-top: 10px;">霧雨 魔理沙</li>
-            <li><a href="?difficulty=normal&character=marisa_red">　Red</a></li>
-            <li><a href="?difficulty=normal&character=marisa_red2">　Red2</a></li>
-            <li><a href="?difficulty=normal&character=marisa_blue">　Blue</a></li>
-            <li><a href="?difficulty=normal&character=marisa_blue2">　Blue2</a></li>
-            <li><a href="?difficulty=normal&character=marisa_yellow">　Yellow</a></li>
-            <li><a href="?difficulty=normal&character=marisa_yellow2">　Yellow2</a></li>
-            <li><a href="?difficulty=normal&character=marisa_green">　Green</a></li>
-            <li><a href="?difficulty=normal&character=marisa_green2">　Green2</a></li>
+            <li>博麗 霊夢（Red）</li>
+            <li>博麗 霊夢（Red2）</li>
+            <li>博麗 霊夢（Blue）</li>
+            <li>博麗 霊夢（Blue2）</li>
+            <li>博麗 霊夢（Yellow）</li>
+            <li>博麗 霊夢（Yellow2）</li>
+            <li>博麗 霊夢（Green）</li>
+            <li>博麗 霊夢（Green2）</li>
+            <li>霧雨 魔理沙（Red）</li>
+            <li>霧雨 魔理沙（Red2）</li>
+            <li>霧雨 魔理沙（Blue）</li>
+            <li>霧雨 魔理沙（Blue2）</li>
+            <li>霧雨 魔理沙（Yellow）</li>
+            <li>霧雨 魔理沙（Yellow2）</li>
+            <li>霧雨 魔理沙（Green）</li>
+            <li>霧雨 魔理沙（Green2）</li>
           </ul>
         </nav>
         <h2>Extra</h2>
         <nav>
           <ul>
-            <li style="font-weight: bold; margin-top: 10px;">博麗 霊夢</li>
-            <li><a href="?difficulty=extra&character=reimu_red">　Red</a></li>
-            <li><a href="?difficulty=extra&character=reimu_red2">　Red2</a></li>
-            <li><a href="?difficulty=extra&character=reimu_blue">　Blue</a></li>
-            <li><a href="?difficulty=extra&character=reimu_blue2">　Blue2</a></li>
-            <li><a href="?difficulty=extra&character=reimu_yellow">　Yellow</a></li>
-            <li><a href="?difficulty=extra&character=reimu_yellow2">　Yellow2</a></li>
-            <li><a href="?difficulty=extra&character=reimu_green">　Green</a></li>
-            <li><a href="?difficulty=extra&character=reimu_green2">　Green2</a></li>
-            <li style="font-weight: bold; margin-top: 10px;">霧雨 魔理沙</li>
-            <li><a href="?difficulty=extra&character=marisa_red">　Red</a></li>
-            <li><a href="?difficulty=extra&character=marisa_red2">　Red2</a></li>
-            <li><a href="?difficulty=extra&character=marisa_blue">　Blue</a></li>
-            <li><a href="?difficulty=extra&character=marisa_blue2">　Blue2</a></li>
-            <li><a href="?difficulty=extra&character=marisa_yellow">　Yellow</a></li>
-            <li><a href="?difficulty=extra&character=marisa_yellow2">　Yellow2</a></li>
-            <li><a href="?difficulty=extra&character=marisa_green">　Green</a></li>
-            <li><a href="?difficulty=extra&character=marisa_green2">　Green2</a></li>
+            <li><a href="?difficulty=extra&character=reimu_red">博麗 霊夢（Red）</a></li>
+            <li>博麗 霊夢（Red2）</li>
+            <li>博麗 霊夢（Blue）</li>
+            <li>博麗 霊夢（Blue2）</li>
+            <li>博麗 霊夢（Yellow）</li>
+            <li><a href="?difficulty=extra&character=reimu_yellow2">博麗 霊夢（Yellow2）</a></li>
+            <li><a href="?difficulty=extra&character=reimu_green">博麗 霊夢（Green）</a></li>
+            <li>博麗 霊夢（Green2）</li>
+            <li><a href="?difficulty=extra&character=marisa_red">霧雨 魔理沙（Red）</a></li>
+            <li>霧雨 魔理沙（Red2）</li>
+            <li>霧雨 魔理沙（Blue）</li>
+            <li>霧雨 魔理沙（Blue2）</li>
+            <li><a href="?difficulty=extra&character=marisa_yellow">霧雨 魔理沙（Yellow）</a></li>
+            <li><a href="?difficulty=extra&character=marisa_yellow2">霧雨 魔理沙（Yellow2）</a></li>
+            <li>霧雨 魔理沙（Green）</li>
+            <li><a href="?difficulty=extra&character=marisa_green2">霧雨 魔理沙（Green2）</a></li>
           </ul>
         </nav>
       `;
       document.title = '東方錦上京 - ちこいアーカイブ';
     }
+  </script>
+  <script>
+    document.body.style.display = 'block';
   </script>
 </body>
 </html>
