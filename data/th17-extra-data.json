@@ -1,0 +1,101 @@
+{
+  "reimu_w": {
+    "title": "【Extra】博麗 霊夢（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "reimu_o": {
+    "title": "【Extra】博麗 霊夢（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "reimu_e": {
+    "title": "【Extra】博麗 霊夢（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa_w": {
+    "title": "【Extra】霧雨 魔理沙（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa_o": {
+    "title": "【Extra】霧雨 魔理沙（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa_e": {
+    "title": "【Extra】霧雨 魔理沙（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "youmu_w": {
+    "title": "【Extra】魂魄 妖夢（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "youmu_o": {
+    "title": "【Extra】魂魄 妖夢（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "youmu_e": {
+    "title": "【Extra】魂魄 妖夢（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  }
+}

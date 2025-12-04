@@ -1,0 +1,243 @@
+{
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "reimu": {
+    "title": "【Normal】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa": {
+    "title": "【Normal】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "sakuya": {
+    "title": "【Normal】十六夜 咲夜",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "sanae": {
+    "title": "【Normal】東風谷 早苗",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
+}

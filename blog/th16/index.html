@@ -1,23 +1,104 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ちこいアーカイブ</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>">
-    <link rel="stylesheet" href="../../style.css">
+    <title></title>
 </head>
 <body>
-    <div class="container">
-        <h1>東方天空璋　～ Hidden Star in Four Seasons.</h1>
-
-        <h2>Normal</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
-
-        <h2>Extra</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
+    <div class="container" id="container">
     </div>
 
     <script src="../../components/loader.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const difficulty = params.get('difficulty');
+        const character = params.get('character');
+
+        if (difficulty && character) {
+            const script = document.createElement('script');
+            script.src = difficulty === 'normal' 
+                ? '../../components/explanation-normal.js'
+                : '../../components/explanation-extra.js';
+            
+            script.onload = function() {
+                const dataUrl = '../../data/th16-' + difficulty + '-data.json';
+                
+                const container = document.getElementById('container');
+                container.innerHTML = `
+                    <h1></h1>
+                    <div class="video-container">
+                        <div class="video-panel">
+                            <div class="video-wrapper">
+                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="timestamps-panel">
+                            ${difficulty === 'normal' ? `
+                            <div class="stage-selector">
+                                <button class="stage-arrow" id="prev-stage">←</button>
+                                <select id="stage-dropdown"></select>
+                                <button class="stage-arrow" id="next-stage">→</button>
+                            </div>
+                            ` : ''}
+                            <div class="timestamps-list" id="timestamps-list">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-panel" id="content-panel">
+                        <div id="content-default" class="stamp-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                `;
+                
+                requestAnimationFrame(() => {
+                    if (difficulty === 'normal') {
+                        loadAndInitializeNormal(dataUrl, character);
+                    } else {
+                        loadAndInitializeExtra(dataUrl, character);
+                    }
+                });
+            };
+            
+            document.body.appendChild(script);
+        } else {
+            const container = document.getElementById('container');
+            container.innerHTML = `
+                <h1>東方天空璋　～ Hidden Star in Four Seasons.</h1>
+                <h2>Normal</h2>
+                <nav>
+                    <ul>
+                        <li><a href="?difficulty=normal&character=reimu_spring">博麗 霊夢（春装備）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_summer">博麗 霊夢（夏装備）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_autumn">博麗 霊夢（秋装備）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_winter">博麗 霊夢（冬装備）</a></li>
+                        <li><a href="?difficulty=normal&character=cirno_spring">チルノ（春装備）</a></li>
+                        <li><a href="?difficulty=normal&character=cirno_summer">チルノ（夏装備）</a></li>
+                        <li><a href="?difficulty=normal&character=cirno_autumn">チルノ（秋装備）</a></li>
+                        <li><a href="?difficulty=normal&character=cirno_winter">チルノ（冬装備）</a></li>
+                        <li><a href="?difficulty=normal&character=aya_spring">射命丸 文（春装備）</a></li>
+                        <li><a href="?difficulty=normal&character=aya_summer">射命丸 文（夏装備）</a></li>
+                        <li><a href="?difficulty=normal&character=aya_autumn">射命丸 文（秋装備）</a></li>
+                        <li><a href="?difficulty=normal&character=aya_winter">射命丸 文（冬装備）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_spring">霧雨 魔理沙（春装備）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_summer">霧雨 魔理沙（夏装備）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_autumn">霧雨 魔理沙（秋装備）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_winter">霧雨 魔理沙（冬装備）</a></li>
+                    </ul>
+                </nav>
+                <h2>Extra</h2>
+                <nav>
+                    <ul>
+                        <li><a href="?difficulty=extra&character=reimu">博麗 霊夢</a></li>
+                        <li><a href="?difficulty=extra&character=cirno">チルノ</a></li>
+                        <li><a href="?difficulty=extra&character=aya">射命丸 文</a></li>
+                        <li><a href="?difficulty=extra&character=marisa">霧雨 魔理沙</a></li>
+                    </ul>
+                </nav>
+            `;
+            document.title = '東方天空璋 - ちこいアーカイブ';
+        }
+    </script>
 </body>
 </html>

@@ -3,11 +3,18 @@ async function loadAndInitializeNormal(dataUrl, characterKey) {
         const response = await fetch(dataUrl);
         const data = await response.json();
         const pageConfig = data[characterKey];
-        const stageLabels = data.stageLabels;
+        let stageLabels = data.stageLabels;
         
         if (!pageConfig) return;
         
-        pageConfig.stageLabels = stageLabels;
+        if (characterKey.includes('final_a')) {
+            pageConfig.stageLabels = stageLabels.slice(0, 6);
+        } else if (characterKey.includes('final_b')) {
+            pageConfig.stageLabels = stageLabels.slice(0, 5).concat([stageLabels[6]]);
+        } else {
+            pageConfig.stageLabels = stageLabels;
+        }
+        
         initializeExplanationPage(pageConfig);
     } catch (error) {
         console.error('Failed to load normal data:', error);
@@ -23,14 +30,12 @@ function initializeExplanationPage(pageConfig) {
     const stageLabels = pageConfig.stageLabels || [];
     let currentStage = 1;
 
-    // ページタイトル設定
     const h1 = document.querySelector('h1');
     if (h1) h1.textContent = pageConfig.title;
     
     const defaultMsg = document.querySelector('#content-default p');
     if (defaultMsg) defaultMsg.textContent = 'タイムスタンプを選択してください。';
 
-    // ドロップダウン初期化
     const dropdown = document.getElementById('stage-dropdown');
     if (dropdown) {
         stageLabels.forEach(function(label, index) {
@@ -47,7 +52,6 @@ function initializeExplanationPage(pageConfig) {
         });
     }
 
-    // 前後ボタン
     const prevBtn = document.getElementById('prev-stage');
     const nextBtn = document.getElementById('next-stage');
     
@@ -102,7 +106,6 @@ function initializeExplanationPage(pageConfig) {
             videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + ts.time + '&autoplay=1';
         }
         
-        // コンテンツ表示
         document.querySelectorAll('.stamp-content').forEach(function(el) {
             el.classList.add('hidden');
         });
@@ -122,7 +125,6 @@ function initializeExplanationPage(pageConfig) {
         if (defaultContent) defaultContent.classList.remove('hidden');
     }
 
-    // 初期化
     renderTimestamps(1);
     if (videoId && videoFrame) {
         videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';

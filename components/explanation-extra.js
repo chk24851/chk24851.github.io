@@ -19,7 +19,6 @@ function initializeExplanationPage(pageConfig) {
     const videoFrame = document.getElementById('videoFrame');
     const videoId = pageConfig.videoId;
 
-    // ページタイトル設定
     const h1 = document.querySelector('h1');
     if (h1) h1.textContent = pageConfig.title;
     
@@ -57,7 +56,6 @@ function initializeExplanationPage(pageConfig) {
             videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + ts.time + '&autoplay=1';
         }
         
-        // コンテンツ表示
         document.querySelectorAll('.stamp-content').forEach(function(el) {
             el.classList.add('hidden');
         });
@@ -77,7 +75,6 @@ function initializeExplanationPage(pageConfig) {
         if (defaultContent) defaultContent.classList.remove('hidden');
     }
 
-    // 初期化
     renderTimestamps();
     if (videoId && videoFrame) {
         videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';

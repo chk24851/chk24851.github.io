@@ -1,0 +1,13 @@
+{
+  "extra": {
+    "title": "【Extra】Extra Route",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  }
+}

@@ -1,23 +1,122 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ちこいアーカイブ</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>">
-    <link rel="stylesheet" href="../../style.css">
+    <title></title>
 </head>
 <body>
-    <div class="container">
-        <h1>東方永夜抄　～ Imperishable Night.</h1>
-
-        <h2>Normal</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
-
-        <h2>Extra</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
+    <div class="container" id="container">
     </div>
 
     <script src="../../components/loader.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const difficulty = params.get('difficulty');
+        const character = params.get('character');
+
+        if (difficulty && character) {
+            const script = document.createElement('script');
+            script.src = difficulty === 'normal' 
+                ? '../../components/explanation-normal.js'
+                : '../../components/explanation-extra.js';
+            
+            script.onload = function() {
+                const dataUrl = '../../data/th8-' + difficulty + '-data.json';
+                
+                const container = document.getElementById('container');
+                container.innerHTML = `
+                    <h1></h1>
+                    <div class="video-container">
+                        <div class="video-panel">
+                            <div class="video-wrapper">
+                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="timestamps-panel">
+                            ${difficulty === 'normal' ? `
+                            <div class="stage-selector">
+                                <button class="stage-arrow" id="prev-stage">←</button>
+                                <select id="stage-dropdown"></select>
+                                <button class="stage-arrow" id="next-stage">→</button>
+                            </div>
+                            ` : ''}
+                            <div class="timestamps-list" id="timestamps-list">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-panel" id="content-panel">
+                        <div id="content-default" class="stamp-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                `;
+                
+                requestAnimationFrame(() => {
+                    if (difficulty === 'normal') {
+                        loadAndInitializeNormal(dataUrl, character);
+                    } else {
+                        loadAndInitializeExtra(dataUrl, character);
+                    }
+                });
+            };
+            
+            document.body.appendChild(script);
+        } else {
+            const container = document.getElementById('container');
+            container.innerHTML = `
+                <h1>東方永夜抄　～ Imperishable Night.</h1>
+                <h2>Normal</h2>
+                <nav>
+                    <ul>
+                        <li style="font-weight: bold; margin-top: 10px;">2キャラクター</li>
+                        <li><a href="?difficulty=normal&character=reimu_yukari_final_a">　博麗 霊夢＆八雲 紫（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_yukari_final_b">　博麗 霊夢＆八雲 紫（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_alice_final_a">　霧雨 魔理沙＆アリス・マーガトロイド（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_alice_final_b">　霧雨 魔理沙＆アリス・マーガトロイド（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=remilia_sakuya_final_a">　レミリア・スカーレット＆十六夜 咲夜（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=remilia_sakuya_final_b">　レミリア・スカーレット＆十六夜 咲夜（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=youmu_yuyuko_final_a">　魂魄 妖夢＆幽幽子（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=youmu_yuyuko_final_b">　魂魄 妖夢＆幽幽子（Final B）</a></li>
+                        <li style="font-weight: bold; margin-top: 10px;">1キャラクター</li>
+                        <li><a href="?difficulty=normal&character=reimu_final_a">　博麗 霊夢（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_final_b">　博麗 霊夢（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=yukari_final_a">　八雲 紫（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=yukari_final_b">　八雲 紫（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_final_a">　霧雨 魔理沙（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_final_b">　霧雨 魔理沙（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=alice_final_a">　アリス・マーガトロイド（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=alice_final_b">　アリス・マーガトロイド（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=remilia_final_a">　レミリア・スカーレット（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=remilia_final_b">　レミリア・スカーレット（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=sakuya_final_a">　十六夜 咲夜（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=sakuya_final_b">　十六夜 咲夜（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=youmu_final_a">　魂魄 妖夢（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=youmu_final_b">　魂魄 妖夢（Final B）</a></li>
+                        <li><a href="?difficulty=normal&character=yuyuko_final_a">　幽幽子（Final A）</a></li>
+                        <li><a href="?difficulty=normal&character=yuyuko_final_b">　幽幽子（Final B）</a></li>
+                    </ul>
+                </nav>
+                <h2>Extra</h2>
+                <nav>
+                    <ul>
+                        <li><a href="?difficulty=extra&character=reimu_yukari">博麗 霊夢＆八雲 紫</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_alice">霧雨 魔理沙＆アリス・マーガトロイド</a></li>
+                        <li><a href="?difficulty=extra&character=remilia_sakuya">レミリア・スカーレット＆十六夜 咲夜</a></li>
+                        <li><a href="?difficulty=extra&character=youmu_yuyuko">魂魄 妖夢＆幽幽子</a></li>
+                        <li><a href="?difficulty=extra&character=reimu">博麗 霊夢</a></li>
+                        <li><a href="?difficulty=extra&character=yukari">八雲 紫</a></li>
+                        <li><a href="?difficulty=extra&character=marisa">霧雨 魔理沙</a></li>
+                        <li><a href="?difficulty=extra&character=alice">アリス・マーガトロイド</a></li>
+                        <li><a href="?difficulty=extra&character=remilia">レミリア・スカーレット</a></li>
+                        <li><a href="?difficulty=extra&character=sakuya">十六夜 咲夜</a></li>
+                        <li><a href="?difficulty=extra&character=youmu">魂魄 妖夢</a></li>
+                        <li><a href="?difficulty=extra&character=yuyuko">幽幽子</a></li>
+                    </ul>
+                </nav>
+            `;
+            document.title = '東方永夜抄 - ちこいアーカイブ';
+        }
+    </script>
 </body>
 </html>

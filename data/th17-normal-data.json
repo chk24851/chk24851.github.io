@@ -1,0 +1,543 @@
+{
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "reimu_w": {
+    "title": "【Normal】博麗 霊夢（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_o": {
+    "title": "【Normal】博麗 霊夢（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_e": {
+    "title": "【Normal】博麗 霊夢（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_w": {
+    "title": "【Normal】霧雨 魔理沙（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_o": {
+    "title": "【Normal】霧雨 魔理沙（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_e": {
+    "title": "【Normal】霧雨 魔理沙（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_w": {
+    "title": "【Normal】魂魄 妖夢（White）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_o": {
+    "title": "【Normal】魂魄 妖夢（Orange）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_e": {
+    "title": "【Normal】魂魄 妖夢（Green）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "reimu": {
+    "title": "【Extra】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa": {
+    "title": "【Extra】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "sakuya": {
+    "title": "【Extra】十六夜 咲夜",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "sanae": {
+    "title": "【Extra】東風谷 早苗",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  }
+}

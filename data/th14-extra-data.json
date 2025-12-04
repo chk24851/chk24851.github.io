@@ -21,17 +21,6 @@
             }
         ]
     },
-    "reimu_c": {
-        "title": "【Extra】博麗 霊夢",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
     "marisa_a": {
         "title": "【Extra】霧雨 魔理沙",
         "videoId": "PLACEHOLDER_VIDEO_ID",
@@ -54,8 +43,19 @@
             }
         ]
     },
-    "marisa_c": {
-        "title": "【Extra】霧雨 魔理沙",
+    "sakuya_a": {
+        "title": "【Extra】十六夜 咲夜",
+        "videoId": "PLACEHOLDER_VIDEO_ID",
+        "timestamps": [
+            {
+                "time": 0,
+                "label": "スタンプ名",
+                "content": "解説を入力してください。"
+            }
+        ]
+    },
+    "sakuya_b": {
+        "title": "【Extra】十六夜 咲夜",
         "videoId": "PLACEHOLDER_VIDEO_ID",
         "timestamps": [
             {

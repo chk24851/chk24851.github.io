@@ -17,8 +17,16 @@ async function generateAchievementsTable() {
       const monthDayCell = document.createElement('td');
       const contentCell = document.createElement('td');
       const link = document.createElement('a');
-      link.href = item.url;
-      link.textContent = item.content + ' >';
+      
+      if (item.url) {
+        link.href = item.url;
+        link.textContent = item.content + ' >';
+      } else {
+        link.classList.add('disabled');
+        link.textContent = item.content;
+        link.addEventListener('click', (e) => e.preventDefault());
+      }
+      
       contentCell.appendChild(link);
 
       if (index > 0 && achievements[index - 1].year === item.year) {

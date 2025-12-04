@@ -1,23 +1,120 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ちこいアーカイブ</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>">
-    <link rel="stylesheet" href="../../style.css">
+    <title></title>
 </head>
 <body>
-    <div class="container">
-        <h1>東方錦上京　～ Fossilized Wonders.</h1>
-
-        <h2>Normal</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
-
-        <h2>Extra</h2>
-        <p style="color: #888; font-style: italic;">準備中...</p>
+    <div class="container" id="container">
     </div>
 
     <script src="../../components/loader.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const difficulty = params.get('difficulty');
+        const character = params.get('character');
+
+        if (difficulty && character) {
+            const script = document.createElement('script');
+            script.src = difficulty === 'normal' 
+                ? '../../components/explanation-normal.js'
+                : '../../components/explanation-extra.js';
+            
+            script.onload = function() {
+                const dataUrl = '../../data/th20-' + difficulty + '-data.json';
+                
+                const container = document.getElementById('container');
+                container.innerHTML = `
+                    <h1></h1>
+                    <div class="video-container">
+                        <div class="video-panel">
+                            <div class="video-wrapper">
+                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="timestamps-panel">
+                            ${difficulty === 'normal' ? `
+                            <div class="stage-selector">
+                                <button class="stage-arrow" id="prev-stage">←</button>
+                                <select id="stage-dropdown"></select>
+                                <button class="stage-arrow" id="next-stage">→</button>
+                            </div>
+                            ` : ''}
+                            <div class="timestamps-list" id="timestamps-list">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-panel" id="content-panel">
+                        <div id="content-default" class="stamp-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                `;
+                
+                requestAnimationFrame(() => {
+                    if (difficulty === 'normal') {
+                        loadAndInitializeNormal(dataUrl, character);
+                    } else {
+                        loadAndInitializeExtra(dataUrl, character);
+                    }
+                });
+            };
+            
+            document.body.appendChild(script);
+        } else {
+            const container = document.getElementById('container');
+            container.innerHTML = `
+                <h1>東方錦上京　～ Fossilized Wonders.</h1>
+                <h2>Normal</h2>
+                <nav>
+                    <ul>
+                        <li style="font-weight: bold; margin-top: 10px;">博麗 霊夢</li>
+                        <li><a href="?difficulty=normal&character=reimu_red">　Red</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_red2">　Red2</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_blue">　Blue</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_blue2">　Blue2</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_yellow">　Yellow</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_yellow2">　Yellow2</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_green">　Green</a></li>
+                        <li><a href="?difficulty=normal&character=reimu_green2">　Green2</a></li>
+                        <li style="font-weight: bold; margin-top: 10px;">霧雨 魔理沙</li>
+                        <li><a href="?difficulty=normal&character=marisa_red">　Red</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_red2">　Red2</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_blue">　Blue</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_blue2">　Blue2</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_yellow">　Yellow</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_yellow2">　Yellow2</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_green">　Green</a></li>
+                        <li><a href="?difficulty=normal&character=marisa_green2">　Green2</a></li>
+                    </ul>
+                </nav>
+                <h2>Extra</h2>
+                <nav>
+                    <ul>
+                        <li style="font-weight: bold; margin-top: 10px;">博麗 霊夢</li>
+                        <li><a href="?difficulty=extra&character=reimu_red">　Red</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_red2">　Red2</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_blue">　Blue</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_blue2">　Blue2</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_yellow">　Yellow</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_yellow2">　Yellow2</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_green">　Green</a></li>
+                        <li><a href="?difficulty=extra&character=reimu_green2">　Green2</a></li>
+                        <li style="font-weight: bold; margin-top: 10px;">霧雨 魔理沙</li>
+                        <li><a href="?difficulty=extra&character=marisa_red">　Red</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_red2">　Red2</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_blue">　Blue</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_blue2">　Blue2</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_yellow">　Yellow</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_yellow2">　Yellow2</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_green">　Green</a></li>
+                        <li><a href="?difficulty=extra&character=marisa_green2">　Green2</a></li>
+                    </ul>
+                </nav>
+            `;
+            document.title = '東方錦上京 - ちこいアーカイブ';
+        }
+    </script>
 </body>
 </html>

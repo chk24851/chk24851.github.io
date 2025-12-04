@@ -1,0 +1,363 @@
+{
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "a1": {
+    "title": "【Normal】Route A-1",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "a2": {
+    "title": "【Normal】Route A-2",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "b1": {
+    "title": "【Normal】Route B-1",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "b2": {
+    "title": "【Normal】Route B-2",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "c1": {
+    "title": "【Normal】Route C-1",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "c2": {
+    "title": "【Normal】Route C-2",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
+}

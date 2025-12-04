@@ -1,0 +1,1443 @@
+{
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6A", "STAGE 6B"],
+  "reimu_yukari_final_a": {
+    "title": "【Normal】博麗 霊夢＆八雲 紫（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_yukari_final_b": {
+    "title": "【Normal】博麗 霊夢＆八雲 紫（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_alice_final_a": {
+    "title": "【Normal】霧雨 魔理沙＆アリス・マーガトロイド（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_alice_final_b": {
+    "title": "【Normal】霧雨 魔理沙＆アリス・マーガトロイド（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "remilia_sakuya_final_a": {
+    "title": "【Normal】レミリア・スカーレット＆十六夜 咲夜（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "remilia_sakuya_final_b": {
+    "title": "【Normal】レミリア・スカーレット＆十六夜 咲夜（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_yuyuko_final_a": {
+    "title": "【Normal】魂魄 妖夢＆幽幽子（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_yuyuko_final_b": {
+    "title": "【Normal】魂魄 妖夢＆幽幽子（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_final_a": {
+    "title": "【Normal】博麗 霊夢（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_final_b": {
+    "title": "【Normal】博麗 霊夢（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "yukari_final_a": {
+    "title": "【Normal】八雲 紫（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "yukari_final_b": {
+    "title": "【Normal】八雲 紫（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_final_a": {
+    "title": "【Normal】霧雨 魔理沙（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_final_b": {
+    "title": "【Normal】霧雨 魔理沙（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "alice_final_a": {
+    "title": "【Normal】アリス・マーガトロイド（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "alice_final_b": {
+    "title": "【Normal】アリス・マーガトロイド（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "remilia_final_a": {
+    "title": "【Normal】レミリア・スカーレット（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "remilia_final_b": {
+    "title": "【Normal】レミリア・スカーレット（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "sakuya_final_a": {
+    "title": "【Normal】十六夜 咲夜（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "sakuya_final_b": {
+    "title": "【Normal】十六夜 咲夜（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_final_a": {
+    "title": "【Normal】魂魄 妖夢（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "youmu_final_b": {
+    "title": "【Normal】魂魄 妖夢（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "yuyuko_final_a": {
+    "title": "【Normal】幽幽子（Final A）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6A",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "yuyuko_final_b": {
+    "title": "【Normal】幽幽子（Final B）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 1",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 2",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 3",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 4",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 5",
+            "content": ""
+          }
+        ]
+      },
+      "7": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "STAGE 6B",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
+}

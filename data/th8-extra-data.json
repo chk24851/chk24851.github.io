@@ -1,0 +1,134 @@
+{
+  "reimu_yukari": {
+    "title": "【Extra】博麗 霊夢＆八雲 紫",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa_alice": {
+    "title": "【Extra】霧雨 魔理沙＆アリス・マーガトロイド",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "remilia_sakuya": {
+    "title": "【Extra】レミリア・スカーレット＆十六夜 咲夜",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "youmu_yuyuko": {
+    "title": "【Extra】魂魄 妖夢＆幽幽子",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "reimu": {
+    "title": "【Extra】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "yukari": {
+    "title": "【Extra】八雲 紫",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "marisa": {
+    "title": "【Extra】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "alice": {
+    "title": "【Extra】アリス・マーガトロイド",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "remilia": {
+    "title": "【Extra】レミリア・スカーレット",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "sakuya": {
+    "title": "【Extra】十六夜 咲夜",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "youmu": {
+    "title": "【Extra】魂魄 妖夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "yuyuko": {
+    "title": "【Extra】幽幽子",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  }
+}

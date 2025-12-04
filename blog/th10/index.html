@@ -1,37 +1,27 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>">
-    <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <div class="container" id="container">
-        <!-- コンテンツはJavaScriptで動的生成 -->
     </div>
 
     <script src="../../components/loader.js"></script>
     <script>
-        // URL パラメータを取得
         const params = new URLSearchParams(window.location.search);
         const difficulty = params.get('difficulty');
         const character = params.get('character');
 
-        // パラメータがなければ一覧表示、あれば解説ページ表示
         if (difficulty && character) {
-            // 必要なスクリプトを動的に読み込む
             const script = document.createElement('script');
             script.src = difficulty === 'normal' 
                 ? '../../components/explanation-normal.js'
                 : '../../components/explanation-extra.js';
             
             script.onload = function() {
-                // スクリプト読み込み完了後に HTML 生成と初期化を実行
                 const dataUrl = '../../data/th10-' + difficulty + '-data.json';
                 
-                // 動的に video-container と content-panel を追加
                 const container = document.getElementById('container');
                 container.innerHTML = `
                     <h1></h1>
@@ -62,9 +52,7 @@
                     </div>
                 `;
                 
-                // DOM の再フロー完了後に初期化
                 requestAnimationFrame(() => {
-                    // 解説ページを初期化
                     if (difficulty === 'normal') {
                         loadAndInitializeNormal(dataUrl, character);
                     } else {
@@ -75,7 +63,6 @@
             
             document.body.appendChild(script);
         } else {
-            // 一覧表示モード
             const container = document.getElementById('container');
             container.innerHTML = `
                 <h1>東方風神録　～ Mountain of Faith.</h1>
