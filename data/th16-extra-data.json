@@ -1,46 +1,46 @@
 {
-    "reimu": {
-        "title": "【Extra】博麗 霊夢",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "cirno": {
-        "title": "【Extra】チルノ",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "aya": {
-        "title": "【Extra】射命丸 文",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "marisa": {
-        "title": "【Extra】霧雨 魔理沙",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    }
+  "reimu": {
+    "title": "【Extra】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "cirno": {
+    "title": "【Extra】チルノ",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "aya": {
+    "title": "【Extra】射命丸 文",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "marisa": {
+    "title": "【Extra】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  }
 }

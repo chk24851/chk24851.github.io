@@ -1,96 +1,96 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title></title>
+  <title></title>
 </head>
 <body>
-    <div class="container" id="container">
-    </div>
+  <div class="container" id="container">
+  </div>
 
-    <script src="../../components/loader.js"></script>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const difficulty = params.get('difficulty');
-        const character = params.get('character');
+  <script src="../../components/loader.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const difficulty = params.get('difficulty');
+    const character = params.get('character');
 
-        if (difficulty && character) {
-            const script = document.createElement('script');
-            script.src = difficulty === 'normal' 
-                ? '../../components/explanation-normal.js'
-                : '../../components/explanation-extra.js';
-            
-            script.onload = function() {
-                const dataUrl = '../../data/th10-' + difficulty + '-data.json';
-                
-                const container = document.getElementById('container');
-                container.innerHTML = `
-                    <h1></h1>
-                    <div class="video-container">
-                        <div class="video-panel">
-                            <div class="video-wrapper">
-                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="timestamps-panel">
-                            ${difficulty === 'normal' ? `
-                            <div class="stage-selector">
-                                <button class="stage-arrow" id="prev-stage">←</button>
-                                <select id="stage-dropdown"></select>
-                                <button class="stage-arrow" id="next-stage">→</button>
-                            </div>
-                            ` : ''}
-                            <div class="timestamps-list" id="timestamps-list">
-                                <ul></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-panel" id="content-panel">
-                        <div id="content-default" class="stamp-content">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
-                `;
-                
-                requestAnimationFrame(() => {
-                    if (difficulty === 'normal') {
-                        loadAndInitializeNormal(dataUrl, character);
-                    } else {
-                        loadAndInitializeExtra(dataUrl, character);
-                    }
-                });
-            };
-            
-            document.body.appendChild(script);
-        } else {
-            const container = document.getElementById('container');
-            container.innerHTML = `
-                <h1>東方風神録　～ Mountain of Faith.</h1>
-                <h2>Normal</h2>
-                <nav>
-                    <ul>
-                        <li><a href="?difficulty=normal&character=reimu_a">博麗 霊夢（霊符）</a></li>
-                        <li><a href="?difficulty=normal&character=reimu_b">博麗 霊夢</a></li>
-                        <li><a href="?difficulty=normal&character=reimu_c">博麗 霊夢</a></li>
-                        <li><a href="?difficulty=normal&character=marisa_a">霧雨 魔理沙（魔符）</a></li>
-                        <li><a href="?difficulty=normal&character=marisa_b">霧雨 魔理沙</a></li>
-                        <li><a href="?difficulty=normal&character=marisa_c">霧雨 魔理沙</a></li>
-                    </ul>
-                </nav>
-                <h2>Extra</h2>
-                <nav>
-                    <ul>
-                        <li><a href="?difficulty=extra&character=reimu_a">博麗 霊夢（霊符）</a></li>
-                        <li><a href="?difficulty=extra&character=reimu_b">博麗 霊夢</a></li>
-                        <li><a href="?difficulty=extra&character=reimu_c">博麗 霊夢</a></li>
-                        <li><a href="?difficulty=extra&character=marisa_a">霧雨 魔理沙（魔符）</a></li>
-                        <li><a href="?difficulty=extra&character=marisa_b">霧雨 魔理沙</a></li>
-                        <li><a href="?difficulty=extra&character=marisa_c">霧雨 魔理沙</a></li>
-                    </ul>
-                </nav>
-            `;
-            document.title = '東方風神録 - ちこいアーカイブ';
-        }
-    </script>
+    if (difficulty && character) {
+      const script = document.createElement('script');
+      script.src = difficulty === 'normal'
+        ? '../../components/explanation-normal.js'
+        : '../../components/explanation-extra.js';
+
+      script.onload = function () {
+        const dataUrl = '../../data/th10-' + difficulty + '-data.json';
+
+        const container = document.getElementById('container');
+        container.innerHTML = `
+          <h1></h1>
+          <div class="video-container">
+            <div class="video-panel">
+              <div class="video-wrapper">
+                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="timestamps-panel">
+              ${difficulty === 'normal' ? `
+              <div class="stage-selector">
+                <button class="stage-arrow" id="prev-stage">←</button>
+                <select id="stage-dropdown"></select>
+                <button class="stage-arrow" id="next-stage">→</button>
+              </div>
+              ` : ''}
+              <div class="timestamps-list" id="timestamps-list">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+          <div class="content-panel" id="content-panel">
+            <div id="content-default" class="stamp-content">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        `;
+
+        requestAnimationFrame(() => {
+          if (difficulty === 'normal') {
+            loadAndInitializeNormal(dataUrl, character);
+          } else {
+            loadAndInitializeExtra(dataUrl, character);
+          }
+        });
+      };
+
+      document.body.appendChild(script);
+    } else {
+      const container = document.getElementById('container');
+      container.innerHTML = `
+        <h1>東方風神録　～ Mountain of Faith.</h1>
+        <h2>Normal</h2>
+        <nav>
+          <ul>
+            <li><a href="?difficulty=normal&character=reimu_a">博麗 霊夢（霊符）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_b">博麗 霊夢</a></li>
+            <li><a href="?difficulty=normal&character=reimu_c">博麗 霊夢</a></li>
+            <li><a href="?difficulty=normal&character=marisa_a">霧雨 魔理沙（魔符）</a></li>
+            <li><a href="?difficulty=normal&character=marisa_b">霧雨 魔理沙</a></li>
+            <li><a href="?difficulty=normal&character=marisa_c">霧雨 魔理沙</a></li>
+          </ul>
+        </nav>
+        <h2>Extra</h2>
+        <nav>
+          <ul>
+            <li><a href="?difficulty=extra&character=reimu_a">博麗 霊夢（霊符）</a></li>
+            <li><a href="?difficulty=extra&character=reimu_b">博麗 霊夢</a></li>
+            <li><a href="?difficulty=extra&character=reimu_c">博麗 霊夢</a></li>
+            <li><a href="?difficulty=extra&character=marisa_a">霧雨 魔理沙（魔符）</a></li>
+            <li><a href="?difficulty=extra&character=marisa_b">霧雨 魔理沙</a></li>
+            <li><a href="?difficulty=extra&character=marisa_c">霧雨 魔理沙</a></li>
+          </ul>
+        </nav>
+      `;
+      document.title = '東方風神録 - ちこいアーカイブ';
+    }
+  </script>
 </body>
 </html>

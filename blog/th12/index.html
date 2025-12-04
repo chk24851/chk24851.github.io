@@ -1,29 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title></title>
+  <title></title>
 </head>
 <body>
-    <div class="container" id="container">
-    </div>
+  <div class="container" id="container">
+  </div>
 
-    <script src="../../components/loader.js"></script>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const difficulty = params.get('difficulty');
-        const character = params.get('character');
+  <script src="../../components/loader.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const difficulty = params.get('difficulty');
+    const character = params.get('character');
 
-        if (difficulty && character) {
-            const script = document.createElement('script');
-            script.src = difficulty === 'normal' 
-                ? '../../components/explanation-normal.js'
-                : '../../components/explanation-extra.js';
-            
-            script.onload = function() {
-                const dataUrl = '../../data/th12-' + difficulty + '-data.json';
-                
-                const container = document.getElementById('container');
-                container.innerHTML = `
+    if (difficulty && character) {
+      const script = document.createElement('script');
+      script.src = difficulty === 'normal'
+        ? '../../components/explanation-normal.js'
+        : '../../components/explanation-extra.js';
+
+      script.onload = function () {
+        const dataUrl = '../../data/th12-' + difficulty + '-data.json';
+
+        const container = document.getElementById('container');
+        container.innerHTML = `
                     <h1></h1>
                     <div class="video-container">
                         <div class="video-panel">
@@ -51,20 +51,20 @@
                         </div>
                     </div>
                 `;
-                
-                requestAnimationFrame(() => {
-                    if (difficulty === 'normal') {
-                        loadAndInitializeNormal(dataUrl, character);
-                    } else {
-                        loadAndInitializeExtra(dataUrl, character);
-                    }
-                });
-            };
-            
-            document.body.appendChild(script);
-        } else {
-            const container = document.getElementById('container');
-            container.innerHTML = `
+
+        requestAnimationFrame(() => {
+          if (difficulty === 'normal') {
+            loadAndInitializeNormal(dataUrl, character);
+          } else {
+            loadAndInitializeExtra(dataUrl, character);
+          }
+        });
+      };
+
+      document.body.appendChild(script);
+    } else {
+      const container = document.getElementById('container');
+      container.innerHTML = `
                 <h1>東方星蓮船　～ Undefined Fantastic Object.</h1>
                 <h2>Normal</h2>
                 <nav>
@@ -89,8 +89,8 @@
                     </ul>
                 </nav>
             `;
-            document.title = '東方星蓮船 - ちこいアーカイブ';
-        }
-    </script>
+      document.title = '東方星蓮船 - ちこいアーカイブ';
+    }
+  </script>
 </body>
 </html>

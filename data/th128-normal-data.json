@@ -1,5 +1,5 @@
 {
-  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
   "a1": {
     "title": "【Normal】Route A-1",
     "videoId": "PLACEHOLDER_VIDEO_ID",
@@ -27,33 +27,6 @@
           {
             "time": 0,
             "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
             "content": ""
           }
         ]
@@ -90,33 +63,6 @@
             "content": ""
           }
         ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
-            "content": ""
-          }
-        ]
       }
     }
   },
@@ -147,33 +93,6 @@
           {
             "time": 0,
             "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
             "content": ""
           }
         ]
@@ -210,33 +129,6 @@
             "content": ""
           }
         ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
-            "content": ""
-          }
-        ]
       }
     }
   },
@@ -267,33 +159,6 @@
           {
             "time": 0,
             "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
             "content": ""
           }
         ]
@@ -330,34 +195,8 @@
             "content": ""
           }
         ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "6": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6",
-            "content": ""
-          }
-        ]
       }
     }
   }
 }
+

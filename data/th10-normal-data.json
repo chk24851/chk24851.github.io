@@ -1,543 +1,543 @@
 {
-    "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
-    "reimu_a": {
-        "title": "【Normal】博麗 霊夢（霊符）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "reimu_b": {
-        "title": "【Normal】博麗 霊夢",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "reimu_c": {
-        "title": "【Normal】博麗 霊夢",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_a": {
-        "title": "【Normal】霧雨 魔理沙（魔符）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_b": {
-        "title": "【Normal】霧雨 魔理沙",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_c": {
-        "title": "【Normal】霧雨 魔理沙",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "reimu_a": {
+    "title": "【Normal】博麗 霊夢（霊符）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
     }
+  },
+  "reimu_b": {
+    "title": "【Normal】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_c": {
+    "title": "【Normal】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_a": {
+    "title": "【Normal】霧雨 魔理沙（魔符）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_b": {
+    "title": "【Normal】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_c": {
+    "title": "【Normal】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
 }

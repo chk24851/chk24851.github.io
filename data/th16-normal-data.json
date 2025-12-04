@@ -1,1443 +1,1443 @@
 {
-    "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
-    "reimu_spring": {
-        "title": "【Normal】博麗 霊夢（春装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "reimu_summer": {
-        "title": "【Normal】博麗 霊夢（夏装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "reimu_autumn": {
-        "title": "【Normal】博麗 霊夢（秋装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "reimu_winter": {
-        "title": "【Normal】博麗 霊夢（冬装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "cirno_spring": {
-        "title": "【Normal】チルノ（春装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "cirno_summer": {
-        "title": "【Normal】チルノ（夏装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "cirno_autumn": {
-        "title": "【Normal】チルノ（秋装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "cirno_winter": {
-        "title": "【Normal】チルノ（冬装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "aya_spring": {
-        "title": "【Normal】射命丸 文（春装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "aya_summer": {
-        "title": "【Normal】射命丸 文（夏装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "aya_autumn": {
-        "title": "【Normal】射命丸 文（秋装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "aya_winter": {
-        "title": "【Normal】射命丸 文（冬装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_spring": {
-        "title": "【Normal】霧雨 魔理沙（春装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_summer": {
-        "title": "【Normal】霧雨 魔理沙（夏装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_autumn": {
-        "title": "【Normal】霧雨 魔理沙（秋装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
-    },
-    "marisa_winter": {
-        "title": "【Normal】霧雨 魔理沙（冬装備）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "stageData": {
-            "1": {
-                "timestamps": [
-                    {
-                        "time": 10,
-                        "label": "スタンプ名",
-                        "content": "【ステージ1】解説を入力してください。"
-                    },
-                    {
-                        "time": 30,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "2": {
-                "timestamps": [
-                    {
-                        "time": 20,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 40,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "3": {
-                "timestamps": [
-                    {
-                        "time": 50,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 70,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "4": {
-                "timestamps": [
-                    {
-                        "time": 80,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 100,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "5": {
-                "timestamps": [
-                    {
-                        "time": 120,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 140,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            },
-            "6": {
-                "timestamps": [
-                    {
-                        "time": 160,
-                        "label": "",
-                        "content": ""
-                    },
-                    {
-                        "time": 180,
-                        "label": "",
-                        "content": ""
-                    }
-                ]
-            }
-        }
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
+  "reimu_spring": {
+    "title": "【Normal】博麗 霊夢（春装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
     }
+  },
+  "reimu_summer": {
+    "title": "【Normal】博麗 霊夢（夏装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_autumn": {
+    "title": "【Normal】博麗 霊夢（秋装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "reimu_winter": {
+    "title": "【Normal】博麗 霊夢（冬装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "cirno_spring": {
+    "title": "【Normal】チルノ（春装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "cirno_summer": {
+    "title": "【Normal】チルノ（夏装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "cirno_autumn": {
+    "title": "【Normal】チルノ（秋装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "cirno_winter": {
+    "title": "【Normal】チルノ（冬装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "aya_spring": {
+    "title": "【Normal】射命丸 文（春装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "aya_summer": {
+    "title": "【Normal】射命丸 文（夏装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "aya_autumn": {
+    "title": "【Normal】射命丸 文（秋装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "aya_winter": {
+    "title": "【Normal】射命丸 文（冬装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_spring": {
+    "title": "【Normal】霧雨 魔理沙（春装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_summer": {
+    "title": "【Normal】霧雨 魔理沙（夏装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_autumn": {
+    "title": "【Normal】霧雨 魔理沙（秋装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  },
+  "marisa_winter": {
+    "title": "【Normal】霧雨 魔理沙（冬装備）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 10,
+            "label": "スタンプ名",
+            "content": "【ステージ1】解説を入力してください。"
+          },
+          {
+            "time": 30,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 20,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 40,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 50,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 70,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "4": {
+        "timestamps": [
+          {
+            "time": 80,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 100,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "5": {
+        "timestamps": [
+          {
+            "time": 120,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 140,
+            "label": "",
+            "content": ""
+          }
+        ]
+      },
+      "6": {
+        "timestamps": [
+          {
+            "time": 160,
+            "label": "",
+            "content": ""
+          },
+          {
+            "time": 180,
+            "label": "",
+            "content": ""
+          }
+        ]
+      }
+    }
+  }
 }

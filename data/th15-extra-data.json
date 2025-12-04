@@ -1,46 +1,46 @@
 {
-    "reimu": {
-        "title": "【Extra】博麗 霊夢",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "marisa": {
-        "title": "【Extra】霧雨 魔理沙",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "sanae": {
-        "title": "【Extra】東風谷 早苗",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "reisen": {
-        "title": "【Extra】鈴仙・優曇華院・イナバ",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    }
+  "reimu": {
+    "title": "【Extra】博麗 霊夢",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "marisa": {
+    "title": "【Extra】霧雨 魔理沙",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "sanae": {
+    "title": "【Extra】東風谷 早苗",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "reisen": {
+    "title": "【Extra】鈴仙・優曇華院・イナバ",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  }
 }

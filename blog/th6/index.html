@@ -26,33 +26,33 @@
 
         const container = document.getElementById('container');
         container.innerHTML = `
-                    <h1></h1>
-                    <div class="video-container">
-                        <div class="video-panel">
-                            <div class="video-wrapper">
-                                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="timestamps-panel">
-                            ${difficulty === 'normal' ? `
-                            <div class="stage-selector">
-                                <button class="stage-arrow" id="prev-stage">←</button>
-                                <select id="stage-dropdown"></select>
-                                <button class="stage-arrow" id="next-stage">→</button>
-                            </div>
-                            ` : ''}
-                            <div class="timestamps-list" id="timestamps-list">
-                                <ul></ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-panel" id="content-panel">
-                        <div id="content-default" class="stamp-content">
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
-                `;
+          <h1></h1>
+          <div class="video-container">
+              <div class="video-panel">
+                <div class="video-wrapper">
+                  <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="timestamps-panel">
+                ${difficulty === 'normal' ? `
+                <div class="stage-selector">
+                  <button class="stage-arrow" id="prev-stage">←</button>
+                  <select id="stage-dropdown"></select>
+                  <button class="stage-arrow" id="next-stage">→</button>
+                </div>
+                ` : ''}
+                <div class="timestamps-list" id="timestamps-list">
+                  <ul></ul>
+                </div>
+              </div>
+          </div>
+          <div class="content-panel" id="content-panel">
+            <div id="content-default" class="stamp-content">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        `;
 
         requestAnimationFrame(() => {
           if (difficulty === 'normal') {
@@ -67,26 +67,26 @@
     } else {
       const container = document.getElementById('container');
       container.innerHTML = `
-                <h1>東方紅魔郷　～ the Embodiment of Scarlet Devil.</h1>
-                <h2>Normal</h2>
-                <nav>
-                    <ul>
-                        <li><a href="?difficulty=normal&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
-                        <li><a href="?difficulty=normal&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
-                        <li><a href="?difficulty=normal&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
-                        <li><a href="?difficulty=normal&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
-                    </ul>
-                </nav>
-                <h2>Extra</h2>
-                <nav>
-                    <ul>
-                        <li><a href="?difficulty=extra&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
-                        <li><a href="?difficulty=extra&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
-                        <li><a href="?difficulty=extra&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
-                        <li><a href="?difficulty=extra&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
-                    </ul>
-                </nav>
-            `;
+        <h1>東方紅魔郷　～ the Embodiment of Scarlet Devil.</h1>
+        <h2>Normal</h2>
+        <nav>
+          <ul>
+            <li><a href="?difficulty=normal&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
+            <li><a href="?difficulty=normal&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
+            <li><a href="?difficulty=normal&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
+            <li><a href="?difficulty=normal&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
+          </ul>
+        </nav>
+        <h2>Extra</h2>
+        <nav>
+          <ul>
+            <li><a href="?difficulty=extra&character=reimu_a">博麗 霊夢（霊の御札）</a></li>
+            <li><a href="?difficulty=extra&character=reimu_b">博麗 霊夢（夢の御札）</a></li>
+            <li><a href="?difficulty=extra&character=marisa_a">霧雨 魔理沙（魔の御札）</a></li>
+            <li><a href="?difficulty=extra&character=marisa_b">霧雨 魔理沙（恋の御札）</a></li>
+          </ul>
+        </nav>
+      `;
       document.title = '東方紅魔郷 - ちこいアーカイブ';
     }
   </script>

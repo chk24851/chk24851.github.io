@@ -1,68 +1,68 @@
 {
-    "reimu_a": {
-        "title": "【Extra】博麗 霊夢（霊の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "reimu_b": {
-        "title": "【Extra】博麗 霊夢（夢の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "marisa_a": {
-        "title": "【Extra】霧雨 魔理沙（魔の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "marisa_b": {
-        "title": "【Extra】霧雨 魔理沙（恋の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "sakuya_a": {
-        "title": "【Extra】十六夜 咲夜（時の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    },
-    "sakuya_b": {
-        "title": "【Extra】十六夜 咲夜（夜刀の御札）",
-        "videoId": "PLACEHOLDER_VIDEO_ID",
-        "timestamps": [
-            {
-                "time": 0,
-                "label": "スタンプ名",
-                "content": "解説を入力してください。"
-            }
-        ]
-    }
+  "reimu_a": {
+    "title": "【Extra】博麗 霊夢（霊の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "reimu_b": {
+    "title": "【Extra】博麗 霊夢（夢の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "marisa_a": {
+    "title": "【Extra】霧雨 魔理沙（魔の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "marisa_b": {
+    "title": "【Extra】霧雨 魔理沙（恋の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "sakuya_a": {
+    "title": "【Extra】十六夜 咲夜（時の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  },
+  "sakuya_b": {
+    "title": "【Extra】十六夜 咲夜（夜刀の御札）",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "スタンプ名",
+        "content": "解説を入力してください。"
+      }
+    ]
+  }
 }
