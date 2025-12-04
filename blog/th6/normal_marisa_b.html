@@ -10,13 +10,233 @@
 <body>
 
     <div class="container">
-        <h1>【Normal】霜雨 魔理沙（恐慥の御札）</h1>
-        <h2>Normal - 霧雨 魔理沙（恋の御札）</h2>
+        <h1>【Normal】霧雨 魔理沙（恋の御札）</h1>
 
-        <h3>感想</h3>
-        <p>ここに感想を書きます。</p>
+        <div class="video-container">
+            <div class="video-panel">
+                <div class="video-wrapper">
+                    <iframe id="videoFrame" data-video-id="PLACEHOLDER" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="timestamps-panel">
+                <div class="stage-selector">
+                    <button class="stage-arrow" id="prev-stage">←</button>
+                    <select id="stage-dropdown">
+                        <option value="1">1面</option>
+                        <option value="2">2面</option>
+                        <option value="3">3面</option>
+                        <option value="4">4面</option>
+                        <option value="5">5面</option>
+                        <option value="6">6面</option>
+                    </select>
+                    <button class="stage-arrow" id="next-stage">→</button>
+                </div>
+
+                <div class="timestamps-list" id="timestamps-list">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-panel" id="content-panel">
+            <div id="content-default" class="stamp-content">
+                <h3>【Normal】霧雨 魔理沙（因果応報）</h3>
+                <p>このページは【Normal】難度での攻略解説です。タイムスタンプを選択して、各シーンの詳細を確認してください。</p>
+            </div>
+            <div id="content-1-0" class="stamp-content hidden">
+                <h3>タイムスタンプ1</h3>
+                <p>【ステージ1】ここに説明を書きます。</p>
+            </div>
+            <div id="content-1-1" class="stamp-content hidden">
+                <h3>タイムスタンプ2</h3>
+                <p>【ステージ1】ここに説明を書きます。</p>
+            </div>
+            <div id="content-2-0" class="stamp-content hidden">
+                <h3>タイムスタンプ3</h3>
+                <p>【ステージ2】ここに説明を書きます。</p>
+            </div>
+            <div id="content-2-1" class="stamp-content hidden">
+                <h3>タイムスタンプ4</h3>
+                <p>【ステージ2】ここに説明を書きます。</p>
+            </div>
+            <div id="content-3-0" class="stamp-content hidden">
+                <h3>タイムスタンプ5</h3>
+                <p>【ステージ3】ここに説明を書きます。</p>
+            </div>
+            <div id="content-3-1" class="stamp-content hidden">
+                <h3>タイムスタンプ6</h3>
+                <p>【ステージ3】ここに説明を書きます。</p>
+            </div>
+            <div id="content-4-0" class="stamp-content hidden">
+                <h3>タイムスタンプ7</h3>
+                <p>【ステージ4】ここに説明を書きます。</p>
+            </div>
+            <div id="content-4-1" class="stamp-content hidden">
+                <h3>タイムスタンプ8</h3>
+                <p>【ステージ4】ここに説明を書きます。</p>
+            </div>
+            <div id="content-5-0" class="stamp-content hidden">
+                <h3>タイムスタンプ9</h3>
+                <p>【ステージ5】ここに説明を書きます。</p>
+            </div>
+            <div id="content-5-1" class="stamp-content hidden">
+                <h3>タイムスタンプ10</h3>
+                <p>【ステージ5】ここに説明を書きます。</p>
+            </div>
+            <div id="content-6-0" class="stamp-content hidden">
+                <h3>タイムスタンプ11</h3>
+                <p>【ステージ6】ここに説明を書きます。</p>
+            </div>
+            <div id="content-6-1" class="stamp-content hidden">
+                <h3>タイムスタンプ12</h3>
+                <p>【ステージ6】ここに説明を書きます。</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        // ステージごとのタイムスタンプデータを管理
+        const stageData = {
+            1: {
+                timestamps: [
+                    { time: 10, label: 'タイムスタンプ1' },
+                    { time: 30, label: 'タイムスタンプ2' }
+                ]
+            },
+            2: {
+                timestamps: [
+                    { time: 20, label: 'タイムスタンプ3' },
+                    { time: 40, label: 'タイムスタンプ4' }
+                ]
+            },
+            3: {
+                timestamps: [
+                    { time: 50, label: 'タイムスタンプ5' },
+                    { time: 70, label: 'タイムスタンプ6' }
+                ]
+            },
+            4: {
+                timestamps: [
+                    { time: 80, label: 'タイムスタンプ7' },
+                    { time: 100, label: 'タイムスタンプ8' }
+                ]
+            },
+            5: {
+                timestamps: [
+                    { time: 120, label: 'タイムスタンプ9' },
+                    { time: 140, label: 'タイムスタンプ10' }
+                ]
+            },
+            6: {
+                timestamps: [
+                    { time: 160, label: 'タイムスタンプ11' },
+                    { time: 180, label: 'タイムスタンプ12' }
+                ]
+            }
+        };
+
+        const videoFrame = document.getElementById('videoFrame');
+        const videoId = videoFrame.dataset.videoId;
+        let currentStage = 1;
+
+        // タイムスタンプリストをレンダリング
+        function renderTimestamps(stage) {
+            const timestamps = stageData[stage].timestamps;
+            const listContainer = document.querySelector('#timestamps-list ul');
+            listContainer.innerHTML = '';
+            
+            timestamps.forEach((ts, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'timestamp-link';
+                a.dataset.time = ts.time;
+                a.dataset.stage = stage;
+                a.dataset.index = index;
+                a.textContent = ts.label;
+                a.tabIndex = 0;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    jumpToTimestamp(stage, index);
+                });
+                
+                a.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        jumpToTimestamp(stage, index);
+                    }
+                });
+                
+                li.appendChild(a);
+                listContainer.appendChild(li);
+            });
+        }
+
+        // コンテンツを切り替え
+        function switchStage(stage) {
+            currentStage = stage;
+            
+            // ドロップダウンを更新
+            document.getElementById('stage-dropdown').value = stage;
+            
+            // タイムスタンプリストをレンダリング
+            renderTimestamps(stage);
+            
+            // コンテンツをクリア
+            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+            
+            // デフォルトコンテンツを表示
+            document.getElementById('content-default').classList.remove('hidden');
+        }
+
+        // タイムスタンプにジャンプ
+        function jumpToTimestamp(stage, index) {
+            const ts = stageData[stage].timestamps[index];
+            const seconds = ts.time;
+            
+            if (videoId) {
+                videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
+            }
+            
+            // コンテンツを表示
+            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+            
+            const selectedContent = document.getElementById(`content-${stage}-${index}`);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+        }
+
+        // ドロップダウンのイベントリスナー
+        document.getElementById('stage-dropdown').addEventListener('change', (e) => {
+            const stage = parseInt(e.target.value);
+            switchStage(stage);
+        });
+
+        // 矢印ボタンのイベントリスナー
+        document.getElementById('prev-stage').addEventListener('click', () => {
+            const prevStage = Math.max(1, currentStage - 1);
+            switchStage(prevStage);
+        });
+
+        document.getElementById('next-stage').addEventListener('click', () => {
+            const nextStage = Math.min(6, currentStage + 1);
+            switchStage(nextStage);
+        });
+
+        // 初期ロード
+        renderTimestamps(1);
+        
+        // 動画を初期表示（時間指定なし、自動再生）
+        if (videoId) {
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        }
+        
+        // デフォルトコンテンツを表示
+        document.getElementById('content-default').classList.remove('hidden');
+    </script>
     <script src="../../components/loader.js"></script>
 </body>
 </html>

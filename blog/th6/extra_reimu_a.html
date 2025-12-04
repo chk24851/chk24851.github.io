@@ -28,7 +28,11 @@
         </div>
 
         <div class="content-panel" id="content-panel">
-            <div id="content-0" class="stamp-content">
+            <div id="content-default" class="stamp-content">
+                <h3>【Extra】博麗 霊夢（霊の御札）</h3>
+                <p>このページは【Extra】難度での攻略解説です。タイムスタンプを選択して、各シーンの詳細を確認してください。</p>
+            </div>
+            <div id="content-0" class="stamp-content hidden">
                 <h3>弾消し</h3>
                 <p>前のチャプターまでにPowerを120～127に調整し，中央の妖精を倒したときに出る大Pをタイミングよく拾うことで，両端の妖精からの攻撃を無効化できます。</p>
             </div>
@@ -108,7 +112,14 @@
 
         // 初期ロード
         renderTimestamps();
-        document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+        
+        // 動画を初期表示（時間指定なし、自動再生）
+        if (videoId) {
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        }
+        
+        // デフォルトコンテンツを表示
+        document.getElementById('content-default').classList.remove('hidden');
     </script>
     <script src="../../components/loader.js"></script>
 </body>

@@ -11,12 +11,116 @@
 
     <div class="container">
         <h1>【Extra】博麗 霊夢（夢の御札）</h1>
-        <h2>Extra - 博麗 霊夢（夢の御札）</h2>
 
-        <h3>感想</h3>
-        <p>ここに感想を書きます。</p>
+        <div class="video-container">
+            <div class="video-panel">
+                <div class="video-wrapper">
+                    <iframe id="videoFrame" data-video-id="PLACEHOLDER" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="timestamps-panel">
+                <div class="timestamps-list" id="timestamps-list">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-panel" id="content-panel">
+            <div id="content-default" class="stamp-content">
+                <h3>【Extra】博麗 霊夢（霊の御札）</h3>
+                <p>このページは【Extra】難度での攻略解説です。タイムスタンプを選択して、各シーンの詳細を確認してください。</p>
+            </div>
+            <div id="content-0" class="stamp-content hidden">
+                <h3>タイムスタンプ1</h3>
+                <p>ここに説明を書きます。</p>
+            </div>
+            <div id="content-1" class="stamp-content hidden">
+                <h3>タイムスタンプ2</h3>
+                <p>ここに説明を書きます。</p>
+            </div>
+            <div id="content-2" class="stamp-content hidden">
+                <h3>タイムスタンプ3</h3>
+                <p>ここに説明を書きます。</p>
+            </div>
+            <div id="content-3" class="stamp-content hidden">
+                <h3>タイムスタンプ4</h3>
+                <p>ここに説明を書きます。</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        // タイムスタンプデータを管理
+        const timestamps = [
+            { time: 10, label: 'タイムスタンプ1' },
+            { time: 30, label: 'タイムスタンプ2' },
+            { time: 50, label: 'タイムスタンプ3' },
+            { time: 70, label: 'タイムスタンプ4' }
+        ];
+
+        const videoFrame = document.getElementById('videoFrame');
+        const videoId = videoFrame.dataset.videoId;
+
+        // タイムスタンプリストをレンダリング
+        function renderTimestamps() {
+            const listContainer = document.querySelector('#timestamps-list ul');
+            listContainer.innerHTML = '';
+            
+            timestamps.forEach((ts, index) => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.className = 'timestamp-link';
+                a.dataset.index = index;
+                a.textContent = ts.label;
+                a.tabIndex = 0;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    jumpToTimestamp(index);
+                });
+                
+                a.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        jumpToTimestamp(index);
+                    }
+                });
+                
+                li.appendChild(a);
+                listContainer.appendChild(li);
+            });
+        }
+
+        // タイムスタンプにジャンプ
+        function jumpToTimestamp(index) {
+            const ts = timestamps[index];
+            const seconds = ts.time;
+            
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?start=${seconds}&autoplay=1`;
+            
+            // コンテンツを表示
+            document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+            
+            const selectedContent = document.getElementById(`content-${index}`);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+        }
+
+        // 初期ロード
+        renderTimestamps();
+        
+        // 動画を初期表示（時間指定なし、自動再生）
+        if (videoId) {
+            videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        }
+        
+        // デフォルトコンテンツを表示
+        document.getElementById('content-default').classList.remove('hidden');
+    </script>
     <script src="../../components/loader.js"></script>
 </body>
 </html>

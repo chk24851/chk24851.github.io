@@ -15,12 +15,11 @@
         <div class="video-container">
             <div class="video-panel">
                 <div class="video-wrapper">
-                    <iframe id="videoFrame" data-video-id="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="videoFrame" data-video-id="SP_PS9-wI28" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="timestamps-panel">
-                <!-- ステージ選択 -->
                 <div class="stage-selector">
                     <button class="stage-arrow" id="prev-stage">←</button>
                     <select id="stage-dropdown">
@@ -35,22 +34,16 @@
                 </div>
 
                 <div class="timestamps-list" id="timestamps-list">
-                    <ul>
-                        <li><a href="#" class="timestamp-link" data-time="0" data-stage="1" tabindex="0">タイムスタンプ1</a></li>
-                        <li><a href="#" class="timestamp-link" data-time="0" data-stage="1" tabindex="0">タイムスタンプ2</a></li>
-                    </ul>
+                    <ul></ul>
                 </div>
             </div>
         </div>
 
         <div class="content-panel" id="content-panel">
-            <!-- デフォルト表示 -->
             <div id="content-default" class="stamp-content">
                 <h3>【Normal】博麗 霊夢（霊の御札）</h3>
                 <p>このページは【Normal】難度での攻略解説です。タイムスタンプを選択して、各シーンの詳細を確認してください。</p>
             </div>
-            
-            <!-- ステージ1 -->
             <div id="content-1-0" class="stamp-content hidden">
                 <h3>タイムスタンプ1</h3>
                 <p>【ステージ1】ここに説明を書きます。</p>
@@ -59,8 +52,6 @@
                 <h3>タイムスタンプ2</h3>
                 <p>【ステージ1】ここに説明を書きます。</p>
             </div>
-            
-            <!-- ステージ2 -->
             <div id="content-2-0" class="stamp-content hidden">
                 <h3>タイムスタンプ3</h3>
                 <p>【ステージ2】ここに説明を書きます。</p>
@@ -69,8 +60,6 @@
                 <h3>タイムスタンプ4</h3>
                 <p>【ステージ2】ここに説明を書きます。</p>
             </div>
-            
-            <!-- ステージ3 -->
             <div id="content-3-0" class="stamp-content hidden">
                 <h3>タイムスタンプ5</h3>
                 <p>【ステージ3】ここに説明を書きます。</p>
@@ -79,8 +68,6 @@
                 <h3>タイムスタンプ6</h3>
                 <p>【ステージ3】ここに説明を書きます。</p>
             </div>
-            
-            <!-- ステージ4 -->
             <div id="content-4-0" class="stamp-content hidden">
                 <h3>タイムスタンプ7</h3>
                 <p>【ステージ4】ここに説明を書きます。</p>
@@ -89,8 +76,6 @@
                 <h3>タイムスタンプ8</h3>
                 <p>【ステージ4】ここに説明を書きます。</p>
             </div>
-            
-            <!-- ステージ5 -->
             <div id="content-5-0" class="stamp-content hidden">
                 <h3>タイムスタンプ9</h3>
                 <p>【ステージ5】ここに説明を書きます。</p>
@@ -99,8 +84,6 @@
                 <h3>タイムスタンプ10</h3>
                 <p>【ステージ5】ここに説明を書きます。</p>
             </div>
-            
-            <!-- ステージ6 -->
             <div id="content-6-0" class="stamp-content hidden">
                 <h3>タイムスタンプ11</h3>
                 <p>【ステージ6】ここに説明を書きます。</p>
@@ -203,6 +186,9 @@
             
             // コンテンツをクリア
             document.querySelectorAll('.stamp-content').forEach(el => el.classList.add('hidden'));
+            
+            // デフォルトコンテンツを表示
+            document.getElementById('content-default').classList.remove('hidden');
         }
 
         // タイムスタンプにジャンプ
