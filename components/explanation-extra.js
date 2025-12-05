@@ -5,7 +5,7 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     const pageConfig = data[characterKey];
 
     if (!pageConfig) {
-      window.location.href = '/404.html';
+      window.location.href = '../../404.html';
       return;
     }
 
@@ -16,7 +16,7 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load extra data:', error);
-    window.location.href = '/404.html';
+    window.location.href = '../../404.html';
   }
 }
 
