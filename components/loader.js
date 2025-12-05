@@ -2,7 +2,7 @@ function getPageContext() {
   const pathname = window.location.pathname;
   const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/about/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
 
-  if (pathname.includes('/blog/th')) {
+  if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
     return {
       isHomePage,
       links: {
