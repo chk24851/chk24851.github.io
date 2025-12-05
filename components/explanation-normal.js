@@ -8,7 +8,7 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
 
     pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
     const originalTitle = pageConfig.title;
-    const label = difficulty === 'lunatic' ? '【Lunatic】' : '【Normal】';
+    const label = '【Normal】';
     pageConfig.title = `${label}${pageConfig.title}`;
     pageConfig.originalTitle = originalTitle;
     initializeExplanationPage(pageConfig);
@@ -92,11 +92,15 @@ function initializeExplanationPage(pageConfig) {
     listContainer.innerHTML = '';
 
     timestamps.forEach(function (ts, index) {
+      if (!ts.label || ts.label.trim() === '') {
+        return;
+      }
+
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.href = '#';
       a.className = 'timestamp-link';
-      a.textContent = ts.label || 'タイムスタンプ';
+      a.textContent = ts.label;
 
       a.addEventListener('click', function (e) {
         e.preventDefault();
@@ -111,7 +115,7 @@ function initializeExplanationPage(pageConfig) {
         const contentDiv = document.createElement('div');
         contentDiv.id = contentId;
         contentDiv.className = 'stamp-content hidden';
-        contentDiv.innerHTML = `<h3>${ts.label || 'タイムスタンプ'}</h3><p>${ts.content || ''}</p>`;
+        contentDiv.innerHTML = `<h3>${ts.label}</h3><p>${ts.content || ''}</p>`;
         contentPanel.appendChild(contentDiv);
       }
     });

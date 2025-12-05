@@ -1,0 +1,36 @@
+{
+  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
+  "default": {
+    "title": "トルテルマジック",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "stageData": {
+      "1": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "ステージ1",
+            "content": "解説を入力してください。"
+          }
+        ]
+      },
+      "2": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "ステージ2",
+            "content": "解説を入力してください。"
+          }
+        ]
+      },
+      "3": {
+        "timestamps": [
+          {
+            "time": 0,
+            "label": "ステージ3",
+            "content": "解説を入力してください。"
+          }
+        ]
+      }
+    }
+  }
+}

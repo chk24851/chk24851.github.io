@@ -19,7 +19,7 @@
 
     if (difficulty && route) {
       const script = document.createElement('script');
-      script.src = difficulty === 'normal' || difficulty === 'lunatic'
+      script.src = difficulty === 'normal'
         ? '../../components/explanation-normal.js'
         : '../../components/explanation-extra.js';
 
@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="timestamps-panel">
-              ${difficulty === 'normal' || difficulty === 'lunatic' ? `
+              ${difficulty === 'normal' ? `
               <div class="stage-selector">
                 <button class="stage-arrow" id="prev-stage">←</button>
                 <select id="stage-dropdown"></select>
@@ -58,9 +58,7 @@
 
         requestAnimationFrame(() => {
           if (difficulty === 'normal') {
-            loadAndInitializeNormal(dataUrl, route, 'normal');
-          } else if (difficulty === 'lunatic') {
-            loadAndInitializeNormal(dataUrl, route, 'lunatic');
+            loadAndInitializeNormal(dataUrl, route);
           } else {
             loadAndInitializeExtra(dataUrl, route);
           }
@@ -81,17 +79,6 @@
             <li><a href="?difficulty=normal&route=b2">Route B-2</a></li>
             <li><a href="?difficulty=normal&route=c1">Route C-1</a></li>
             <li><a href="?difficulty=normal&route=c2">Route C-2</a></li>
-          </ul>
-        </nav>
-        <h2>Lunatic</h2>
-        <nav>
-          <ul>
-            <li><a href="?difficulty=lunatic&route=a1">Route A-1</a></li>
-            <li><a href="?difficulty=lunatic&route=a2">Route A-2</a></li>
-            <li><a href="?difficulty=lunatic&route=b1" class="disabled">Route B-1</a></li>
-            <li><a href="?difficulty=lunatic&route=b2" class="disabled">Route B-2</a></li>
-            <li><a href="?difficulty=lunatic&route=c1" class="disabled">Route C-1</a></li>
-            <li><a href="?difficulty=lunatic&route=c2" class="disabled">Route C-2</a></li>
           </ul>
         </nav>
         <h2>Extra</h2>
