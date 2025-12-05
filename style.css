@@ -352,7 +352,7 @@ table td {
 }
 
 .achievements-table td:nth-child(2) {
-    width: 12.5%;
+    width: 12%;
     text-align: right;
     border-right: 1px solid #ecf0f1;
 }
@@ -364,7 +364,7 @@ table td {
 }
 
 .achievements-table td:nth-child(3) {
-    width: 77.5%;
+    width: 78%;
 }
 
 .achievements-table .date-header {
