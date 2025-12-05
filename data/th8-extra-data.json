@@ -1,7 +1,7 @@
 {
   "reimu_yukari": {
-    "title": "博麗 霜夢＆八雲 紫（幻想の結界チーム）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢＆八雲 紫（幻想の結界チーム）",
+    "videoId": "GtiBnVZzIuE",
     "timestamps": [
       {
         "time": 0,
@@ -11,8 +11,8 @@
     ]
   },
   "marisa_alice": {
-    "title": "霧雨 魔理沙＆アリス・マーガトロイド（禁呑の詳唱チーム）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙＆アリス・マーガトロイド（禁呪の詠唱チーム）",
+    "videoId": "woYIFbdZ_Hc",
     "timestamps": [
       {
         "time": 0,
@@ -23,7 +23,7 @@
   },
   "sakuya_remilia": {
     "title": "十六夜 咲夜＆レミリア・スカーレット（夢幻の紅魔チーム）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "Zliv_apam3A",
     "timestamps": [
       {
         "time": 0,
@@ -33,8 +33,8 @@
     ]
   },
   "youmu_yuyuko": {
-    "title": "魂魄 妖夢＆幽幽子",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "魂魄 妖夢＆西行寺 幽々子（幽冥の住人チーム）",
+    "videoId": "zcY6C9lMyGw",
     "timestamps": [
       {
         "time": 0,
@@ -45,7 +45,7 @@
   },
   "reimu": {
     "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "tuLFdHFVb4c",
     "timestamps": [
       {
         "time": 0,
@@ -56,7 +56,7 @@
   },
   "yukari": {
     "title": "八雲 紫",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "hOJdEtPINxA",
     "timestamps": [
       {
         "time": 0,
@@ -67,7 +67,7 @@
   },
   "marisa": {
     "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "sS_U3l4CwzY",
     "timestamps": [
       {
         "time": 0,
@@ -78,18 +78,7 @@
   },
   "alice": {
     "title": "アリス・マーガトロイド",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
-    ]
-  },
-  "remilia": {
-    "title": "レミリア・スカーレット",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "h0aHbXOClCc",
     "timestamps": [
       {
         "time": 0,
@@ -100,7 +89,18 @@
   },
   "sakuya": {
     "title": "十六夜 咲夜",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "SU2gV4EQ2-E",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "Extra",
+        "content": ""
+      }
+    ]
+  },
+  "remilia": {
+    "title": "レミリア・スカーレット",
+    "videoId": "sozg0c4oXB8",
     "timestamps": [
       {
         "time": 0,
@@ -111,7 +111,7 @@
   },
   "youmu": {
     "title": "魂魄 妖夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "0gNZQNwdj7Y",
     "timestamps": [
       {
         "time": 0,
@@ -121,8 +121,8 @@
     ]
   },
   "yuyuko": {
-    "title": "幽幽子",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "西行寺 幽々子",
+    "videoId": "3AV4OM3hEOs",
     "timestamps": [
       {
         "time": 0,

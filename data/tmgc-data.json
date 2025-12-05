@@ -1,5 +1,5 @@
 {
-  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
+  "stageLabels": ["道中", "ボス（シュー）", "ボス（コアントロー）"],
   "default": {
     "title": "トルテルマジック",
     "videoId": "mtLp4bveBmQ",

@@ -1,7 +1,7 @@
 {
   "reimu_a": {
-    "title": "博麗 霊夢（霊の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（霊符　追尾タイプ）",
+    "videoId": "SJNnDMwxOHs",
     "timestamps": [
       {
         "time": 0,
@@ -11,8 +11,8 @@
     ]
   },
   "reimu_b": {
-    "title": "博麗 霊夢（夢の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（夢符　速射タイプ）",
+    "videoId": "Dzwv1pIEwbQ",
     "timestamps": [
       {
         "time": 0,
@@ -22,8 +22,8 @@
     ]
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙（魔の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（魔符　威力重視タイプ）",
+    "videoId": "bdDk-loPHM4",
     "timestamps": [
       {
         "time": 0,
@@ -33,8 +33,8 @@
     ]
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙（恋の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（恋符　貫通タイプ）",
+    "videoId": "l4hV5KSXKdg",
     "timestamps": [
       {
         "time": 0,
@@ -44,8 +44,8 @@
     ]
   },
   "sakuya_a": {
-    "title": "十六夜 咲夜（時の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "十六夜 咲夜（幻符　広範囲タイプ）",
+    "videoId": "5PsvRNhioG8",
     "timestamps": [
       {
         "time": 0,
@@ -55,8 +55,8 @@
     ]
   },
   "sakuya_b": {
-    "title": "十六夜 咲夜（夜刀の御札）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "十六夜 咲夜（時符　特殊タイプ）",
+    "videoId": "6FyDEpN1Aq8",
     "timestamps": [
       {
         "time": 0,
