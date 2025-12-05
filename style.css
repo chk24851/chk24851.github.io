@@ -721,6 +721,7 @@ footer p {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: none;
+    text-align: center;
 }
 
 #stage-dropdown:hover {
