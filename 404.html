@@ -6,7 +6,10 @@
   <title>ページが見つかりません</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body { display: block !important; }
+    body { 
+      display: block !important; 
+      background-color: #ffffff !important;
+    }
     .error-container {
       display: flex;
       flex-direction: column;
@@ -27,20 +30,10 @@
       margin: 1rem 0;
       color: #2c3e50;
     }
-    @media (prefers-color-scheme: dark) {
-      .error-title {
-        color: #ecf0f1;
-      }
-    }
     .error-message {
       font-size: 1.1rem;
       margin: 1rem 0 2rem;
       color: #7f8c8d;
-    }
-    @media (prefers-color-scheme: dark) {
-      .error-message {
-        color: #bdc3c7;
-      }
     }
     .error-links {
       display: flex;
@@ -51,22 +44,14 @@
     .error-links a {
       display: inline-block;
       padding: 0.75rem 1.5rem;
-      background-color: #3498db;
+      background-color: #e67e22;
       color: white;
       text-decoration: none;
       border-radius: 4px;
       transition: background-color 0.3s;
     }
     .error-links a:hover {
-      background-color: #2980b9;
-    }
-    @media (prefers-color-scheme: dark) {
-      .error-links a {
-        background-color: #2980b9;
-      }
-      .error-links a:hover {
-        background-color: #3498db;
-      }
+      background-color: #d35400;
     }
   </style>
 </head>
