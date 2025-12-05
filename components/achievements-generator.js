@@ -4,20 +4,17 @@ async function generateAchievementsTable() {
     const achievements = await response.json();
 
     const tbody = document.querySelector('.achievements-table tbody');
-    if (!tbody) {
-      return;
-    }
+    if (!tbody) return;
 
     tbody.innerHTML = '';
 
     achievements.forEach((item, index) => {
       const row = document.createElement('tr');
-      
       const yearCell = document.createElement('td');
       const monthDayCell = document.createElement('td');
       const contentCell = document.createElement('td');
       const link = document.createElement('a');
-      
+
       if (item.url) {
         link.href = item.url;
         link.textContent = item.content + ' >';
@@ -26,7 +23,7 @@ async function generateAchievementsTable() {
         link.textContent = item.content;
         link.addEventListener('click', (e) => e.preventDefault());
       }
-      
+
       contentCell.appendChild(link);
 
       if (index > 0 && achievements[index - 1].year === item.year) {
@@ -43,11 +40,11 @@ async function generateAchievementsTable() {
 
       if (index < achievements.length - 1) {
         const nextItem = achievements[index + 1];
-        
+
         if (item.year === nextItem.year) {
           yearCell.classList.add('no-border-bottom');
         }
-        
+
         if (item.month === nextItem.month && item.day === nextItem.day) {
           monthDayCell.classList.add('no-border-bottom');
         }
@@ -59,6 +56,7 @@ async function generateAchievementsTable() {
       tbody.appendChild(row);
     });
   } catch (error) {
+    console.error('実績テーブルの読み込みエラー:', error);
   }
 }
 

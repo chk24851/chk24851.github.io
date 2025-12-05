@@ -3,21 +3,23 @@ async function loadAndInitializeNormal(dataUrl, characterKey) {
     const response = await fetch(dataUrl);
     const data = await response.json();
     const pageConfig = data[characterKey];
-    let stageLabels = data.stageLabels;
 
     if (!pageConfig) return;
 
-    if (characterKey.includes('final_a')) {
-      pageConfig.stageLabels = stageLabels.slice(0, 6);
-    } else if (characterKey.includes('final_b')) {
-      pageConfig.stageLabels = stageLabels.slice(0, 5).concat([stageLabels[6]]);
-    } else {
-      pageConfig.stageLabels = stageLabels;
-    }
-
+    pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load normal data:', error);
+  }
+}
+
+function getStageLabels(characterKey, allLabels) {
+  if (characterKey.includes('final_a')) {
+    return allLabels.slice(0, 6);
+  } else if (characterKey.includes('final_b')) {
+    return allLabels.slice(0, 5).concat([allLabels[6]]);
+  } else {
+    return allLabels;
   }
 }
 

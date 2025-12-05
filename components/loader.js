@@ -1,50 +1,89 @@
-function loadHeader() {
+function getPageContext() {
   const pathname = window.location.pathname;
-  let links;
+  const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/about/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
 
   if (pathname.includes('/blog/th')) {
-    links = {
-      home: '../../index.html',
-      about: '../../about/index.html',
-      blog: '../index.html',
-      sitemap: '../../sitemap.html'
+    return {
+      isHomePage,
+      links: {
+        home: '../../index.html',
+        about: '../../about/index.html',
+        blog: '../index.html',
+        sitemap: '../../sitemap.html'
+      },
+      css: '../../style.css'
     };
   } else if (pathname.includes('/blog/')) {
-    links = {
-      home: '../index.html',
-      about: '../about/index.html',
-      blog: 'index.html',
-      sitemap: '../sitemap.html'
+    return {
+      isHomePage,
+      links: {
+        home: '../index.html',
+        about: '../about/index.html',
+        blog: 'index.html',
+        sitemap: '../sitemap.html'
+      },
+      css: '../style.css'
     };
   } else if (pathname.includes('/about/') || pathname.includes('/gallery/')) {
-    links = {
-      home: '../index.html',
-      about: 'index.html',
-      blog: '../blog/index.html',
-      sitemap: '../sitemap.html'
+    return {
+      isHomePage,
+      links: {
+        home: '../index.html',
+        about: 'index.html',
+        blog: '../blog/index.html',
+        sitemap: '../sitemap.html'
+      },
+      css: '../style.css'
     };
   } else {
-    links = {
-      home: 'index.html',
-      about: 'about/index.html',
-      blog: 'blog/index.html',
-      sitemap: 'sitemap.html'
+    return {
+      isHomePage,
+      links: {
+        home: 'index.html',
+        about: 'about/index.html',
+        blog: 'blog/index.html',
+        sitemap: 'sitemap.html'
+      },
+      css: 'style.css'
     };
   }
+}
 
-  const headerHTML = `
-    <header>
-      <nav>
-        <ul>
-          <li><a href="${links.home}">ちこいアーカイブ</a></li>
-          <li><a href="${links.about}">自己紹介</a></li>
-          <li><a href="${links.blog}">ブログ</a></li>
-          <li><a href="${links.sitemap}">サイトマップ</a></li>
-        </ul>
-      </nav>
-    </header>`;
+function getTitleFromPage(filePath) {
+  return fetch(filePath)
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      return doc.querySelector('title').textContent;
+    });
+}
 
-  document.body.insertAdjacentHTML('afterbegin', headerHTML);
+function loadHeader() {
+  const context = getPageContext();
+
+  Promise.all([
+    getTitleFromPage(context.links.home),
+    getTitleFromPage(context.links.about),
+    getTitleFromPage(context.links.blog),
+    getTitleFromPage(context.links.sitemap)
+  ]).then(([homeTitle, aboutTitle, blogTitle, sitemapTitle]) => {
+    const headerHTML = `
+      <header>
+        <nav>
+          <ul>
+            <li><a href="${context.links.home}">${homeTitle}</a></li>
+            <li><a href="${context.links.about}">${aboutTitle}</a></li>
+            <li><a href="${context.links.blog}">${blogTitle}</a></li>
+            <li><a href="${context.links.sitemap}">${sitemapTitle}</a></li>
+          </ul>
+        </nav>
+      </header>`;
+
+    document.body.insertAdjacentHTML('afterbegin', headerHTML);
+  }).catch(error => {
+    console.error('ヘッダー読み込みエラー:', error);
+  });
 }
 
 function loadFooter() {
@@ -57,38 +96,40 @@ function loadFooter() {
 }
 
 function setFavicon() {
-  const favicon = document.querySelector('link[rel="icon"]');
   const faviconSVG = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' text-anchor='middle' x='50'>🐮</text></svg>";
+  const link = document.createElement('link');
+  link.rel = 'icon';
+  link.href = faviconSVG;
+  document.head.appendChild(link);
+}
 
-  if (favicon) {
-    favicon.href = faviconSVG;
-  } else {
-    const link = document.createElement('link');
-    link.rel = 'icon';
-    link.href = faviconSVG;
-    document.head.appendChild(link);
+function setSiteTitle() {
+  const context = getPageContext();
+
+  if (!context.isHomePage) {
+    getTitleFromPage(context.links.home).then(homePageTitle => {
+      const currentTitle = document.title;
+
+      if (!currentTitle.includes(' - ')) {
+        document.title = `${currentTitle} - ${homePageTitle}`;
+      }
+    });
   }
 }
 
 function initializeHTML() {
-  const pathname = window.location.pathname;
-  let cssPath = 'style.css';
-
-  if (pathname.includes('/blog/th')) {
-    cssPath = '../../style.css';
-  } else if (pathname.includes('/blog/') || pathname.includes('/about/') || pathname.includes('/gallery/')) {
-    cssPath = '../style.css';
-  }
+  const context = getPageContext();
 
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = cssPath;
+  link.href = context.css;
 
   if (!document.querySelector('link[rel="stylesheet"]')) {
     document.head.appendChild(link);
   }
 
   setFavicon();
+  setSiteTitle();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

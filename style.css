@@ -390,7 +390,6 @@ table td {
     color: inherit;
     text-decoration: none;
     display: block;
-    padding: inherit;
     margin: -12px;
     padding: 12px;
     transition: background-color 0.3s ease;
@@ -413,7 +412,7 @@ table td {
     .achievements-table a:hover {
         background-color: #3e2723;
     }
-    
+
     .achievements-table a.disabled:hover {
         background-color: transparent;
     }
@@ -617,6 +616,11 @@ footer p {
 
 .sitemap-list li {
     margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.sitemap-list li:first-child {
+    margin-top: 15px;
 }
 
 .sitemap-list strong {
@@ -865,12 +869,4 @@ footer p {
 
 .stamp-content.hidden {
     display: none !important;
-}
-
-.sitemap-list li {
-    margin-top: 10px;
-}
-
-.sitemap-list li:first-child {
-    margin-top: 15px;
 }
