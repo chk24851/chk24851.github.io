@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_w": {
-    "title": "博麗 霊夢（White）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（オオカミ霊）",
+    "videoId": "x_rVIbJhXc0",
     "stageData": {
       "1": {
         "timestamps": [
@@ -61,8 +61,8 @@
     }
   },
   "reimu_o": {
-    "title": "博麗 霊夢（Orange）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（カワウソ霊）",
+    "videoId": "X5uvobV_4cI",
     "stageData": {
       "1": {
         "timestamps": [
@@ -121,8 +121,8 @@
     }
   },
   "reimu_e": {
-    "title": "博麗 霊夢（Green）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（オオワシ霊）",
+    "videoId": "IodPhV3eY0s",
     "stageData": {
       "1": {
         "timestamps": [
@@ -181,8 +181,8 @@
     }
   },
   "marisa_w": {
-    "title": "霧雨 魔理沙（White）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（オオカミ霊）",
+    "videoId": "Fbx40c39NUs",
     "stageData": {
       "1": {
         "timestamps": [
@@ -241,8 +241,8 @@
     }
   },
   "marisa_o": {
-    "title": "霧雨 魔理沙（Orange）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（カワウソ霊）",
+    "videoId": "a8N0y727knQ",
     "stageData": {
       "1": {
         "timestamps": [
@@ -301,8 +301,8 @@
     }
   },
   "marisa_e": {
-    "title": "霧雨 魔理沙（Green）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（オオワシ霊）",
+    "videoId": "xrqbYpM33k8",
     "stageData": {
       "1": {
         "timestamps": [
@@ -361,8 +361,8 @@
     }
   },
   "youmu_w": {
-    "title": "魂魄 妖夢（White）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "魂魄 妖夢（オオカミ霊）",
+    "videoId": "EJrBz9Y7WJw",
     "stageData": {
       "1": {
         "timestamps": [
@@ -421,8 +421,8 @@
     }
   },
   "youmu_o": {
-    "title": "魂魄 妖夢（Orange）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "魂魄 妖夢（カワウソ霊）",
+    "videoId": "d5lz6Xwmi-w",
     "stageData": {
       "1": {
         "timestamps": [
@@ -481,8 +481,8 @@
     }
   },
   "youmu_e": {
-    "title": "魂魄 妖夢（Green）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "魂魄 妖夢（オオワシ霊）",
+    "videoId": "t8C6MdAPvKU",
     "stageData": {
       "1": {
         "timestamps": [

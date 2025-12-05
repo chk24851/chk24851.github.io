@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_a": {
-    "title": "博麗 霊夢（霊符）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（誘導装備）",
+    "videoId": "d8fACBtagk0",
     "stageData": {
       "1": {
         "timestamps": [
@@ -91,8 +91,8 @@
     }
   },
   "reimu_b": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（前方集中装備）",
+    "videoId": "a9RBeMahKrQ",
     "stageData": {
       "1": {
         "timestamps": [
@@ -181,8 +181,8 @@
     }
   },
   "reimu_c": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（封印装備）",
+    "videoId": "354NT1JlNEo",
     "stageData": {
       "1": {
         "timestamps": [
@@ -271,8 +271,8 @@
     }
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙（魔符）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（高威力装備）",
+    "videoId": "h6v1FuuztE0",
     "stageData": {
       "1": {
         "timestamps": [
@@ -361,8 +361,8 @@
     }
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（貫通装備）",
+    "videoId": "cyYEt8fnckg",
     "stageData": {
       "1": {
         "timestamps": [
@@ -451,8 +451,8 @@
     }
   },
   "marisa_c": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（魔法使い装備）",
+    "videoId": "kiyrgVy3sJY",
     "stageData": {
       "1": {
         "timestamps": [

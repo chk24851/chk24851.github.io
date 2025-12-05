@@ -1,6 +1,6 @@
 {
   "reimu_red": {
-    "title": "博麗 霊夢（Red）",
+    "title": "博麗 霊夢（スカーレットデビル）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -11,7 +11,7 @@
     ]
   },
   "reimu_red2": {
-    "title": "博麗 霊夢（Red2）",
+    "title": "博麗 霊夢（クリーチャーレッド）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -22,7 +22,7 @@
     ]
   },
   "reimu_blue": {
-    "title": "博麗 霊夢（Blue）",
+    "title": "博麗 霊夢（スノーブロッサム）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -33,7 +33,7 @@
     ]
   },
   "reimu_blue2": {
-    "title": "博麗 霊夢（Blue2）",
+    "title": "博麗 霊夢（ブルーシーズン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -44,7 +44,7 @@
     ]
   },
   "reimu_yellow": {
-    "title": "博麗 霊夢（Yellow）",
+    "title": "博麗 霊夢（イエローサブタレイニアン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -55,7 +55,7 @@
     ]
   },
   "reimu_yellow2": {
-    "title": "博麗 霊夢（Yellow2）",
+    "title": "博麗 霊夢（インペリシャブルムーン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -66,7 +66,7 @@
     ]
   },
   "reimu_green": {
-    "title": "博麗 霊夢（Green）",
+    "title": "博麗 霊夢（ビーストハードネス）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -77,7 +77,7 @@
     ]
   },
   "reimu_green2": {
-    "title": "博麗 霊夢（Green2）",
+    "title": "博麗 霊夢（シントイズムウィンド）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -88,7 +88,7 @@
     ]
   },
   "marisa_red": {
-    "title": "霧雨 魔理沙（Red）",
+    "title": "霧雨 魔理沙（スカーレットデビル）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -99,7 +99,7 @@
     ]
   },
   "marisa_red2": {
-    "title": "霧雨 魔理沙（Red2）",
+    "title": "霧雨 魔理沙（クリーチャーレッド）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -110,7 +110,7 @@
     ]
   },
   "marisa_blue": {
-    "title": "霧雨 魔理沙（Blue）",
+    "title": "霧雨 魔理沙（スノーブロッサム）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -121,7 +121,7 @@
     ]
   },
   "marisa_blue2": {
-    "title": "霧雨 魔理沙（Blue2）",
+    "title": "霧雨 魔理沙（ブルーシーズン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -132,7 +132,7 @@
     ]
   },
   "marisa_yellow": {
-    "title": "霧雨 魔理沙（Yellow）",
+    "title": "霧雨 魔理沙（イエローサブタレイニアン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -143,7 +143,7 @@
     ]
   },
   "marisa_yellow2": {
-    "title": "霧雨 魔理沙（Yellow2）",
+    "title": "霧雨 魔理沙（インペリシャブルムーン）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -154,7 +154,7 @@
     ]
   },
   "marisa_green": {
-    "title": "霧雨 魔理沙（Green）",
+    "title": "霧雨 魔理沙（ビーストハードネス）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -165,7 +165,7 @@
     ]
   },
   "marisa_green2": {
-    "title": "霧雨 魔理沙（Green2）",
+    "title": "霧雨 魔理沙（シントイズムウィンド）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {

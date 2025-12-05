@@ -1,6 +1,6 @@
 {
   "reimu_a": {
-    "title": "博麗 霊夢",
+    "title": "博麗 霊夢（前方集中型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -11,7 +11,7 @@
     ]
   },
   "reimu_b": {
-    "title": "博麗 霊夢",
+    "title": "博麗 霊夢（貫通誤導型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -22,7 +22,7 @@
     ]
   },
   "reimu_c": {
-    "title": "博麗 霊夢",
+    "title": "博麗 霊夢（移動特化型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -33,7 +33,7 @@
     ]
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙",
+    "title": "霧雨 魔理沙（支援強化型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -44,7 +44,7 @@
     ]
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙",
+    "title": "霧雨 魔理沙（配置変化型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -55,7 +55,7 @@
     ]
   },
   "marisa_c": {
-    "title": "霧雨 魔理沙",
+    "title": "霧雨 魔理沙（防御重視型）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {

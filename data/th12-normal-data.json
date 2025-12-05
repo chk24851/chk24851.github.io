@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_a": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（一点集中攻撃力重視型）",
+    "videoId": "K92TZ4wWI5c",
     "stageData": {
       "1": {
         "timestamps": [
@@ -91,8 +91,8 @@
     }
   },
   "reimu_b": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（アンチパターン重視超誘導型）",
+    "videoId": "3QilLXLjDSs",
     "stageData": {
       "1": {
         "timestamps": [
@@ -181,8 +181,8 @@
     }
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（無限貫通＆常時攻撃型）",
+    "videoId": "_VJzsa5qoio",
     "stageData": {
       "1": {
         "timestamps": [
@@ -271,8 +271,8 @@
     }
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（超攻撃範囲重視型）",
+    "videoId": "5_gg1bC4Flc",
     "stageData": {
       "1": {
         "timestamps": [
@@ -361,8 +361,8 @@
     }
   },
   "sanae_a": {
-    "title": "東風谷 早苗",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "東風谷 早苗（一点集中＆誘導型）",
+    "videoId": "OKkfQDviwnI",
     "stageData": {
       "1": {
         "timestamps": [
@@ -451,8 +451,8 @@
     }
   },
   "sanae_b": {
-    "title": "東風谷 早苗",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "東風谷 早苗（高威力＆広範囲炸裂型）",
+    "videoId": "sJU2UUffldg",
     "stageData": {
       "1": {
         "timestamps": [

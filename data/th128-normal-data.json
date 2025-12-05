@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
   "a1": {
-    "title": "Route A-1",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　A1",
+    "videoId": "n5BT_48Z-u4",
     "stageData": {
       "1": {
         "timestamps": [
@@ -34,8 +34,8 @@
     }
   },
   "a2": {
-    "title": "Route A-2",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　A2",
+    "videoId": "nuGSQ6E940s",
     "stageData": {
       "1": {
         "timestamps": [
@@ -67,8 +67,8 @@
     }
   },
   "b1": {
-    "title": "Route B-1",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　B1",
+    "videoId": "vr3X0YKJ48Y",
     "stageData": {
       "1": {
         "timestamps": [
@@ -100,8 +100,8 @@
     }
   },
   "b2": {
-    "title": "Route B-2",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　B2",
+    "videoId": "eQX7KYVkfKQ",
     "stageData": {
       "1": {
         "timestamps": [
@@ -133,8 +133,8 @@
     }
   },
   "c1": {
-    "title": "Route C-1",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　C1",
+    "videoId": "ty__GVtNGcw",
     "stageData": {
       "1": {
         "timestamps": [
@@ -166,8 +166,8 @@
     }
   },
   "c2": {
-    "title": "Route C-2",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "ルート　C2",
+    "videoId": "IGsbUHngDvs",
     "stageData": {
       "1": {
         "timestamps": [

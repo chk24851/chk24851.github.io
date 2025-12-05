@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_a": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（翻弄される回避重視タイプ）",
+    "videoId": "-wfBEp4IaO8",
     "stageData": {
       "1": {
         "timestamps": [
@@ -91,8 +91,8 @@
     }
   },
   "reimu_b": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（伝統のバランスタイプ）",
+    "videoId": "pQKs3HXDN8U",
     "stageData": {
       "1": {
         "timestamps": [
@@ -181,8 +181,8 @@
     }
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（散熱の威力重視タイプ）",
+    "videoId": "_kNJlGVX6PA",
     "stageData": {
       "1": {
         "timestamps": [
@@ -271,8 +271,8 @@
     }
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
+    "videoId": "4jO1QI7DiQY",
     "stageData": {
       "1": {
         "timestamps": [
@@ -361,8 +361,8 @@
     }
   },
   "sakuya_a": {
-    "title": "十六夜 咲夜",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
+    "videoId": "n9Thukk243Y",
     "stageData": {
       "1": {
         "timestamps": [
@@ -451,8 +451,8 @@
     }
   },
   "sakuya_b": {
-    "title": "十六夜 咲夜",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
+    "videoId": "28gdp3hGoRk",
     "stageData": {
       "1": {
         "timestamps": [

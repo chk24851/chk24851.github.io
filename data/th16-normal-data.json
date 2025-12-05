@@ -2,7 +2,7 @@
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_spring": {
     "title": "博麗 霊夢（春装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "kyKbDlCjAgA",
     "stageData": {
       "1": {
         "timestamps": [
@@ -92,7 +92,7 @@
   },
   "reimu_summer": {
     "title": "博麗 霊夢（夏装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "QRBTPIubdp0",
     "stageData": {
       "1": {
         "timestamps": [
@@ -182,7 +182,7 @@
   },
   "reimu_autumn": {
     "title": "博麗 霊夢（秋装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "iit6ZW5ErpQ",
     "stageData": {
       "1": {
         "timestamps": [
@@ -272,7 +272,7 @@
   },
   "reimu_winter": {
     "title": "博麗 霊夢（冬装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "Uba3jUNRPMM",
     "stageData": {
       "1": {
         "timestamps": [
@@ -362,7 +362,7 @@
   },
   "cirno_spring": {
     "title": "チルノ（春装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "wg_2LmpxrxI",
     "stageData": {
       "1": {
         "timestamps": [
@@ -452,7 +452,7 @@
   },
   "cirno_summer": {
     "title": "チルノ（夏装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "Dv84yXjaaHA",
     "stageData": {
       "1": {
         "timestamps": [
@@ -542,7 +542,7 @@
   },
   "cirno_autumn": {
     "title": "チルノ（秋装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "PoQzPrJqYwA",
     "stageData": {
       "1": {
         "timestamps": [
@@ -632,7 +632,7 @@
   },
   "cirno_winter": {
     "title": "チルノ（冬装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "rE26ijlOTd4",
     "stageData": {
       "1": {
         "timestamps": [
@@ -722,7 +722,7 @@
   },
   "aya_spring": {
     "title": "射命丸 文（春装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "POSRWfHmYic",
     "stageData": {
       "1": {
         "timestamps": [
@@ -812,7 +812,7 @@
   },
   "aya_summer": {
     "title": "射命丸 文（夏装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "i37cECgC8bE",
     "stageData": {
       "1": {
         "timestamps": [
@@ -902,7 +902,7 @@
   },
   "aya_autumn": {
     "title": "射命丸 文（秋装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "kXkSzQUHS9k",
     "stageData": {
       "1": {
         "timestamps": [
@@ -992,7 +992,7 @@
   },
   "aya_winter": {
     "title": "射命丸 文（冬装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "9GProyggwXs",
     "stageData": {
       "1": {
         "timestamps": [
@@ -1082,7 +1082,7 @@
   },
   "marisa_spring": {
     "title": "霧雨 魔理沙（春装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "rpYIW6K0wjw",
     "stageData": {
       "1": {
         "timestamps": [
@@ -1172,7 +1172,7 @@
   },
   "marisa_summer": {
     "title": "霧雨 魔理沙（夏装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "sfLfsXggJ0c",
     "stageData": {
       "1": {
         "timestamps": [
@@ -1262,7 +1262,7 @@
   },
   "marisa_autumn": {
     "title": "霧雨 魔理沙（秋装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "pcBe5HHw38U",
     "stageData": {
       "1": {
         "timestamps": [
@@ -1352,7 +1352,7 @@
   },
   "marisa_winter": {
     "title": "霧雨 魔理沙（冬装備）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "videoId": "ld4XECnQneE",
     "stageData": {
       "1": {
         "timestamps": [

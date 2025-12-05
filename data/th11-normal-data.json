@@ -1,8 +1,8 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_a": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（前方集中型）",
+    "videoId": "Xhaq2TBNtTA",
     "stageData": {
       "1": {
         "timestamps": [
@@ -91,8 +91,8 @@
     }
   },
   "reimu_b": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（貫通誘導型）",
+    "videoId": "M8X4JKowJ60",
     "stageData": {
       "1": {
         "timestamps": [
@@ -181,8 +181,8 @@
     }
   },
   "reimu_c": {
-    "title": "博麗 霊夢",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "博麗 霊夢（移動特化型）",
+    "videoId": "_KW6Q0qOW0g",
     "stageData": {
       "1": {
         "timestamps": [
@@ -271,8 +271,8 @@
     }
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（支援強化型）",
+    "videoId": "83LNMYAnpmU",
     "stageData": {
       "1": {
         "timestamps": [
@@ -361,8 +361,8 @@
     }
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（配置変化型）",
+    "videoId": "ZrfX59QY-Yw",
     "stageData": {
       "1": {
         "timestamps": [
@@ -451,8 +451,8 @@
     }
   },
   "marisa_c": {
-    "title": "霧雨 魔理沙",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "title": "霧雨 魔理沙（防御重視型）",
+    "videoId": "rRGgJdVP6Vw",
     "stageData": {
       "1": {
         "timestamps": [
