@@ -4,15 +4,19 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     const data = await response.json();
     const pageConfig = data[characterKey];
 
-    if (pageConfig) {
-      const originalTitle = pageConfig.title;
-      const label = difficulty === 'phantasm' ? '【Phantasm】' : '【Extra】';
-      pageConfig.title = `${label}${pageConfig.title}`;
-      pageConfig.originalTitle = originalTitle;
-      initializeExplanationPage(pageConfig);
+    if (!pageConfig) {
+      window.location.href = '/404.html';
+      return;
     }
+
+    const originalTitle = pageConfig.title;
+    const label = difficulty === 'phantasm' ? '【Phantasm】' : '【Extra】';
+    pageConfig.title = `${label}${pageConfig.title}`;
+    pageConfig.originalTitle = originalTitle;
+    initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load extra data:', error);
+    window.location.href = '/404.html';
   }
 }
 

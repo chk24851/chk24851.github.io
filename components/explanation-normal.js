@@ -4,7 +4,10 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
     const data = await response.json();
     const pageConfig = data[characterKey];
 
-    if (!pageConfig) return;
+    if (!pageConfig) {
+      window.location.href = '/404.html';
+      return;
+    }
 
     pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
     const originalTitle = pageConfig.title;
@@ -14,6 +17,7 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load normal data:', error);
+    window.location.href = '/404.html';
   }
 }
 
