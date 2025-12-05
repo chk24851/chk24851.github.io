@@ -19,9 +19,9 @@
 
     if (difficulty && character) {
       const script = document.createElement('script');
-      script.src = (difficulty === 'normal' || difficulty === 'extra' || difficulty === 'phantasm')
-        ? '../../components/explanation-' + (difficulty === 'phantasm' ? 'extra' : difficulty) + '.js'
-        : '../../components/explanation-normal.js';
+      script.src = difficulty === 'normal'
+        ? '../../components/explanation-normal.js'
+        : '../../components/explanation-extra.js';
 
       script.onload = function () {
         const dataUrl = '../../data/th7-' + difficulty + '-data.json';
@@ -58,9 +58,9 @@
 
         requestAnimationFrame(() => {
           if (difficulty === 'normal') {
-            loadAndInitializeNormal(dataUrl, character);
+            loadAndInitializeNormal(dataUrl, character, 'normal');
           } else {
-            loadAndInitializeExtra(dataUrl, character);
+            loadAndInitializeExtra(dataUrl, character, difficulty);
           }
         });
       };

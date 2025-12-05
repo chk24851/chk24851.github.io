@@ -1,4 +1,4 @@
-async function loadAndInitializeExtra(dataUrl, characterKey) {
+async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra') {
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
@@ -6,7 +6,8 @@ async function loadAndInitializeExtra(dataUrl, characterKey) {
 
     if (pageConfig) {
       const originalTitle = pageConfig.title;
-      pageConfig.title = `【Extra】${pageConfig.title}`;
+      const label = difficulty === 'phantasm' ? '【Phantasm】' : '【Extra】';
+      pageConfig.title = `${label}${pageConfig.title}`;
       pageConfig.originalTitle = originalTitle;
       initializeExplanationPage(pageConfig);
     }

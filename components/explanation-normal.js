@@ -1,4 +1,4 @@
-async function loadAndInitializeNormal(dataUrl, characterKey) {
+async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'normal') {
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
@@ -8,7 +8,8 @@ async function loadAndInitializeNormal(dataUrl, characterKey) {
 
     pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
     const originalTitle = pageConfig.title;
-    pageConfig.title = `【Normal】${pageConfig.title}`;
+    const label = difficulty === 'lunatic' ? '【Lunatic】' : '【Normal】';
+    pageConfig.title = `${label}${pageConfig.title}`;
     pageConfig.originalTitle = originalTitle;
     initializeExplanationPage(pageConfig);
   } catch (error) {
