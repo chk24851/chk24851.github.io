@@ -548,8 +548,8 @@ header {
     padding: 15px 0;
     box-shadow: 0 2px 8px rgba(217, 112, 55, 0.2);
     margin-bottom: 40px;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    margin-left: 0;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -594,8 +594,8 @@ footer {
     padding: 30px 20px;
     margin-top: 60px;
     font-size: 0.95em;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
+    margin-left: 0;
     transition: background-color 0.3s ease;
 }
 
@@ -772,11 +772,15 @@ footer p {
 .video-panel {
     flex: 2;
     min-width: 300px;
+    align-self: center;
 }
 
 .video-wrapper {
     aspect-ratio: 4 / 3;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-wrapper iframe {
