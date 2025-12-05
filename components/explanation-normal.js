@@ -5,7 +5,7 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
     const pageConfig = data[characterKey];
 
     if (!pageConfig) {
-      window.location.href = '../../404.html';
+      window.location.href = '/404.html';
       return;
     }
 
@@ -17,7 +17,7 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load normal data:', error);
-    window.location.href = '../../404.html';
+    window.location.href = '/404.html';
   }
 }
 
