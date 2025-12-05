@@ -1,7 +1,7 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_spring": {
-    "title": "【Normal】博麗 霊夢（春装備）",
+    "title": "博麗 霊夢（春装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -91,7 +91,7 @@
     }
   },
   "reimu_summer": {
-    "title": "【Normal】博麗 霊夢（夏装備）",
+    "title": "博麗 霊夢（夏装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -181,7 +181,7 @@
     }
   },
   "reimu_autumn": {
-    "title": "【Normal】博麗 霊夢（秋装備）",
+    "title": "博麗 霊夢（秋装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -271,7 +271,7 @@
     }
   },
   "reimu_winter": {
-    "title": "【Normal】博麗 霊夢（冬装備）",
+    "title": "博麗 霊夢（冬装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -361,7 +361,7 @@
     }
   },
   "cirno_spring": {
-    "title": "【Normal】チルノ（春装備）",
+    "title": "チルノ（春装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -451,7 +451,7 @@
     }
   },
   "cirno_summer": {
-    "title": "【Normal】チルノ（夏装備）",
+    "title": "チルノ（夏装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -541,7 +541,7 @@
     }
   },
   "cirno_autumn": {
-    "title": "【Normal】チルノ（秋装備）",
+    "title": "チルノ（秋装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -631,7 +631,7 @@
     }
   },
   "cirno_winter": {
-    "title": "【Normal】チルノ（冬装備）",
+    "title": "チルノ（冬装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -721,7 +721,7 @@
     }
   },
   "aya_spring": {
-    "title": "【Normal】射命丸 文（春装備）",
+    "title": "射命丸 文（春装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -811,7 +811,7 @@
     }
   },
   "aya_summer": {
-    "title": "【Normal】射命丸 文（夏装備）",
+    "title": "射命丸 文（夏装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -901,7 +901,7 @@
     }
   },
   "aya_autumn": {
-    "title": "【Normal】射命丸 文（秋装備）",
+    "title": "射命丸 文（秋装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -991,7 +991,7 @@
     }
   },
   "aya_winter": {
-    "title": "【Normal】射命丸 文（冬装備）",
+    "title": "射命丸 文（冬装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -1081,7 +1081,7 @@
     }
   },
   "marisa_spring": {
-    "title": "【Normal】霧雨 魔理沙（春装備）",
+    "title": "霧雨 魔理沙（春装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -1171,7 +1171,7 @@
     }
   },
   "marisa_summer": {
-    "title": "【Normal】霧雨 魔理沙（夏装備）",
+    "title": "霧雨 魔理沙（夏装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -1261,7 +1261,7 @@
     }
   },
   "marisa_autumn": {
-    "title": "【Normal】霧雨 魔理沙（秋装備）",
+    "title": "霧雨 魔理沙（秋装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -1351,7 +1351,7 @@
     }
   },
   "marisa_winter": {
-    "title": "【Normal】霧雨 魔理沙（冬装備）",
+    "title": "霧雨 魔理沙（冬装備）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {

@@ -1,6 +1,6 @@
 {
   "reimu_yukari": {
-    "title": "【Extra】博麗 霊夢＆八雲 紫",
+    "title": "博麗 霊夢＆八雲 紫",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -11,7 +11,7 @@
     ]
   },
   "marisa_alice": {
-    "title": "【Extra】霧雨 魔理沙＆アリス・マーガトロイド",
+    "title": "霧雨 魔理沙＆アリス・マーガトロイド",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -22,7 +22,7 @@
     ]
   },
   "remilia_sakuya": {
-    "title": "【Extra】レミリア・スカーレット＆十六夜 咲夜",
+    "title": "レミリア・スカーレット＆十六夜 咲夜",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -33,7 +33,7 @@
     ]
   },
   "youmu_yuyuko": {
-    "title": "【Extra】魂魄 妖夢＆幽幽子",
+    "title": "魂魄 妖夢＆幽幽子",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -44,7 +44,7 @@
     ]
   },
   "reimu": {
-    "title": "【Extra】博麗 霊夢",
+    "title": "博麗 霊夢",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -55,7 +55,7 @@
     ]
   },
   "yukari": {
-    "title": "【Extra】八雲 紫",
+    "title": "八雲 紫",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -66,7 +66,7 @@
     ]
   },
   "marisa": {
-    "title": "【Extra】霧雨 魔理沙",
+    "title": "霧雨 魔理沙",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -77,7 +77,7 @@
     ]
   },
   "alice": {
-    "title": "【Extra】アリス・マーガトロイド",
+    "title": "アリス・マーガトロイド",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -88,7 +88,7 @@
     ]
   },
   "remilia": {
-    "title": "【Extra】レミリア・スカーレット",
+    "title": "レミリア・スカーレット",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -99,7 +99,7 @@
     ]
   },
   "sakuya": {
-    "title": "【Extra】十六夜 咲夜",
+    "title": "十六夜 咲夜",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -110,7 +110,7 @@
     ]
   },
   "youmu": {
-    "title": "【Extra】魂魄 妖夢",
+    "title": "魂魄 妖夢",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {
@@ -121,7 +121,7 @@
     ]
   },
   "yuyuko": {
-    "title": "【Extra】幽幽子",
+    "title": "幽幽子",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
       {

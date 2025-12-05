@@ -7,6 +7,9 @@ async function loadAndInitializeNormal(dataUrl, characterKey) {
     if (!pageConfig) return;
 
     pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
+    const originalTitle = pageConfig.title;
+    pageConfig.title = `【Normal】${pageConfig.title}`;
+    pageConfig.originalTitle = originalTitle;
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load normal data:', error);
@@ -34,6 +37,9 @@ function initializeExplanationPage(pageConfig) {
 
   const h1 = document.querySelector('h1');
   if (h1) h1.textContent = pageConfig.title;
+
+  const defaultH3 = document.querySelector('#content-default h3');
+  if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
   const defaultMsg = document.querySelector('#content-default p');
   if (defaultMsg) defaultMsg.textContent = 'タイムスタンプを選択してください。';
@@ -79,6 +85,7 @@ function initializeExplanationPage(pageConfig) {
   function renderTimestamps(stage) {
     const timestamps = stageData[stage] ? stageData[stage].timestamps : [];
     const listContainer = document.querySelector('#timestamps-list ul');
+    const contentPanel = document.getElementById('content-panel');
     if (!listContainer) return;
 
     listContainer.innerHTML = '';
@@ -97,6 +104,15 @@ function initializeExplanationPage(pageConfig) {
 
       li.appendChild(a);
       listContainer.appendChild(li);
+
+      const contentId = 'content-' + stage + '-' + index;
+      if (!document.getElementById(contentId)) {
+        const contentDiv = document.createElement('div');
+        contentDiv.id = contentId;
+        contentDiv.className = 'stamp-content hidden';
+        contentDiv.innerHTML = `<h3>${ts.label || 'タイムスタンプ'}</h3><p>${ts.content || ''}</p>`;
+        contentPanel.appendChild(contentDiv);
+      }
     });
   }
 

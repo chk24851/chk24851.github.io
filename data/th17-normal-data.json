@@ -1,7 +1,7 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu_w": {
-    "title": "【Normal】博麗 霊夢（White）",
+    "title": "博麗 霊夢（White）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -61,7 +61,7 @@
     }
   },
   "reimu_o": {
-    "title": "【Normal】博麗 霊夢（Orange）",
+    "title": "博麗 霊夢（Orange）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -121,7 +121,7 @@
     }
   },
   "reimu_e": {
-    "title": "【Normal】博麗 霊夢（Green）",
+    "title": "博麗 霊夢（Green）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -181,7 +181,7 @@
     }
   },
   "marisa_w": {
-    "title": "【Normal】霧雨 魔理沙（White）",
+    "title": "霧雨 魔理沙（White）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -241,7 +241,7 @@
     }
   },
   "marisa_o": {
-    "title": "【Normal】霧雨 魔理沙（Orange）",
+    "title": "霧雨 魔理沙（Orange）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -301,7 +301,7 @@
     }
   },
   "marisa_e": {
-    "title": "【Normal】霧雨 魔理沙（Green）",
+    "title": "霧雨 魔理沙（Green）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -361,7 +361,7 @@
     }
   },
   "youmu_w": {
-    "title": "【Normal】魂魄 妖夢（White）",
+    "title": "魂魄 妖夢（White）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -421,7 +421,7 @@
     }
   },
   "youmu_o": {
-    "title": "【Normal】魂魄 妖夢（Orange）",
+    "title": "魂魄 妖夢（Orange）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -481,7 +481,7 @@
     }
   },
   "youmu_e": {
-    "title": "【Normal】魂魄 妖夢（Green）",
+    "title": "魂魄 妖夢（Green）",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {

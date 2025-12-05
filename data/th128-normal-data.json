@@ -1,7 +1,7 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
   "a1": {
-    "title": "【Normal】Route A-1",
+    "title": "Route A-1",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -34,7 +34,7 @@
     }
   },
   "a2": {
-    "title": "【Normal】Route A-2",
+    "title": "Route A-2",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -67,7 +67,7 @@
     }
   },
   "b1": {
-    "title": "【Normal】Route B-1",
+    "title": "Route B-1",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -100,7 +100,7 @@
     }
   },
   "b2": {
-    "title": "【Normal】Route B-2",
+    "title": "Route B-2",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -133,7 +133,7 @@
     }
   },
   "c1": {
-    "title": "【Normal】Route C-1",
+    "title": "Route C-1",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -166,7 +166,7 @@
     }
   },
   "c2": {
-    "title": "【Normal】Route C-2",
+    "title": "Route C-2",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {

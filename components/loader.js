@@ -83,6 +83,8 @@ function loadHeader() {
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
   }).catch(error => {
     console.error('ヘッダー読み込みエラー:', error);
+  }).finally(() => {
+    document.body.style.display = 'block';
   });
 }
 

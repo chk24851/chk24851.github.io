@@ -1,7 +1,7 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3", "STAGE 4", "STAGE 5", "STAGE 6"],
   "reimu": {
-    "title": "【Normal】博麗 霊夢",
+    "title": "博麗 霊夢",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -91,7 +91,7 @@
     }
   },
   "marisa": {
-    "title": "【Normal】霧雨 魔理沙",
+    "title": "霧雨 魔理沙",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -181,7 +181,7 @@
     }
   },
   "sanae": {
-    "title": "【Normal】東風谷 早苗",
+    "title": "東風谷 早苗",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
@@ -271,7 +271,7 @@
     }
   },
   "youmu": {
-    "title": "【Normal】魂魄 妖夢",
+    "title": "魂魄 妖夢",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "stageData": {
       "1": {
