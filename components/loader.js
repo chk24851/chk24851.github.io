@@ -120,6 +120,22 @@ function setSiteTitle() {
 }
 
 function initializeHTML() {
+  const head = document.head;
+  
+  // Set meta tags if not already present
+  if (!document.querySelector('meta[charset]')) {
+    const charsetMeta = document.createElement('meta');
+    charsetMeta.setAttribute('charset', 'UTF-8');
+    head.insertBefore(charsetMeta, head.firstChild);
+  }
+  
+  if (!document.querySelector('meta[name="viewport"]')) {
+    const viewportMeta = document.createElement('meta');
+    viewportMeta.setAttribute('name', 'viewport');
+    viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+    head.insertBefore(viewportMeta, head.querySelector('title') || head.firstChild);
+  }
+
   const context = getPageContext();
 
   const link = document.createElement('link');
