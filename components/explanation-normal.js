@@ -153,4 +153,15 @@ function initializeExplanationPage(pageConfig) {
     videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
   }
   showDefaultContent();
+
+  // Synchronize video panel and timestamps panel heights
+  const SYNC_DELAY = 100; // ms
+  const syncPanelHeights = () => {
+    const videoPanel = document.querySelector('.video-panel');
+    const timestampsPanel = document.querySelector('.timestamps-panel');
+    videoPanel && timestampsPanel && (timestampsPanel.style.height = videoPanel.getBoundingClientRect().height + 'px');
+  };
+
+  ['load', 'resize'].forEach(event => window.addEventListener(event, syncPanelHeights));
+  setTimeout(syncPanelHeights, SYNC_DELAY);
 }

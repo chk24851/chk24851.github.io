@@ -794,6 +794,7 @@ footer p {
     flex: 1;
     min-width: 200px;
     padding: 0;
+    overflow-y: auto;
 }
 
 .timestamps-list {
