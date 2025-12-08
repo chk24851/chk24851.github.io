@@ -10,8 +10,48 @@
 </head>
 <body>
   <div class="container">
-    <h1>ちこいアーカイブ（仮）</h1>
-    <p style="color: #888; font-style: italic;">準備中...</p>
+    <h1>ちこいアーカイブ</h1>
+    
+    <div style="display: flex; gap: 20px; margin: 40px 0; flex-wrap: wrap;">
+      <section style="flex: 1; min-width: 300px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+        <h2>最新動画</h2>
+        <iframe 
+          width="100%" 
+          height="300" 
+          src="https://www.youtube.com/embed/videoseries?list=UUchannelId" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+        <p style="margin-top: 10px; text-align: center;">
+          <a href="https://www.youtube.com/@chikoi" target="_blank" rel="noopener noreferrer">
+            YouTubeチャンネルを見る
+          </a>
+        </p>
+      </section>
+
+      <section style="flex: 1; min-width: 300px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+        <h2>最新ツイート</h2>
+        <a class="twitter-timeline" 
+          data-width="100%" 
+          data-height="300"
+          href="https://twitter.com/chk24851?ref_src=twsrc%5Etfw">
+          Tweets by chk24851
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </section>
+    </div>
+
+    <nav style="margin: 40px 0; padding: 20px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+      <h2>コンテンツ</h2>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin: 10px 0;"><a href="blog/">ゲーム解説</a></li>
+        <li style="margin: 10px 0;"><a href="about/">このサイトについて</a></li>
+        <li style="margin: 10px 0;"><a href="gallery/">ギャラリー</a></li>
+        <li style="margin: 10px 0;"><a href="sitemap.html">サイトマップ</a></li>
+      </ul>
+    </nav>
   </div>
 </body>
 </html>
