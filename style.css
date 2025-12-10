@@ -676,7 +676,7 @@ footer p {
     cursor: pointer;
     font-weight: 600;
     transition: color 0.2s ease;
-    font-size: 1.1em;
+    font-size: 1em;
     min-width: auto;
 }
 
@@ -929,14 +929,14 @@ footer p {
 
     .stage-arrow {
         padding: 4px 6px;
-        font-size: 0.9em;
+        font-size: 1em;
         min-height: 44px;
         min-width: 44px;
     }
 
     #stage-dropdown {
         padding: 8px;
-        font-size: 0.9em;
+        font-size: 1em;
         min-height: 44px;
     }
 
@@ -1091,7 +1091,7 @@ strong.red {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f5f5f5;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1105,7 +1105,7 @@ strong.red {
 
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-track {
-        background: #2d2217;
+        background: transparent;
     }
 
     ::-webkit-scrollbar-thumb {
