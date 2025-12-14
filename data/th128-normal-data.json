@@ -2,6 +2,7 @@
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
   "a1": {
     "title": "ルート　A1",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "n5BT_48Z-u4",
     "stageData": {
       "1": {
@@ -35,6 +36,7 @@
   },
   "a2": {
     "title": "ルート　A2",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "nuGSQ6E940s",
     "stageData": {
       "1": {
@@ -68,6 +70,7 @@
   },
   "b1": {
     "title": "ルート　B1",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "vr3X0YKJ48Y",
     "stageData": {
       "1": {
@@ -101,6 +104,7 @@
   },
   "b2": {
     "title": "ルート　B2",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "eQX7KYVkfKQ",
     "stageData": {
       "1": {
@@ -134,6 +138,7 @@
   },
   "c1": {
     "title": "ルート　C1",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "ty__GVtNGcw",
     "stageData": {
       "1": {
@@ -167,6 +172,7 @@
   },
   "c2": {
     "title": "ルート　C2",
+    "message": "道中の敵に当たり判定はありません。",
     "videoId": "IGsbUHngDvs",
     "stageData": {
       "1": {

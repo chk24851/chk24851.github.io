@@ -2,7 +2,7 @@
   "stageLabels": ["道中", "ボス", "裏ボス"],
   "default": {
     "title": "トルテルマジック",
-    "message": "自機の当たり判定は「スカートの裾」が目安です。",
+    "message": "自機の当たり判定は「スカートの裾」が目安です。道中の敵に当たり判定はありません。",
     "videoId": "mtLp4bveBmQ",
     "stageData": {
       "1": {
