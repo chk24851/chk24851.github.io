@@ -122,7 +122,6 @@ function setSiteTitle() {
 function initializeHTML() {
   const head = document.head;
   
-  // Set meta tags if not already present
   if (!document.querySelector('meta[charset]')) {
     const charsetMeta = document.createElement('meta');
     charsetMeta.setAttribute('charset', 'UTF-8');

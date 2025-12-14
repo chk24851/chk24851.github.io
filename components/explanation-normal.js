@@ -157,7 +157,6 @@ function initializeExplanationPage(pageConfig) {
   }
   showDefaultContent();
 
-  // Synchronize video panel and timestamps panel heights
   const SYNC_DELAY = 100; // ms
   const syncPanelHeights = () => {
     const videoPanel = document.querySelector('.video-panel');
