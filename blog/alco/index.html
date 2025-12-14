@@ -38,8 +38,11 @@
       const defaultH3 = document.querySelector('#content-default h3');
       if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
-      const defaultMsg = document.querySelector('#content-default p');
-      if (defaultMsg) defaultMsg.textContent = 'タイムスタンプを選択してください。';
+      const characterMsg = document.querySelector('#content-default #character-message');
+      if (characterMsg) characterMsg.textContent = pageConfig.message || '';
+
+      const instructionMsg = document.querySelector('#content-default #instruction-message');
+      if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
 
       const dropdown = document.getElementById('stage-dropdown');
       if (dropdown) {
@@ -174,7 +177,8 @@
       <div id="content-panel" class="content-panel">
         <div id="content-default" class="stamp-content">
           <h3></h3>
-          <p></p>
+          <p id="character-message"></p>
+          <p id="instruction-message"></p>
         </div>
       </div>
     `;

@@ -42,8 +42,11 @@ function initializeExplanationPage(pageConfig) {
   const defaultH3 = document.querySelector('#content-default h3');
   if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
-  const defaultMsg = document.querySelector('#content-default p');
-  if (defaultMsg) defaultMsg.textContent = 'タイムスタンプを選択してください。';
+  const characterMsg = document.querySelector('#content-default #character-message');
+  if (characterMsg) characterMsg.textContent = pageConfig.message || '';
+
+  const instructionMsg = document.querySelector('#content-default #instruction-message');
+  if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
 
   const dropdown = document.getElementById('stage-dropdown');
   if (dropdown) {
