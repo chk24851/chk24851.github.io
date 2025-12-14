@@ -232,6 +232,7 @@ nav a:hover {
 a.disabled {
     pointer-events: none;
     cursor: default;
+    opacity: 0.5;
 }
 
 hr {
@@ -584,6 +585,7 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     text-decoration: none;
+    transform: none;
 }
 
 footer {
@@ -741,6 +743,11 @@ footer p {
 
     #stage-dropdown:hover {
         color: #e8b896;
+    }
+
+    #stage-dropdown option {
+        background-color: #3a2f28;
+        color: #d9a373;
     }
 }
 
@@ -1105,15 +1112,19 @@ strong.red {
 
 @media (prefers-color-scheme: dark) {
     ::-webkit-scrollbar-track {
-        background: transparent;
+        background: #1a1410;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #666;
+        background: #888;
         border-radius: 6px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: #888;
+        background: #aaa;
+    }
+
+    .timestamps-list::-webkit-scrollbar-track {
+        background: #3a2f28;
     }
 }

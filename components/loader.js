@@ -91,7 +91,7 @@ function loadHeader() {
 function loadFooter() {
   const footerHTML = `
     <footer>
-      <p>&copy; 2025 ちこい. All rights reserved.</p>
+      <p>&copy; 2025 ちこい</p>
     </footer>`;
 
   document.body.insertAdjacentHTML('beforeend', footerHTML);
