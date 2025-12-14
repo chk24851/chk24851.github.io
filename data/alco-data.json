@@ -1,5 +1,5 @@
 {
-  "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
+  "stageLabels": ["Stage1", "Stage2", "Stage3"],
   "default": {
     "title": "黄昏酒場",
     "videoId": "wHojqQ3oQYs",
@@ -7,18 +7,23 @@
       "1": {
         "timestamps": [
           {
-            "time": 0,
-            "label": "ステージ1",
-            "content": "解説を入力してください。"
+            "time": 3,
+            "label": "道中",
+            "content": "敵の出現位置にあらかじめ爪楊枝を設置しておくと速攻できます。体力の多い敵には特に有効です。"
+          },
+          {
+            "time": 70,
+            "label": "ボス",
+            "content": "ボスに近づくとペナルティ弾を撃ってきます。"
           }
         ]
       },
       "2": {
         "timestamps": [
           {
-            "time": 0,
-            "label": "ステージ2",
-            "content": "解説を入力してください。"
+            "time": 136,
+            "label": "道中",
+            "content": "敵の出現位置にあらかじめ爪楊枝を設置しておくと速攻できます。体力の多い敵には特に有効です。"
           }
         ]
       },
