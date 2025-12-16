@@ -6,7 +6,7 @@
     body { display: none; }
   </style>
   <link rel="stylesheet" href="../../style.css">
-  <script src="../../components/loader.js"></script>
+  <script src="../../loader.js"></script>
 </head>
 <body>
   <div class="container" id="container">
@@ -20,11 +20,11 @@
     if (difficulty && character) {
       const script = document.createElement('script');
       script.src = difficulty === 'normal'
-        ? '../../components/explanation-normal.js'
-        : '../../components/explanation-extra.js';
+        ? '../scripts/normal.js'
+        : '../scripts/extra.js';
 
       script.onload = function () {
-        const dataUrl = '../../data/th10-' + difficulty + '-data.json';
+        const dataUrl = '../data/th10-' + difficulty + '-data.json';
 
         const container = document.getElementById('container');
         container.innerHTML = `

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トルテルマジック - セットアップ</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <style>
+    .setup-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .setup-section {
+      margin: 30px 0;
+      border-left: 4px solid #d97037;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .setup-section {
+        background-color: #2a2a2a;
+      }
+    }
+
+    .setup-section h2 {
+      margin-top: 0;
+      color: #d97037;
+    }
+
+    .setup-section ol, .setup-section ul {
+      line-height: 1.8;
+    }
+
+    .setup-section li {
+      margin: 12px 0;
+    }
+
+    .code-block {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 12px;
+      font-family: monospace;
+      overflow-x: auto;
+      margin: 12px 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .code-block {
+        background-color: #1a1a1a;
+        border-color: #444;
+        color: #e0e0e0;
+      }
+    }
+
+    .note {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .note {
+        background-color: #5a4033;
+        border-left-color: #d9a373;
+        color: #f0e6d8;
+      }
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #d97037;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="setup-container">
+    <a href="../" class="back-link">← トルテルマジックに戻る</a>
+
+    <h1>トルテルマジック - セットアップガイド</h1>
+
+    <div class="setup-section">
+      <h2>1. 必要な環境</h2>
+      <ul>
+        <li><strong>OS</strong>: Windows</li>
+      </ul>
+    </div>
+
+    <div class="setup-section">
+      <h2>2. インストール手順</h2>
+      <ol>
+        <li>
+          <strong>リポジトリをクローンする</strong>
+          <div class="code-block">git clone https://github.com/chk24851/tortelmagic.git<br>cd tortelmagic</div>
+        </li>
+        <li>
+          <strong>依存パッケージをインストール</strong>
+          <div class="code-block">pip install -r requirements.txt</div>
+          <div class="note">
+            <strong>注意</strong>: pipコマンドが利用できない場合は、Pythonパッケージマネージャー（pip3）を使用してください。
+          </div>
+        </li>
+        <li>
+          <strong>設定ファイルを作成</strong>
+          <div class="code-block">cp config.example.json config.json</div>
+          <p>必要に応じて<code>config.json</code>ファイルを編集してください。</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="setup-section">
+      <h2>3. 初期設定</h2>
+      <ol>
+        <li>
+          <strong>データベースの初期化</strong>
+          <div class="code-block">python setup.py init-db</div>
+        </li>
+        <li>
+          <strong>デフォルトデータの読み込み</strong>
+          <div class="code-block">python manage.py migrate<br>python manage.py seed</div>
+        </li>
+        <li>
+          <strong>環境変数の設定</strong>
+          <p><code>.env</code>ファイルを作成し、必要な環境変数を設定します。</p>
+          <div class="code-block">API_KEY=your_api_key<br>DEBUG=True<br>ENVIRONMENT=development</div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="setup-section">
+      <h2>4. アプリケーションの起動</h2>
+      <ol>
+        <li>
+          <strong>開発サーバーの起動</strong>
+          <div class="code-block">python manage.py runserver</div>
+          <p>ブラウザで<code>http://localhost:8000</code>にアクセスしてください。</p>
+        </li>
+        <li>
+          <strong>本番環境での実行</strong>
+          <div class="code-block">python manage.py runserver --env production</div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="setup-section">
+      <h2>5. テストの実行</h2>
+      <p>アプリケーションが正しくセットアップされたか確認するため、テストを実行します。</p>
+      <div class="code-block">python -m pytest tests/<br>python -m pytest tests/ -v</div>
+      <p><strong>-v</strong>フラグを使用すると、詳細な出力が表示されます。</p>
+    </div>
+
+    <div class="setup-section">
+      <h2>6. よくある問題と解決方法</h2>
+      <dl>
+        <dt><strong>問題: Pythonが見つからない</strong></dt>
+        <dd>
+          Pythonがシステムパスに含まれていない可能性があります。
+          <div class="code-block">python --version</div>
+          を実行して、インストール状態を確認してください。
+        </dd>
+
+        <dt><strong>問題: 依存パッケージのインストール失敗</strong></dt>
+        <dd>
+          <div class="code-block">pip install --upgrade pip setuptools wheel<br>pip install -r requirements.txt</div>
+          を実行して、pipを最新バージョンに更新してから再試行してください。
+        </dd>
+
+        <dt><strong>問題: ポート8000が既に使用されている</strong></dt>
+        <dd>
+          <div class="code-block">python manage.py runserver 8001</div>
+          別のポート番号を指定して実行してください。
+        </dd>
+
+        <dt><strong>問題: データベースエラーが発生する</strong></dt>
+        <dd>
+          <div class="code-block">python manage.py migrate --reset<br>python manage.py seed</div>
+          データベースをリセットして再初期化してください。
+        </dd>
+      </dl>
+    </div>
+
+    <div class="setup-section">
+      <h2>7. 次のステップ</h2>
+      <ul>
+        <li><a href="https://github.com/chk24851/tortelmagic" target="_blank" style="color: #d97037; text-decoration: underline;">GitHubリポジトリ</a>を確認して、最新の情報を取得します。</li>
+        <li><a href="../" style="color: #d97037; text-decoration: underline;">トルテルマジックのメインページ</a>で、ゲーム情報を確認します。</li>
+        <li>API仕様やプラグイン開発に関する詳細は、ドキュメントを参照してください。</li>
+      </ul>
+    </div>
+
+    <div class="setup-section">
+      <h2>8. サポート</h2>
+      <p>セットアップに関する質問や問題がある場合は、以下の方法でサポートを受けることができます。</p>
+      <ul>
+        <li><a href="https://github.com/chk24851/tortelmagic/issues" target="_blank" style="color: #d97037; text-decoration: underline;">GitHubのIssueトラッカー</a>で問題を報告します。</li>
+        <li>ドキュメントを参照して、一般的な問題の解決策を確認します。</li>
+        <li>コミュニティフォーラムで質問を投稿します。</li>
+      </ul>
+    </div>
+
+    <a href="../" class="back-link">← トルテルマジックに戻る</a>
+  </div>
+</body>
+</html>

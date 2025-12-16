@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>実績</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../loader.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>実績</h1>
+    <table class="achievements-table">
+      <thead>
+        <tr>
+          <th colspan="2" class="date-header">日付</th>
+          <th class="content-header">内容</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    async function generateAchievementsTable() {
+      try {
+        const response = await fetch('./achievements.json');
+        const achievements = await response.json();
+
+        const tbody = document.querySelector('.achievements-table tbody');
+        if (!tbody) return;
+
+        tbody.innerHTML = '';
+
+        achievements.forEach((item, index) => {
+          const row = document.createElement('tr');
+          const yearCell = document.createElement('td');
+          const monthDayCell = document.createElement('td');
+          const contentCell = document.createElement('td');
+          const link = document.createElement('a');
+
+          if (item.url) {
+            link.href = item.url;
+            link.textContent = item.content + ' >';
+          } else {
+            link.classList.add('disabled');
+            link.textContent = item.content;
+            link.addEventListener('click', (e) => e.preventDefault());
+          }
+
+          contentCell.appendChild(link);
+
+          if (index > 0 && achievements[index - 1].year === item.year) {
+            yearCell.textContent = '';
+          } else {
+            yearCell.textContent = item.year + '年';
+          }
+
+          if (index > 0 && achievements[index - 1].month === item.month && achievements[index - 1].day === item.day) {
+            monthDayCell.textContent = '';
+          } else {
+            monthDayCell.textContent = item.month + '月' + item.day + '日';
+          }
+
+          if (index < achievements.length - 1) {
+            const nextItem = achievements[index + 1];
+
+            if (item.year === nextItem.year) {
+              yearCell.classList.add('no-border-bottom');
+            }
+
+            if (item.month === nextItem.month && item.day === nextItem.day) {
+              monthDayCell.classList.add('no-border-bottom');
+            }
+          }
+
+          row.appendChild(yearCell);
+          row.appendChild(monthDayCell);
+          row.appendChild(contentCell);
+          tbody.appendChild(row);
+        });
+      } catch (error) {
+        console.error('実績テーブルの読み込みエラー:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', generateAchievementsTable);
+  </script>
+</body>
+</html>

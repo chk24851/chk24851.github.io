@@ -1,30 +1,30 @@
 function getPageContext() {
   const pathname = window.location.pathname;
-  const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/about/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
+  const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
 
   if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
     return {
       isHomePage,
       links: {
         home: '../../index.html',
-        about: '../../about/index.html',
+        about: '../../achievements/index.html',
         blog: '../index.html',
         sitemap: '../../sitemap.html'
       },
-      css: '../../style.css'
+      css: '../style.css'
     };
   } else if (pathname.includes('/blog/')) {
     return {
       isHomePage,
       links: {
         home: '../index.html',
-        about: '../about/index.html',
+        about: '../achievements/index.html',
         blog: 'index.html',
         sitemap: '../sitemap.html'
       },
       css: '../style.css'
     };
-  } else if (pathname.includes('/about/') || pathname.includes('/gallery/')) {
+  } else if (pathname.includes('/achievements/') || pathname.includes('/gallery/')) {
     return {
       isHomePage,
       links: {
@@ -40,7 +40,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: 'index.html',
-        about: 'about/index.html',
+        about: 'achievements/index.html',
         blog: 'blog/index.html',
         sitemap: 'sitemap.html'
       },

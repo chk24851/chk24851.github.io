@@ -6,7 +6,7 @@
     body { display: none; }
   </style>
   <link rel="stylesheet" href="../../style.css">
-  <script src="../../components/loader.js"></script>
+  <script src="../../loader.js"></script>
 </head>
 <body>
   <div class="container" id="container">
@@ -16,37 +16,39 @@
     const params = new URLSearchParams(window.location.search);
     const difficulty = params.get('difficulty');
     const character = params.get('character');
+    const route = params.get('route');
+    const characterKey = route ? character + '_' + route : character;
 
     if (difficulty && character) {
       const script = document.createElement('script');
       script.src = difficulty === 'normal'
-        ? '../../components/explanation-normal.js'
-        : '../../components/explanation-extra.js';
+        ? '../scripts/normal.js'
+        : '../scripts/extra.js';
 
       script.onload = function () {
-        const dataUrl = '../../data/th8-' + difficulty + '-data.json';
+        const dataUrl = '../data/th8-' + difficulty + '-data.json';
 
         const container = document.getElementById('container');
         container.innerHTML = `
           <h1></h1>
           <div class="video-container">
-              <div class="video-panel">
-                <div class="video-wrapper">
-                  <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+            <div class="video-panel">
+              <div class="video-wrapper">
+                <iframe id="videoFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <div class="timestamps-panel">
-                ${difficulty === 'normal' ? `
-                <div class="stage-selector">
-                  <button class="stage-arrow" id="prev-stage">←</button>
-                  <select id="stage-dropdown"></select>
-                  <button class="stage-arrow" id="next-stage">→</button>
-                </div>
-                ` : ''}
-                <div class="timestamps-list" id="timestamps-list">
-                  <ul></ul>
-                </div>
+            </div>
+            <div class="timestamps-panel">
+              ${difficulty === 'normal' ? `
+              <div class="stage-selector">
+                <button class="stage-arrow" id="prev-stage">←</button>
+                <select id="stage-dropdown"></select>
+                <button class="stage-arrow" id="next-stage">→</button>
               </div>
+              ` : ''}
+              <div class="timestamps-list" id="timestamps-list">
+                <ul></ul>
+              </div>
+            </div>
           </div>
           <div class="content-panel" id="content-panel">
             <div id="content-default" class="stamp-content">
@@ -59,9 +61,9 @@
 
         requestAnimationFrame(() => {
           if (difficulty === 'normal') {
-            loadAndInitializeNormal(dataUrl, character);
+            loadAndInitializeNormal(dataUrl, characterKey);
           } else {
-            loadAndInitializeExtra(dataUrl, character);
+            loadAndInitializeExtra(dataUrl, characterKey);
           }
         });
       };
