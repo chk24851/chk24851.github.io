@@ -44,8 +44,9 @@
             link.href = item.url;
             link.textContent = item.content + ' >';
           } else {
-            link.classList.add('disabled');
             link.textContent = item.content;
+            link.style.pointerEvents = 'none';
+            link.style.cursor = 'default';
             link.addEventListener('click', (e) => e.preventDefault());
           }
 

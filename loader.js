@@ -61,10 +61,7 @@ function getPageContext() {
         blog: 'index.html',
         sitemap: `${prefix}/sitemap.html`
       },
-      css: `${prefix}/style.css`,
-      breadcrumb: [
-        { label: '', href: 'index.html' }
-      ]
+      css: `${prefix}/style.css`
     };
   } else if (pathname.includes('/achievements/')) {
     const depth = 1;

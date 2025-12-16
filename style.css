@@ -331,6 +331,7 @@ table td {
     padding: 12px;
     border-bottom: 1px solid #ecf0f1;
     transition: border-color 0.3s ease;
+    overflow: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -403,6 +404,7 @@ table td {
     display: block;
     margin: -12px;
     padding: 12px;
+    box-sizing: border-box;
     transition: background-color 0.3s ease;
 }
 
