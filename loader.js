@@ -1,84 +1,84 @@
 function getPageContext() {
   const pathname = window.location.pathname;
-  const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
+  const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/'));
 
-  const gameMap = {
-    'th6': '東方紅魔郷',
-    'th7': '東方妖々夢',
-    'th8': '東方永夜抄',
-    'th10': '東方風神録',
-    'th11': '東方地霊殿',
-    'th12': '東方星蓮船',
-    'th13': '東方神霊廟',
-    'th14': '東方輝針城',
-    'th15': '東方紺珠伝',
-    'th16': '東方天空璋',
-    'th17': '東方鬼形獣',
-    'th18': '東方虹龍洞',
-    'th20': '東方錦上京',
-    'th128': '妖精大戦争',
-    'alco': '黄昏酒場',
-    'tmgc': 'トルテルマジック'
+  const getRelativePath = (depth) => {
+    return Array(depth).fill('..').join('/');
   };
 
   if (pathname.includes('/blog/tmgc/setup')) {
+    const depth = 3;
+    const prefix = getRelativePath(depth);
+    const blogPrefix = getRelativePath(2);
+    const blogLink = getRelativePath(1);
+    
     return {
       isHomePage,
       links: {
-        home: '../../../index.html',
-        about: '../../../achievements/index.html',
-        blog: '../../index.html',
-        sitemap: '../../../sitemap.html'
+        home: `${prefix}/index.html`,
+        about: `${prefix}/achievements/index.html`,
+        blog: `${blogPrefix}/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
-      css: '../../../style.css',
+      css: `${prefix}/style.css`,
       breadcrumb: [
-        { label: 'ホーム', href: '../../../index.html' },
-        { label: 'ブログ', href: '../../index.html' },
-        { label: 'トルテルマジック', href: '../index.html' },
-        { label: 'セットアップガイド', href: null }
+        { label: '', href: `${blogPrefix}/index.html` },
+        { label: '', href: `${blogLink}/index.html` },
+        { label: '', href: null }
       ]
     };
   } else if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
     const match = pathname.match(/\/(th\d+|alco|tmgc)\//);
     const gameKey = match ? match[1] : null;
-    const gameTitle = gameKey ? gameMap[gameKey] : 'ゲーム';
+    const gameHref = gameKey ? `../${gameKey}/index.html` : null;
+    const depth = 2;
+    const prefix = getRelativePath(depth);
+    const blogLink = getRelativePath(1);
 
     return {
       isHomePage,
       links: {
-        home: '../../index.html',
-        about: '../../achievements/index.html',
-        blog: '../index.html',
-        sitemap: '../../sitemap.html'
+        home: `${prefix}/index.html`,
+        about: `${prefix}/achievements/index.html`,
+        blog: `${blogLink}/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
-      css: '../style.css',
+      css: `${prefix}/style.css`,
       breadcrumb: [
-        { label: 'ホーム', href: '../../index.html' },
-        { label: 'ブログ', href: '../index.html' },
-        { label: gameTitle, href: null }
+        { label: '', href: `${blogLink}/index.html` },
+        { label: '', href: gameHref }
       ]
     };
   } else if (pathname.includes('/blog/')) {
+    const depth = 1;
+    const prefix = getRelativePath(depth);
+    
     return {
       isHomePage,
       links: {
-        home: '../index.html',
-        about: '../achievements/index.html',
+        home: `${prefix}/index.html`,
+        about: `${prefix}/achievements/index.html`,
         blog: 'index.html',
-        sitemap: '../sitemap.html'
+        sitemap: `${prefix}/sitemap.html`
       },
-      css: '../style.css'
+      css: `${prefix}/style.css`,
+      breadcrumb: [
+        { label: '', href: 'index.html' }
+      ]
     };
-  } else if (pathname.includes('/achievements/') || pathname.includes('/gallery/')) {
+  } else if (pathname.includes('/achievements/')) {
+    const depth = 1;
+    const prefix = getRelativePath(depth);
+    
     return {
       isHomePage,
       links: {
-        home: '../index.html',
+        home: `${prefix}/index.html`,
         about: 'index.html',
-        blog: '../blog/index.html',
-        sitemap: '../sitemap.html'
+        blog: `${prefix}/blog/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
-      css: '../style.css'
+      css: `${prefix}/style.css`
     };
   } else {
     return {
@@ -128,23 +128,43 @@ function loadHeader() {
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
     if (context.breadcrumb) {
-      const breadcrumbHTML = `<div style="margin-bottom: 20px; font-size: 14px; color: #999;">` + 
-        context.breadcrumb.map(item => 
-          item.href 
-            ? `<a href="${item.href}" style="color: #d97037; text-decoration: none;">${item.label}</a>`
-            : `<span>${item.label}</span>`
-        ).join(' > ') + 
-        `</div>`;
-      
-      const insertBreadcrumb = () => {
-        const container = document.querySelector('.container');
-        if (container) {
-          container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
-        } else {
-          setTimeout(insertBreadcrumb, 50);
+      const processBreadcrumb = async () => {
+        const breadcrumbWithTitles = [];
+        
+        for (const item of context.breadcrumb) {
+          if (item.label === '') {
+            try {
+              const filePath = item.href || './';
+              const title = await getTitleFromPage(filePath);
+              breadcrumbWithTitles.push({ ...item, label: title });
+            } catch (error) {
+              breadcrumbWithTitles.push(item);
+            }
+          } else {
+            breadcrumbWithTitles.push(item);
+          }
         }
+        
+        const breadcrumbHTML = `<div style="margin-bottom: 20px; font-size: 14px; color: #999;">` + 
+          breadcrumbWithTitles.map(item => 
+            item.href 
+              ? `<a href="${item.href}" style="color: #d97037; text-decoration: none;">${item.label}</a>`
+              : `<span>${item.label}</span>`
+          ).join(' > ') + 
+          `</div>`;
+        
+        const insertBreadcrumb = () => {
+          const container = document.querySelector('.container');
+          if (container) {
+            container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
+          } else {
+            setTimeout(insertBreadcrumb, 50);
+          }
+        };
+        insertBreadcrumb();
       };
-      insertBreadcrumb();
+      
+      processBreadcrumb();
     }
   }).catch(error => {
     console.error('ヘッダー読み込みエラー:', error);

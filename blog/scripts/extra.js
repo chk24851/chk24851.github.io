@@ -105,7 +105,7 @@ function initializeExplanationPage(pageConfig) {
   }
   showDefaultContent();
 
-  const SYNC_DELAY = 100; // ms
+  const SYNC_DELAY = 100;
   const syncPanelHeights = () => {
     const videoPanel = document.querySelector('.video-panel');
     const timestampsPanel = document.querySelector('.timestamps-panel');
