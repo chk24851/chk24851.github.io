@@ -1,47 +1,69 @@
-async function loadAndInitializeNormal(dataUrl, character, route, difficulty = 'normal') {
+async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDifficulty, difficulty) {
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
     
-    const characterData = data[character];
-    if (!characterData) return;
+    let pageConfig;
+    
+    if (routeOrDifficulty === 'final_a' || routeOrDifficulty === 'final_b') {
+      const character = characterKeyOrName;
+      const route = routeOrDifficulty;
+      
+      const characterData = data[character];
+      if (!characterData) return;
 
-    const pageConfig = {
-      title: characterData.title,
-      videoId: characterData.videoIds[route],
-      message: '',
-      stageData: {}
-    };
+      pageConfig = {
+        title: characterData.title,
+        videoId: characterData.videoIds[route],
+        message: '',
+        stageData: {}
+      };
 
-    if (characterData.commonStages) {
-      Object.assign(pageConfig.stageData, characterData.commonStages);
+      if (characterData.commonStages) {
+        Object.assign(pageConfig.stageData, characterData.commonStages);
+      }
+
+      if (characterData.stage6 && characterData.stage6[route]) {
+        const stageNum = route === 'final_a' ? '6' : '7';
+        pageConfig.stageData[stageNum] = characterData.stage6[route];
+      }
+
+      pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
+      const originalTitle = pageConfig.title;
+      const label = '【Normal】';
+      pageConfig.title = `${label}${pageConfig.title}`;
+      if (route === 'final_a') {
+        pageConfig.title = `${pageConfig.title}（FinalA）`;
+      } else if (route === 'final_b') {
+        pageConfig.title = `${pageConfig.title}（FinalB）`;
+      }
+      pageConfig.originalTitle = originalTitle;
+    } else {
+      const characterKey = characterKeyOrName;
+      pageConfig = data[characterKey];
+      if (!pageConfig) return;
+
+      pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
+      const originalTitle = pageConfig.title;
+      const label = '【Normal】';
+      pageConfig.title = `${label}${pageConfig.title}`;
+      pageConfig.originalTitle = originalTitle;
     }
-
-    if (characterData.stage6 && characterData.stage6[route]) {
-      const stageNum = route === 'final_a' ? '6' : '7';
-      pageConfig.stageData[stageNum] = characterData.stage6[route];
-    }
-
-    pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
-    const originalTitle = pageConfig.title;
-    const label = '【Normal】';
-    pageConfig.title = `${label}${pageConfig.title}`;
-    if (route === 'final_a') {
-      pageConfig.title = `${pageConfig.title}（FinalA）`;
-    } else if (route === 'final_b') {
-      pageConfig.title = `${pageConfig.title}（FinalB）`;
-    }
-    pageConfig.originalTitle = originalTitle;
+    
     initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load normal data:', error);
   }
 }
 
-function getStageLabels(route, allLabels) {
-  if (route === 'final_a') {
+function getStageLabels(characterKeyOrRoute, allLabels) {
+  if (characterKeyOrRoute === 'final_a') {
     return allLabels.slice(0, 6);
-  } else if (route === 'final_b') {
+  } else if (characterKeyOrRoute === 'final_b') {
+    return allLabels.slice(0, 5).concat([allLabels[6]]);
+  } else if (characterKeyOrRoute.includes('final_a')) {
+    return allLabels.slice(0, 6);
+  } else if (characterKeyOrRoute.includes('final_b')) {
     return allLabels.slice(0, 5).concat([allLabels[6]]);
   } else {
     return allLabels;
