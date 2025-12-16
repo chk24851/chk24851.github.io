@@ -1,9 +1,12 @@
 {
   "stageLabels": ["Stage1", "Stage2", "Stage3", "Stage4", "Stage5", "Stage6A", "Stage6B"],
-  "reimu_yukari_final_a": {
-    "title": "博麗 霊夢＆八雲 紫（幻想の結界チーム）（FinalA）",
-    "videoId": "ZqOzU8FFf6w",
-    "stageData": {
+  "reimu_yukari": {
+    "title": "博麗 霊夢＆八雲 紫（幻想の結界チーム）",
+    "videoIds": {
+      "final_a": "ZqOzU8FFf6w",
+      "final_b": "56YTM7GKoyg"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -48,8 +51,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -57,59 +62,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "reimu_yukari_final_b": {
-    "title": "博麗 霊夢＆八雲 紫（幻想の結界チーム）（FinalB）",
-    "videoId": "56YTM7GKoyg",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -120,10 +74,13 @@
       }
     }
   },
-  "marisa_alice_final_a": {
-    "title": "霧雨 魔理沙＆アリス・マーガトロイド（禁呪の詠唱チーム）（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "marisa_alice": {
+    "title": "霧雨 魔理沙＆アリス・マーガトロイド（禁呪の詠唱チーム）",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -168,8 +125,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -177,59 +136,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "marisa_alice_final_b": {
-    "title": "霧雨 魔理沙＆アリス・マーガトロイド（禁呪の詠唱チーム）（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -240,10 +148,13 @@
       }
     }
   },
-  "sakuya_remilia_final_a": {
-    "title": "十六夜 咲夜＆レミリア・スカーレット（夢幻の紅魔チーム）（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "sakuya_remilia": {
+    "title": "十六夜 咲夜＆レミリア・スカーレット（夢幻の紅魔チーム）",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -288,8 +199,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -297,59 +210,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "sakuya_remilia_final_b": {
-    "title": "十六夜 咲夜＆レミリア・スカーレット（夢幻の紅魔チーム）（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -360,10 +222,13 @@
       }
     }
   },
-  "youmu_yuyuko_final_a": {
-    "title": "魂魄 妖夢＆西行寺 幽々子（幽冥の住人チーム）（FinalA）",
-    "videoId": "_RLD4iDwLSA",
-    "stageData": {
+  "youmu_yuyuko": {
+    "title": "魂魄 妖夢＆西行寺 幽々子（幽冥の住人チーム）",
+    "videoIds": {
+      "final_a": "_RLD4iDwLSA",
+      "final_b": "R4uAAf8fMGM"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -408,8 +273,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -417,59 +284,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "youmu_yuyuko_final_b": {
-    "title": "魂魄 妖夢＆西行寺 幽々子（幽冥の住人チーム）（FinalB）",
-    "videoId": "R4uAAf8fMGM",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -480,10 +296,13 @@
       }
     }
   },
-  "reimu_final_a": {
-    "title": "博麗 霊夢（FinalA）",
-    "videoId": "hP14N3ucRMI",
-    "stageData": {
+  "reimu": {
+    "title": "博麗 霊夢",
+    "videoIds": {
+      "final_a": "hP14N3ucRMI",
+      "final_b": "jp014tS8-vM"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -528,8 +347,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -537,59 +358,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "reimu_final_b": {
-    "title": "博麗 霊夢（FinalB）",
-    "videoId": "jp014tS8-vM",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -600,10 +370,13 @@
       }
     }
   },
-  "yukari_final_a": {
-    "title": "八雲 紫（FinalA）",
-    "videoId": "m83uDRJjICU",
-    "stageData": {
+  "yukari": {
+    "title": "八雲 紫",
+    "videoIds": {
+      "final_a": "m83uDRJjICU",
+      "final_b": "3OOW9RFQDh4"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -648,8 +421,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -657,59 +432,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "yukari_final_b": {
-    "title": "八雲 紫（FinalB）",
-    "videoId": "3OOW9RFQDh4",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -720,10 +444,13 @@
       }
     }
   },
-  "marisa_final_a": {
-    "title": "霧雨 魔理沙（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "marisa": {
+    "title": "霧雨 魔理沙",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -768,8 +495,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -777,59 +506,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "marisa_final_b": {
-    "title": "霧雨 魔理沙（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -840,10 +518,13 @@
       }
     }
   },
-  "alice_final_a": {
-    "title": "アリス・マーガトロイド（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "alice": {
+    "title": "アリス・マーガトロイド",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -888,8 +569,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -897,59 +580,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "alice_final_b": {
-    "title": "アリス・マーガトロイド（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -960,10 +592,13 @@
       }
     }
   },
-  "sakuya_final_a": {
-    "title": "十六夜 咲夜（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "sakuya": {
+    "title": "十六夜 咲夜",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -1008,8 +643,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -1017,59 +654,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "sakuya_final_b": {
-    "title": "十六夜 咲夜（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -1080,10 +666,13 @@
       }
     }
   },
-  "remilia_final_a": {
-    "title": "レミリア・スカーレット（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "remilia": {
+    "title": "レミリア・スカーレット",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -1128,8 +717,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -1137,59 +728,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "remilia_final_b": {
-    "title": "レミリア・スカーレット（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -1200,10 +740,13 @@
       }
     }
   },
-  "youmu_final_a": {
-    "title": "魂魄 妖夢（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "youmu": {
+    "title": "魂魄 妖夢",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -1248,8 +791,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -1257,59 +802,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "youmu_final_b": {
-    "title": "魂魄 妖夢（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,
@@ -1320,10 +814,13 @@
       }
     }
   },
-  "yuyuko_final_a": {
-    "title": "西行寺 幽々子（FinalA）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
+  "yuyuko": {
+    "title": "西行寺 幽々子",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    },
+    "commonStages": {
       "1": {
         "timestamps": [
           {
@@ -1368,8 +865,10 @@
             "content": ""
           }
         ]
-      },
-      "6": {
+      }
+    },
+    "stage6": {
+      "final_a": {
         "timestamps": [
           {
             "time": 0,
@@ -1377,59 +876,8 @@
             "content": ""
           }
         ]
-      }
-    }
-  },
-  "yuyuko_final_b": {
-    "title": "西行寺 幽々子（FinalB）",
-    "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 1",
-            "content": ""
-          }
-        ]
       },
-      "2": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 2",
-            "content": ""
-          }
-        ]
-      },
-      "3": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 3",
-            "content": ""
-          }
-        ]
-      },
-      "4": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 4",
-            "content": ""
-          }
-        ]
-      },
-      "5": {
-        "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 5",
-            "content": ""
-          }
-        ]
-      },
-      "7": {
+      "final_b": {
         "timestamps": [
           {
             "time": 0,

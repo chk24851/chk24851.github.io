@@ -1,15 +1,36 @@
-async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'normal') {
+async function loadAndInitializeNormal(dataUrl, character, route, difficulty = 'normal') {
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
-    const pageConfig = data[characterKey];
+    
+    const characterData = data[character];
+    if (!characterData) return;
 
-    if (!pageConfig) return;
+    const pageConfig = {
+      title: characterData.title,
+      videoId: characterData.videoIds[route],
+      message: '',
+      stageData: {}
+    };
 
-    pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
+    if (characterData.commonStages) {
+      Object.assign(pageConfig.stageData, characterData.commonStages);
+    }
+
+    if (characterData.stage6 && characterData.stage6[route]) {
+      const stageNum = route === 'final_a' ? '6' : '7';
+      pageConfig.stageData[stageNum] = characterData.stage6[route];
+    }
+
+    pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
     const originalTitle = pageConfig.title;
     const label = '【Normal】';
     pageConfig.title = `${label}${pageConfig.title}`;
+    if (route === 'final_a') {
+      pageConfig.title = `${pageConfig.title}（FinalA）`;
+    } else if (route === 'final_b') {
+      pageConfig.title = `${pageConfig.title}（FinalB）`;
+    }
     pageConfig.originalTitle = originalTitle;
     initializeExplanationPage(pageConfig);
   } catch (error) {
@@ -17,10 +38,10 @@ async function loadAndInitializeNormal(dataUrl, characterKey, difficulty = 'norm
   }
 }
 
-function getStageLabels(characterKey, allLabels) {
-  if (characterKey.includes('final_a')) {
+function getStageLabels(route, allLabels) {
+  if (route === 'final_a') {
     return allLabels.slice(0, 6);
-  } else if (characterKey.includes('final_b')) {
+  } else if (route === 'final_b') {
     return allLabels.slice(0, 5).concat([allLabels[6]]);
   } else {
     return allLabels;
