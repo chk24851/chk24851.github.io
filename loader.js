@@ -2,7 +2,47 @@ function getPageContext() {
   const pathname = window.location.pathname;
   const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/') && !pathname.includes('/gallery/'));
 
-  if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
+  const gameMap = {
+    'th6': '東方紅魔郷',
+    'th7': '東方妖々夢',
+    'th8': '東方永夜抄',
+    'th10': '東方風神録',
+    'th11': '東方地霊殿',
+    'th12': '東方星蓮船',
+    'th13': '東方神霊廟',
+    'th14': '東方輝針城',
+    'th15': '東方紺珠伝',
+    'th16': '東方天空璋',
+    'th17': '東方鬼形獣',
+    'th18': '東方虹龍洞',
+    'th20': '東方錦上京',
+    'th128': '妖精大戦争',
+    'alco': '黄昏酒場',
+    'tmgc': 'トルテルマジック'
+  };
+
+  if (pathname.includes('/blog/tmgc/setup')) {
+    return {
+      isHomePage,
+      links: {
+        home: '../../../index.html',
+        about: '../../../achievements/index.html',
+        blog: '../../index.html',
+        sitemap: '../../../sitemap.html'
+      },
+      css: '../../../style.css',
+      breadcrumb: [
+        { label: 'ホーム', href: '../../../index.html' },
+        { label: 'ブログ', href: '../../index.html' },
+        { label: 'トルテルマジック', href: '../index.html' },
+        { label: 'セットアップガイド', href: null }
+      ]
+    };
+  } else if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
+    const match = pathname.match(/\/(th\d+|alco|tmgc)\//);
+    const gameKey = match ? match[1] : null;
+    const gameTitle = gameKey ? gameMap[gameKey] : 'ゲーム';
+
     return {
       isHomePage,
       links: {
@@ -11,7 +51,12 @@ function getPageContext() {
         blog: '../index.html',
         sitemap: '../../sitemap.html'
       },
-      css: '../style.css'
+      css: '../style.css',
+      breadcrumb: [
+        { label: 'ホーム', href: '../../index.html' },
+        { label: 'ブログ', href: '../index.html' },
+        { label: gameTitle, href: null }
+      ]
     };
   } else if (pathname.includes('/blog/')) {
     return {
@@ -81,6 +126,26 @@ function loadHeader() {
       </header>`;
 
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
+
+    if (context.breadcrumb) {
+      const breadcrumbHTML = `<div style="margin-bottom: 20px; font-size: 14px; color: #999;">` + 
+        context.breadcrumb.map(item => 
+          item.href 
+            ? `<a href="${item.href}" style="color: #d97037; text-decoration: none;">${item.label}</a>`
+            : `<span>${item.label}</span>`
+        ).join(' > ') + 
+        `</div>`;
+      
+      const insertBreadcrumb = () => {
+        const container = document.querySelector('.container');
+        if (container) {
+          container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
+        } else {
+          setTimeout(insertBreadcrumb, 50);
+        }
+      };
+      insertBreadcrumb();
+    }
   }).catch(error => {
     console.error('ヘッダー読み込みエラー:', error);
   }).finally(() => {

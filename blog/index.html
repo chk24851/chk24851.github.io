@@ -4,6 +4,14 @@
   <title>ブログ</title>
   <style>
     body { display: none; }
+    .tree-icon {
+      color: #5a3a2a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .tree-icon {
+        color: #d4c5b9;
+      }
+    }
   </style>
   <link rel="stylesheet" href="../style.css">
   <script src="../loader.js"></script>
@@ -37,7 +45,12 @@
     <nav>
       <ul>
         <li><a href="alco/index.html">黄昏酒場～Uwabami Breakers～</a></li>
-        <li><a href="tmgc/index.html">トルテルマジック</a></li>
+        <li>
+          <a href="tmgc/index.html">トルテルマジック</a>
+          <ul style="margin-top: 8px; margin-left: 20px; padding-left: 0;">
+            <li style="margin-left: 0;"><span class="tree-icon">└</span> <a href="tmgc/setup/index.html" style="font-size: 0.9em;">セットアップガイド</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
