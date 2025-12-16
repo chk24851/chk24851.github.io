@@ -30,7 +30,8 @@ function getPageContext() {
   } else if (pathname.includes('/blog/th') || pathname.includes('/blog/alco') || pathname.includes('/blog/tmgc')) {
     const match = pathname.match(/\/(th\d+|alco|tmgc)\//);
     const gameKey = match ? match[1] : null;
-    const gameHref = gameKey ? `../${gameKey}/index.html` : null;
+    const hasQueryParams = window.location.search !== '';
+    const gameHref = gameKey && hasQueryParams ? `../${gameKey}/index.html` : null;
     const depth = 2;
     const prefix = getRelativePath(depth);
     const blogLink = getRelativePath(1);
@@ -142,9 +143,10 @@ function loadHeader() {
           if (item.label === '') {
             try {
               const filePath = item.href || './';
-              const title = await getTitleFromPage(filePath);
+              const title = await getTitleFromPageByTitle(filePath);
               breadcrumbWithTitles.push({ ...item, label: title });
             } catch (error) {
+              console.error('パンくず取得エラー:', error);
               breadcrumbWithTitles.push(item);
             }
           } else {
