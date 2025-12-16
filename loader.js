@@ -16,7 +16,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: `${prefix}/index.html`,
-        about: `${prefix}/achievements/index.html`,
+        achievements: `${prefix}/achievements/index.html`,
         blog: `${blogPrefix}/index.html`,
         sitemap: `${prefix}/sitemap.html`
       },
@@ -39,7 +39,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: `${prefix}/index.html`,
-        about: `${prefix}/achievements/index.html`,
+        achievements: `${prefix}/achievements/index.html`,
         blog: `${blogLink}/index.html`,
         sitemap: `${prefix}/sitemap.html`
       },
@@ -57,7 +57,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: `${prefix}/index.html`,
-        about: `${prefix}/achievements/index.html`,
+        achievements: `${prefix}/achievements/index.html`,
         blog: 'index.html',
         sitemap: `${prefix}/sitemap.html`
       },
@@ -71,7 +71,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: `${prefix}/index.html`,
-        about: 'index.html',
+        achievements: 'index.html',
         blog: `${prefix}/blog/index.html`,
         sitemap: `${prefix}/sitemap.html`
       },
@@ -82,7 +82,7 @@ function getPageContext() {
       isHomePage,
       links: {
         home: 'index.html',
-        about: 'achievements/index.html',
+        achievements: 'achievements/index.html',
         blog: 'blog/index.html',
         sitemap: 'sitemap.html'
       },
@@ -97,6 +97,16 @@ function getTitleFromPage(filePath) {
     .then(html => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
+      return doc.querySelector('h1').textContent;
+    });
+}
+
+function getTitleFromPageByTitle(filePath) {
+  return fetch(filePath)
+    .then(response => response.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
       return doc.querySelector('title').textContent;
     });
 }
@@ -105,17 +115,17 @@ function loadHeader() {
   const context = getPageContext();
 
   Promise.all([
-    getTitleFromPage(context.links.home),
-    getTitleFromPage(context.links.about),
-    getTitleFromPage(context.links.blog),
-    getTitleFromPage(context.links.sitemap)
-  ]).then(([homeTitle, aboutTitle, blogTitle, sitemapTitle]) => {
+    getTitleFromPageByTitle(context.links.home),
+    getTitleFromPageByTitle(context.links.achievements),
+    getTitleFromPageByTitle(context.links.blog),
+    getTitleFromPageByTitle(context.links.sitemap)
+  ]).then(([homeTitle, achievementsTitle, blogTitle, sitemapTitle]) => {
     const headerHTML = `
       <header>
         <nav>
           <ul>
             <li><a href="${context.links.home}">${homeTitle}</a></li>
-            <li><a href="${context.links.about}">${aboutTitle}</a></li>
+            <li><a href="${context.links.achievements}">${achievementsTitle}</a></li>
             <li><a href="${context.links.blog}">${blogTitle}</a></li>
             <li><a href="${context.links.sitemap}">${sitemapTitle}</a></li>
           </ul>
