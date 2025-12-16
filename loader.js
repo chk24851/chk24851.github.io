@@ -200,15 +200,19 @@ function setFavicon() {
 function setSiteTitle() {
   const context = getPageContext();
 
-  if (!context.isHomePage) {
-    getTitleFromPage(context.links.home).then(homePageTitle => {
+  getTitleFromPage(context.links.home).then(h1FromHome => {
+    getTitleFromPageByTitle(context.links.home).then(titleFromHome => {
       const currentTitle = document.title;
 
       if (!currentTitle.includes(' - ')) {
-        document.title = `${currentTitle} - ${homePageTitle}`;
+        if (context.isHomePage && titleFromHome === h1FromHome) {
+          return;
+        } else {
+          document.title = `${currentTitle} - ${h1FromHome}`;
+        }
       }
     });
-  }
+  });
 }
 
 function initializeHTML() {
