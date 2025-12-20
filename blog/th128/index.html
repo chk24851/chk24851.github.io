@@ -9,6 +9,9 @@
   <script src="../../loader.js"></script>
 </head>
 <body>
+  <div id="error-message-banner" style="display: none;">
+    <span id="error-message-text"></span>
+  </div>
   <div class="container" id="container">
   </div>
 
@@ -16,6 +19,8 @@
     const params = new URLSearchParams(window.location.search);
     const difficulty = params.get('difficulty');
     const route = params.get('route');
+
+    validateGameParameters({ difficulty: true, route: true });
 
     if (difficulty && route) {
       const script = document.createElement('script');

@@ -5,7 +5,12 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     const pageConfig = data[characterKey];
 
     if (!pageConfig) {
-      console.error('Character data not found:', characterKey);
+      const match = window.location.pathname.match(/\/(th\d+)\//);
+      if (match) {
+        const gameKey = match[1];
+        sessionStorage.setItem('errorMessage', '無効なパラメータです');
+        window.location.href = `../${gameKey}/index.html`;
+      }
       return;
     }
 
@@ -14,7 +19,7 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     pageConfig.originalTitle = originalTitle;
     initializeExplanationPage(pageConfig);
   } catch (error) {
-    console.error('Failed to load extra data:', error);
+    console.error('データの読み込みに失敗しました:', error);
   }
 }
 

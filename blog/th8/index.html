@@ -9,6 +9,9 @@
   <script src="../../loader.js"></script>
 </head>
 <body>
+  <div id="error-message-banner" style="display: none;">
+    <span id="error-message-text"></span>
+  </div>
   <div class="container" id="container">
   </div>
 
@@ -17,6 +20,13 @@
     const difficulty = params.get('difficulty');
     const character = params.get('character');
     const route = params.get('route');
+    
+    validateGameParameters({ difficulty: true });
+    
+    if (difficulty === 'normal' && route && route !== 'final_a' && route !== 'final_b') {
+      redirectWithError('index.html');
+    }
+    
     const characterKey = route ? character + '_' + route : character;
 
     if (difficulty && character) {

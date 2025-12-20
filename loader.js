@@ -1,3 +1,47 @@
+function showErrorMessage(message) {
+  const banner = document.getElementById('error-message-banner');
+  if (!banner) return;
+  
+  const messageText = document.getElementById('error-message-text');
+  messageText.textContent = message;
+  banner.style.display = 'block';
+}
+
+function redirectWithError(url) {
+  sessionStorage.setItem('errorMessage', '無効なパラメータです');
+  window.location.href = url;
+}
+
+function validateGameParameters(config) {
+  const params = new URLSearchParams(window.location.search);
+  
+  if (config.difficulty) {
+    const difficulty = params.get('difficulty');
+    if (difficulty && difficulty !== 'normal' && difficulty !== 'extra') {
+      redirectWithError('index.html');
+      return false;
+    }
+  }
+  
+  if (config.route) {
+    const route = params.get('route');
+    if (route && route !== 'final_a' && route !== 'final_b') {
+      redirectWithError('index.html');
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+function initializeErrorBanner() {
+  const errorMessage = sessionStorage.getItem('errorMessage');
+  if (errorMessage) {
+    showErrorMessage(errorMessage);
+    sessionStorage.removeItem('errorMessage');
+  }
+}
+
 function getPageContext() {
   const pathname = window.location.pathname;
   const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/'));
@@ -249,6 +293,7 @@ function initializeHTML() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeHTML();
+  initializeErrorBanner();
   loadHeader();
   loadFooter();
 });

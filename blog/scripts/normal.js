@@ -10,7 +10,15 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
       const route = routeOrDifficulty;
       
       const characterData = data[character];
-      if (!characterData) return;
+      if (!characterData) {
+        const match = window.location.pathname.match(/\/(th\d+)\//);
+        if (match) {
+          const gameKey = match[1];
+          sessionStorage.setItem('errorMessage', '無効なパラメータです');
+          window.location.href = `../${gameKey}/index.html`;
+        }
+        return;
+      }
 
       pageConfig = {
         title: characterData.title,
@@ -43,7 +51,15 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
     } else {
       const characterKey = characterKeyOrName;
       pageConfig = data[characterKey];
-      if (!pageConfig) return;
+      if (!pageConfig) {
+        const match = window.location.pathname.match(/\/(th\d+)\//);
+        if (match) {
+          const gameKey = match[1];
+          sessionStorage.setItem('errorMessage', '無効なパラメータです');
+          window.location.href = `../${gameKey}/index.html`;
+        }
+        return;
+      }
 
       pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
       const originalTitle = pageConfig.title;
@@ -53,7 +69,7 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
     
     initializeExplanationPage(pageConfig);
   } catch (error) {
-    console.error('Failed to load normal data:', error);
+    console.error('データの読み込みに失敗しました:', error);
   }
 }
 
