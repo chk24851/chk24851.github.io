@@ -1,6 +1,7 @@
 {
   "reimu_a": {
     "title": "博麗 霊夢（誘導装備）",
+    "message": "ホーミング機体です。攻撃にあたって必ずしも敵の正面をとる必要はありませんが，火力はやや低いのでテンポが悪い機体です。",
     "videoId": "EVbhTYmRPkA",
     "timestamps": [
       {
@@ -12,6 +13,7 @@
   },
   "reimu_b": {
     "title": "博麗 霊夢（前方集中装備）",
+    "message": "針機体です。高火力で安定した強機体です。",
     "videoId": "zNPOXxEbU3c",
     "timestamps": [
       {
@@ -23,6 +25,7 @@
   },
   "reimu_c": {
     "title": "博麗 霊夢（封印装備）",
+    "message": "拡散ショット機体です。拡散ショットは一度に当てると結構火力が出る機体です。",
     "videoId": "qPClEjg8ac0",
     "timestamps": [
       {
@@ -34,6 +37,7 @@
   },
   "marisa_a": {
     "title": "霧雨 魔理沙（高威力装備）",
+    "message": "誘導オプション機体です。火力を出しやすい一方，当たり判定の大きい機体です。",
     "videoId": "n3XjZDugf60",
     "timestamps": [
       {
@@ -45,6 +49,7 @@
   },
   "marisa_b": {
     "title": "霧雨 魔理沙（貫通装備）",
+    "message": "レーザー機体です。レーザーが貫通して安定性のある一方，当たり判定の大きい機体です。",
     "videoId": "ZdjHRSo2rig",
     "timestamps": [
       {
@@ -56,6 +61,7 @@
   },
   "marisa_c": {
     "title": "霧雨 魔理沙（魔法使い装備）",
+    "message": "設置オプション機体です。オプションからの攻撃は敵までの距離をある程度詰めないと通りません。当たり判定の大きい機体です。",
     "videoId": "G09MBY3B7eo",
     "timestamps": [
       {
