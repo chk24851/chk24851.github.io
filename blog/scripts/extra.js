@@ -4,16 +4,22 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     const data = await response.json();
     const pageConfig = data[characterKey];
 
-    if (pageConfig) {
-      const originalTitle = pageConfig.title;
-      const label = difficulty === 'phantasm' ? '【Phantasm】' : '【Extra】';
-      pageConfig.title = `${label}${pageConfig.title}`;
-      pageConfig.originalTitle = originalTitle;
-      initializeExplanationPage(pageConfig);
+    if (!pageConfig) {
+      console.error('Character data not found:', characterKey);
+      return;
     }
+
+    const originalTitle = pageConfig.title;
+    pageConfig.title = difficulty === 'phantasm' ? `【Phantasm】${pageConfig.title}` : `【Extra】${pageConfig.title}`;
+    pageConfig.originalTitle = originalTitle;
+    initializeExplanationPage(pageConfig);
   } catch (error) {
     console.error('Failed to load extra data:', error);
   }
+}
+
+function getYouTubeEmbedUrl(videoId, startTime = 0) {
+  return `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`;
 }
 
 function initializeExplanationPage(pageConfig) {
@@ -22,6 +28,11 @@ function initializeExplanationPage(pageConfig) {
   const timestamps = pageConfig.timestamps || [];
   const videoFrame = document.getElementById('videoFrame');
   const videoId = pageConfig.videoId;
+  const listContainer = document.querySelector('#timestamps-list ul');
+  const contentPanel = document.getElementById('content-panel');
+  const videoPanel = document.querySelector('.video-panel');
+  const timestampsPanel = document.querySelector('.timestamps-panel');
+  const defaultContent = document.getElementById('content-default');
 
   const h1 = document.querySelector('h1');
   if (h1) h1.textContent = pageConfig.title;
@@ -30,19 +41,31 @@ function initializeExplanationPage(pageConfig) {
   if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
   const characterMsg = document.querySelector('#content-default #character-message');
-  if (characterMsg) characterMsg.textContent = pageConfig.message || '';
+  if (characterMsg) characterMsg.textContent = pageConfig.message;
 
   const instructionMsg = document.querySelector('#content-default #instruction-message');
   if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
 
+  const getStampContentsElements = () => contentPanel.querySelectorAll('.stamp-content');
+
   function renderTimestamps() {
-    const listContainer = document.querySelector('#timestamps-list ul');
-    const contentPanel = document.getElementById('content-panel');
     if (!listContainer) return;
 
     listContainer.innerHTML = '';
+    getStampContentsElements().forEach(el => {
+      if (el.id !== 'content-default') el.remove();
+    });
 
-    timestamps.forEach(function (ts, index) {
+    if (timestamps.length === 0) {
+      const li = document.createElement('li');
+      li.textContent = '（タイムスタンプなし）';
+      li.style.textAlign = 'center';
+      li.style.opacity = '0.5';
+      listContainer.appendChild(li);
+      return;
+    }
+
+    timestamps.forEach((ts, index) => {
       if (!ts.label || ts.label.trim() === '') {
         return;
       }
@@ -53,7 +76,7 @@ function initializeExplanationPage(pageConfig) {
       a.className = 'timestamp-link';
       a.textContent = ts.label;
 
-      a.addEventListener('click', function (e) {
+      a.addEventListener('click', (e) => {
         e.preventDefault();
         jumpToTimestamp(index);
       });
@@ -61,30 +84,26 @@ function initializeExplanationPage(pageConfig) {
       li.appendChild(a);
       listContainer.appendChild(li);
 
-      const contentId = 'content-' + index;
-      if (!document.getElementById(contentId)) {
-        const contentDiv = document.createElement('div');
-        contentDiv.id = contentId;
-        contentDiv.className = 'stamp-content hidden';
-        contentDiv.innerHTML = `<h3>${ts.label}</h3><p>${ts.content || ''}</p>`;
-        contentPanel.appendChild(contentDiv);
-      }
+      const contentId = `content-${index}`;
+      const contentDiv = document.createElement('div');
+      contentDiv.id = contentId;
+      contentDiv.className = 'stamp-content hidden';
+      contentDiv.innerHTML = `<h3>${ts.label}</h3><p>${ts.content || ''}</p>`;
+      contentPanel.appendChild(contentDiv);
     });
   }
 
   function jumpToTimestamp(index) {
-    const ts = timestamps[index];
+    const ts = timestamps && timestamps[index] ? timestamps[index] : null;
     if (!ts) return;
 
     if (videoId && videoFrame) {
-      videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + ts.time + '&autoplay=1';
+      videoFrame.src = getYouTubeEmbedUrl(videoId, ts.time);
     }
 
-    document.querySelectorAll('.stamp-content').forEach(function (el) {
-      el.classList.add('hidden');
-    });
+    getStampContentsElements().forEach(el => el.classList.add('hidden'));
 
-    const contentId = 'content-' + index;
+    const contentId = `content-${index}`;
     const selectedContent = document.getElementById(contentId);
     if (selectedContent) {
       selectedContent.classList.remove('hidden');
@@ -92,26 +111,25 @@ function initializeExplanationPage(pageConfig) {
   }
 
   function showDefaultContent() {
-    document.querySelectorAll('.stamp-content').forEach(function (el) {
-      el.classList.add('hidden');
-    });
-    const defaultContent = document.getElementById('content-default');
+    getStampContentsElements().forEach(el => el.classList.add('hidden'));
     if (defaultContent) defaultContent.classList.remove('hidden');
   }
 
   renderTimestamps();
   if (videoId && videoFrame) {
-    videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+    videoFrame.src = getYouTubeEmbedUrl(videoId);
   }
   showDefaultContent();
 
   const SYNC_DELAY = 100;
   const syncPanelHeights = () => {
-    const videoPanel = document.querySelector('.video-panel');
-    const timestampsPanel = document.querySelector('.timestamps-panel');
     videoPanel && timestampsPanel && (timestampsPanel.style.height = videoPanel.getBoundingClientRect().height + 'px');
   };
 
+  if (window.lastSyncPanelHeights) {
+    ['load', 'resize'].forEach(event => window.removeEventListener(event, window.lastSyncPanelHeights));
+  }
+  window.lastSyncPanelHeights = syncPanelHeights;
   ['load', 'resize'].forEach(event => window.addEventListener(event, syncPanelHeights));
   setTimeout(syncPanelHeights, SYNC_DELAY);
 }
