@@ -2,7 +2,7 @@
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
   "reimu_a": {
     "title": "博麗 霊夢（誘導装備）",
-    "message": "ホーミング機体です。攻撃にあたって必ずしも敵の正面をとる必要はありませんが，火力はやや低いのでテンポが悪い機体です。",
+    "message": "ホーミング機体です。攻撃にあたって必ずしも敵の正面をとる必要はありませんが，火力はやや低いのでテンポの悪い機体です。",
     "videoId": "d8fACBtagk0",
     "stageData": {
       "1": {

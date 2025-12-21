@@ -2,7 +2,7 @@
   "stageLabels": ["Stage1", "Stage2", "Stage3", "Stage4", "Stage5", "Stage6"],
   "reimu_a": {
     "title": "博麗 霊夢（霊符　追尾タイプ）",
-    "message": "ホーミング機体です。攻撃にあたって必ずしも敵の正面をとる必要はありませんが，火力は低いです。",
+    "message": "ホーミング機体です。攻撃にあたって必ずしも敵の正面をとる必要はありませんが，火力の低い機体です。",
     "videoId": "OhMuyCkJxQ4",
     "stageData": {
       "1": {
