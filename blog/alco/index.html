@@ -13,6 +13,10 @@
   </div>
 
   <script>
+    function getYouTubeEmbedUrl(videoId, startTime = 0) {
+      return `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`;
+    }
+
     async function initializeAlco() {
       const data = {
   "stageLabels": ["Stage1", "Stage2", "Stage3"],
@@ -116,7 +120,6 @@
       if (!pageConfig) return;
 
       const originalTitle = pageConfig.title;
-      pageConfig.title = pageConfig.title;
       pageConfig.originalTitle = originalTitle;
       pageConfig.stageLabels = data.stageLabels;
       
@@ -184,6 +187,15 @@
 
         listContainer.innerHTML = '';
 
+        if (timestamps.length === 0) {
+          const li = document.createElement('li');
+          li.textContent = '（タイムスタンプなし）';
+          li.style.textAlign = 'center';
+          li.style.opacity = '0.5';
+          listContainer.appendChild(li);
+          return;
+        }
+
         timestamps.forEach(function (ts, index) {
           if (!ts.label || ts.label.trim() === '') {
             return;
@@ -203,7 +215,7 @@
           li.appendChild(a);
           listContainer.appendChild(li);
 
-          const contentId = 'content-' + stage + '-' + index;
+          const contentId = `content-${stage}-${index}`;
           if (!document.getElementById(contentId)) {
             const contentDiv = document.createElement('div');
             contentDiv.id = contentId;
@@ -219,14 +231,14 @@
         if (!ts) return;
 
         if (videoId && videoFrame) {
-          videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?start=' + ts.time + '&autoplay=1';
+          videoFrame.src = getYouTubeEmbedUrl(videoId, ts.time);
         }
 
-        document.querySelectorAll('.stamp-content').forEach(function (el) {
+        document.querySelectorAll('.stamp-content').forEach(el => {
           el.classList.add('hidden');
         });
 
-        const contentId = 'content-' + stage + '-' + index;
+        const contentId = `content-${stage}-${index}`;
         const selectedContent = document.getElementById(contentId);
         if (selectedContent) {
           selectedContent.classList.remove('hidden');
@@ -234,7 +246,7 @@
       }
 
       function showDefaultContent() {
-        document.querySelectorAll('.stamp-content').forEach(function (el) {
+        document.querySelectorAll('.stamp-content').forEach(el => {
           el.classList.add('hidden');
         });
         const defaultContent = document.getElementById('content-default');
@@ -243,7 +255,7 @@
 
       renderTimestamps(1);
       if (videoId && videoFrame) {
-        videoFrame.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+        videoFrame.src = getYouTubeEmbedUrl(videoId);
       }
       showDefaultContent();
 
@@ -254,6 +266,10 @@
         videoPanel && timestampsPanel && (timestampsPanel.style.height = videoPanel.getBoundingClientRect().height + 'px');
       };
 
+      if (window.lastSyncPanelHeights) {
+        ['load', 'resize'].forEach(event => window.removeEventListener(event, window.lastSyncPanelHeights));
+      }
+      window.lastSyncPanelHeights = syncPanelHeights;
       ['load', 'resize'].forEach(event => window.addEventListener(event, syncPanelHeights));
       setTimeout(syncPanelHeights, SYNC_DELAY);
     }
