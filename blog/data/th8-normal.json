@@ -259,82 +259,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -349,82 +299,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -439,82 +339,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -529,82 +379,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -619,82 +419,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -709,82 +459,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -799,82 +499,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -889,82 +539,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -979,82 +579,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -1069,82 +619,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }
@@ -1159,82 +659,32 @@
     "commonStages": {
       "1": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 1",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 2",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 3",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 4",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": {
-              "final_a": 0,
-              "final_b": 0
-            },
-            "label": "STAGE 5",
-            "content": ""
-          }
         ]
       }
     },
     "stage6": {
       "final_a": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6A",
-            "content": ""
-          }
         ]
       },
       "final_b": {
         "timestamps": [
-          {
-            "time": 0,
-            "label": "STAGE 6B",
-            "content": ""
-          }
         ]
       }
     }

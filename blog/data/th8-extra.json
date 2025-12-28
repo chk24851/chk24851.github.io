@@ -66,11 +66,6 @@
     "message": "ミサイル＆レーザー機体です。レーザーは貫通します。高速移動時において瞬間的に低速移動状態へ切り替えると，両方のショットを同時に放っている状態になって攻撃力が上がる強機体です。",
     "videoId": "woYIFbdZ_Hc",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "sakuya_remilia": {
@@ -78,11 +73,6 @@
     "message": "拡散ショット＆設置オプション機体です。オプションがかなりの高火力である強機体です。",
     "videoId": "Zliv_apam3A",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "youmu_yuyuko": {
@@ -90,11 +80,6 @@
     "message": "誘導オプション＆拡散ショット機体です。拡散ショットは一度に当てると結構火力が出ます。また，「逢魔が時」状態にしやすく，ボスには滅法強い強機体です。",
     "videoId": "zcY6C9lMyGw",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "reimu": {
@@ -102,11 +87,6 @@
     "message": "ホーミング機体です。当たり判定が小さいことに加え，本来判定のある使い魔に対して判定がないので避けに集中できますが，火力は乏しい弱機体です。",
     "videoId": "tuLFdHFVb4c",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "yukari": {
@@ -114,11 +94,6 @@
     "message": "針機体です。当たり判定が小さく，安定性のある強機体です。",
     "videoId": "hOJdEtPINxA",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "marisa": {
@@ -126,11 +101,6 @@
     "message": "ミサイル機体です。正面火力がそれなりにある機体です。",
     "videoId": "sS_U3l4CwzY",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "alice": {
@@ -138,11 +108,6 @@
     "message": "レーザー機体です。レーザーは貫通しますが，攻撃範囲は狭い弱機体です。",
     "videoId": "h0aHbXOClCc",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "sakuya": {
@@ -150,11 +115,6 @@
     "message": "拡散ショット機体です。火力に乏しく，攻撃範囲も狭い弱機体です。",
     "videoId": "SU2gV4EQ2-E",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "remilia": {
@@ -162,11 +122,6 @@
     "message": "設置オプション機体です。オプションがかなりの高火力である強機体です。",
     "videoId": "sozg0c4oXB8",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "youmu": {
@@ -174,11 +129,6 @@
     "message": "誘導オプション機体です。「逢魔が時」状態にしやすく，ボスには滅法強い強機体です。",
     "videoId": "0gNZQNwdj7Y",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   },
   "yuyuko": {
@@ -186,11 +136,6 @@
     "message": "拡散ショット機体です。拡散ショットは一度に当てると結構火力が出る機体です。",
     "videoId": "3AV4OM3hEOs",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "Extra",
-        "content": ""
-      }
     ]
   }
 }
