@@ -1,96 +1,143 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_red": 0,
+          "reimu_red2": 0,
+          "reimu_blue": 0,
+          "reimu_blue2": 0,
+          "reimu_yellow": 0,
+          "reimu_yellow2": 0,
+          "reimu_green": 0,
+          "reimu_green2": 0,
+          "marisa_red": 0,
+          "marisa_red2": 0,
+          "marisa_blue": 0,
+          "marisa_blue2": 0,
+          "marisa_yellow": 0,
+          "marisa_yellow2": 0,
+          "marisa_green": 0,
+          "marisa_green2": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu_red": {
-    "title": "博麗 霊夢（スカーレットデビル）",
+    "label": "博麗 霊夢（スカーレットデビル）",
+    "description": "",
     "videoId": "ker1EcHehbQ",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "reimu_red2": {
-    "title": "博麗 霊夢（クリーチャーレッド）",
+    "label": "博麗 霊夢（クリーチャーレッド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "reimu_blue": {
-    "title": "博麗 霊夢（スノーブロッサム）",
+    "label": "博麗 霊夢（スノーブロッサム）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "reimu_blue2": {
-    "title": "博麗 霊夢（ブルーシーズン）",
+    "label": "博麗 霊夢（ブルーシーズン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "reimu_yellow": {
-    "title": "博麗 霊夢（イエローサブタレイニアン）",
+    "label": "博麗 霊夢（イエローサブタレイニアン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "reimu_yellow2": {
-    "title": "博麗 霊夢（インペリシャブルムーン）",
+    "label": "博麗 霊夢（インペリシャブルムーン）",
+    "description": "",
     "videoId": "wHy9JzMarQE",
     "timestamps": [
     ]
   },
   "reimu_green": {
-    "title": "博麗 霊夢（ビーストハードネス）",
+    "label": "博麗 霊夢（ビーストハードネス）",
+    "description": "",
     "videoId": "SdpqXO0Qw20",
     "timestamps": [
     ]
   },
   "reimu_green2": {
-    "title": "博麗 霊夢（シントイズムウィンド）",
+    "label": "博麗 霊夢（シントイズムウィンド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_red": {
-    "title": "霧雨 魔理沙（スカーレットデビル）",
+    "label": "霧雨 魔理沙（スカーレットデビル）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_red2": {
-    "title": "霧雨 魔理沙（クリーチャーレッド）",
+    "label": "霧雨 魔理沙（クリーチャーレッド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_blue": {
-    "title": "霧雨 魔理沙（スノーブロッサム）",
+    "label": "霧雨 魔理沙（スノーブロッサム）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_blue2": {
-    "title": "霧雨 魔理沙（ブルーシーズン）",
+    "label": "霧雨 魔理沙（ブルーシーズン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_yellow": {
-    "title": "霧雨 魔理沙（イエローサブタレイニアン）",
+    "label": "霧雨 魔理沙（イエローサブタレイニアン）",
+    "description": "",
     "videoId": "gV6fTfoh-5I",
     "timestamps": [
     ]
   },
   "marisa_yellow2": {
-    "title": "霧雨 魔理沙（インペリシャブルムーン）",
+    "label": "霧雨 魔理沙（インペリシャブルムーン）",
+    "description": "",
     "videoId": "z5FEtVFcMj0",
     "timestamps": [
     ]
   },
   "marisa_green": {
-    "title": "霧雨 魔理沙（ビーストハードネス）",
+    "label": "霧雨 魔理沙（ビーストハードネス）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
     "timestamps": [
     ]
   },
   "marisa_green2": {
-    "title": "霧雨 魔理沙（シントイズムウィンド）",
+    "label": "霧雨 魔理沙（シントイズムウィンド）",
+    "description": "",
     "videoId": "h850A4kHhNU",
     "timestamps": [
     ]

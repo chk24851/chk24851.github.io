@@ -1,483 +1,354 @@
 {
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_spring": 0,
+            "reimu_summer": 0,
+            "reimu_autumn": 0,
+            "reimu_winter": 0,
+            "cirno_spring": 0,
+            "cirno_summer": 0,
+            "cirno_autumn": 0,
+            "cirno_winter": 0,
+            "aya_spring": 0,
+            "aya_summer": 0,
+            "aya_autumn": 0,
+            "aya_winter": 0,
+            "marisa_spring": 0,
+            "marisa_summer": 0,
+            "marisa_autumn": 0,
+            "marisa_winter": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
   "reimu_spring": {
-    "title": "博麗 霊夢（春装備）",
+    "label": "博麗 霊夢（春装備）",
+    "description": "",
     "videoId": "kyKbDlCjAgA",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_summer": {
-    "title": "博麗 霊夢（夏装備）",
+    "label": "博麗 霊夢（夏装備）",
+    "description": "",
     "videoId": "QRBTPIubdp0",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_autumn": {
-    "title": "博麗 霊夢（秋装備）",
+    "label": "博麗 霊夢（秋装備）",
+    "description": "",
     "videoId": "iit6ZW5ErpQ",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_winter": {
-    "title": "博麗 霊夢（冬装備）",
+    "label": "博麗 霊夢（冬装備）",
+    "description": "",
     "videoId": "Uba3jUNRPMM",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "cirno_spring": {
-    "title": "チルノ（春装備）",
+    "label": "チルノ（春装備）",
+    "description": "",
     "videoId": "wg_2LmpxrxI",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "cirno_summer": {
-    "title": "チルノ（夏装備）",
+    "label": "チルノ（夏装備）",
+    "description": "",
     "videoId": "Dv84yXjaaHA",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "cirno_autumn": {
-    "title": "チルノ（秋装備）",
+    "label": "チルノ（秋装備）",
+    "description": "",
     "videoId": "PoQzPrJqYwA",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "cirno_winter": {
-    "title": "チルノ（冬装備）",
+    "label": "チルノ（冬装備）",
+    "description": "",
     "videoId": "rE26ijlOTd4",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "aya_spring": {
-    "title": "射命丸 文（春装備）",
+    "label": "射命丸 文（春装備）",
+    "description": "",
     "videoId": "POSRWfHmYic",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "aya_summer": {
-    "title": "射命丸 文（夏装備）",
+    "label": "射命丸 文（夏装備）",
+    "description": "",
     "videoId": "i37cECgC8bE",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "aya_autumn": {
-    "title": "射命丸 文（秋装備）",
+    "label": "射命丸 文（秋装備）",
+    "description": "",
     "videoId": "kXkSzQUHS9k",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "aya_winter": {
-    "title": "射命丸 文（冬装備）",
+    "label": "射命丸 文（冬装備）",
+    "description": "",
     "videoId": "9GProyggwXs",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_spring": {
-    "title": "霧雨 魔理沙（春装備）",
+    "label": "霧雨 魔理沙（春装備）",
+    "description": "",
     "videoId": "rpYIW6K0wjw",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_summer": {
-    "title": "霧雨 魔理沙（夏装備）",
+    "label": "霧雨 魔理沙（夏装備）",
+    "description": "",
     "videoId": "sfLfsXggJ0c",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_autumn": {
-    "title": "霧雨 魔理沙（秋装備）",
+    "label": "霧雨 魔理沙（秋装備）",
+    "description": "",
     "videoId": "pcBe5HHw38U",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_winter": {
-    "title": "霧雨 魔理沙（冬装備）",
+    "label": "霧雨 魔理沙（冬装備）",
+    "description": "",
     "videoId": "ld4XECnQneE",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   }
 }
+
+
+
+

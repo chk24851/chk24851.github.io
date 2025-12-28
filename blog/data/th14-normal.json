@@ -1,183 +1,154 @@
 {
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
   "reimu_a": {
-    "title": "博麗 霊夢（翻弄される回避重視タイプ）",
+    "label": "博麗 霊夢（翻弄される回避重視タイプ）",
+    "description": "",
     "videoId": "-wfBEp4IaO8",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_b": {
-    "title": "博麗 霊夢（伝統のバランスタイプ）",
+    "label": "博麗 霊夢（伝統のバランスタイプ）",
+    "description": "",
     "videoId": "pQKs3HXDN8U",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙（散熱の威力重視タイプ）",
+    "label": "霧雨 魔理沙（散熱の威力重視タイプ）",
+    "description": "",
     "videoId": "_kNJlGVX6PA",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
+    "label": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
+    "description": "",
     "videoId": "4jO1QI7DiQY",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "sakuya_a": {
-    "title": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
+    "label": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
+    "description": "",
     "videoId": "n9Thukk243Y",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "sakuya_b": {
-    "title": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
+    "label": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
+    "description": "",
     "videoId": "28gdp3hGoRk",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   }
 }
+
+
+
+

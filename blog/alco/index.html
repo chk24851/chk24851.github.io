@@ -21,8 +21,8 @@
       const data = {
   "stageLabels": ["Stage1", "Stage2", "Stage3"],
   "default": {
-    "title": "黄昏酒場",
-    "message": "基本的に，遠くの敵にはショットで，近くの敵には爪楊枝で攻撃します。道中では，敵の出現位置にあらかじめ爪楊枝を設置しておくと速攻できます。体力の多い敵には特に有効です。道中はチャプターごとに区切られています。チャプター内の敵が全滅すると直ちに次のチャプターが始まります。そのため，パターンが崩れたときはあえて敵を生かしておくことが有効になるかもしれません。ボス戦では，ボスに近づくとペナルティ弾を撃ってきます。",
+    "label": "黄昏酒場",
+    "description": "基本的に，遠くの敵にはショットで，近くの敵には爪楊枝で攻撃します。道中では，敵の出現位置にあらかじめ爪楊枝を設置しておくと速攻できます。体力の多い敵には特に有効です。道中はチャプターごとに区切られています。チャプター内の敵が全滅すると直ちに次のチャプターが始まります。そのため，パターンが崩れたときはあえて敵を生かしておくことが有効になるかもしれません。ボス戦では，ボスに近づくとペナルティ弾を撃ってきます。",
     "videoId": "wHojqQ3oQYs",
     "stageData": {
       "1": {
@@ -119,8 +119,8 @@
 
       if (!pageConfig) return;
 
-      const originalTitle = pageConfig.title;
-      pageConfig.originalTitle = originalTitle;
+      const originalLabel = pageConfig.label;
+      pageConfig.originalTitle = originalLabel;
       pageConfig.stageLabels = data.stageLabels;
       
       const stageData = pageConfig.stageData || {};
@@ -130,13 +130,13 @@
       let currentStage = 1;
 
       const h1 = document.querySelector('h1');
-      if (h1) h1.textContent = pageConfig.title;
+      if (h1) h1.textContent = pageConfig.label;
 
       const defaultH3 = document.querySelector('#content-default h3');
-      if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
+      if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.label;
 
       const characterMsg = document.querySelector('#content-default #character-message');
-      if (characterMsg) characterMsg.textContent = pageConfig.message || '';
+      if (characterMsg) characterMsg.textContent = pageConfig.description || '';
 
       const instructionMsg = document.querySelector('#content-default #instruction-message');
       if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
@@ -197,10 +197,6 @@
         }
 
         timestamps.forEach(function (ts, index) {
-          if (!ts.label || ts.label.trim() === '') {
-            return;
-          }
-
           const li = document.createElement('li');
           const a = document.createElement('a');
           a.href = '#';

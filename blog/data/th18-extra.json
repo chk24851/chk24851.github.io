@@ -1,24 +1,47 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 0,
+          "marisa": 0,
+          "sakuya": 0,
+          "sanae": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu": {
-    "title": "博麗 霊夢",
+    "label": "博麗 霊夢",
+    "description": "",
     "videoId": "sub_Bv4A8fo",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "marisa": {
-    "title": "霧雨 魔理沙",
+    "label": "霧雨 魔理沙",
+    "description": "",
     "videoId": "8hcsUMXLLwk",
     "timestamps": [
     ]
   },
   "sakuya": {
-    "title": "十六夜 咲夜",
+    "label": "十六夜 咲夜",
+    "description": "",
     "videoId": "Hx_VJ2JLLvo",
     "timestamps": [
     ]
   },
   "sanae": {
-    "title": "東風谷 早苗",
+    "label": "東風谷 早苗",
+    "description": "",
     "videoId": "ewMlHEMIRNw",
     "timestamps": [
     ]

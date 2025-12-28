@@ -21,8 +21,8 @@
       const data = {
   "stageLabels": ["道中", "ボス", "裏ボス"],
   "default": {
-    "title": "トルテルマジック",
-    "message": "自機の当たり判定は「スカートの裾」が目安です。道中の敵に当たり判定はありません。",
+    "label": "トルテルマジック",
+    "description": "自機の当たり判定は「スカートの裾」が目安です。道中の敵に当たり判定はありません。",
     "videoId": "mtLp4bveBmQ",
     "stageData": {
       "1": {
@@ -94,8 +94,8 @@
 
       if (!pageConfig) return;
 
-      const originalTitle = pageConfig.title;
-      pageConfig.title = `【Normal】${pageConfig.title}`;
+      const originalTitle = pageConfig.label;
+      pageConfig.title = `【Normal】${pageConfig.label}`;
       pageConfig.originalTitle = originalTitle;
       pageConfig.stageLabels = data.stageLabels;
       
@@ -112,7 +112,7 @@
       if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
       const characterMsg = document.querySelector('#content-default #character-message');
-      if (characterMsg) characterMsg.textContent = pageConfig.message || '';
+      if (characterMsg) characterMsg.textContent = pageConfig.description || '';
 
       const instructionMsg = document.querySelector('#content-default #instruction-message');
       if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
@@ -173,10 +173,6 @@
         }
 
         timestamps.forEach(function (ts, index) {
-          if (!ts.label || ts.label.trim() === '') {
-            return;
-          }
-
           const li = document.createElement('li');
           const a = document.createElement('a');
           a.href = '#';

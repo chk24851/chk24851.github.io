@@ -1,118 +1,113 @@
 {
   "stageLabels": ["STAGE 1", "STAGE 2", "STAGE 3"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "a1": 0,
+            "a2": 0,
+            "b1": 0,
+            "b2": 0,
+            "c1": 0,
+            "c2": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
+    }
+  },
   "a1": {
-    "title": "ルート　A1",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　A1",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "n5BT_48Z-u4",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   },
   "a2": {
-    "title": "ルート　A2",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　A2",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "nuGSQ6E940s",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   },
   "b1": {
-    "title": "ルート　B1",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　B1",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "vr3X0YKJ48Y",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   },
   "b2": {
-    "title": "ルート　B2",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　B2",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "eQX7KYVkfKQ",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   },
   "c1": {
-    "title": "ルート　C1",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　C1",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "ty__GVtNGcw",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   },
   "c2": {
-    "title": "ルート　C2",
-    "message": "道中の敵に当たり判定はありません。",
+    "label": "ルート　C2",
+    "description": "道中の敵に当たり判定はありません。",
     "videoId": "IGsbUHngDvs",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ]
     }
   }
 }
+
+
+
+
 

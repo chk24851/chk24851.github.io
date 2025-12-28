@@ -1,36 +1,63 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 0,
+          "reimu_b": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "sanae_a": 0,
+          "sanae_b": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu_a": {
-    "title": "博麗 霊夢（一点集中攻撃力重視型）",
+    "label": "博麗 霊夢（一点集中攻撃力重視型）",
+    "description": "",
     "videoId": "SNiSDP-OCmM",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "reimu_b": {
-    "title": "博麗 霊夢（アンチパターン重視超誘導型）",
+    "label": "博麗 霊夢（アンチパターン重視超誘導型）",
+    "description": "",
     "videoId": "g2wIi_ENEEs",
     "timestamps": [
     ]
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙（無限貫通＆常時攻撃型）",
+    "label": "霧雨 魔理沙（無限貫通＆常時攻撃型）",
+    "description": "",
     "videoId": "Yp8tu5czvxg",
     "timestamps": [
     ]
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙（超攻撃範囲重視型）",
+    "label": "霧雨 魔理沙（超攻撃範囲重視型）",
+    "description": "",
     "videoId": "wG3ekONn9UA",
     "timestamps": [
     ]
   },
   "sanae_a": {
-    "title": "東風谷 早苗（一点集中＆誘導型）",
+    "label": "東風谷 早苗（一点集中＆誘導型）",
+    "description": "",
     "videoId": "ji5Kt35LGlI",
     "timestamps": [
     ]
   },
   "sanae_b": {
-    "title": "東風谷 早苗（高威力＆広範囲炸裂型）",
+    "label": "東風谷 早苗（高威力＆広範囲炸裂型）",
+    "description": "",
     "videoId": "fE_tIpl0x7I",
     "timestamps": [
     ]

@@ -1,54 +1,87 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_w": 0,
+          "reimu_o": 0,
+          "reimu_e": 0,
+          "marisa_w": 0,
+          "marisa_o": 0,
+          "marisa_e": 0,
+          "youmu_w": 0,
+          "youmu_o": 0,
+          "youmu_e": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu_w": {
-    "title": "博麗 霊夢（オオカミ霊）",
+    "label": "博麗 霊夢（オオカミ霊）",
+    "description": "",
     "videoId": "gHUANkE29sU",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "reimu_o": {
-    "title": "博麗 霊夢（カワウソ霊）",
+    "label": "博麗 霊夢（カワウソ霊）",
+    "description": "",
     "videoId": "f_lpjvXHMvE",
     "timestamps": [
     ]
   },
   "reimu_e": {
-    "title": "博麗 霊夢（オオワシ霊）",
+    "label": "博麗 霊夢（オオワシ霊）",
+    "description": "",
     "videoId": "Dpe_S0DvemM",
     "timestamps": [
     ]
   },
   "marisa_w": {
-    "title": "霧雨 魔理沙（オオカミ霊）",
+    "label": "霧雨 魔理沙（オオカミ霊）",
+    "description": "",
     "videoId": "K0bC-A3xrAc",
     "timestamps": [
     ]
   },
   "marisa_o": {
-    "title": "霧雨 魔理沙（カワウソ霊）",
+    "label": "霧雨 魔理沙（カワウソ霊）",
+    "description": "",
     "videoId": "iyQAIqDq-Hw",
     "timestamps": [
     ]
   },
   "marisa_e": {
-    "title": "霧雨 魔理沙（オオワシ霊）",
+    "label": "霧雨 魔理沙（オオワシ霊）",
+    "description": "",
     "videoId": "mE5Gatg_THI",
     "timestamps": [
     ]
   },
   "youmu_w": {
-    "title": "魂魄 妖夢（オオカミ霊）",
+    "label": "魂魄 妖夢（オオカミ霊）",
+    "description": "",
     "videoId": "LoSNadDkb54",
     "timestamps": [
     ]
   },
   "youmu_o": {
-    "title": "魂魄 妖夢（カワウソ霊）",
+    "label": "魂魄 妖夢（カワウソ霊）",
+    "description": "",
     "videoId": "QJMQemtnXUU",
     "timestamps": [
     ]
   },
   "youmu_e": {
-    "title": "魂魄 妖夢（オオワシ霊）",
+    "label": "魂魄 妖夢（オオワシ霊）",
+    "description": "",
     "videoId": "aol85j-KI2Y",
     "timestamps": [
     ]

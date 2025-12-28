@@ -1,123 +1,114 @@
 {
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu": 0,
+            "marisa": 0,
+            "sakuya": 0,
+            "sanae": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
   "reimu": {
-    "title": "博麗 霊夢",
+    "label": "博麗 霊夢",
+    "description": "",
     "videoId": "K6guMFeAAxk",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa": {
-    "title": "霧雨 魔理沙",
+    "label": "霧雨 魔理沙",
+    "description": "",
     "videoId": "Alqqzhcx23E",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "sakuya": {
-    "title": "十六夜 咲夜",
+    "label": "十六夜 咲夜",
+    "description": "",
     "videoId": "qOvQOTtMg80",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "sanae": {
-    "title": "東風谷 早苗",
+    "label": "東風谷 早苗",
+    "description": "",
     "videoId": "eMdJmdogO-Y",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   }
 }
+
+
+
+

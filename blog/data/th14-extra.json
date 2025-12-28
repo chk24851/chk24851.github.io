@@ -1,36 +1,63 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 0,
+          "reimu_b": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "sakuya_a": 0,
+          "sakuya_b": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu_a": {
-    "title": "博麗 霊夢（翻弄される回避重視タイプ）",
+    "label": "博麗 霊夢（翻弄される回避重視タイプ）",
+    "description": "",
     "videoId": "ojqVTvayFhs",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "reimu_b": {
-    "title": "博麗 霊夢（伝統のバランスタイプ）",
+    "label": "博麗 霊夢（伝統のバランスタイプ）",
+    "description": "",
     "videoId": "D1INEVO6g4k",
     "timestamps": [
     ]
   },
   "marisa_a": {
-    "title": "霧雨 魔理沙（散熱の威力重視タイプ）",
+    "label": "霧雨 魔理沙（散熱の威力重視タイプ）",
+    "description": "",
     "videoId": "TUoG2YgptA0",
     "timestamps": [
     ]
   },
   "marisa_b": {
-    "title": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
+    "label": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
+    "description": "",
     "videoId": "4fsu9a2XMxE",
     "timestamps": [
     ]
   },
   "sakuya_a": {
-    "title": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
+    "label": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
+    "description": "",
     "videoId": "Dv3kNZzWkBg",
     "timestamps": [
     ]
   },
   "sakuya_b": {
-    "title": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
+    "label": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
+    "description": "",
     "videoId": "oudeY-RfpRQ",
     "timestamps": [
     ]

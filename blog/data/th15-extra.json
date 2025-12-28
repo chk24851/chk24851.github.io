@@ -1,24 +1,47 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 0,
+          "marisa": 0,
+          "sanae": 0,
+          "reisen": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu": {
-    "title": "博麗 霊夢",
+    "label": "博麗 霊夢",
+    "description": "",
     "videoId": "6hWEw6VjunE",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "marisa": {
-    "title": "霧雨 魔理沙",
+    "label": "霧雨 魔理沙",
+    "description": "",
     "videoId": "uBGRbG258jY",
     "timestamps": [
     ]
   },
   "sanae": {
-    "title": "東風谷 早苗",
+    "label": "東風谷 早苗",
+    "description": "",
     "videoId": "7oA0hU2MeRQ",
     "timestamps": [
     ]
   },
   "reisen": {
-    "title": "鈴仙・優曇華院・イナバ",
+    "label": "鈴仙・優曇華院・イナバ",
+    "description": "",
     "videoId": "gHSDelPpvmE",
     "timestamps": [
     ]

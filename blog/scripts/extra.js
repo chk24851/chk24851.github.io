@@ -2,7 +2,8 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
-    const pageConfig = data[characterKey];
+
+    let pageConfig = data[characterKey];
 
     if (!pageConfig) {
       const match = window.location.pathname.match(/\/(th\d+)\//);
@@ -14,10 +15,12 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
       return;
     }
 
-    const originalTitle = pageConfig.title;
-    pageConfig.title = difficulty === 'phantasm' ? `【Phantasm】${pageConfig.title}` : `【Extra】${pageConfig.title}`;
-    pageConfig.originalTitle = originalTitle;
-    initializeExplanationPage(pageConfig);
+    const originalLabel = pageConfig.label;
+    pageConfig.title = difficulty === 'phantasm' ? `【Phantasm】${pageConfig.label}` : `【Extra】${pageConfig.label}`;
+    pageConfig.originalTitle = originalLabel;
+    pageConfig.characterKey = characterKey;
+
+    initializeExplanationPage(pageConfig, data);
   } catch (error) {
     console.error('データの読み込みに失敗しました:', error);
   }
@@ -27,7 +30,7 @@ function getYouTubeEmbedUrl(videoId, startTime = 0) {
   return `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`;
 }
 
-function initializeExplanationPage(pageConfig) {
+function initializeExplanationPage(pageConfig, data) {
   if (!pageConfig) return;
 
   const timestamps = pageConfig.timestamps || [];
@@ -46,14 +49,60 @@ function initializeExplanationPage(pageConfig) {
   if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
   const characterMsg = document.querySelector('#content-default #character-message');
-  if (characterMsg) characterMsg.textContent = pageConfig.message;
+  if (characterMsg) characterMsg.textContent = pageConfig.description || '';
 
   const instructionMsg = document.querySelector('#content-default #instruction-message');
   if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
 
   const getStampContentsElements = () => contentPanel.querySelectorAll('.stamp-content');
 
+  const getAllTimestamps = () => {
+    let allTimestamps = [];
+    
+    if (data && data.common && data.common.timestamps && Array.isArray(data.common.timestamps)) {
+      data.common.timestamps.forEach((ts) => {
+        if (!ts.label || !ts.description) {
+          return;
+        }
+        
+        let timeValue = ts.time;
+        if (typeof ts.time === 'object' && ts.time !== null) {
+          timeValue = ts.time[pageConfig.characterKey];
+        }
+        
+        if (timeValue === undefined || timeValue === null) {
+          return;
+        }
+        
+        allTimestamps.push({
+          time: timeValue,
+          label: ts.label,
+          content: ts.description,
+          type: 'common'
+        });
+      });
+    }
+    
+    if (timestamps && Array.isArray(timestamps)) {
+      timestamps.forEach((ts) => {
+        if (!ts.time || !ts.label || !ts.description) {
+          return;
+        }
+        allTimestamps.push({
+          time: ts.time,
+          label: ts.label,
+          content: ts.description,
+          type: 'individual'
+        });
+      });
+    }
+    
+    return allTimestamps.sort((a, b) => a.time - b.time);
+  };
+
   function renderTimestamps() {
+    const allTimestamps = getAllTimestamps();
+    
     if (!listContainer) return;
 
     listContainer.innerHTML = '';
@@ -61,7 +110,7 @@ function initializeExplanationPage(pageConfig) {
       if (el.id !== 'content-default') el.remove();
     });
 
-    if (timestamps.length === 0) {
+    if (allTimestamps.length === 0) {
       const li = document.createElement('li');
       li.textContent = '（タイムスタンプなし）';
       li.style.textAlign = 'center';
@@ -70,11 +119,7 @@ function initializeExplanationPage(pageConfig) {
       return;
     }
 
-    timestamps.forEach((ts, index) => {
-      if (!ts.label || ts.label.trim() === '') {
-        return;
-      }
-
+    allTimestamps.forEach((ts, index) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.href = '#';
@@ -99,7 +144,8 @@ function initializeExplanationPage(pageConfig) {
   }
 
   function jumpToTimestamp(index) {
-    const ts = timestamps && timestamps[index] ? timestamps[index] : null;
+    const allTimestamps = getAllTimestamps();
+    const ts = allTimestamps && allTimestamps[index] ? allTimestamps[index] : null;
     if (!ts) return;
 
     if (videoId && videoFrame) {

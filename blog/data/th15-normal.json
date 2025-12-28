@@ -1,123 +1,114 @@
 {
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu": 0,
+            "marisa": 0,
+            "sanae": 0,
+            "reisen": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
   "reimu": {
-    "title": "博麗 霊夢",
+    "label": "博麗 霊夢",
+    "description": "",
     "videoId": "4M8g0xv0v_0",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa": {
-    "title": "霧雨 魔理沙",
+    "label": "霧雨 魔理沙",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "sanae": {
-    "title": "東風谷 早苗",
+    "label": "東風谷 早苗",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reisen": {
-    "title": "鈴仙・優曇華院・イナバ",
+    "label": "鈴仙・優曇華院・イナバ",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   }
 }
+
+
+
+

@@ -1,24 +1,47 @@
 {
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 0,
+          "cirno": 0,
+          "aya": 0,
+          "marisa": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
   "reimu": {
-    "title": "博麗 霊夢",
+    "label": "博麗 霊夢",
+    "description": "",
     "videoId": "UpCUUI3Ws_A",
     "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
     ]
   },
   "cirno": {
-    "title": "チルノ",
+    "label": "チルノ",
+    "description": "",
     "videoId": "CU2sWhm12BQ",
     "timestamps": [
     ]
   },
   "aya": {
-    "title": "射命丸 文",
+    "label": "射命丸 文",
+    "description": "",
     "videoId": "_NtvcoK7Dko",
     "timestamps": [
     ]
   },
   "marisa": {
-    "title": "霧雨 魔理沙",
+    "label": "霧雨 魔理沙",
+    "description": "",
     "videoId": "Lcz6nD_hmxw",
     "timestamps": [
     ]

@@ -1,483 +1,354 @@
 {
   "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_red": 0,
+            "reimu_red2": 0,
+            "reimu_blue": 0,
+            "reimu_blue2": 0,
+            "reimu_yellow": 0,
+            "reimu_yellow2": 0,
+            "reimu_green": 0,
+            "reimu_green2": 0,
+            "marisa_red": 0,
+            "marisa_red2": 0,
+            "marisa_blue": 0,
+            "marisa_blue2": 0,
+            "marisa_yellow": 0,
+            "marisa_yellow2": 0,
+            "marisa_green": 0,
+            "marisa_green2": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
   "reimu_red": {
-    "title": "博麗 霊夢（スカーレットデビル）",
+    "label": "博麗 霊夢（スカーレットデビル）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_red2": {
-    "title": "博麗 霊夢（クリーチャーレッド）",
+    "label": "博麗 霊夢（クリーチャーレッド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_blue": {
-    "title": "博麗 霊夢（スノーブロッサム）",
+    "label": "博麗 霊夢（スノーブロッサム）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_blue2": {
-    "title": "博麗 霊夢（ブルーシーズン）",
+    "label": "博麗 霊夢（ブルーシーズン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_yellow": {
-    "title": "博麗 霊夢（イエローサブタレイニアン）",
+    "label": "博麗 霊夢（イエローサブタレイニアン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_yellow2": {
-    "title": "博麗 霊夢（インペリシャブルムーン）",
+    "label": "博麗 霊夢（インペリシャブルムーン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_green": {
-    "title": "博麗 霊夢（ビーストハードネス）",
+    "label": "博麗 霊夢（ビーストハードネス）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "reimu_green2": {
-    "title": "博麗 霊夢（シントイズムウィンド）",
+    "label": "博麗 霊夢（シントイズムウィンド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_red": {
-    "title": "霧雨 魔理沙（スカーレットデビル）",
+    "label": "霧雨 魔理沙（スカーレットデビル）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_red2": {
-    "title": "霧雨 魔理沙（クリーチャーレッド）",
+    "label": "霧雨 魔理沙（クリーチャーレッド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_blue": {
-    "title": "霧雨 魔理沙（スノーブロッサム）",
+    "label": "霧雨 魔理沙（スノーブロッサム）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_blue2": {
-    "title": "霧雨 魔理沙（ブルーシーズン）",
+    "label": "霧雨 魔理沙（ブルーシーズン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_yellow": {
-    "title": "霧雨 魔理沙（イエローサブタレイニアン）",
+    "label": "霧雨 魔理沙（イエローサブタレイニアン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_yellow2": {
-    "title": "霧雨 魔理沙（インペリシャブルムーン）",
+    "label": "霧雨 魔理沙（インペリシャブルムーン）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_green": {
-    "title": "霧雨 魔理沙（ビーストハードネス）",
+    "label": "霧雨 魔理沙（ビーストハードネス）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   },
   "marisa_green2": {
-    "title": "霧雨 魔理沙（シントイズムウィンド）",
+    "label": "霧雨 魔理沙（シントイズムウィンド）",
+    "description": "",
     "videoId": "PLACEHOLDER_VIDEO_ID",
-    "stageData": {
-      "1": {
-        "timestamps": [
-        ]
-      },
-      "2": {
-        "timestamps": [
-        ]
-      },
-      "3": {
-        "timestamps": [
-        ]
-      },
-      "4": {
-        "timestamps": [
-        ]
-      },
-      "5": {
-        "timestamps": [
-        ]
-      },
-      "6": {
-        "timestamps": [
-        ]
-      }
+    "timestamps": {
+      "1": [
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
     }
   }
 }
+
+
+
+

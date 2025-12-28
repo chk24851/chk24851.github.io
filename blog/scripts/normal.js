@@ -2,9 +2,9 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
   try {
     const response = await fetch(dataUrl);
     const data = await response.json();
-    
+
     let pageConfig;
-    
+
     if (routeOrDifficulty === 'final_a' || routeOrDifficulty === 'final_b') {
       const character = characterKeyOrName;
       const route = routeOrDifficulty;
@@ -21,33 +21,23 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
       }
 
       pageConfig = {
-        title: characterData.title,
+        label: characterData.label,
+        description: characterData.description || '',
         videoId: characterData.videoIds[route],
-        message: characterData.message || '',
-        stageData: {}
+        stageData: characterData.timestamps || {}
       };
 
-      if (characterData.commonStages) {
-        Object.assign(pageConfig.stageData, characterData.commonStages);
-      }
-
-      if (characterData.stage6) {
-        const stage6Data = characterData.stage6[route];
-        if (stage6Data && stage6Data.timestamps) {
-          pageConfig.stageData['6'] = stage6Data;
-        }
-      }
-
-      pageConfig.route = route;
-      pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
-      const originalTitle = pageConfig.title;
-      pageConfig.title = `【Normal】${pageConfig.title}`;
+      const originalLabel = pageConfig.label;
+      pageConfig.title = `【Normal】${pageConfig.label}`;
       if (route === 'final_a') {
         pageConfig.title += '（FinalA）';
       } else if (route === 'final_b') {
         pageConfig.title += '（FinalB）';
       }
-      pageConfig.originalTitle = originalTitle;
+      pageConfig.originalTitle = originalLabel;
+      pageConfig.characterKey = character;
+      pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
+      pageConfig.route = route;
     } else {
       const characterKey = characterKeyOrName;
       pageConfig = data[characterKey];
@@ -61,13 +51,14 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
         return;
       }
 
+      const originalLabel = pageConfig.label;
+      pageConfig.title = `【Normal】${pageConfig.label}`;
+      pageConfig.originalTitle = originalLabel;
+      pageConfig.characterKey = characterKey;
       pageConfig.stageLabels = getStageLabels(characterKey, data.stageLabels);
-      const originalTitle = pageConfig.title;
-      pageConfig.title = `【Normal】${pageConfig.title}`;
-      pageConfig.originalTitle = originalTitle;
     }
     
-    initializeExplanationPage(pageConfig);
+    initializeExplanationPage(pageConfig, data);
   } catch (error) {
     console.error('データの読み込みに失敗しました:', error);
   }
@@ -80,7 +71,7 @@ function getStageLabels(characterKeyOrRoute, allLabels) {
   if (isRouteFinalA) {
     return allLabels.slice(0, 6);
   } else if (isRouteFinalB) {
-    return allLabels.slice(0, 5).concat([allLabels[6]]);
+    return [allLabels[0], allLabels[1], allLabels[2], allLabels[3], allLabels[4], allLabels[6]];
   } else {
     return allLabels;
   }
@@ -90,10 +81,10 @@ function getYouTubeEmbedUrl(videoId, startTime = 0) {
   return `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`;
 }
 
-function initializeExplanationPage(pageConfig) {
+function initializeExplanationPage(pageConfig, data) {
   if (!pageConfig) return;
 
-  const stageData = pageConfig.stageData || {};
+  const stageData = pageConfig.stageData || (pageConfig.timestamps ? { ...pageConfig.timestamps } : {});
   const videoFrame = document.getElementById('videoFrame');
   const videoId = pageConfig.videoId;
   const stageLabels = pageConfig.stageLabels || [];
@@ -114,7 +105,7 @@ function initializeExplanationPage(pageConfig) {
   if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
   const characterMsg = document.querySelector('#content-default #character-message');
-  if (characterMsg) characterMsg.textContent = pageConfig.message;
+  if (characterMsg) characterMsg.textContent = pageConfig.description || '';
 
   const instructionMsg = document.querySelector('#content-default #instruction-message');
   if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
@@ -158,7 +149,57 @@ function initializeExplanationPage(pageConfig) {
   const getStampContentsElements = () => contentPanel.querySelectorAll('.stamp-content');
 
   function renderTimestamps(stage) {
-    const stageTimestamps = stageData[stage] && stageData[stage].timestamps ? stageData[stage].timestamps : [];
+    let allTimestamps = [];
+    
+    if (data && data.common && data.common.timestamps && data.common.timestamps[stage]) {
+      const commonTimestamps = data.common.timestamps[stage];
+      commonTimestamps.forEach((ts) => {
+        if (!ts.label || !ts.description) {
+          return;
+        }
+        
+        let timeValue = ts.time;
+        if (typeof ts.time === 'object' && ts.time !== null) {
+          timeValue = ts.time[pageConfig.characterKey];
+        }
+        
+        if (timeValue === undefined || timeValue === null) {
+          return;
+        }
+        
+        allTimestamps.push({
+          time: timeValue,
+          label: ts.label,
+          content: ts.description,
+          type: 'common'
+        });
+      });
+    }
+    
+    let stageTimestamps = null;
+    const stageInfo = stageData[stage];
+    if (Array.isArray(stageInfo)) {
+      stageTimestamps = stageInfo;
+    } else if (stageInfo && stageInfo.timestamps) {
+      stageTimestamps = stageInfo.timestamps;
+    }
+    
+    if (stageTimestamps) {
+      stageTimestamps.forEach((ts) => {
+        if (!ts.time || !ts.label || !ts.description) {
+          return;
+        }
+        allTimestamps.push({
+          time: ts.time,
+          label: ts.label,
+          content: ts.description,
+          type: 'individual'
+        });
+      });
+    }
+    
+    allTimestamps.sort((a, b) => a.time - b.time);
+    
     if (!listContainer) return;
 
     listContainer.innerHTML = '';
@@ -166,7 +207,7 @@ function initializeExplanationPage(pageConfig) {
       if (el.id !== 'content-default') el.remove();
     });
 
-    if (stageTimestamps.length === 0) {
+    if (allTimestamps.length === 0) {
       const li = document.createElement('li');
       li.textContent = '（タイムスタンプなし）';
       li.style.textAlign = 'center';
@@ -175,11 +216,7 @@ function initializeExplanationPage(pageConfig) {
       return;
     }
 
-    stageTimestamps.forEach((ts, index) => {
-      if (!ts.label || ts.label.trim() === '') {
-        return;
-      }
-
+    allTimestamps.forEach((ts, index) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.href = '#';
@@ -188,7 +225,7 @@ function initializeExplanationPage(pageConfig) {
 
       a.addEventListener('click', (e) => {
         e.preventDefault();
-        jumpToTimestamp(stage, index);
+        jumpToTimestamp(stage, index, allTimestamps);
       });
 
       li.appendChild(a);
@@ -203,16 +240,12 @@ function initializeExplanationPage(pageConfig) {
     });
   }
 
-  function jumpToTimestamp(stage, index) {
-    const ts = stageData[stage] && stageData[stage].timestamps ? stageData[stage].timestamps[index] : null;
+  function jumpToTimestamp(stage, index, allTimestamps) {
+    const ts = allTimestamps && allTimestamps[index] ? allTimestamps[index] : null;
     if (!ts) return;
 
     if (videoId && videoFrame) {
-      let timeValue = ts.time;
-      if (typeof ts.time === 'object' && route && ts.time[route]) {
-        timeValue = ts.time[route];
-      }
-      videoFrame.src = getYouTubeEmbedUrl(videoId, timeValue);
+      videoFrame.src = getYouTubeEmbedUrl(videoId, ts.time);
     }
 
     getStampContentsElements().forEach(el => el.classList.add('hidden'));
