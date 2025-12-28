@@ -3,44 +3,24 @@
     "title": "博麗 霊夢",
     "videoId": "PyKPE7vE8kY",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "marisa": {
     "title": "霧雨 魔理沙",
     "videoId": "eJtoxUxTnzM",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "sanae": {
     "title": "東風谷 早苗",
     "videoId": "y4vN8WPQqDQ",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "youmu": {
     "title": "魂魄 妖夢",
     "videoId": "UCVL27Z35cE",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   }
 }

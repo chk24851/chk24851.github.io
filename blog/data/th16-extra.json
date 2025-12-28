@@ -3,44 +3,24 @@
     "title": "博麗 霊夢",
     "videoId": "UpCUUI3Ws_A",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "cirno": {
     "title": "チルノ",
     "videoId": "CU2sWhm12BQ",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "aya": {
     "title": "射命丸 文",
     "videoId": "_NtvcoK7Dko",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "marisa": {
     "title": "霧雨 魔理沙",
     "videoId": "Lcz6nD_hmxw",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   }
 }

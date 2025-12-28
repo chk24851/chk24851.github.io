@@ -6,86 +6,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -96,86 +36,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -186,86 +66,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -276,86 +96,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -366,86 +126,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -456,86 +156,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -546,86 +186,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -636,86 +216,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -726,86 +246,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -816,86 +276,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -906,86 +306,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -996,86 +336,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -1086,86 +366,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -1176,86 +396,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -1266,86 +426,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }
@@ -1356,86 +456,26 @@
     "stageData": {
       "1": {
         "timestamps": [
-          {
-            "time": 10,
-            "label": "スタンプ名",
-            "content": "【ステージ1】解説を入力してください。"
-          },
-          {
-            "time": 30,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "2": {
         "timestamps": [
-          {
-            "time": 20,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 40,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "3": {
         "timestamps": [
-          {
-            "time": 50,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 70,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "4": {
         "timestamps": [
-          {
-            "time": 80,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 100,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "5": {
         "timestamps": [
-          {
-            "time": 120,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 140,
-            "label": "",
-            "content": ""
-          }
         ]
       },
       "6": {
         "timestamps": [
-          {
-            "time": 160,
-            "label": "",
-            "content": ""
-          },
-          {
-            "time": 180,
-            "label": "",
-            "content": ""
-          }
         ]
       }
     }

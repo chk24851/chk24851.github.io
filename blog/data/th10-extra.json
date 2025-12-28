@@ -26,11 +26,6 @@
     "message": "針機体です。当たり判定が小さく，高火力で安定した強機体です。",
     "videoId": "zNPOXxEbU3c",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "reimu_c": {
@@ -38,11 +33,6 @@
     "message": "高速移動時は広範囲ショット，低速移動時は拡散ショット機体です。当たり判定が小さく，拡散ショットは一度に当てると結構火力が出る機体です。",
     "videoId": "qPClEjg8ac0",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "marisa_a": {
@@ -50,11 +40,6 @@
     "message": "誘導オプション機体です。オプションをうまく誘導できれば高火力を出しやすい機体です。",
     "videoId": "n3XjZDugf60",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "marisa_b": {
@@ -62,11 +47,6 @@
     "message": "レーザー機体です。レーザーが貫通して安定性のある機体です。",
     "videoId": "ZdjHRSo2rig",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   },
   "marisa_c": {
@@ -74,11 +54,6 @@
     "message": "設置オプション機体です。オプションからの攻撃は敵までの距離をある程度詰めないと通らない機体です。",
     "videoId": "G09MBY3B7eo",
     "timestamps": [
-      {
-        "time": 0,
-        "label": "スタンプ名",
-        "content": "解説を入力してください。"
-      }
     ]
   }
 }
