@@ -84,12 +84,12 @@ function getYouTubeEmbedUrl(videoId, startTime = 0) {
 function initializeExplanationPage(pageConfig, data) {
   if (!pageConfig) return;
 
-  const stageData = pageConfig.stageData || (pageConfig.timestamps ? { ...pageConfig.timestamps } : {});
+  const stageData = pageConfig.timestamps || {};
   const videoFrame = document.getElementById('videoFrame');
   const videoId = pageConfig.videoId;
   const stageLabels = pageConfig.stageLabels || [];
   const route = pageConfig.route || null;
-  const maxStage = Object.keys(stageData).length;
+  const maxStage = stageLabels.length;
   const INITIAL_STAGE = 1;
   let currentStage = INITIAL_STAGE;
   const listContainer = document.querySelector('#timestamps-list ul');
@@ -151,7 +151,7 @@ function initializeExplanationPage(pageConfig, data) {
   function renderTimestamps(stage) {
     let allTimestamps = [];
     
-    if (data && data.common && data.common.timestamps && data.common.timestamps[stage]) {
+    if (data.common && data.common.timestamps && data.common.timestamps[stage]) {
       const commonTimestamps = data.common.timestamps[stage];
       commonTimestamps.forEach((ts) => {
         if (!ts.label || !ts.description) {
