@@ -49,7 +49,7 @@ function initializeExplanationPage(pageConfig, data) {
   if (defaultH3) defaultH3.textContent = pageConfig.originalTitle || pageConfig.title;
 
   const characterMsg = document.querySelector('#content-default #character-message');
-  if (characterMsg) characterMsg.textContent = pageConfig.description || '';
+  if (characterMsg) characterMsg.innerHTML = pageConfig.description || '';
 
   const instructionMsg = document.querySelector('#content-default #instruction-message');
   if (instructionMsg) instructionMsg.textContent = '※タイムスタンプを選択すると説明が表示されます。';
