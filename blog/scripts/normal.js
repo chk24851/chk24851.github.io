@@ -37,7 +37,7 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
       pageConfig.originalTitle = originalLabel;
       pageConfig.characterKey = character;
       pageConfig.stageLabels = getStageLabels(route, data.stageLabels);
-      pageConfig.route = route;
+      pageConfig.characterRoute = route;
     } else {
       const characterKey = characterKeyOrName;
       pageConfig = data[characterKey];
@@ -65,8 +65,8 @@ async function loadAndInitializeNormal(dataUrl, characterKeyOrName, routeOrDiffi
 }
 
 function getStageLabels(characterKeyOrRoute, allLabels) {
-  const isRouteFinalA = characterKeyOrRoute === 'final_a' || characterKeyOrRoute.includes('final_a');
-  const isRouteFinalB = characterKeyOrRoute === 'final_b' || characterKeyOrRoute.includes('final_b');
+  const isRouteFinalA = characterKeyOrRoute === 'final_a';
+  const isRouteFinalB = characterKeyOrRoute === 'final_b';
   
   if (isRouteFinalA) {
     return allLabels.slice(0, 6);
@@ -84,11 +84,11 @@ function getYouTubeEmbedUrl(videoId, startTime = 0) {
 function initializeExplanationPage(pageConfig, data) {
   if (!pageConfig) return;
 
-  const stageData = pageConfig.timestamps || {};
+  const stageData = pageConfig.stageData || {};
   const videoFrame = document.getElementById('videoFrame');
   const videoId = pageConfig.videoId;
   const stageLabels = pageConfig.stageLabels || [];
-  const route = pageConfig.route || null;
+  const route = pageConfig.characterRoute || null;
   const maxStage = stageLabels.length;
   const INITIAL_STAGE = 1;
   let currentStage = INITIAL_STAGE;
@@ -151,8 +151,13 @@ function initializeExplanationPage(pageConfig, data) {
   function renderTimestamps(stage) {
     let allTimestamps = [];
     
-    if (data.common && data.common.timestamps && data.common.timestamps[stage]) {
-      const commonTimestamps = data.common.timestamps[stage];
+    let stageKey = String(stage);
+    if (route === 'final_b' && stage === maxStage && maxStage === 6) {
+      stageKey = '7';
+    }
+    
+    if (data.common && data.common.timestamps && data.common.timestamps[stageKey]) {
+      const commonTimestamps = data.common.timestamps[stageKey];
       commonTimestamps.forEach((ts) => {
         if (!ts.label || !ts.description) {
           return;
@@ -160,7 +165,14 @@ function initializeExplanationPage(pageConfig, data) {
         
         let timeValue = ts.time;
         if (typeof ts.time === 'object' && ts.time !== null) {
-          timeValue = ts.time[pageConfig.characterKey];
+          const charTimeData = ts.time[pageConfig.characterKey];
+          
+          if (typeof charTimeData === 'object' && charTimeData !== null && ('a' in charTimeData || 'b' in charTimeData)) {
+            const isFinalB = route === 'final_b';
+            timeValue = isFinalB ? charTimeData.b : charTimeData.a;
+          } else {
+            timeValue = charTimeData;
+          }
         }
         
         if (timeValue === undefined || timeValue === null) {

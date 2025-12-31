@@ -5,14 +5,10 @@
       "1": [
         {
           "time": {
-            "reimu_yukari_final_a": 144,
-            "reimu_yukari_final_b": 139,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 144, "b": 139},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "永夜蟄居",
           "description": "リグルの近くを回転しながら避けることができます。奇数波目はリグルの左下から右回りに，偶数波目はリグルの下から左回りに避けます。"
@@ -21,14 +17,10 @@
       "2": [
         {
           "time": {
-            "reimu_yukari_final_a": 330,
-            "reimu_yukari_final_b": 323,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 330, "b": 323},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "イルスタードダイブ",
           "description": "初めは画面中央やや下あたりで待機します。「スペルカード宣言時のスペルカードの文字の高さ」が目安です。１波目の使い魔が通り過ぎたらミスティアの下に張り付きます。これ以降は自機狙い弾に注意しつつミスティアを追いかけて攻撃します。"
@@ -37,42 +29,30 @@
       "3": [
         {
           "time": {
-            "reimu_yukari_final_a": 453,
-            "reimu_yukari_final_b": 437,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 453, "b": 437},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "中ボス通常",
           "description": "中央２つの使い魔から放たれる弾がやや厄介なので速攻しましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 594,
-            "reimu_yukari_final_b": 575,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 594, "b": 575},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "幻想天皇",
           "description": "最下段で中央とその横を反復しながら避けます。中央から始めて「弾の発射音が３回聞こえたら移動」を繰り返します。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 616,
-            "reimu_yukari_final_b": 594,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 616, "b": 594},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "高天原",
           "description": "最下段で中央から横一方向に避けます。「弾の発射音が６回聞こえたら移動」を繰り返します。"
@@ -81,112 +61,80 @@
       "4": [
         {
           "time": {
-            "reimu_yukari_final_a": 734,
-            "reimu_yukari_final_b": 714,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 734, "b": 714},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ミルキーウェイ",
           "description": "横から飛んでくる弾が来ない場所で正面からの弾を避けます。横の弾は若干下向きに動きながら飛んでくるので注意が必要です。また，撃破が遅れると魔方陣から弾の塊が飛んでくるので速攻しましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 751,
-            "reimu_yukari_final_b": 731,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 751, "b": 731},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ボス通常２",
           "description": "敵機依存固定弾です。魔理沙の移動は自機依存なので誘導できます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 768,
-            "reimu_yukari_final_b": 746,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 768, "b": 746},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "スターダストレヴァリエ",
           "description": "角度ランダムの固定弾です。まずは使い魔が全方位に画面端へ向けて広がってくるので間の列に入りましょう。その後，しばらく画面端を左回りに移動した後，中心に向かって戻ってきます。列に入った後，使い魔が左回りに移動し始めるそばの場所で待機していれば，戻ってくる使い魔に当たりません。その場所で星弾の列を避けましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 830,
-            "reimu_yukari_final_b": 805,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 830, "b": 805},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ボス通常３",
           "description": "<strong>準難所です。</strong>ランダム弾の気合避けです。密度の薄い場所で避けましょう。その際，弾が後ろから飛んでくることもありますので気をつけましょう。余裕があれば魔理沙を追いかけて速攻しましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 850,
-            "reimu_yukari_final_b": 822,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 850, "b": 822},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ノンディレクショナルレーザー",
           "description": "自機狙い弾と固定弾の組み合わせです。固定弾を避けた後に大きく横へ動いておくと，次の固定弾を避ける際に自機狙い弾が邪魔になりづらいです。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 874,
-            "reimu_yukari_final_b": 846,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 874, "b": 846},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ボス通常４",
           "description": "敵機依存固定弾です。魔理沙の移動は自機依存なので誘導できます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 891,
-            "reimu_yukari_final_b": 863,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 891, "b": 863},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "マスタースパーク",
           "description": "レーザーの端の薄い部分には判定がありません。レーザーは１波目は真下，２波目以降は自機方向に撃ってきます。２波目以降は魔理沙の真下から逸れた方向に撃たせると効率よく撃ち込むことができます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 919,
-            "reimu_yukari_final_b": 893,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 919, "b": 893},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "アースライトレイ",
           "description": "<strong>準難所です。</strong>自機狙い弾と自機外し弾の組み合わせです。自機狙い弾の列はやや高速なので，早めに切り返すことを心がけましょう。少し上側で構えると避けやすいと思います。"
@@ -195,146 +143,107 @@
       "5": [
         {
           "time": {
-            "reimu_yukari_final_a": 991,
-            "reimu_yukari_final_b": 971,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 991, "b": 971},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "道中１",
           "description": "開幕の妖精には当たり判定がありません。重なって攻撃することで楽に突破できます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1040,
-            "reimu_yukari_final_b": 1020,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1040, "b": 1020},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "道中２",
           "description": "最初の３体の妖精には当たり判定がありません。重なって速攻することで楽に突破できます。速攻できなかったときは焦らず下側に降りましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1067,
-            "reimu_yukari_final_b": 1046,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1067, "b": 1046},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "中ボス通常１",
           "description": "てゐを左端に誘導すると交差米粒弾が避けやすく，自機狙い小弾が邪魔になりづらいです。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1080,
-            "reimu_yukari_final_b": 1059,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1080, "b": 1059},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "中ボス通常２",
           "description": "内部ランクが変動しない限り，同じ動きで避けられます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1162,
-            "reimu_yukari_final_b": 1139,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1162, "b": 1139},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "赤眼催眠（マインドシェイカー）",
           "description": "速攻するなら中央，安定をとるなら左右下で避けます。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1185,
-            "reimu_yukari_final_b": 1160,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1185, "b": 1160},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ボス通常２",
           "description": "同じ場所から放たれた弾は同じ場所に飛んできます。つまり，敵が移動するまで使い魔の位置も変わらないので弾道も変わりません。したがって，一度入った隙間で避けられるならば，敵が移動するまでの間は不動で避けられます。ただし，敵が下側に降りてくると，弾が重なって難しい配置になることがあるので注意が必要です。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1228,
-            "reimu_yukari_final_b": 1202,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1228, "b": 1202},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "ボス通常３",
           "description": "使い魔を破壊しないように妖怪側で攻撃しましょう。また，「幻視調律（ビジョナリチューニング）」が終わってから攻撃が始まるまでの時間が短いので注意しましょう。"
         },
         {
           "time": {
-            "reimu_final_a": 0,
-            "reimu_final_b": 0
+            "reimu": {"a": 0, "b": 0}
           },
           "label": "ボス通常３",
           "description": "「幻視調律（ビジョナリチューニング）」が終わってから攻撃が始まるまでの時間が短いので注意しましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1245,
-            "reimu_yukari_final_b": 1217,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1245, "b": 1217},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "生神停止（アイドリングウェーブ）",
           "description": "１波目のみ，中央最下段で幻視状態から明けても被弾しません。２波目以降は最下段中央から横にずれた隙間で待機するようにしましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1273,
-            "reimu_yukari_final_b": 1243,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1273, "b": 1243},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "真実の月（インビジブルフルムーン）",
           "description": "鈴仙に近づくと少ない動きで避けることができます。小弾の列の間に入って避けますが，一時次の小弾の列と重なるので，位置を見失わないように気をつけましょう。"
         },
         {
           "time": {
-            "reimu_yukari_final_a": 1306,
-            "reimu_yukari_final_b": 1276,
-            "youmu_yuyuko_final_a": 0,
-            "youmu_yuyuko_final_b": 0,
-            "reimu_final_a": 0,
-            "reimu_final_b": 0,
-            "yukari_final_a": 0,
-            "yukari_final_b": 0
+            "reimu_yukari": {"a": 1306, "b": 1276},
+            "youmu_yuyuko": {"a": 0, "b": 0},
+            "reimu": {"a": 0, "b": 0},
+            "yukari": {"a": 0, "b": 0}
           },
           "label": "月兎遠隔催眠術（テレメスメリズム）",
           "description": "<strong>準難所です。</strong>１回目の幻視状態が解除されるまでは最下段から攻撃します。その後は鈴仙を追いかけながら撃ち込みます。"

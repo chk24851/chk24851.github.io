@@ -33,7 +33,6 @@ function getYouTubeEmbedUrl(videoId, startTime = 0) {
 function initializeExplanationPage(pageConfig, data) {
   if (!pageConfig) return;
 
-  const timestamps = pageConfig.timestamps || [];
   const videoFrame = document.getElementById('videoFrame');
   const videoId = pageConfig.videoId;
   const listContainer = document.querySelector('#timestamps-list ul');
@@ -67,7 +66,13 @@ function initializeExplanationPage(pageConfig, data) {
         
         let timeValue = ts.time;
         if (typeof ts.time === 'object' && ts.time !== null) {
-          timeValue = ts.time[pageConfig.characterKey];
+          const charTimeData = ts.time[pageConfig.characterKey];
+          
+          if (typeof charTimeData === 'object' && charTimeData !== null && ('a' in charTimeData || 'b' in charTimeData)) {
+            timeValue = charTimeData.a;
+          } else {
+            timeValue = charTimeData;
+          }
         }
         
         if (timeValue === undefined || timeValue === null) {
@@ -83,8 +88,8 @@ function initializeExplanationPage(pageConfig, data) {
       });
     }
     
-    if (timestamps && Array.isArray(timestamps)) {
-      timestamps.forEach((ts) => {
+    if (pageConfig.timestamps && Array.isArray(pageConfig.timestamps)) {
+      pageConfig.timestamps.forEach((ts) => {
         if (!ts.time || !ts.label || !ts.description) {
           return;
         }
