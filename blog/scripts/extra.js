@@ -3,15 +3,19 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
     const response = await fetch(dataUrl);
     const data = await response.json();
 
-    let pageConfig = data[characterKey];
-
-    if (!pageConfig) {
+    function handleInvalidData() {
       const match = window.location.pathname.match(/\/(th\d+)\//);
       if (match) {
         const gameKey = match[1];
         sessionStorage.setItem('errorMessage', '無効なパラメータです');
         window.location.href = `../${gameKey}/index.html`;
       }
+    }
+
+    let pageConfig = data[characterKey];
+
+    if (!pageConfig) {
+      handleInvalidData();
       return;
     }
 
@@ -28,6 +32,18 @@ async function loadAndInitializeExtra(dataUrl, characterKey, difficulty = 'extra
 
 function getYouTubeEmbedUrl(videoId, startTime = 0) {
   return `https://www.youtube.com/embed/${videoId}?start=${startTime}&autoplay=1`;
+}
+
+function getCharacterTimeValue(timeData, characterKey) {
+  if (typeof timeData === 'object' && timeData !== null) {
+    const charTimeData = timeData[characterKey];
+    
+    if (typeof charTimeData === 'object' && charTimeData !== null && ('a' in charTimeData || 'b' in charTimeData)) {
+      return charTimeData.a;
+    }
+    return charTimeData;
+  }
+  return timeData;
 }
 
 function initializeExplanationPage(pageConfig, data) {
@@ -55,25 +71,23 @@ function initializeExplanationPage(pageConfig, data) {
 
   const getStampContentsElements = () => contentPanel.querySelectorAll('.stamp-content');
 
+  let cachedAllTimestamps = null;
+
   const getAllTimestamps = () => {
+    if (cachedAllTimestamps !== null) {
+      return cachedAllTimestamps;
+    }
+
     let allTimestamps = [];
     
-    if (data && data.common && data.common.timestamps && Array.isArray(data.common.timestamps)) {
-      data.common.timestamps.forEach((ts) => {
+    const commonTimestamps = data?.common?.timestamps;
+    if (Array.isArray(commonTimestamps)) {
+      commonTimestamps.forEach((ts) => {
         if (!ts.label || !ts.description) {
           return;
         }
         
-        let timeValue = ts.time;
-        if (typeof ts.time === 'object' && ts.time !== null) {
-          const charTimeData = ts.time[pageConfig.characterKey];
-          
-          if (typeof charTimeData === 'object' && charTimeData !== null && ('a' in charTimeData || 'b' in charTimeData)) {
-            timeValue = charTimeData.a;
-          } else {
-            timeValue = charTimeData;
-          }
-        }
+        const timeValue = getCharacterTimeValue(ts.time, pageConfig.characterKey);
         
         if (timeValue === undefined || timeValue === null) {
           return;
@@ -102,7 +116,8 @@ function initializeExplanationPage(pageConfig, data) {
       });
     }
     
-    return allTimestamps.sort((a, b) => a.time - b.time);
+    cachedAllTimestamps = allTimestamps.sort((a, b) => a.time - b.time);
+    return cachedAllTimestamps;
   };
 
   function renderTimestamps() {
@@ -110,10 +125,10 @@ function initializeExplanationPage(pageConfig, data) {
     
     if (!listContainer) return;
 
-    listContainer.innerHTML = '';
     getStampContentsElements().forEach(el => {
       if (el.id !== 'content-default') el.remove();
     });
+    listContainer.innerHTML = '';
 
     if (allTimestamps.length === 0) {
       const li = document.createElement('li');
