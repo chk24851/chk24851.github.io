@@ -6,7 +6,7 @@
         {
           "time": {
             "reimu_a": 64,
-            "reimu_b": 0,
+            "reimu_b": 65,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -18,7 +18,7 @@
         {
           "time": {
             "reimu_a": 87,
-            "reimu_b": 0,
+            "reimu_b": 87,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -31,8 +31,8 @@
       "2": [
         {
           "time": {
-            "reimu_a": 168,
-            "reimu_b": 0,
+            "reimu_a": 178,
+            "reimu_b": 154,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -44,7 +44,7 @@
         {
           "time": {
             "reimu_a": 215,
-            "reimu_b": 0,
+            "reimu_b": 191,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -56,7 +56,7 @@
         {
           "time": {
             "reimu_a": 296,
-            "reimu_b": 0,
+            "reimu_b": 273,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -68,7 +68,7 @@
         {
           "time": {
             "reimu_a": 314,
-            "reimu_b": 0,
+            "reimu_b": 286,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -80,7 +80,7 @@
         {
           "time": {
             "reimu_a": 350,
-            "reimu_b": 0,
+            "reimu_b": 318,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -94,7 +94,7 @@
         {
           "time": {
             "reimu_a": 446,
-            "reimu_b": 0,
+            "reimu_b": 406,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -106,7 +106,7 @@
         {
           "time": {
             "reimu_a": 490,
-            "reimu_b": 0,
+            "reimu_b": 446,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -118,7 +118,7 @@
         {
           "time": {
             "reimu_a": 510,
-            "reimu_b": 0,
+            "reimu_b": 462,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -130,7 +130,7 @@
         {
           "time": {
             "reimu_a": 535,
-            "reimu_b": 0,
+            "reimu_b": 481,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -142,7 +142,7 @@
         {
           "time": {
             "reimu_a": 541,
-            "reimu_b": 0,
+            "reimu_b": 487,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -154,7 +154,7 @@
         {
           "time": {
             "reimu_a": 591,
-            "reimu_b": 0,
+            "reimu_b": 529,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -166,21 +166,21 @@
         {
           "time": {
             "reimu_a": 624,
-            "reimu_b": 0,
+            "reimu_b": 555,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "魔彩光の上海人形",
-          "description": "弾速の速い大弾に目が行きがちですが，ここでは黄色の楔弾列に注目して，片端が壁になって飛んでくる場合はその壁ごと避けるようにしましょう。"
+          "description": "速い大弾に目が行きがちですが，ここでは黄色の楔弾列に注目して，片端が壁になって飛んでくる場合はその壁ごと避けるようにしましょう。"
         }
       ],
       "4": [
         {
           "time": {
             "reimu_a": 754,
-            "reimu_b": 0,
+            "reimu_b": 680,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -192,7 +192,7 @@
         {
           "time": {
             "reimu_a": 771,
-            "reimu_b": 0,
+            "reimu_b": 697,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -204,7 +204,7 @@
         {
           "time": {
             "reimu_a": 797,
-            "reimu_b": 0,
+            "reimu_b": 718,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -216,19 +216,19 @@
         {
           "time": {
             "reimu_a": 873,
-            "reimu_b": 0,
+            "reimu_b": 789,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "道中３",
-          "description": "道中最後は完全固定弾幕です。小弾と米粒弾の各交差弾を一度に相手することのないようにしましょう。中央からやや左側に寄ると避けやすいと思います。"
+          "description": "道中最後は完全固定弾幕です。小弾と米粒弾の各交差弾を一度に相手することのないようにしましょう。中央からやや左側に寄ると避けやすくなります。"
         },
         {
           "time": {
-            "reimu_a": 901,
-            "reimu_b": 0
+            "reimu_a": 899,
+            "reimu_b": 825
           },
           "label": "ボス通常１",
           "description": "自機依存の大弾を上側に誘導することで撃ち込む時間を確保することができます。また，大弾を６回連続で撃ってくるときの画面上の小弾の密度を低くすることもできます。"
@@ -236,7 +236,7 @@
         {
           "time": {
             "reimu_a": 968,
-            "reimu_b": 0
+            "reimu_b": 880
           },
           "label": "ボス通常３",
           "description": "隙間が見えたら積極的に抜けていきましょう。密度がやや高いので，もたもたしていると下側で難しい配置になってしまうかもしれません。"
@@ -244,7 +244,7 @@
         {
           "time": {
             "reimu_a": 991,
-            "reimu_b": 0
+            "reimu_b": 899
           },
           "label": "グァルネリ・デル・ジェス",
           "description": "ルナサに近づくとペナルティ弾を撃ってきますが，自機外し弾なので恐れずにルナサの正面から始めましょう。自機近くの使い魔からは弾幕が発生しません。正面からゆっくり下がるとともに，「正面からの楔弾」と「後ろからの小弾」に気をつけましょう。楔弾は自機狙いです。画面端にいるときは画面外から飛んでくることもあるので特に注意しましょう。"
@@ -252,7 +252,7 @@
         {
           "time": {
             "reimu_a": 1017,
-            "reimu_b": 0,
+            "reimu_b": 920,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -264,13 +264,13 @@
         {
           "time": {
             "reimu_a": 1043,
-            "reimu_b": 0,
+            "reimu_b": 944,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
-          "label": "コンチェルトグロッソ",
+          "label": "霊車コンチェルトグロッソ",
           "description": "プリズムコンチェルトと同様，米粒弾がレーザーに重なると弾が変化しますが，こちらの方が変化する位置がより上側なので，弾道を見極めやすいでしょう。左下が避けやすいので，基本的にはそこを維持し，弾が迫ってきたら右側に逃げましょう。"
         }
       ],
@@ -278,7 +278,7 @@
         {
           "time": {
             "reimu_a": 1117,
-            "reimu_b": 0,
+            "reimu_b": 1017,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -290,7 +290,7 @@
         {
           "time": {
             "reimu_a": 1154,
-            "reimu_b": 0,
+            "reimu_b": 1054,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -302,7 +302,7 @@
         {
           "time": {
             "reimu_a": 1177,
-            "reimu_b": 0,
+            "reimu_b": 1077,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -314,7 +314,7 @@
         {
           "time": {
             "reimu_a": 1222,
-            "reimu_b": 0,
+            "reimu_b": 1117,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -326,7 +326,7 @@
         {
           "time": {
             "reimu_a": 1254,
-            "reimu_b": 0,
+            "reimu_b": 1145,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -338,7 +338,7 @@
         {
           "time": {
             "reimu_a": 1290,
-            "reimu_b": 0,
+            "reimu_b": 1192,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -350,21 +350,21 @@
         {
           "time": {
             "reimu_a": 1391,
-            "reimu_b": 0,
+            "reimu_b": 1276,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "天人の五衰",
-          "description": "<strong>準難所です。</strong>自機依存のばらまき弾を放ちます。視野を広く持ち，弾の少ない隙間に飛び込んで的確に処理できるかが取得の鍵となります。配置によっては大きく避けさせられることがあります。"
+          "description": "<strong>準難所です。</strong>自機依存のばらまき弾を放ちます。視野を広く持ち，弾の少ない隙間に飛び込んで的確に処理できるかが取得の鍵となります。配置によっては大きく避けさせられることがあります。弾速は速いですが，すべて直線的な軌道なので，落ち着いて避けましょう。"
         }
       ],
       "6": [
         {
           "time": {
             "reimu_a": 1471,
-            "reimu_b": 0,
+            "reimu_b": 1342,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -376,7 +376,7 @@
         {
           "time": {
             "reimu_a": 1487,
-            "reimu_b": 0,
+            "reimu_b": 1358,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -387,20 +387,8 @@
         },
         {
           "time": {
-            "reimu_a": 1515,
-            "reimu_b": 0,
-            "marisa_a": 0,
-            "marisa_b": 0,
-            "sakuya_a": 0,
-            "sakuya_b": 0
-          },
-          "label": "ボス通常１",
-          "description": "２波目は幽々子を左側に誘導するとワインダー弾の配置が比較的優しくなると思います。"
-        },
-        {
-          "time": {
             "reimu_a": 1576,
-            "reimu_b": 0,
+            "reimu_b": 1458,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -412,31 +400,31 @@
         {
           "time": {
             "reimu_a": 1612,
-            "reimu_b": 0,
+            "reimu_b": 1496,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "生者必滅の理 -死蝶-",
-          "description": "大弾の列に隙間ができたらすぐ切り返しましょう。留まっていると次の弾列が迫ってきたり，切り返しが遅れると弾列が壁になって追い詰められてしまったりする恐れがあります。"
+          "description": "固定弾と自機狙い弾の組み合わせです。自機狙い弾の発射間隔は固定なので，切り返しのタイミングを固定すればパターン化できます。"
         },
         {
           "time": {
             "reimu_a": 1643,
-            "reimu_b": 0,
+            "reimu_b": 1532,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "ボス通常３",
-          "description": "固定のナイフ列弾と自機狙いの大弾の組み合わせです。ナイフ弾は途中から中央寄りに寄ってくるので，どこかのタイミングで左右側に移動する必要があります。大弾の発射間隔は毎回固定なので，ナイフ弾の潜る列を決めればパターン化が可能です。"
+          "description": "固定ナイフ弾と自機狙い大弾の組み合わせです。最初は中央が安地ですが，途中からナイフ弾列が乱れるので，どこかのタイミングで左右に移動する必要があります。大弾の発射間隔は固定なので，ナイフ弾の潜る列を固定すればパターン化できます。"
         },
         {
           "time": {
             "reimu_a": 1683,
-            "reimu_b": 0,
+            "reimu_b": 1576,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -448,7 +436,7 @@
         {
           "time": {
             "reimu_a": 1740,
-            "reimu_b": 0,
+            "reimu_b": 1629,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
@@ -460,19 +448,19 @@
         {
           "time": {
             "reimu_a": 1769,
-            "reimu_b": 0,
+            "reimu_b": 1663,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,
             "sakuya_b": 0
           },
           "label": "完全なる墨染の桜 -亡我-",
-          "description": "<strong class='red'>難所です。</strong>開幕の固定弾以降は自機依存蝶弾とばらまき米粒弾の組み合わせです。紫蝶弾は自機の右側，水色蝶弾は自機の左側に飛んできます。初めに，幽々子を左側へ誘導します。１回目の水色蝶弾が迫ってきたあたりから幽々子とともに右側へ移動し，２～４回目の紫蝶弾を自機の左側にやり過ごすようにしながら追いかけます。４回目の紫蝶弾と青蝶弾の間がベストな切り返しタイミングです。遅れると，さらに右側の狭い隙間で５回目の蝶弾をやり過ごした後に大きく戻ってくることになります。このあたりになると，米粒弾が結構な数になってきます。米粒弾は速度や角度が異なるので気をつけて避けましょう。"
+          "description": "<strong>準難所です。</strong>開幕の固定弾以降は自機依存蝶弾とばらまき米粒弾の組み合わせです。紫蝶弾は自機の右側，水色蝶弾は自機の左側に飛んできます。初めに，幽々子を左側へ誘導します。１回目の水色蝶弾が迫ってきたあたりから幽々子とともに右側へ移動し，２～４回目の紫蝶弾を自機の左側にやり過ごすようにしながら追いかけます。４回目の紫蝶弾と青蝶弾の間がベストな切り返しタイミングです。遅れると，さらに右側の狭い隙間で５回目の蝶弾をやり過ごした後に大きく戻ってくることになります。このあたりになると，米粒弾が結構な数になってきます。米粒弾は速度や角度が異なるので気をつけて避けましょう。"
         },
         {
           "time": {
             "reimu_a": 1832,
-            "reimu_b": 0,
+            "reimu_b": 1731,
             "marisa_a": 0,
             "marisa_b": 0,
             "sakuya_a": 0,

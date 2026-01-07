@@ -17,7 +17,7 @@ function validateGameParameters(config) {
   
   if (config.difficulty) {
     const difficulty = params.get('difficulty');
-    if (difficulty && difficulty !== 'normal' && difficulty !== 'extra') {
+    if (difficulty && difficulty !== 'normal' && difficulty !== 'extra' && difficulty !== 'phantasm') {
       redirectWithError('index.html');
       return false;
     }
