@@ -25,7 +25,8 @@ function validateGameParameters(config) {
   
   if (config.route) {
     const route = params.get('route');
-    if (route && route !== 'final_a' && route !== 'final_b') {
+    if (route && route !== 'final_a' && route !== 'final_b' && 
+        !route.match(/^[abc][1-9]\d*$/)) {
       redirectWithError('index.html');
       return false;
     }
@@ -42,13 +43,13 @@ function initializeErrorBanner() {
   }
 }
 
+const getRelativePath = (depth) => {
+  return Array(depth).fill('..').join('/');
+};
+
 function getPageContext() {
   const pathname = window.location.pathname;
   const isHomePage = pathname === '/' || (pathname.endsWith('/index.html') && !pathname.includes('/achievements/') && !pathname.includes('/blog/'));
-
-  const getRelativePath = (depth) => {
-    return Array(depth).fill('..').join('/');
-  };
 
   if (pathname.includes('/blog/tmgc/setup')) {
     const depth = 3;
@@ -136,23 +137,13 @@ function getPageContext() {
   }
 }
 
-function getTitleFromPage(filePath) {
+function getTitleFromFile(filePath, selector) {
   return fetch(filePath)
     .then(response => response.text())
     .then(html => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
-      return doc.querySelector('h1').textContent;
-    });
-}
-
-function getTitleFromPageByTitle(filePath) {
-  return fetch(filePath)
-    .then(response => response.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      return doc.querySelector('title').textContent;
+      return doc.querySelector(selector).textContent;
     });
 }
 
@@ -160,10 +151,10 @@ function loadHeader() {
   const context = getPageContext();
 
   Promise.all([
-    getTitleFromPageByTitle(context.links.home),
-    getTitleFromPageByTitle(context.links.achievements),
-    getTitleFromPageByTitle(context.links.blog),
-    getTitleFromPageByTitle(context.links.sitemap)
+    getTitleFromFile(context.links.home, 'title'),
+    getTitleFromFile(context.links.achievements, 'title'),
+    getTitleFromFile(context.links.blog, 'title'),
+    getTitleFromFile(context.links.sitemap, 'title')
   ]).then(([homeTitle, achievementsTitle, blogTitle, sitemapTitle]) => {
     const headerHTML = `
       <header>
@@ -187,7 +178,7 @@ function loadHeader() {
           if (item.label === '') {
             try {
               const filePath = item.href || './';
-              const title = await getTitleFromPageByTitle(filePath);
+              const title = await getTitleFromFile(filePath, 'title');
               breadcrumbWithTitles.push({ ...item, label: title });
             } catch (error) {
               console.error('パンくず取得エラー:', error);
@@ -206,22 +197,20 @@ function loadHeader() {
           ).join(' > ') + 
           `</div>`;
         
-        const insertBreadcrumb = () => {
-          const container = document.querySelector('.container');
-          if (container) {
-            container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
-          } else {
-            setTimeout(insertBreadcrumb, 50);
-          }
-        };
-        insertBreadcrumb();
+        const container = document.querySelector('.container');
+        if (container) {
+          container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
+        }
       };
       
-      processBreadcrumb();
+      return processBreadcrumb();
     }
+    
+    return Promise.resolve();
+  }).then(() => {
+    document.body.style.display = 'block';
   }).catch(error => {
     console.error('ヘッダー読み込みエラー:', error);
-  }).finally(() => {
     document.body.style.display = 'block';
   });
 }
@@ -246,37 +235,19 @@ function setFavicon() {
 function setSiteTitle() {
   const context = getPageContext();
 
-  getTitleFromPage(context.links.home).then(h1FromHome => {
-    getTitleFromPageByTitle(context.links.home).then(titleFromHome => {
-      const currentTitle = document.title;
+  Promise.all([
+    getTitleFromFile(context.links.home, 'h1'),
+    getTitleFromFile(context.links.home, 'title')
+  ]).then(([h1FromHome, titleFromHome]) => {
+    const currentTitle = document.title;
 
-      if (!currentTitle.includes(' - ')) {
-        if (context.isHomePage && titleFromHome === h1FromHome) {
-          return;
-        } else {
-          document.title = `${currentTitle} - ${h1FromHome}`;
-        }
-      }
-    });
+    if (!currentTitle.includes(' - ') && titleFromHome !== h1FromHome) {
+      document.title = `${currentTitle} - ${h1FromHome}`;
+    }
   });
 }
 
 function initializeHTML() {
-  const head = document.head;
-  
-  if (!document.querySelector('meta[charset]')) {
-    const charsetMeta = document.createElement('meta');
-    charsetMeta.setAttribute('charset', 'UTF-8');
-    head.insertBefore(charsetMeta, head.firstChild);
-  }
-  
-  if (!document.querySelector('meta[name="viewport"]')) {
-    const viewportMeta = document.createElement('meta');
-    viewportMeta.setAttribute('name', 'viewport');
-    viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
-    head.insertBefore(viewportMeta, head.querySelector('title') || head.firstChild);
-  }
-
   const context = getPageContext();
 
   const link = document.createElement('link');

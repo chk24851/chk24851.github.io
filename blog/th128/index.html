@@ -20,9 +20,9 @@
     const difficulty = params.get('difficulty');
     const route = params.get('route');
 
-    validateGameParameters({ difficulty: true, route: true });
+    validateGameParameters({ difficulty: true, route: false });
 
-    if (difficulty && route) {
+    if (difficulty && (route || difficulty === 'extra')) {
       const script = document.createElement('script');
       script.src = difficulty === 'normal'
         ? '../scripts/normal.js'
@@ -66,7 +66,7 @@
           if (difficulty === 'normal') {
             loadAndInitializeNormal(dataUrl, route);
           } else {
-            loadAndInitializeExtra(dataUrl, route);
+            loadAndInitializeExtra(dataUrl, 'ex');
           }
         });
       };
@@ -90,7 +90,7 @@
         <h2>Extra</h2>
         <nav>
           <ul>
-            <li><a href="?difficulty=extra&route=ex">ルート　EX</a></li>
+            <li><a href="?difficulty=extra">ルート　EX</a></li>
           </ul>
         </nav>
       `;
