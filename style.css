@@ -604,6 +604,7 @@ header {
     width: 100%;
     margin-left: 0;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -611,6 +612,17 @@ header {
         background-color: #8a5a3a;
         box-shadow: 0 2px 8px rgba(217, 163, 115, 0.2);
     }
+}
+
+#hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
 }
 
 header nav ul {
@@ -639,6 +651,64 @@ header nav a:hover {
     color: #fff;
     text-decoration: none;
     transform: none;
+}
+
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: block;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #d97037;
+        box-shadow: 0 4px 8px rgba(217, 112, 55, 0.3);
+        width: 100%;
+        z-index: 1000;
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        header nav {
+            background-color: #8a5a3a;
+            box-shadow: 0 4px 8px rgba(217, 163, 115, 0.3);
+        }
+    }
+
+    header nav.active {
+        opacity: 1;
+        max-height: 300px;
+        visibility: visible;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+    header nav a {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 0;
+        font-size: 1em;
+    }
+
+    header nav a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 
 footer {

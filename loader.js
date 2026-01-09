@@ -158,7 +158,8 @@ function loadHeader() {
   ]).then(([homeTitle, achievementsTitle, blogTitle, sitemapTitle]) => {
     const headerHTML = `
       <header>
-        <nav>
+        <button id="hamburger-menu" aria-label="メニューを開く">☰</button>
+        <nav id="header-nav">
           <ul>
             <li><a href="${context.links.home}">${homeTitle}</a></li>
             <li><a href="${context.links.achievements}">${achievementsTitle}</a></li>
@@ -169,6 +170,21 @@ function loadHeader() {
       </header>`;
 
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
+
+    const hamburgerBtn = document.getElementById('hamburger-menu');
+    const headerNav = document.getElementById('header-nav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      headerNav.classList.toggle('active');
+      hamburgerBtn.setAttribute('aria-expanded', headerNav.classList.contains('active'));
+    });
+
+    document.querySelectorAll('#header-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        headerNav.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
 
     if (context.breadcrumb) {
       const processBreadcrumb = async () => {
