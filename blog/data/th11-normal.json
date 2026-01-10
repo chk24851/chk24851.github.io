@@ -5,6 +5,158 @@
       "1": [
         {
           "time": {
+            "reimu_a": 3,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "道中１",
+          "description": "グレイズによって交信強度を最大にすることで，上部へ移動しなくてもアイテムを自動回収できます。"
+        },
+        {
+          "time": {
+            "reimu_a": 9,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "道中２",
+          "description": "開幕以降，道中で弾を放ってくる敵は打ち返しを除いて青妖精だけです。場所によってはしつこく撃ってくるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 38,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "中ボス通常１",
+          "description": "安地があるので入ってもよいでしょう。「弾源付近」が目安です。"
+        },
+        {
+          "time": {
+            "reimu_a": 118,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "ボス通常２",
+          "description": "敵機依存安地です。「弾源付近」が目安です。敵が移動するので，弾の発射が終わったら少し上側へ逃げ，敵の移動が終わったら再び安地へ入りましょう。"
+        }
+      ],
+      "2": [
+        {
+          "time": {
+            "reimu_a": 200,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "グリーンアイドモンスター",
+          "description": "敵の当たり判定がないので，重なって攻撃することができます。"
+        }
+      ],
+      "3": [
+        {
+          "time": {
+            "reimu_a": 465,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "ボス通常３",
+          "description": "弾が上端と側端で反射します。弾をボスの真下に誘導すると左右両側から同時に弾が飛んできてしまうので，真下からずれたところに誘導しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 465,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "三歩必殺",
+          "description": "<strong>準難所です。</strong>１波につき弾が３回設置されます。２回目に設置される弾列の間で待機します。１回目に設置される弾列の動きとともに下端まで移動して避けます。特に，１波目の青弾列が非常にばらけるので，配置によっては難しくなります。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "道中",
+          "description": "道中後半の中弾と紫札弾は自機狙い，緑札弾は固定弾です。レーザー地帯までは弾の発射タイミングは固定なので，自機狙い弾の切り返しタイミングを固定するとパターン化できます。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu_a": 824,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "中ボス通常１",
+          "description": "中ボス直後の早回し地帯を回避するため，ここで遅回しします。なお，通常２で遅回しするのはランダムな高速弾を避け続けなければならないので非推奨です。また，通常を耐久してしまうとボスが逃げて早回し地帯が始まってしまい，遅回しが水の泡となってしまうので注意しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "",
+          "description": ""
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "",
+          "description": ""
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "",
+          "description": ""
+        },
+        {
+          "time": {
             "reimu_a": 0,
             "reimu_b": 0,
             "reimu_c": 0,
@@ -16,15 +168,19 @@
           "description": ""
         }
       ],
-      "2": [
-      ],
-      "3": [
-      ],
-      "4": [
-      ],
-      "5": [
-      ],
       "6": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "",
+          "description": ""
+        }
       ]
     }
   },
@@ -33,22 +189,17 @@
     "description": "",
     "videoId": "Xhaq2TBNtTA",
     "timestamps": {
-      "1": [
-        {
-          "time": 0,
-          "label": "",
-          "description": ""
-        }
-      ],
-      "2": [
-      ],
-      "3": [
-      ],
       "4": [
-      ],
-      "5": [
-      ],
-      "6": [
+        {
+          "time": 677,
+          "label": "二重黒死蝶",
+          "description": "<strong class='red'>難所です。</strong>弾の少ない場所で避けましょう。"
+        },
+        {
+          "time": 700,
+          "label": "飛行虫ネスト",
+          "description": "<strong>準難所です。</strong>蝶弾は粗い自機狙いなので早めに移動したくなりますが，側端側に連れてレーザーの隙間が狭くなるので，蝶弾がすべて反射した後に素早く切り返すようにしましょう。"
+        }
       ]
     }
   },
