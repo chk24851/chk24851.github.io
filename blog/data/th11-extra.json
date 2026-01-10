@@ -3,7 +3,7 @@
     "timestamps": [
       {
         "time": {
-          "reimu_a": 0,
+          "reimu_a": 3,
           "reimu_b": 0,
           "reimu_c": 0,
           "marisa_a": 0,
@@ -12,6 +12,66 @@
         },
         "label": "道中",
         "description": "グレイズによって交信強度を最大にすることで，上部へ移動しなくてもアイテムを自動回収できます。"
+      },
+      {
+        "time": {
+          "reimu_a": 81,
+          "reimu_b": 0,
+          "reimu_c": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "marisa_c": 0
+        },
+        "label": "九字刺し",
+        "description": "レーザーは中央下端にいれば当たりません。その中で弾を避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 115,
+          "reimu_b": 0,
+          "reimu_c": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "marisa_c": 0
+        },
+        "label": "五穀豊穣ライスシャワー",
+        "description": "安地です。「ミラクルフルーツのボーナススコアの百の位と千の位の間で当たり判定の印が数値の下端に内接する位置」が目安です。安地に入った後は真上に弾列が発射されないように，または真下に弾列が発射されるように，横移動で微調整しましょう。撃破後は早苗の体当たりを食らわないよう，速やかに離れましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 203,
+          "reimu_b": 0,
+          "reimu_c": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "marisa_c": 0
+        },
+        "label": "ボス通常１",
+        "description": "こいしを右側に誘導すると楽に避けられます。"
+      },
+      {
+        "time": {
+          "reimu_a": 318,
+          "reimu_b": 0,
+          "reimu_c": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "marisa_c": 0
+        },
+        "label": "ボス通常４",
+        "description": "こいしを右側に誘導すると楽に避けられます。"
+      },
+      {
+        "time": {
+          "reimu_a": 0,
+          "reimu_b": 0,
+          "reimu_c": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "marisa_c": 0
+        },
+        "label": "",
+        "description": ""
       },
       {
         "time": {
@@ -30,9 +90,7 @@
   "reimu_a": {
     "label": "博麗 霊夢（前方集中型）",
     "description": "前方集中ショット機体です。当たり判定が小さく，高火力で安定した強機体です。側端にてショットを撃たない状態でその壁に向かって移動すると，反対側の側端に瞬間移動することができます。",
-    "videoId": "M3fynqtve94",
-    "timestamps": [
-    ]
+    "videoId": "M3fynqtve94"
   },
   "reimu_b": {
     "label": "博麗 霊夢（貫通誘導型）",
