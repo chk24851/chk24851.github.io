@@ -207,6 +207,7 @@
       window.lastSyncPanelHeights = syncPanelHeights;
       ['load', 'resize'].forEach(event => window.addEventListener(event, syncPanelHeights));
       setTimeout(syncPanelHeights, SYNC_DELAY);
+      document.body.style.display = 'block';
     }
 
     const container = document.getElementById('container');

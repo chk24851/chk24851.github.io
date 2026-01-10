@@ -359,7 +359,7 @@
             "yukari": 1631
           },
           "label": "永夜返し　-子の二つ-",
-          "description": "<strong class='red'>難所です。</strong>横移動で避けます。避ける高さは「台詞欄の下端に当たり判定の印が外接する位置」が目安です。"
+          "description": "<strong class='red'>難所です。</strong>横移動で避けます。避ける高さは「当たり判定の印が台詞欄の下端に外接する位置」が目安です。"
         },
         {
           "time": {
