@@ -13,121 +13,97 @@
 <body>
   <div class="container">
 
-    <h1>セットアップ</h1>
+    <h1>セットアップに関する補足</h1>
 
     <div class="setup-section">
       <h2>前提</h2>
-      <p><strong>Windows 10</strong>上で<strong>コントローラ操作</strong>することを想定しています。次のソフトを使用するのでインターネット上からダウンロードします。</p>
+      <p>このページではトルテルマジックのセットアップに必要なファイルやソフトウェアについて補足します。なお，ここではゲームを<strong>Windows 10</strong>上で正常に動作させ，<strong>コントローラ操作</strong>することを想定しています。導入するものは次の通りです。</p>
       <ul>
-        <li>tmgc100+（ゲームソフト）</li>
-        <li>dgVoodoo（エミュレータソフト）</li>
-        <li>HidHide（コントローラ無効化ソフト）</li>
-        <li>JoyToKey（キー割り当てソフト）</li>
-        <li>YAMAHA XG WDM SoftSynthesizer（サウンド再生ソフト）</li>
+        <li>ゲームファイル</li>
+        <li>Direct3D関連のDLLファイル</li>
+        <li>エミュレータソフト</li>
+        <li>キー入力無効化ソフト</li>
+        <li>キー入力割り当てソフト</li>
+        <li>BGM再生ソフト</li>
       </ul>
-      以下，ゲームを除く各ソフトについて補足します。
+      <div class="note">
+        <p><strong>注意</strong>: </p>
+        <ul>
+          <li>掲載しているリンクは誤操作防止のため，その先のウェブサイトへワンクリックで遷移しないようにしています。リンク切れの場合はウェブアーカイブ経由でのアクセスや有志の配布先のウェブサイトへのアクセス（二次配布が認められているものに限る）を試みてください。</li>
+          <li>すべてのソフトウェアは管理者権限で起動してください。</li>
+          <li>このページに掲載されている内容に関するすべての操作については一切の責任を負いかねます。</li>
+        </ul>
+      </div>
     </div>
 
     <div class="setup-section">
-      <h2>2. インストール手順</h2>
+      <h2>【必須】ゲームファイル</h2>
+      <p>トルテルマジックは<a href="http://isweb1.infoseek.co.jp/~hoe/program/tortestg/index.html" target="_blank" onclick="return false;" style="color: #d97037; text-decoration: underline;">ぴえとろ惑星－トルテルマジック</a>で配布されていたフリーゲームです。配布元のウェブサイトはすでに閉鎖されています。</p>
       <ol>
-        <li>
-          <strong>リポジトリをクローンする</strong>
-          <div class="code-block">git clone https://github.com/chk24851/tortelmagic.git<br>cd tortelmagic</div>
-        </li>
-        <li>
-          <strong>依存パッケージをインストール</strong>
-          <div class="code-block">pip install -r requirements.txt</div>
-          <div class="note">
-            <strong>注意</strong>: pipコマンドが利用できない場合は、Pythonパッケージマネージャー（pip3）を使用してください。
-          </div>
-        </li>
-        <li>
-          <strong>設定ファイルを作成</strong>
-          <div class="code-block">cp config.example.json config.json</div>
-          <p>必要に応じて<code>config.json</code>ファイルを編集してください。</p>
-        </li>
+        <li><code>tmgc100+.lzh</code>をダウンロードして展開してください。</li>
+      </ol>
+      <p>展開したフォルダ内に<code>tmgc100+.exe</code>や<code>tmgc100+.txt</code>があります。</p>
+    </div>
+
+    <div class="setup-section">
+      <h2>【必須】Direct3D関連のDLLファイル</h2>
+      <p>トルテルマジックはDirect3Dを使用しており，Windows 10に標準搭載されていないファイル<code>d3drm.dll</code>が必要です。これは「DirectX End-User Runtimes (March 2009) - 日本語」に同梱されています。</p>
+      <ol>
+        <li><a href="https://www.microsoft.com/ja-jp/download/details.aspx?id=19743" target="_blank" onclick="return false;" style="color: #d97037; text-decoration: underline;">Download DirectX End-User Runtimes (March 2009) - 日本語 from Official Microsoft Download Center</a>から<code>directx_mar2009_redist.exe</code>をダウンロードして展開してください。配布はすでに終了しています。</li>
+        <li>展開したフォルダ内の<code>dxnt.cab</code>を展開してください。</li>
+        <li>展開したフォルダ内の<code>d3drm.dll</code>を<code>tmgc100+.exe</code>のあるフォルダへコピーしてください。</li>
       </ol>
     </div>
 
     <div class="setup-section">
-      <h2>3. 初期設定</h2>
-      <ol>
-        <li>
-          <strong>データベースの初期化</strong>
-          <div class="code-block">python setup.py init-db</div>
-        </li>
-        <li>
-          <strong>デフォルトデータの読み込み</strong>
-          <div class="code-block">python manage.py migrate<br>python manage.py seed</div>
-        </li>
-        <li>
-          <strong>環境変数の設定</strong>
-          <p><code>.env</code>ファイルを作成し、必要な環境変数を設定します。</p>
-          <div class="code-block">API_KEY=your_api_key<br>DEBUG=True<br>ENVIRONMENT=development</div>
-        </li>
-      </ol>
+      <h2>【必須】エミュレータソフト</h2>
+      <p>トルテルマジックはDirect3Dを使用しており，Windows 10では正常に動作しません。そのため，Direct3Dをエミュレートするソフトウェアが必要です。ここでは，その方法の一例として「dgVoodoo」を紹介します。</p>
+        <ol>
+          <li><a href="https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/#latest-stable-version" onclick="return false;" style="color: #d97037; text-decoration: underline;">Downloads - Dege's stuffs</a>からLatest stable versionのdgVoodooをダウンロードして展開してください。</li>
+          <li>展開したフォルダ直下の<code>dgVoodooCpl.exe</code>，<code>MS > x86</code>フォルダ内の<code>D3DImm.dll</code>，<code>DDraw.dll</code>をすべて<code>tmgc100+.exe</code>のあるフォルダへコピーしてください。</li>
+          <li><code>dgVoodooCpl.exe</code>を起動してください。</li>
+          <li>
+            Config folder / Running instanceの「.¥」を選択してください。また，次の通りに設定を変更してください。
+            <ul>
+              <li>General > Appearance
+                <ul>
+                  <li>
+                    ラジオボタン「Full Screen」「Windowed」を選択
+                    <p>フルスクリーンモードで起動したい場合は「Full Screen」，ウインドウモードで起動したい場合は「Windowed」を選択してください。</p>
+                  </li>
+                  <li>Windowedの右側のプルダウンボックスから「Streched, 4:3 Aspect Ratio」を選択</li>
+                </ul>
+              </li>
+              <li>DirectX > Videocard
+                <ul>
+                  <li>プルダウンボックスから「Voodoo Virtual SVGA Card」を選択</li>
+                  <li>VRAMの右側のプルダウンボックスから「64 MB」を選択</li>
+                </ul>
+              </li>
+              <li>DirectX > Miscellanneous
+                <ul>
+                  <li>チェックボックス「dgVoodoo Watermark」を選択解除</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>「Apply」を選択して設定を保存し，「OK」を選択して<code>dgVoodooCpl.exe</code>を終了してください。</li>
+        </ol>
     </div>
 
     <div class="setup-section">
-      <h2>4. アプリケーションの起動</h2>
-      <ol>
-        <li>
-          <strong>開発サーバーの起動</strong>
-          <div class="code-block">python manage.py runserver</div>
-          <p>ブラウザで<code>http://localhost:8000</code>にアクセスしてください。</p>
-        </li>
-        <li>
-          <strong>本番環境での実行</strong>
-          <div class="code-block">python manage.py runserver --env production</div>
-        </li>
-      </ol>
+      <h2>キー入力無効化ソフト</h2>
+      <p>トルテルマジックには入力遅延があります。そのため，入力遅延を解消するためには<code>tmgc100+.txt</code>に掲載されているデフォルトのキー入力を無効にするとともに，新たにキー入力を割り当てる必要があります（後述の「キー入力割り当てソフト」を参照）。ここでは，その方法の一例として「HidHide」を紹介します。</p>
     </div>
 
     <div class="setup-section">
-      <h2>5. テストの実行</h2>
-      <p>アプリケーションが正しくセットアップされたか確認するため、テストを実行します。</p>
-      <div class="code-block">python -m pytest tests/<br>python -m pytest tests/ -v</div>
-      <p><strong>-v</strong>フラグを使用すると、詳細な出力が表示されます。</p>
+      <h2>キー入力割り当てソフト</h2>
+      <p>トルテルマジックにはキーコンフィグがありません。そのため，デフォルトのキー以外で操作するためには新たにキー入力を割り当てる必要があります。ここでは，その方法の一例として「JoyToKey」を紹介します。</p>
     </div>
 
     <div class="setup-section">
-      <h2>6. よくある問題と解決方法</h2>
-      <dl>
-        <dt><strong>問題: Pythonが見つからない</strong></dt>
-        <dd>
-          Pythonがシステムパスに含まれていない可能性があります。
-          <div class="code-block">python --version</div>
-          を実行して、インストール状態を確認してください。
-        </dd>
-
-        <dt><strong>問題: 依存パッケージのインストール失敗</strong></dt>
-        <dd>
-          <div class="code-block">pip install --upgrade pip setuptools wheel<br>pip install -r requirements.txt</div>
-          を実行して、pipを最新バージョンに更新してから再試行してください。
-        </dd>
-
-        <dt><strong>問題: ポート8000が既に使用されている</strong></dt>
-        <dd>
-          <div class="code-block">python manage.py runserver 8001</div>
-          別のポート番号を指定して実行してください。
-        </dd>
-
-        <dt><strong>問題: データベースエラーが発生する</strong></dt>
-        <dd>
-          <div class="code-block">python manage.py migrate --reset<br>python manage.py seed</div>
-          データベースをリセットして再初期化してください。
-        </dd>
-      </dl>
-    </div>
-
-    <div class="setup-section">
-      <h2>7. 次のステップ</h2>
-      <ul>
-        <li><a href="https://github.com/chk24851/tortelmagic" target="_blank" style="color: #d97037; text-decoration: underline;">GitHubリポジトリ</a>を確認して、最新の情報を取得します。</li>
-        <li><a href="../" style="color: #d97037; text-decoration: underline;">トルテルマジックのメインページ</a>で、ゲーム情報を確認します。</li>
-        <li>API仕様やプラグイン開発に関する詳細は、ドキュメントを参照してください。</li>
-      </ul>
+      <h2>BGM再生ソフト</h2>
+      <p>トルテルマジックのBGMファイルはMIDI形式になっており，Windows10にはMIDI音源「Microsoft GS Wavetable SW」が標準搭載されています。しかし，この音源では一部の音が正しく再生されないため，再生されるようにする必要があります。ここでは，その方法の一例として「YAMAHA XG WDM SoftSynthesizer」を紹介します。</p>
     </div>
   </div>
 </body>
