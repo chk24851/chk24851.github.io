@@ -129,18 +129,6 @@
         },
         {
           "time": {
-            "reimu_a": 535,
-            "reimu_b": 481,
-            "marisa_a": 471,
-            "marisa_b": 468,
-            "sakuya_a": 506,
-            "sakuya_b": 471
-          },
-          "label": "ボス通常２",
-          "description": "下側の隅が安地なので使ってもよいでしょう。"
-        },
-        {
-          "time": {
             "reimu_a": 541,
             "reimu_b": 487,
             "marisa_a": 477,

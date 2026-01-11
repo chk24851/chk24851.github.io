@@ -278,9 +278,9 @@ function initializeHTML() {
   setSiteTitle();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   initializeHTML();
   initializeErrorBanner();
-  loadHeader();
+  await loadHeader();
   loadFooter();
 });
