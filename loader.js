@@ -186,6 +186,13 @@ function loadHeader() {
       });
     });
 
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('header') && headerNav.classList.contains('active')) {
+        headerNav.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
     if (context.breadcrumb) {
       const processBreadcrumb = async () => {
         const breadcrumbWithTitles = [];

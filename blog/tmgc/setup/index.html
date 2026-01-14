@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>セットアップ</title>
+  <title>セットアップに関する補足</title>
   <style>
     body { display: none; }
   </style>
@@ -21,16 +21,16 @@
       <ul>
         <li>ゲームファイル</li>
         <li>Direct3D関連のDLLファイル</li>
-        <li>エミュレータソフト</li>
-        <li>キー入力無効化ソフト</li>
-        <li>キー入力割り当てソフト</li>
-        <li>BGM再生ソフト</li>
+        <li>エミュレータソフトウェア</li>
+        <li>キー入力無効化ソフトウェア</li>
+        <li>キー入力割り当てソフトウェア</li>
+        <li>BGM再生ソフトウェア</li>
       </ul>
       <div class="note">
         <p><strong>注意</strong>: </p>
         <ul>
           <li>掲載しているリンクは誤操作防止のため，その先のウェブサイトへワンクリックで遷移しないようにしています。リンク切れの場合はウェブアーカイブ経由でのアクセスや有志の配布先のウェブサイトへのアクセス（二次配布が認められているものに限る）を試みてください。</li>
-          <li>すべてのソフトウェアは管理者権限で起動してください。</li>
+          <li>正常にセットアップを行うため，すべてのソフトウェアは管理者権限で起動してください。</li>
           <li>このページに掲載されている内容に関するすべての操作については一切の責任を負いかねます。</li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="setup-section">
-      <h2>【必須】エミュレータソフト</h2>
+      <h2>【必須】エミュレータソフトウェア</h2>
       <p>トルテルマジックはDirect3Dを使用しており，Windows 10では正常に動作しません。そのため，Direct3Dをエミュレートするソフトウェアが必要です。ここでは，その方法の一例として「dgVoodoo」を紹介します。</p>
         <ol>
           <li><a href="https://dege.freeweb.hu/dgVoodoo2/dgVoodoo2/#latest-stable-version" onclick="return false;" style="color: #d97037; text-decoration: underline;">Downloads - Dege's stuffs</a>からLatest stable versionのdgVoodooをダウンロードして展開してください。</li>
@@ -68,7 +68,7 @@
               <li>General > Appearance
                 <ul>
                   <li>
-                    ラジオボタン「Full Screen」「Windowed」を選択
+                    ラジオボタン「Full Screen」「Windowed」をいずれか選択
                     <p>フルスクリーンモードで起動したい場合は「Full Screen」，ウインドウモードで起動したい場合は「Windowed」を選択してください。</p>
                   </li>
                   <li>Windowedの右側のプルダウンボックスから「Streched, 4:3 Aspect Ratio」を選択</li>
@@ -92,17 +92,17 @@
     </div>
 
     <div class="setup-section">
-      <h2>キー入力無効化ソフト</h2>
-      <p>トルテルマジックには入力遅延があります。そのため，入力遅延を解消するためには<code>tmgc100+.txt</code>に掲載されているデフォルトのキー入力を無効にするとともに，新たにキー入力を割り当てる必要があります（後述の「キー入力割り当てソフト」を参照）。ここでは，その方法の一例として「HidHide」を紹介します。</p>
+      <h2>キー入力無効化ソフトウェア</h2>
+      <p>トルテルマジックには入力遅延があります。そのため，遅延のない操作をするためには<code>tmgc100+.txt</code>に掲載されているデフォルトのキー入力を無効にするとともに，新たにキー入力を割り当てる必要があります（後述の「キー入力割り当てソフト」を参照）。ここでは，その方法の一例として「HidHide」を紹介します。</p>
     </div>
 
     <div class="setup-section">
-      <h2>キー入力割り当てソフト</h2>
+      <h2>キー入力割り当てソフトウェア</h2>
       <p>トルテルマジックにはキーコンフィグがありません。そのため，デフォルトのキー以外で操作するためには新たにキー入力を割り当てる必要があります。ここでは，その方法の一例として「JoyToKey」を紹介します。</p>
     </div>
 
     <div class="setup-section">
-      <h2>BGM再生ソフト</h2>
+      <h2>BGM再生ソフトウェア</h2>
       <p>トルテルマジックのBGMファイルはMIDI形式になっており，Windows10にはMIDI音源「Microsoft GS Wavetable SW」が標準搭載されています。しかし，この音源では一部の音が正しく再生されないため，再生されるようにする必要があります。ここでは，その方法の一例として「YAMAHA XG WDM SoftSynthesizer」を紹介します。</p>
     </div>
   </div>
