@@ -96,7 +96,7 @@
         {
           "time": {
             "reimu_a": 824,
-            "reimu_b": 0,
+            "reimu_b": 892,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -108,7 +108,7 @@
         {
           "time": {
             "reimu_a": 857,
-            "reimu_b": 0,
+            "reimu_b": 927,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -119,7 +119,7 @@
         },
         {
           "time": {
-            "reimu_b": 0,
+            "reimu_b": 946,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -131,7 +131,7 @@
         {
           "time": {
             "reimu_a": 938,
-            "reimu_b": 0,
+            "reimu_b": 1005,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -142,8 +142,20 @@
         },
         {
           "time": {
+            "reimu_a": 962,
+            "reimu_b": 1039,
+            "reimu_c": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "ゾンビフェアリー",
+          "description": "開始直後はボスのそばで待機します。妖精が復活したらお燐の上側へ右回りで上がり，弾を放ち始めたら右回りでお燐の真下まで移動します。基本的にはお燐へ攻撃しますが，妖精が近づいてきて避けづらくなったときは大きく左右へ移動し，妖精を誘導して倒しましょう。ある程度倒した後，再びお燐の真下へ移動して攻撃しましょう。以降，その繰り返しです。"
+        },
+        {
+          "time": {
             "reimu_a": 978,
-            "reimu_b": 0,
+            "reimu_b": 1062,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -155,7 +167,7 @@
         {
           "time": {
             "reimu_a": 1032,
-            "reimu_b": 0,
+            "reimu_b": 1122,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -167,7 +179,7 @@
         {
           "time": {
             "reimu_a": 1058,
-            "reimu_b": 0,
+            "reimu_b": 1149,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -180,7 +192,7 @@
       "6": [
         {
           "time": {
-            "reimu_b": 0,
+            "reimu_b": 1200,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -192,19 +204,19 @@
         {
           "time": {
             "reimu_a": 1142,
-            "reimu_b": 0,
+            "reimu_b": 1244,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
           },
           "label": "火焔の車輪",
-          "description": "低速移動だけで避けられます。"
+          "description": "低速移動のみで避けられます。"
         },
         {
           "time": {
             "reimu_a": 1215,
-            "reimu_b": 0,
+            "reimu_b": 1322,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -216,7 +228,7 @@
         {
           "time": {
             "reimu_a": 1259,
-            "reimu_b": 0,
+            "reimu_b": 1361,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_c": 0
@@ -227,7 +239,7 @@
         {
           "time": {
             "reimu_a": 1302,
-            "reimu_b": 0,
+            "reimu_b": 1398,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -239,7 +251,7 @@
         {
           "time": {
             "reimu_a": 1323,
-            "reimu_b": 0,
+            "reimu_b": 1430,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -251,7 +263,7 @@
         {
           "time": {
             "reimu_a": 1335,
-            "reimu_b": 0,
+            "reimu_b": 1446,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -263,7 +275,7 @@
         {
           "time": {
             "reimu_a": 1359,
-            "reimu_b": 0,
+            "reimu_b": 1474,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -275,7 +287,7 @@
         {
           "time": {
             "reimu_a": 1382,
-            "reimu_b": 0,
+            "reimu_b": 1523,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -287,7 +299,7 @@
         {
           "time": {
             "reimu_a": 1417,
-            "reimu_b": 0,
+            "reimu_b": 1559,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
