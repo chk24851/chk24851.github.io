@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -452,6 +456,12 @@ table td {
     background-color: #ecf0f1;
 }
 
+.achievements-table a:focus-visible {
+    background-color: #ecf0f1;
+    outline: 2px solid #d97037;
+    outline-offset: -2px;
+}
+
 .achievements-table a.disabled {
     cursor: default;
     pointer-events: none;
@@ -464,6 +474,11 @@ table td {
 @media (prefers-color-scheme: dark) {
     .achievements-table a:hover {
         background-color: #3e2723;
+    }
+
+    .achievements-table a:focus-visible {
+        background-color: #3e2723;
+        outline-color: #d9a373;
     }
 
     .achievements-table a.disabled:hover {
@@ -604,7 +619,9 @@ header {
     width: 100%;
     margin-left: 0;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -623,6 +640,12 @@ header {
     cursor: pointer;
     padding: 10px 20px;
     margin: 0;
+}
+
+#hamburger-menu:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+    transition: none;
 }
 
 header nav ul {
@@ -651,6 +674,12 @@ header nav a:hover {
     color: #fff;
     text-decoration: none;
     transform: none;
+}
+
+header nav a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -734,6 +763,40 @@ footer p {
     margin: 0;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links a:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .sitemap-list {
     margin-left: 20px;
 }
@@ -812,8 +875,9 @@ footer p {
     transform: none;
 }
 
-.stage-arrow:focus {
-    outline: none;
+.stage-arrow:focus-visible {
+    outline: 2px solid #d97037;
+    outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -825,6 +889,10 @@ footer p {
         color: #e8b896;
         background-color: transparent;
         box-shadow: none;
+    }
+
+    .stage-arrow:focus-visible {
+        outline-color: #d9a373;
     }
 
     .stage-selector {
@@ -854,8 +922,9 @@ footer p {
     border: none;
 }
 
-#stage-dropdown:focus {
-    outline: none;
+#stage-dropdown:focus-visible {
+    outline: 2px solid #d97037;
+    outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -866,6 +935,10 @@ footer p {
 
     #stage-dropdown:hover {
         color: #e8b896;
+    }
+
+    #stage-dropdown:focus-visible {
+        outline-color: #d9a373;
     }
 
     #stage-dropdown option {
@@ -1296,6 +1369,49 @@ strong.red {
         background-color: #1a1a1a;
         border-color: #444;
         color: #e0e0e0;
+    }
+}
+
+#scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #d97037;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(217, 112, 55, 0.3);
+}
+
+#scroll-top-btn:hover {
+    background-color: #c85a29;
+    transform: translateY(-3px);
+}
+
+#scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+    #scroll-top-btn {
+        background-color: #8a5a3a;
+        box-shadow: 0 2px 8px rgba(217, 163, 115, 0.3);
+    }
+
+    #scroll-top-btn:hover {
+        background-color: #6a4020;
     }
 }
 

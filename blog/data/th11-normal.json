@@ -6,7 +6,6 @@
         {
           "time": {
             "reimu_a": 3,
-            "reimu_b": 0,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -18,7 +17,6 @@
         {
           "time": {
             "reimu_a": 9,
-            "reimu_b": 0,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -30,7 +28,7 @@
         {
           "time": {
             "reimu_a": 118,
-            "reimu_b": 0,
+            "reimu_b": 124,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -44,7 +42,7 @@
         {
           "time": {
             "reimu_a": 200,
-            "reimu_b": 0,
+            "reimu_b": 207,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -58,7 +56,7 @@
         {
           "time": {
             "reimu_a": 465,
-            "reimu_b": 0,
+            "reimu_b": 503,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -70,7 +68,7 @@
         {
           "time": {
             "reimu_a": 476,
-            "reimu_b": 0,
+            "reimu_b": 521,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -84,7 +82,7 @@
         {
           "time": {
             "reimu_a": 569,
-            "reimu_b": 0,
+            "reimu_b": 628,
             "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
@@ -339,7 +337,19 @@
     "description": "前方追尾ショット機体です。当たり判定が小さく，攻撃にあたって必ずしも敵の正面をとる必要はありませんが，敵の方向にやや曲がる程度の追尾で火力の低い機体です。すべてのボタンを離すと画面上のアイテムを自動回収できます。",
     "videoId": "M8X4JKowJ60",
     "timestamps": {
+      "1": [
+        {
+          "time": 10,
+          "label": "道中",
+          "description": "開幕以降，道中で弾を放ってくる敵は打ち返しを除いて青妖精だけです。場所によってはしつこく撃ってくるので気をつけましょう。"
+        }
+      ],
       "4": [
+        {
+          "time": 784,
+          "label": "濛々迷霧",
+          "description": "画面全体を使って大きく誘導しましょう。敵を引き付けてから"
+        }
       ]
     }
   },
@@ -349,8 +359,6 @@
     "videoId": "_KW6Q0qOW0g",
     "timestamps": {
       "4": [
-      ],
-      "6": [
       ]
     }
   },

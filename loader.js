@@ -137,13 +137,23 @@ function getPageContext() {
   }
 }
 
+const titleCache = {};
+
 function getTitleFromFile(filePath, selector) {
+  const cacheKey = `${filePath}:${selector}`;
+  
+  if (titleCache[cacheKey]) {
+    return Promise.resolve(titleCache[cacheKey]);
+  }
+  
   return fetch(filePath)
     .then(response => response.text())
     .then(html => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
-      return doc.querySelector(selector).textContent;
+      const title = doc.querySelector(selector).textContent;
+      titleCache[cacheKey] = title;
+      return title;
     });
 }
 
@@ -241,10 +251,36 @@ function loadHeader() {
 function loadFooter() {
   const footerHTML = `
     <footer>
-      <p>&copy; 2026 ちこい</p>
-    </footer>`;
+      <div class="footer-content">
+        <p>&copy; 2026 ちこい</p>
+        <div class="footer-links">
+          <a href="https://www.youtube.com/@chikoi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
+          <a href="https://x.com/chk24851" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+    </footer>
+    <button id="scroll-top-btn" aria-label="ページトップへ">↑</button>`;
 
   document.body.insertAdjacentHTML('beforeend', footerHTML);
+  
+  const scrollTopBtn = document.getElementById('scroll-top-btn');
+  
+  const toggleScrollTopBtn = () => {
+    if (window.scrollY > 100) {
+      scrollTopBtn.classList.add('visible');
+    } else {
+      scrollTopBtn.classList.remove('visible');
+    }
+  };
+  
+  window.addEventListener('scroll', toggleScrollTopBtn);
+  
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
 
 function setFavicon() {
@@ -270,6 +306,166 @@ function setSiteTitle() {
   });
 }
 
+function setOGPTags() {
+  const pageTitle = document.title;
+  const pageUrl = window.location.href;
+  const ogpImage = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'><rect fill='%23d97037' width='1200' height='630'/><text y='350' font-size='200' text-anchor='middle' x='600' fill='white'>🐮</text><text y='450' font-size='48' text-anchor='middle' x='600' fill='white'>ちこいアーカイブ</text></svg>";
+
+  const ogpMeta = [
+    { property: 'og:title', content: pageTitle },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: pageUrl },
+    { property: 'og:image', content: ogpImage }
+  ];
+
+  ogpMeta.forEach(meta => {
+    if (!document.querySelector(`meta[property="${meta.property}"]`)) {
+      const metaTag = document.createElement('meta');
+      metaTag.setAttribute('property', meta.property);
+      metaTag.setAttribute('content', meta.content);
+      document.head.appendChild(metaTag);
+    }
+  });
+}
+
+function setRobotsMeta() {
+  if (!document.querySelector('meta[name="robots"]')) {
+    const robotsMeta = document.createElement('meta');
+    robotsMeta.setAttribute('name', 'robots');
+    robotsMeta.setAttribute('content', 'index, follow');
+    document.head.appendChild(robotsMeta);
+  }
+}
+
+function setupPWA() {
+  // manifest.json リンク
+  if (!document.querySelector('link[rel="manifest"]')) {
+    const manifestLink = document.createElement('link');
+    manifestLink.rel = 'manifest';
+    manifestLink.href = '/manifest.json';
+    document.head.appendChild(manifestLink);
+  }
+
+  // theme-color メタタグ
+  if (!document.querySelector('meta[name="theme-color"]')) {
+    const themeColorMeta = document.createElement('meta');
+    themeColorMeta.setAttribute('name', 'theme-color');
+    themeColorMeta.setAttribute('content', '#d97037');
+    document.head.appendChild(themeColorMeta);
+  }
+
+  // Apple用のアイコン
+  if (!document.querySelector('link[rel="apple-touch-icon"]')) {
+    const appleTouchIcon = document.createElement('link');
+    appleTouchIcon.rel = 'apple-touch-icon';
+    appleTouchIcon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><rect fill="%23d97037" width="180" height="180"/><text y="130" font-size="130" text-anchor="middle" x="90" fill="white">🐮</text></svg>';
+    document.head.appendChild(appleTouchIcon);
+  }
+}
+
+function setupCSP() {
+  if (!document.querySelector('meta[http-equiv="Content-Security-Policy"]')) {
+    const cspMeta = document.createElement('meta');
+    cspMeta.setAttribute('http-equiv', 'Content-Security-Policy');
+    cspMeta.setAttribute('content', "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube.com; base-uri 'self'; form-action 'self';");
+    document.head.appendChild(cspMeta);
+  }
+}
+
+function setupStructuredData() {
+  if (document.querySelector('script[type="application/ld+json"]')) {
+    return; // 既に存在する場合はスキップ
+  }
+
+  const breadcrumbList = generateBreadcrumbList();
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ちこいアーカイブ",
+    "url": "https://chk24851.github.io/",
+    "logo": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect fill='%23d97037' width='200' height='200'/><text y='150' font-size='140' text-anchor='middle' x='100' fill='white'>🐮</text></svg>"
+  };
+
+  // Organization スキーマを追加
+  const orgScript = document.createElement('script');
+  orgScript.type = 'application/ld+json';
+  orgScript.textContent = JSON.stringify(organizationSchema);
+  document.head.appendChild(orgScript);
+
+  // BreadcrumbList スキーマがある場合は追加
+  if (breadcrumbList) {
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.textContent = JSON.stringify(breadcrumbList);
+    document.head.appendChild(breadcrumbScript);
+  }
+}
+
+function generateBreadcrumbList() {
+  const path = window.location.pathname;
+  
+  // ホームページの場合はスキップ
+  if (path === '/' || path === '/index.html') {
+    return null;
+  }
+
+  const segments = path.split('/').filter(s => s && s !== 'index.html');
+  const breadcrumbs = [];
+  let currentPath = '';
+
+  // ホーム
+  breadcrumbs.push({
+    "@type": "ListItem",
+    "position": 1,
+    "name": "ホーム",
+    "item": "https://chk24851.github.io/"
+  });
+
+  // 各パス段階
+  segments.forEach((segment, index) => {
+    currentPath += '/' + segment;
+    const name = formatBreadcrumbName(segment);
+    breadcrumbs.push({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": name,
+      "item": "https://chk24851.github.io" + currentPath + "/"
+    });
+  });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs
+  };
+}
+
+function formatBreadcrumbName(segment) {
+  // URLセグメントを日本語表示名に変換
+  const nameMap = {
+    'blog': 'ブログ',
+    'achievements': 'アチーブメント',
+    'th6': '東方紅魔郷',
+    'th7': '東方妖妖夢',
+    'th8': '東方永夜抄',
+    'th10': '東方風神録',
+    'th11': '東方地霊殿',
+    'th12': '東方星蓮船',
+    'th128': '東方星蓮船 1.28',
+    'th13': '東方神霊廟',
+    'th14': '東方輝針城',
+    'th15': '東方紺珠伝',
+    'th16': '東方天空璋',
+    'th17': '東方鬼形獣',
+    'th18': '東方虹龍洞',
+    'th20': '東方毘沙門天',
+    'alco': 'アルコホリック・スパイダー',
+    'tmgc': 'トルテルマジック',
+    'setup': 'セットアップ'
+  };
+  return nameMap[segment] || segment;
+}
+
 function initializeHTML() {
   const context = getPageContext();
 
@@ -282,6 +478,11 @@ function initializeHTML() {
   }
 
   setFavicon();
+  setOGPTags();
+  setRobotsMeta();
+  setupPWA();
+  setupCSP();
+  setupStructuredData();
   setSiteTitle();
 }
 
