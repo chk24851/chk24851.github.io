@@ -1,7 +1,6 @@
 {
   "name": "ちこいアーカイブ",
   "short_name": "ちこい",
-  "description": "東方Project関連の情報まとめサイト",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

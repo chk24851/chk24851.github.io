@@ -6,7 +6,7 @@
         {
           "time": {
             "reimu_a": 3,
-            "reimu_c": 0,
+            "reimu_c": 3,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -17,7 +17,7 @@
         {
           "time": {
             "reimu_a": 9,
-            "reimu_c": 0,
+            "reimu_c": 9,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -27,9 +27,21 @@
         },
         {
           "time": {
+            "reimu_a": 38,
+            "reimu_b": 38,
+            "reimu_c": 38,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "marisa_c": 0
+          },
+          "label": "中ボス通常１",
+          "description": "敵機依存安地です。「弾源付近」が目安です。"
+        },
+        {
+          "time": {
             "reimu_a": 118,
             "reimu_b": 124,
-            "reimu_c": 0,
+            "reimu_c": 120,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -43,7 +55,7 @@
           "time": {
             "reimu_a": 200,
             "reimu_b": 207,
-            "reimu_c": 0,
+            "reimu_c": 201,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -57,7 +69,7 @@
           "time": {
             "reimu_a": 465,
             "reimu_b": 503,
-            "reimu_c": 0,
+            "reimu_c": 478,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -69,7 +81,7 @@
           "time": {
             "reimu_a": 476,
             "reimu_b": 521,
-            "reimu_c": 0,
+            "reimu_c": 493,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -83,7 +95,7 @@
           "time": {
             "reimu_a": 569,
             "reimu_b": 628,
-            "reimu_c": 0,
+            "reimu_c": 592,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -97,7 +109,7 @@
           "time": {
             "reimu_a": 824,
             "reimu_b": 892,
-            "reimu_c": 0,
+            "reimu_c": 842,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -109,30 +121,29 @@
           "time": {
             "reimu_a": 857,
             "reimu_b": 927,
-            "reimu_c": 0,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
           },
           "label": "キャッツウォーク",
-          "description": "<strong>準難所です。</strong>敵は下側に降りながら，奇数波目に「左→中央→右→中央→左→中央→右」，偶数波目に「右→中央→左→中央→右→中央→左」の順で移動します。５回目の移動まで追いかけながら撃ち込み，以降はその追いかけた先の場所で避けると，角度の急な斜方からの弾を減らすことができ，弾の重なりも抑えられて避けやすくなります。"
+          "description": "<strong>準難所です。</strong>敵は下側に降りながら，奇数波目に「左→中央→右→中央→左→中央→右」，偶数波目に「右→中央→左→中央→右→中央→左」の順で移動します。５回目の移動まで追いかけながら撃ち込みましょう。"
         },
         {
           "time": {
             "reimu_b": 946,
-            "reimu_c": 0,
+            "reimu_c": 907,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
           },
           "label": "道中",
-          "description": "<strong>準難所です。</strong>ウイルス弾の漂う中で自機狙い弾を切り返す必要があります。弾は発射回数が多く，壁になって飛んでくるので，タイミングよく切り返す必要があります。敵の配置や弾の発射間隔は固定なので，切り返すタイミングを固定しましょう。"
+          "description": "<strong>準難所です。</strong>ウイルス弾の漂う中で自機狙い弾を切り返す必要があります。弾は発射回数が多く，壁になって飛んでくるので，必要に応じてタイミングよく切り返す必要があります。"
         },
         {
           "time": {
             "reimu_a": 938,
             "reimu_b": 1005,
-            "reimu_c": 0,
+            "reimu_c": 956,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -144,31 +155,31 @@
           "time": {
             "reimu_a": 962,
             "reimu_b": 1039,
-            "reimu_c": 0,
+            "reimu_c": 974,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
           },
           "label": "ゾンビフェアリー",
-          "description": "開始直後はボスのそばで待機します。妖精が復活したらお燐の上側へ右回りで上がり，弾を放ち始めたら右回りでお燐の真下まで移動します。基本的にはお燐へ攻撃しますが，妖精が近づいてきて避けづらくなったときは大きく左右へ移動し，妖精を誘導して倒しましょう。ある程度倒した後，再びお燐の真下へ移動して攻撃しましょう。以降，その繰り返しです。"
+          "description": "開始直後は敵の下側に張り付いて待機します。妖精が復活したらお燐の上側へ右回りで上がり，弾を放ち始めたら右回りでお燐の真下まで移動します。基本的にはお燐へ攻撃しますが，妖精が近づいてきて避けづらくなったときは大きく左右へ移動し，妖精を誘導して倒しましょう。ある程度倒した後，再びお燐の真下へ移動して攻撃しましょう。以降，その繰り返しです。"
         },
         {
           "time": {
             "reimu_a": 978,
             "reimu_b": 1062,
-            "reimu_c": 0,
+            "reimu_c": 994,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
           },
           "label": "ボス通常２",
-          "description": "中央で敵に張り付ける位置で縦移動しながら避けると米粒弾を避けずに済みます。"
+          "description": "中央で敵に張り付ける位置で縦移動しながら自機狙い弾を避けると米粒弾を避けずに済みます。"
         },
         {
           "time": {
             "reimu_a": 1032,
             "reimu_b": 1122,
-            "reimu_c": 0,
+            "reimu_c": 1051,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -180,7 +191,7 @@
           "time": {
             "reimu_a": 1058,
             "reimu_b": 1149,
-            "reimu_c": 0,
+            "reimu_c": 1080,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -193,7 +204,7 @@
         {
           "time": {
             "reimu_b": 1200,
-            "reimu_c": 0,
+            "reimu_c": 1124,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -205,7 +216,7 @@
           "time": {
             "reimu_a": 1142,
             "reimu_b": 1244,
-            "reimu_c": 0,
+            "reimu_c": 1168,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -217,7 +228,7 @@
           "time": {
             "reimu_a": 1215,
             "reimu_b": 1322,
-            "reimu_c": 0,
+            "reimu_c": 1241,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -229,7 +240,7 @@
           "time": {
             "reimu_a": 1259,
             "reimu_b": 1361,
-            "reimu_c": 0,
+            "reimu_c": 1281,
             "marisa_a": 0,
             "marisa_c": 0
           },
@@ -240,7 +251,7 @@
           "time": {
             "reimu_a": 1302,
             "reimu_b": 1398,
-            "reimu_c": 0,
+            "reimu_c": 1310,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -252,7 +263,7 @@
           "time": {
             "reimu_a": 1323,
             "reimu_b": 1430,
-            "reimu_c": 0,
+            "reimu_c": 1341,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -264,7 +275,7 @@
           "time": {
             "reimu_a": 1335,
             "reimu_b": 1446,
-            "reimu_c": 0,
+            "reimu_c": 1357,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -276,7 +287,7 @@
           "time": {
             "reimu_a": 1359,
             "reimu_b": 1474,
-            "reimu_c": 0,
+            "reimu_c": 1387,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -288,7 +299,7 @@
           "time": {
             "reimu_a": 1382,
             "reimu_b": 1523,
-            "reimu_c": 0,
+            "reimu_c": 1419,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -300,7 +311,7 @@
           "time": {
             "reimu_a": 1417,
             "reimu_b": 1559,
-            "reimu_c": 0,
+            "reimu_c": 1453,
             "marisa_a": 0,
             "marisa_b": 0,
             "marisa_c": 0
@@ -326,6 +337,11 @@
           "time": 700,
           "label": "飛行虫ネスト",
           "description": "<strong>準難所です。</strong>蝶弾は粗い自機狙いなので早めに移動したくなりますが，側端側に連れてレーザーの隙間が狭くなるので，蝶弾がすべて反射した後に素早く切り返すようにしましょう。"
+        },
+        {
+          "time": 727,
+          "label": "波と粒の境界",
+          "description": "安地があるので使ってもよいでしょう。"
         }
       ],
       "5": [
@@ -370,7 +386,48 @@
     "description": "高速移動時は自機依存ショット，低速移動時は固定ショット機体です。高速移動時は自機を移動させた方向へショットが傾きます。また，低速移動にすると傾けた角度で固定でき，再び高速移動に戻すと解除されます。当たり判定が小さく，一度に当てると火力が高い機体です。ショットボタンを離すと超高速移動ができます。移動速度には慣れておきましょう。",
     "videoId": "_KW6Q0qOW0g",
     "timestamps": {
+      "2": [
+        {
+          "time": 151,
+          "label": "道中１",
+          "description": "開幕は中央で横方向にショットを撃つと妖精の攻撃を完封できます。妖精の出現位置に合わせて構える高さを変えましょう。"
+        },
+        {
+          "time": 171,
+          "label": "道中２",
+          "description": "右端から横移動だけで青陰陽玉を対処できます。高さは「”Graze”の文字列」が目安です。なお，弾は自機依存です。"
+        },
+        {
+          "time": 211,
+          "label": "道中３",
+          "description": "道中後半は中央で横方向にショットを撃つと敵の攻撃を完封できます。"
+        }
+      ],
+      "3": [
+        {
+          "time": 330,
+          "label": "道中",
+          "description": "右端から横移動だけで中ボスまでのすべての敵を対処できます。高さは「”Player”の文字列の下側」が目安です。レーザーの発射される位置を念頭に置いて避けましょう。"
+        },
+        {
+          "time": 429,
+          "label": "地獄の苦輪",
+          "description": "大弾は動き出すまで時間がかかるので，出現させてしまっても問題ありません。"
+        }
+      ],
       "4": [
+        {
+          "time": 697,
+          "label": "風神木の葉隠れ",
+          "description": "安地です。横軸は「さとりの２回目の台詞の”記”の字の言偏」，縦軸は「”Power”と”Graze”の文字列の間」が目安です。"
+        }
+      ],
+      "5": [
+        {
+          "time": 878,
+          "label": "キャッツウォーク",
+          "description": "<strong class='red'>難所です。</strong>敵は下側に降りながら，奇数波目に「左→中央→右→中央→左→中央→右」，偶数波目に「右→中央→左→中央→右→中央→左」の順で移動します。５回目の移動までショットを傾けながら撃ち込みましょう。"
+        }
       ]
     }
   },

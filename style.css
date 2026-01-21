@@ -1081,7 +1081,6 @@ footer p {
     display: none !important;
 }
 
-/* Mobile Optimization (768px and below - Tablet) */
 @media (max-width: 768px) {
     .container {
         margin: 10px;
@@ -1168,7 +1167,6 @@ footer p {
     }
 }
 
-/* Mobile Optimization (480px and below - Smartphone) */
 @media (max-width: 480px) {
     .container {
         margin: 5px;

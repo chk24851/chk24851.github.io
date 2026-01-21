@@ -62,8 +62,7 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: `${blogPrefix}/index.html`,
-        sitemap: `${prefix}/sitemap.html`
+        blog: `${blogPrefix}/index.html`
       },
       css: `${prefix}/style.css`,
       breadcrumb: [
@@ -86,8 +85,7 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: `${blogLink}/index.html`,
-        sitemap: `${prefix}/sitemap.html`
+        blog: `${blogLink}/index.html`
       },
       css: `${prefix}/style.css`,
       breadcrumb: [
@@ -104,8 +102,7 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: 'index.html',
-        sitemap: `${prefix}/sitemap.html`
+        blog: 'index.html'
       },
       css: `${prefix}/style.css`
     };
@@ -118,8 +115,7 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: 'index.html',
-        blog: `${prefix}/blog/index.html`,
-        sitemap: `${prefix}/sitemap.html`
+        blog: `${prefix}/blog/index.html`
       },
       css: `${prefix}/style.css`
     };
@@ -129,8 +125,7 @@ function getPageContext() {
       links: {
         home: 'index.html',
         achievements: 'achievements/index.html',
-        blog: 'blog/index.html',
-        sitemap: 'sitemap.html'
+        blog: 'blog/index.html'
       },
       css: 'style.css'
     };
@@ -163,18 +158,18 @@ function loadHeader() {
   Promise.all([
     getTitleFromFile(context.links.home, 'title'),
     getTitleFromFile(context.links.achievements, 'title'),
-    getTitleFromFile(context.links.blog, 'title'),
-    getTitleFromFile(context.links.sitemap, 'title')
-  ]).then(([homeTitle, achievementsTitle, blogTitle, sitemapTitle]) => {
+    getTitleFromFile(context.links.blog, 'title')
+  ]).then(([homeTitle, achievementsTitle, blogTitle]) => {
+    const sitemapHref = context.isHomePage ? 'sitemap.html' : `${getRelativePath(1)}/sitemap.html`;
     const headerHTML = `
       <header>
-        <button id="hamburger-menu" aria-label="メニューを開く">☰</button>
+        <button id="hamburger-menu">☰</button>
         <nav id="header-nav">
           <ul>
             <li><a href="${context.links.home}">${homeTitle}</a></li>
             <li><a href="${context.links.achievements}">${achievementsTitle}</a></li>
             <li><a href="${context.links.blog}">${blogTitle}</a></li>
-            <li><a href="${context.links.sitemap}">${sitemapTitle}</a></li>
+            <li><a href="${sitemapHref}">サイトマップ</a></li>
           </ul>
         </nav>
       </header>`;
@@ -186,20 +181,17 @@ function loadHeader() {
 
     hamburgerBtn.addEventListener('click', () => {
       headerNav.classList.toggle('active');
-      hamburgerBtn.setAttribute('aria-expanded', headerNav.classList.contains('active'));
     });
 
     document.querySelectorAll('#header-nav a').forEach(link => {
       link.addEventListener('click', () => {
         headerNav.classList.remove('active');
-        hamburgerBtn.setAttribute('aria-expanded', 'false');
       });
     });
 
     document.addEventListener('click', (e) => {
       if (!e.target.closest('header') && headerNav.classList.contains('active')) {
         headerNav.classList.remove('active');
-        hamburgerBtn.setAttribute('aria-expanded', 'false');
       }
     });
 
@@ -254,12 +246,12 @@ function loadFooter() {
       <div class="footer-content">
         <p>&copy; 2026 ちこい</p>
         <div class="footer-links">
-          <a href="https://www.youtube.com/@chikoi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶</a>
-          <a href="https://x.com/chk24851" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+          <a href="https://www.youtube.com/@chikoi" target="_blank" rel="noopener noreferrer">▶</a>
+          <a href="https://x.com/chk24851" target="_blank" rel="noopener noreferrer">𝕏</a>
         </div>
       </div>
     </footer>
-    <button id="scroll-top-btn" aria-label="ページトップへ">↑</button>`;
+    <button id="scroll-top-btn">↑</button>`;
 
   document.body.insertAdjacentHTML('beforeend', footerHTML);
   
@@ -306,39 +298,9 @@ function setSiteTitle() {
   });
 }
 
-function setOGPTags() {
-  const pageTitle = document.title;
-  const pageUrl = window.location.href;
-  const ogpImage = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'><rect fill='%23d97037' width='1200' height='630'/><text y='350' font-size='200' text-anchor='middle' x='600' fill='white'>🐮</text><text y='450' font-size='48' text-anchor='middle' x='600' fill='white'>ちこいアーカイブ</text></svg>";
 
-  const ogpMeta = [
-    { property: 'og:title', content: pageTitle },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: pageUrl },
-    { property: 'og:image', content: ogpImage }
-  ];
-
-  ogpMeta.forEach(meta => {
-    if (!document.querySelector(`meta[property="${meta.property}"]`)) {
-      const metaTag = document.createElement('meta');
-      metaTag.setAttribute('property', meta.property);
-      metaTag.setAttribute('content', meta.content);
-      document.head.appendChild(metaTag);
-    }
-  });
-}
-
-function setRobotsMeta() {
-  if (!document.querySelector('meta[name="robots"]')) {
-    const robotsMeta = document.createElement('meta');
-    robotsMeta.setAttribute('name', 'robots');
-    robotsMeta.setAttribute('content', 'index, follow');
-    document.head.appendChild(robotsMeta);
-  }
-}
 
 function setupPWA() {
-  // manifest.json リンク
   if (!document.querySelector('link[rel="manifest"]')) {
     const manifestLink = document.createElement('link');
     manifestLink.rel = 'manifest';
@@ -346,20 +308,11 @@ function setupPWA() {
     document.head.appendChild(manifestLink);
   }
 
-  // theme-color メタタグ
   if (!document.querySelector('meta[name="theme-color"]')) {
     const themeColorMeta = document.createElement('meta');
     themeColorMeta.setAttribute('name', 'theme-color');
     themeColorMeta.setAttribute('content', '#d97037');
     document.head.appendChild(themeColorMeta);
-  }
-
-  // Apple用のアイコン
-  if (!document.querySelector('link[rel="apple-touch-icon"]')) {
-    const appleTouchIcon = document.createElement('link');
-    appleTouchIcon.rel = 'apple-touch-icon';
-    appleTouchIcon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><rect fill="%23d97037" width="180" height="180"/><text y="130" font-size="130" text-anchor="middle" x="90" fill="white">🐮</text></svg>';
-    document.head.appendChild(appleTouchIcon);
   }
 }
 
@@ -370,100 +323,6 @@ function setupCSP() {
     cspMeta.setAttribute('content', "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube.com; base-uri 'self'; form-action 'self';");
     document.head.appendChild(cspMeta);
   }
-}
-
-function setupStructuredData() {
-  if (document.querySelector('script[type="application/ld+json"]')) {
-    return; // 既に存在する場合はスキップ
-  }
-
-  const breadcrumbList = generateBreadcrumbList();
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ちこいアーカイブ",
-    "url": "https://chk24851.github.io/",
-    "logo": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect fill='%23d97037' width='200' height='200'/><text y='150' font-size='140' text-anchor='middle' x='100' fill='white'>🐮</text></svg>"
-  };
-
-  // Organization スキーマを追加
-  const orgScript = document.createElement('script');
-  orgScript.type = 'application/ld+json';
-  orgScript.textContent = JSON.stringify(organizationSchema);
-  document.head.appendChild(orgScript);
-
-  // BreadcrumbList スキーマがある場合は追加
-  if (breadcrumbList) {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.textContent = JSON.stringify(breadcrumbList);
-    document.head.appendChild(breadcrumbScript);
-  }
-}
-
-function generateBreadcrumbList() {
-  const path = window.location.pathname;
-  
-  // ホームページの場合はスキップ
-  if (path === '/' || path === '/index.html') {
-    return null;
-  }
-
-  const segments = path.split('/').filter(s => s && s !== 'index.html');
-  const breadcrumbs = [];
-  let currentPath = '';
-
-  // ホーム
-  breadcrumbs.push({
-    "@type": "ListItem",
-    "position": 1,
-    "name": "ホーム",
-    "item": "https://chk24851.github.io/"
-  });
-
-  // 各パス段階
-  segments.forEach((segment, index) => {
-    currentPath += '/' + segment;
-    const name = formatBreadcrumbName(segment);
-    breadcrumbs.push({
-      "@type": "ListItem",
-      "position": index + 2,
-      "name": name,
-      "item": "https://chk24851.github.io" + currentPath + "/"
-    });
-  });
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": breadcrumbs
-  };
-}
-
-function formatBreadcrumbName(segment) {
-  // URLセグメントを日本語表示名に変換
-  const nameMap = {
-    'blog': 'ブログ',
-    'achievements': 'アチーブメント',
-    'th6': '東方紅魔郷',
-    'th7': '東方妖妖夢',
-    'th8': '東方永夜抄',
-    'th10': '東方風神録',
-    'th11': '東方地霊殿',
-    'th12': '東方星蓮船',
-    'th128': '東方星蓮船 1.28',
-    'th13': '東方神霊廟',
-    'th14': '東方輝針城',
-    'th15': '東方紺珠伝',
-    'th16': '東方天空璋',
-    'th17': '東方鬼形獣',
-    'th18': '東方虹龍洞',
-    'th20': '東方毘沙門天',
-    'alco': 'アルコホリック・スパイダー',
-    'tmgc': 'トルテルマジック',
-    'setup': 'セットアップ'
-  };
-  return nameMap[segment] || segment;
 }
 
 function initializeHTML() {
@@ -478,11 +337,8 @@ function initializeHTML() {
   }
 
   setFavicon();
-  setOGPTags();
-  setRobotsMeta();
   setupPWA();
   setupCSP();
-  setupStructuredData();
   setSiteTitle();
 }
 
