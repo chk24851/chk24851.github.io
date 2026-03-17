@@ -30,7 +30,7 @@
   },
   "reimu_a": {
     "label": "博麗 霊夢（翻弄される回避重視タイプ）",
-    "description": "",
+    "description": "４面中ボスは八橋，４面ボスは弁々です。",
     "videoId": "-wfBEp4IaO8",
     "timestamps": {
       "1": [
@@ -54,7 +54,7 @@
   },
   "reimu_b": {
     "label": "博麗 霊夢（伝統のバランスタイプ）",
-    "description": "",
+    "description": "４面中ボスは弁々，４面ボスは八橋です。",
     "videoId": "pQKs3HXDN8U",
     "timestamps": {
       "1": [
@@ -73,7 +73,7 @@
   },
   "marisa_a": {
     "label": "霧雨 魔理沙（散熱の威力重視タイプ）",
-    "description": "",
+    "description": "４面中ボスは八橋，４面ボスは弁々です。",
     "videoId": "_kNJlGVX6PA",
     "timestamps": {
       "1": [
@@ -92,7 +92,7 @@
   },
   "marisa_b": {
     "label": "霧雨 魔理沙（自給自足の霊力吸収タイプ）",
-    "description": "",
+    "description": "４面中ボスは弁々，４面ボスは八橋です。",
     "videoId": "4jO1QI7DiQY",
     "timestamps": {
       "1": [
@@ -111,7 +111,7 @@
   },
   "sakuya_a": {
     "label": "十六夜 咲夜（輝く銀の牽制攻撃タイプ）",
-    "description": "",
+    "description": "４面中ボスは八橋，４面ボスは弁々です。",
     "videoId": "n9Thukk243Y",
     "timestamps": {
       "1": [
@@ -130,7 +130,7 @@
   },
   "sakuya_b": {
     "label": "十六夜 咲夜（しっかり者のアイテム増加タイプ）",
-    "description": "",
+    "description": "４面中ボスは弁々，４面ボスは八橋です。",
     "videoId": "28gdp3hGoRk",
     "timestamps": {
       "1": [

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>実績</title>
+  <title>Achievements</title>
   <style>
     body { display: none; }
   </style>
@@ -25,17 +25,24 @@
     </table>
   </div>
   <script>
-    async function generateAchievementsTable() {
+    let sortAscending = true;
+    let achievementsData = [];
+
+    async function generateAchievementsTable(data = null) {
       try {
-        const response = await fetch('./achievements.json');
-        const achievements = await response.json();
+        if (data === null) {
+          const response = await fetch('./achievements.json');
+          achievementsData = await response.json();
+        } else {
+          achievementsData = data;
+        }
 
         const tbody = document.querySelector('.achievements-table tbody');
         if (!tbody) return;
 
         tbody.innerHTML = '';
 
-        achievements.forEach((item, index) => {
+        achievementsData.forEach((item, index) => {
           const row = document.createElement('tr');
           const yearCell = document.createElement('td');
           const monthDayCell = document.createElement('td');
@@ -54,20 +61,20 @@
 
           contentCell.appendChild(link);
 
-          if (index > 0 && achievements[index - 1].year === item.year) {
+          if (index > 0 && achievementsData[index - 1].year === item.year) {
             yearCell.textContent = '';
           } else {
             yearCell.textContent = item.year + '年';
           }
 
-          if (index > 0 && achievements[index - 1].month === item.month && achievements[index - 1].day === item.day) {
+          if (index > 0 && achievementsData[index - 1].month === item.month && achievementsData[index - 1].day === item.day) {
             monthDayCell.textContent = '';
           } else {
             monthDayCell.textContent = item.month + '月' + item.day + '日';
           }
 
-          if (index < achievements.length - 1) {
-            const nextItem = achievements[index + 1];
+          if (index < achievementsData.length - 1) {
+            const nextItem = achievementsData[index + 1];
 
             if (item.year === nextItem.year) {
               yearCell.classList.add('no-border-bottom');
@@ -88,7 +95,33 @@
       }
     }
 
-    document.addEventListener('DOMContentLoaded', generateAchievementsTable);
+    function updateDateHeaderArrow() {
+      const dateHeader = document.querySelector('.date-header');
+      if (dateHeader) {
+        dateHeader.textContent = sortAscending ? '日付 ▼' : '日付 ▲';
+      }
+    }
+
+    function toggleDateSort() {
+      sortAscending = !sortAscending;
+      const sorted = [...achievementsData].sort((a, b) => {
+        const dateA = new Date(a.year, a.month - 1, a.day);
+        const dateB = new Date(b.year, b.month - 1, b.day);
+        return sortAscending ? dateA - dateB : dateB - dateA;
+      });
+      updateDateHeaderArrow();
+      generateAchievementsTable(sorted);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      generateAchievementsTable();
+      const dateHeader = document.querySelector('.date-header');
+      if (dateHeader) {
+        dateHeader.style.cursor = 'pointer';
+        updateDateHeaderArrow();
+        dateHeader.addEventListener('click', toggleDateSort);
+      }
+    });
   </script>
 </body>
 </html>

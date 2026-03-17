@@ -62,7 +62,8 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: `${blogPrefix}/index.html`
+        blog: `${blogPrefix}/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
       css: `${prefix}/style.css`,
       breadcrumb: [
@@ -85,7 +86,8 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: `${blogLink}/index.html`
+        blog: `${blogLink}/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
       css: `${prefix}/style.css`,
       breadcrumb: [
@@ -102,7 +104,8 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: `${prefix}/achievements/index.html`,
-        blog: 'index.html'
+        blog: 'index.html',
+        sitemap: `${prefix}/sitemap.html`
       },
       css: `${prefix}/style.css`
     };
@@ -115,7 +118,8 @@ function getPageContext() {
       links: {
         home: `${prefix}/index.html`,
         achievements: 'index.html',
-        blog: `${prefix}/blog/index.html`
+        blog: `${prefix}/blog/index.html`,
+        sitemap: `${prefix}/sitemap.html`
       },
       css: `${prefix}/style.css`
     };
@@ -125,7 +129,8 @@ function getPageContext() {
       links: {
         home: 'index.html',
         achievements: 'achievements/index.html',
-        blog: 'blog/index.html'
+        blog: 'blog/index.html',
+        sitemap: 'sitemap.html'
       },
       css: 'style.css'
     };
@@ -158,9 +163,9 @@ function loadHeader() {
   Promise.all([
     getTitleFromFile(context.links.home, 'title'),
     getTitleFromFile(context.links.achievements, 'title'),
-    getTitleFromFile(context.links.blog, 'title')
-  ]).then(([homeTitle, achievementsTitle, blogTitle]) => {
-    const sitemapHref = context.isHomePage ? 'sitemap.html' : `${getRelativePath(1)}/sitemap.html`;
+    getTitleFromFile(context.links.blog, 'title'),
+    getTitleFromFile(context.links.sitemap, 'title')
+  ]).then(([homeTitle, achievementsTitle, blogTitle, sitemapTitle]) => {
     const headerHTML = `
       <header>
         <button id="hamburger-menu">☰</button>
@@ -169,7 +174,7 @@ function loadHeader() {
             <li><a href="${context.links.home}">${homeTitle}</a></li>
             <li><a href="${context.links.achievements}">${achievementsTitle}</a></li>
             <li><a href="${context.links.blog}">${blogTitle}</a></li>
-            <li><a href="${sitemapHref}">サイトマップ</a></li>
+            <li><a href="${context.links.sitemap}">${sitemapTitle}</a></li>
           </ul>
         </nav>
       </header>`;
@@ -214,7 +219,7 @@ function loadHeader() {
           }
         }
         
-        const breadcrumbHTML = `<div style="margin-bottom: 20px; font-size: 14px; color: #999;">` + 
+        const breadcrumbHTML = `<div id="breadcrumb-nav" style="margin-bottom: 20px; font-size: 14px; color: #999;">` + 
           breadcrumbWithTitles.map(item => 
             item.href 
               ? `<a href="${item.href}" style="color: #d97037; text-decoration: none;">${item.label}</a>`
@@ -225,6 +230,14 @@ function loadHeader() {
         const container = document.querySelector('.container');
         if (container) {
           container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
+          
+          const observer = new MutationObserver(() => {
+            if (!document.getElementById('breadcrumb-nav')) {
+              container.insertAdjacentHTML('afterbegin', breadcrumbHTML);
+            }
+          });
+          
+          observer.observe(container, { childList: true, subtree: true });
         }
       };
       
@@ -297,8 +310,6 @@ function setSiteTitle() {
     }
   });
 }
-
-
 
 function setupPWA() {
   if (!document.querySelector('link[rel="manifest"]')) {

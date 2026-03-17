@@ -1376,7 +1376,7 @@ strong.red {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: #d97037;
+    background-color: #dd7e4b;
     color: white;
     border: none;
     border-radius: 50%;
@@ -1389,11 +1389,11 @@ strong.red {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(217, 112, 55, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #scroll-top-btn:hover {
-    background-color: #c85a29;
+    background-color: #e28559;
     transform: translateY(-3px);
 }
 
@@ -1404,12 +1404,12 @@ strong.red {
 
 @media (prefers-color-scheme: dark) {
     #scroll-top-btn {
-        background-color: #8a5a3a;
-        box-shadow: 0 2px 8px rgba(217, 163, 115, 0.3);
+        background-color: #996b4e;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     #scroll-top-btn:hover {
-        background-color: #6a4020;
+        background-color: #a87c5f;
     }
 }
 
