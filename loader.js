@@ -353,6 +353,13 @@ function initializeHTML() {
   setSiteTitle();
 }
 
+document.addEventListener('pageshow', async () => {
+  initializeHTML();
+  initializeErrorBanner();
+  await loadHeader();
+  loadFooter();
+});
+
 document.addEventListener('DOMContentLoaded', async () => {
   initializeHTML();
   initializeErrorBanner();
