@@ -358,6 +358,13 @@ document.addEventListener('pageshow', async () => {
   initializeErrorBanner();
   await loadHeader();
   loadFooter();
+  
+  const container = document.querySelector('.container');
+  if (container) {
+    container.style.animation = 'none';
+    container.offsetHeight;
+    container.style.animation = 'fadeIn 0.5s ease-in';
+  }
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
