@@ -1,0 +1,59 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 0,
+          "reimu_b": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "sakuya_a": 0,
+          "sakuya_b": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_a": {
+    "description": "",
+    "videoId": "ojqVTvayFhs",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_b": {
+    "description": "",
+    "videoId": "D1INEVO6g4k",
+    "timestamps": [
+    ]
+  },
+  "marisa_a": {
+    "description": "",
+    "videoId": "TUoG2YgptA0",
+    "timestamps": [
+    ]
+  },
+  "marisa_b": {
+    "description": "",
+    "videoId": "4fsu9a2XMxE",
+    "timestamps": [
+    ]
+  },
+  "sakuya_a": {
+    "description": "",
+    "videoId": "Dv3kNZzWkBg",
+    "timestamps": [
+    ]
+  },
+  "sakuya_b": {
+    "description": "",
+    "videoId": "oudeY-RfpRQ",
+    "timestamps": [
+    ]
+  }
+}

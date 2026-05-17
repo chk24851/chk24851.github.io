@@ -1,0 +1,59 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 0,
+          "reimu_b": 0,
+          "marisa_a": 0,
+          "marisa_b": 0,
+          "sanae_a": 0,
+          "sanae_b": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_a": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "SNiSDP-OCmM",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_b": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。",
+    "videoId": "g2wIi_ENEEs",
+    "timestamps": [
+    ]
+  },
+  "marisa_a": {
+    "description": "レーザー機体です。レーザーは貫通します。",
+    "videoId": "Yp8tu5czvxg",
+    "timestamps": [
+    ]
+  },
+  "marisa_b": {
+    "description": "拡散ショット機体です。",
+    "videoId": "wG3ekONn9UA",
+    "timestamps": [
+    ]
+  },
+  "sanae_a": {
+    "description": "蛇（前方追尾ショット）機体です。",
+    "videoId": "ji5Kt35LGlI",
+    "timestamps": [
+    ]
+  },
+  "sanae_b": {
+    "description": "蛙（炸裂ショット）機体です。",
+    "videoId": "fE_tIpl0x7I",
+    "timestamps": [
+    ]
+  }
+}

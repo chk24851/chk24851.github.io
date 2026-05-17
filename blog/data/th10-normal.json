@@ -1,0 +1,287 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "3": [
+        {
+          "time": {
+            "reimu_a": 481,
+            "reimu_b": 451,
+            "reimu_c": 454,
+            "marisa_a": 454,
+            "marisa_c": 436
+          },
+          "label": "ボス通常２",
+          "description": "ワインダーは通常１と同様に不動で避けられます。"
+        },
+        {
+          "time": {
+            "reimu_a": 491,
+            "reimu_b": 460,
+            "reimu_c": 462,
+            "marisa_a": 462,
+            "marisa_c": 445
+          },
+          "label": "河童のポロロッカ",
+          "description": "縦移動を駆使して避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 516,
+            "reimu_b": 479,
+            "reimu_c": 486,
+            "marisa_a": 486,
+            "marisa_c": 465
+          },
+          "label": "お化けキューカンバー",
+          "description": "<strong>準難所です。</strong>敵が下に動きながらレーザーを撃ってくるとその隙間が狭くなりやすいです。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu_a": 647,
+            "reimu_b": 614,
+            "reimu_c": 624,
+            "marisa_a": 614,
+            "marisa_b": 495,
+            "marisa_c": 595
+          },
+          "label": "道中",
+          "description": "ウイルス弾をばらまく妖精は長く撃たせると画面上に大量の弾が留まってしまうので，できるだけ速攻しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 692,
+            "reimu_b": 658,
+            "reimu_c": 669,
+            "marisa_a": 657,
+            "marisa_c": 642
+          },
+          "label": "天の八衢",
+          "description": "<strong>準難所です。</strong>上に抜けていくことを心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 711,
+            "reimu_b": 670,
+            "reimu_c": 682,
+            "marisa_a": 672,
+            "marisa_c": 654
+          },
+          "label": "ボス通常２",
+          "description": "青弾の隙間に赤弾が飛んでくると避ける隙間がかなり狭くなるので，慎重に避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 723,
+            "reimu_b": 680,
+            "reimu_c": 693,
+            "marisa_a": 684,
+            "marisa_c": 661
+          },
+          "label": "風神木の葉隠れ",
+          "description": "<strong>準難所です。</strong>開幕数秒間は無敵です。下に動きながら避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 745,
+            "reimu_b": 698,
+            "reimu_c": 720,
+            "marisa_a": 704,
+            "marisa_c": 679
+          },
+          "label": "ボス通常３",
+          "description": "通常２よりも弾速差が顕著なので，青弾の隙間に赤弾が飛んできたときの対処はそれほど難しくありませんが，避ける隙間は狭くなるので慎重に避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 757,
+            "reimu_b": 707,
+            "reimu_c": 730,
+            "marisa_a": 715,
+            "marisa_b": 555,
+            "marisa_c": 688
+          },
+          "label": "幻想風靡",
+          "description": "<strong>準難所です。</strong>左右いずれかの端で避けましょう。弾の重なりや速度差に気をつけつつ，上に抜けていくことを心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 777,
+            "reimu_b": 727,
+            "reimu_c": 749,
+            "marisa_a": 735,
+            "marisa_b": 575,
+            "marisa_c": 707
+          },
+          "label": "山神渡御",
+          "description": "固定弾幕です。開幕数秒間は無敵です。避け方をパターン化しましょう。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu_a": 881,
+            "reimu_b": 827,
+            "reimu_c": 862,
+            "marisa_a": 836,
+            "marisa_c": 807
+          },
+          "label": "グレイソーマタージ",
+          "description": "自機依存弾幕です。開幕数秒間は無敵です。弾の誘導方向と弾幕の避け方をパターン化しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 943,
+            "reimu_b": 887,
+            "reimu_c": 927,
+            "marisa_a": 894,
+            "marisa_c": 863
+          },
+          "label": "ボス通常１",
+          "description": "<strong>準難所です。</strong>開幕以降のランダム弾がしばしば壁になって厄介です。広がる前に抜けることを心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 960,
+            "reimu_b": 905,
+            "reimu_c": 942,
+            "marisa_a": 908,
+            "marisa_c": 877
+          },
+          "label": "白昼の客星",
+          "description": "固定弾＋自機狙い弾の攻撃です。自機狙い弾の発射間隔は固定なので，避け方をパターン化できます。固定弾は左右対称なので，最下段で中央とその横の隙間を反復しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1018,
+            "reimu_b": 956,
+            "reimu_c": 1002,
+            "marisa_a": 970,
+            "marisa_c": 922
+          },
+          "label": "神風を喚ぶ星の儀式",
+          "description": "自機依存弾幕です。敵が動くので弾の誘導方向をパターン化することは難しいですが，避け方を決めておくと避けやすいです。青弾は壁になることがあるので気をつけましょう。"
+        }
+      ],
+      "6": [
+        {
+          "time": {
+            "reimu_a": 1156,
+            "reimu_b": 1101,
+            "reimu_c": 1144,
+            "marisa_a": 1101,
+            "marisa_b": 833,
+            "marisa_c": 1044
+          },
+          "label": "ボス通常２",
+          "description": "自機狙い弾を切り返しをする場合，タイミングがシビアなので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1173,
+            "reimu_b": 1120,
+            "reimu_c": 1169,
+            "marisa_a": 1119,
+            "marisa_b": 843,
+            "marisa_c": 1060
+          },
+          "label": "神の粥",
+          "description": "弾の種類が途中で変化しますが，判定は変化前のままなので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1202,
+            "reimu_b": 1144,
+            "reimu_c": 1200,
+            "marisa_a": 1144,
+            "marisa_c": 1085
+          },
+          "label": "御射山御狩神事",
+          "description": "<strong>準難所です。</strong>自機依存弾を大きく左右に誘導して避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1282,
+            "reimu_b": 1209,
+            "reimu_c": 1287,
+            "marisa_a": 1203,
+            "marisa_c": 1130
+          },
+          "label": "お天水の奇跡",
+          "description": "<strong class='red'>難所です。</strong>自機狙い弾を切り返すときは，左右の端に向かって斜め上に動くと隙間ができます。弾の種類が途中で変化しますが，判定は変化前のままなので気をつけましょう。また，鱗弾は弾速差があって重なることが多いので気をつけましょう。"
+        }
+      ]
+    }
+  },
+  "reimu_a": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。",
+    "videoId": "d8fACBtagk0"
+  },
+  "reimu_b": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "a9RBeMahKrQ"
+  },
+  "reimu_c": {
+    "description": "高速移動時は広範囲ショット，低速移動時は拡散ショット機体です。当たり判定が小さいです。",
+    "videoId": "354NT1JlNEo"
+  },
+  "marisa_a": {
+    "description": "誘導オプションショット機体です。",
+    "videoId": "h6v1FuuztE0"
+  },
+  "marisa_b": {
+    "description": "レーザー機体です。レーザーは貫通します。Power3台のときにメインショットの左側の攻撃力が激増します。",
+    "videoId": "cyYEt8fnckg",
+    "timestamps": {
+      "1": [
+        {
+          "time": 56,
+          "label": "道中",
+          "description": "ここまですべてのPを回収していれば，中ボス撃破後のPを一部回収することでPower3.00に達します。足りないときは，道中後半でPを回収して１面ボス戦までに達しましょう。"
+        }
+      ],
+      "4": [
+        {
+          "time": 446,
+          "label": "中ボス",
+          "description": "中ボスを速攻すると早回し地帯が始まります。早回し地帯は大量の妖精が発生し，アイテムの多い中で複数回切り返しする必要があるので，できるだけ中ボスで遅回ししましょう。"
+        },
+        {
+          "time": 541,
+          "label": "風神木の葉隠れ",
+          "description": "最初の数秒間は無敵です。"
+        }
+      ],
+      "5": [
+        {
+          "time": 661,
+          "label": "グレイソーマタージ",
+          "description": "自機依存固定弾です。最初の数秒間は無敵です。"
+        },
+        {
+          "time": 710,
+          "label": "ボス通常１",
+          "description": "最初の固定弾は「真下に展開される塊の左下の隙間」に入って避けましょう。"
+        }
+      ],
+      "6": [
+        {
+          "time": 768,
+          "label": "道中１",
+          "description": "すっと同じ弾列の間にいるとアイテムを拾ってしまうので，アイテムを避けながら列を移る必要があります。アイテムの降ってこない隙間でひまわり妖精の放つ弾幕を避けましょう。"
+        },
+        {
+          "time": 789,
+          "label": "道中２",
+          "description": "すっと同じ弾列の間にいるとアイテムを拾ってしまうので，アイテムを避けながら列を移る必要があります。アイテムの降ってこない隙間でひまわり妖精の放つ弾幕を避けましょう。なお，ひまわり妖精は数秒間無敵です。"
+        }
+      ]
+    }
+  },
+  "marisa_c": {
+    "description": "設置オプションショット機体です。",
+    "videoId": "kiyrgVy3sJY"
+  }
+}

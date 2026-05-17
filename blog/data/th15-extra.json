@@ -1,0 +1,45 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 0,
+          "marisa": 0,
+          "sanae": 0,
+          "reisen": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu": {
+    "description": "",
+    "videoId": "6hWEw6VjunE",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "marisa": {
+    "description": "",
+    "videoId": "uBGRbG258jY",
+    "timestamps": [
+    ]
+  },
+  "sanae": {
+    "description": "",
+    "videoId": "7oA0hU2MeRQ",
+    "timestamps": [
+    ]
+  },
+  "reisen": {
+    "description": "",
+    "videoId": "gHSDelPpvmE",
+    "timestamps": [
+    ]
+  }
+}

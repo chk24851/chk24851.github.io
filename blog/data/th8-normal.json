@@ -1,0 +1,466 @@
+{
+  "stageLabels": ["Stage1", "Stage2", "Stage3", "Stage4", "Stage5", "Stage6A", "Stage6B"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_yukari": {"a": 144, "b": 139},
+            "youmu_yuyuko": {"a": 136, "b": 136},
+            "reimu": {"a": 154, "b": 152},
+            "yukari": {"a": 142, "b": 137}
+          },
+          "label": "永夜蟄居",
+          "description": "敵のそばを回転しながら避けます。奇数回目は敵の右下から右回りに，偶数回目は敵の下から左回りに避けます。"
+        }
+      ],
+      "2": [
+        {
+          "time": {
+            "reimu_yukari": {"a": 330, "b": 323},
+            "youmu_yuyuko": {"a": 311, "b": 314},
+            "reimu": {"a": 355, "b": 355},
+            "yukari": {"a": 328, "b": 318}
+          },
+          "label": "イルスタードダイブ",
+          "description": "開幕は中央やや下あたりで待ちます。高さは「スペルカード宣言時のスペルカードの文字列」が目安です。１回目の使い魔が通り過ぎたら敵のそばまで動きます。それ以降は使い魔から撃たれる自機狙い弾に気をつけつつ，敵を追いかけながら攻撃します。"
+        }
+      ],
+      "3": [
+        {
+          "time": {
+            "reimu_yukari": {"a": 453, "b": 437},
+            "youmu_yuyuko": {"a": 423, "b": 429},
+            "reimu": {"a": 484, "b": 489}
+          },
+          "label": "中ボス通常",
+          "description": "中央２つの使い魔を速攻すると避けやすくなります。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 594, "b": 575},
+            "youmu_yuyuko": {"a": 565, "b": 569},
+            "reimu": {"a": 674, "b": 674},
+            "yukari": {"a": 584, "b": 574}
+          },
+          "label": "幻想天皇",
+          "description": "中央で反復しながら避けます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 616, "b": 594},
+            "youmu_yuyuko": {"a": 586, "b": 591},
+            "reimu": {"a": 703, "b": 704},
+            "yukari": {"a": 604, "b": 593}
+          },
+          "label": "高天原",
+          "description": "中央から横一方向に避けます。「弾の発射音が６回聞こえたら移動」を繰り返します。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu_yukari": {"a": 734, "b": 714},
+            "youmu_yuyuko": {"a": 705, "b": 711},
+            "reimu": {"a": 842, "b": 842},
+            "yukari": {"a": 723, "b": 711}
+          },
+          "label": "ミルキーウェイ",
+          "description": "横から飛んでくる弾は真横ではなく，若干下向きに飛んでくるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 751, "b": 731},
+            "youmu_yuyuko": {"a": 723, "b": 728},
+            "reimu": {"a": 868, "b": 868},
+            "yukari": {"a": 740, "b": 729}
+          },
+          "label": "ボス通常２",
+          "description": "敵機依存弾幕です。敵の誘導方向と弾幕の避け方をパターン化しましょう。広い隙間はありませんが，密度の薄い隙間を抜けるとよいでしょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 768, "b": 746},
+            "youmu_yuyuko": {"a": 741, "b": 745},
+            "reimu": {"a": 896, "b": 896},
+            "yukari": {"a": 757, "b": 744}
+          },
+          "label": "スターダストレヴァリエ",
+          "description": "固定弾幕です。角度はランダムですが，避け方をパターン化しましょう。後ろから戻ってくる使い魔に気をつけましょう。１回目は高速で回転している際にグレイズできる場所，２回目は使い魔が逆回転し始めるそばで待っていれば当たりません。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 830, "b": 805},
+            "youmu_yuyuko": {"a": 801, "b": 805},
+            "reimu": {"a": 961, "b": 963},
+            "yukari": {"a": 816, "b": 802}
+          },
+          "label": "ボス通常３",
+          "description": "<strong>準難所です。</strong>密度の薄い場所で避けましょう。弾が後ろから飛んでくることもあるので気をつけましょう。余裕があれば敵を追いかけて速攻しましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 850, "b": 822},
+            "youmu_yuyuko": {"a": 821, "b": 824},
+            "reimu": {"a": 987, "b": 990},
+            "yukari": {"a": 832, "b": 818}
+          },
+          "label": "ノンディレクショナルレーザー",
+          "description": "固定弾＋自機狙い弾の攻撃です。固定弾を避けた後に大きく横へ動いておくと，次の固定弾を避ける際に自機狙い弾が邪魔になりにくいです。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 874, "b": 846},
+            "youmu_yuyuko": {"a": 844, "b": 849},
+            "reimu": {"a": 1029, "b": 1032},
+            "yukari": {"a": 856, "b": 841}
+          },
+          "label": "ボス通常４",
+          "description": "敵機依存弾です。敵の誘導方向と弾幕の避け方をパターン化しましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 891, "b": 863},
+            "youmu_yuyuko": {"a": 865, "b": 870},
+            "reimu": {"a": 1059, "b": 1062},
+            "yukari": {"a": 871, "b": 857}
+          },
+          "label": "マスタースパーク",
+          "description": "１回目は下，２回目以降は自機方向にレーザーを撃ってきます。２波目以降は敵の位置から横に逸れた方向へ撃たせると効率よく撃ち込むことができます。なお，レーザーの端の薄い部分には判定がありません。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 919, "b": 893},
+            "youmu_yuyuko": {"a": 888, "b": 893},
+            "reimu": {"a": 1094, "b": 1097},
+            "yukari": {"a": 900, "b": 881}
+          },
+          "label": "アースライトレイ",
+          "description": "<strong>準難所です。</strong>自機狙い弾＋自機外し弾の攻撃です。自機狙い弾はやや高速なので，早めに切り返すことを心がけましょう。やや上で構えると避けやすくなります。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu_yukari": {"a": 995, "b": 975},
+            "youmu_yuyuko": {"a": 961, "b": 964},
+            "reimu": {"a": 1195, "b": 1193},
+            "yukari": {"a": 970, "b": 949}
+          },
+          "label": "道中１",
+          "description": "開幕の妖精には当たり判定がありません。重なって攻撃することで弾を避けずに倒せます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1042, "b": 1022},
+            "youmu_yuyuko": {"a": 1008, "b": 1010},
+            "reimu": {"a": 1242, "b": 1239},
+            "yukari": {"a": 1017, "b": 996}
+          },
+          "label": "道中２",
+          "description": "最初の３体の妖精には当たり判定がありません。重なって攻撃することで弾を避けずに倒せます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1066, "b": 1045},
+            "youmu_yuyuko": {"a": 1031, "b": 1034},
+            "reimu": {"a": 1265, "b": 1263},
+            "yukari": {"a": 1040, "b": 1020}
+          },
+          "label": "中ボス通常１",
+          "description": "てゐを左に誘導すると自機狙い小弾が邪魔になりにくいです。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1080, "b": 1059},
+            "youmu_yuyuko": {"a": 1044, "b": 1047},
+            "reimu": {"a": 1288, "b": 1282},
+            "yukari": {"a": 1055, "b": 1034}
+          },
+          "label": "中ボス通常２",
+          "description": "固定弾幕です。避け方をパターン化しましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1162, "b": 1139},
+            "youmu_yuyuko": {"a": 1130, "b": 1130},
+            "reimu": {"a": 1383, "b": 1376},
+            "yukari": {"a": 1135, "b": 1115}
+          },
+          "label": "赤眼催眠（マインドシェイカー）",
+          "description": "速攻するなら中央，安定をとるなら左下または右下で避けます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1185, "b": 1160},
+            "youmu_yuyuko": {"a": 1152, "b": 1151},
+            "reimu": {"a": 1407, "b": 1400},
+            "yukari": {"a": 1156, "b": 1136}
+          },
+          "label": "ボス通常２",
+          "description": "敵機依存弾です。敵が下に降りてくると，弾が重なって難しくなることがあるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1228, "b": 1202},
+            "youmu_yuyuko": {"a": 1191, "b": 1191}
+          },
+          "label": "ボス通常３",
+          "description": "使い魔を破壊するとかえって軌道が見づらくなるので，破壊しないように妖怪側で攻撃しましょう。また，「幻視調律（ビジョナリチューニング）」が終わってから攻撃が始まるまでの時間が短いので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu": {"a": 1463, "b": 1455},
+            "yukari": {"a": 1197, "b": 1180}
+          },
+          "label": "ボス通常３",
+          "description": "「幻視調律（ビジョナリチューニング）」が終わってから攻撃が始まるまでの時間が短いので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1245, "b": 1217},
+            "youmu_yuyuko": {"a": 1211, "b": 1212},
+            "reimu": {"a": 1486, "b": 1477},
+            "yukari": {"a": 1213, "b": 1197}
+          },
+          "label": "生神停止（アイドリングウェーブ）",
+          "description": "１回目のみ，正面で幻視状態から明けても被弾しません。２回目以降は正面から横にずれた位置で待つようにしましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1273, "b": 1243},
+            "youmu_yuyuko": {"a": 1238, "b": 1238},
+            "reimu": {"a": 1517, "b": 1508},
+            "yukari": {"a": 1240, "b": 1224}
+          },
+          "label": "真実の月（インビジブルフルムーン）",
+          "description": "敵の下よりもそばの方が小さい移動で避けられます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": {"a": 1306, "b": 1276},
+            "youmu_yuyuko": {"a": 1266, "b": 1267},
+            "reimu": {"a": 1558, "b": 1550},
+            "yukari": {"a": 1271, "b": 1255}
+          },
+          "label": "月兎遠隔催眠術（テレメスメリズム）",
+          "description": "<strong>準難所です。</strong>１回目の幻視状態が解除されるまでは最下段から攻撃します。その後は敵を追いかけつつ，近づきながら撃ち込みます。"
+        }
+      ],
+      "6": [
+        {
+          "time": {
+            "reimu_yukari": 1502,
+            "youmu_yuyuko": 1469,
+            "reimu": 1803,
+            "yukari": 1463
+          },
+          "label": "ボス通常３",
+          "description": "<strong>準難所です。</strong>視野を広く保って少しでも広い隙間に潜りましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1568,
+            "youmu_yuyuko": 1537,
+            "reimu": 1898,
+            "yukari": 1533
+          },
+          "label": "アポロ１３",
+          "description": "<strong class='red'>難所です。</strong>永琳を同じ側に２回誘導すると３回目の弾数が若干減ります。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1595,
+            "youmu_yuyuko": 1562,
+            "reimu": 1928,
+            "yukari": 1560
+          },
+          "label": "天文密葬法",
+          "description": "<strong class='red'>難所です。</strong>左右いずれかの使い魔を速攻して自機狙い弾を誘導できる場所を作ります。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1667,
+            "youmu_yuyuko": 1634,
+            "reimu": 2014,
+            "yukari": 1617
+          },
+          "label": "蓬莱の薬",
+          "description": "<strong class='red'>難所です。</strong>緑色の交差弾からは端の方が避けやすいです。最終段階は速い弾が飛んでくる位置を予測しながら避けましょう。"
+        }
+      ],
+      "7": [
+        {
+          "time": {
+            "reimu_yukari": 1413,
+            "youmu_yuyuko": 1404,
+            "reimu": 1718,
+            "yukari": 1392
+          },
+          "label": "龍の頸の玉　-五色の弾丸-",
+          "description": "<strong class='red'>難所です。</strong>輝夜を端に誘導するとレーザーの飛んでくる位置を固定できます。固定した後はレーザー隙間が広くて小弾の密度が薄い隙間に入りましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1432,
+            "youmu_yuyuko": 1429,
+            "reimu": 1743,
+            "yukari": 1410
+          },
+          "label": "ボス通常２",
+          "description": "自機依存弾幕です。開幕誘導することで，弾が密集する方向をずらすことができます。右上または左上に誘導し，弾が出現し始めたら敵の正面に動きましょう。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1459,
+            "youmu_yuyuko": 1460,
+            "reimu": 1780,
+            "yukari": 1436
+          },
+          "label": "仏の御石の鉢　-砕けぬ意思-",
+          "description": "<strong>難所です。</strong>レーザーの隙間の広いところで弾を避けましょう。弾速差に気をつけましょう。なお，レーザーは実体化直後に判定がありません。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1505,
+            "youmu_yuyuko": 1508,
+            "reimu": 1860,
+            "yukari": 1479
+          },
+          "label": "火鼠の皮衣　-焦れぬ心-",
+          "description": "中央最下段から縦移動で避けます。レーザーの発射音が２回聞こえるごとに動きます。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1523,
+            "youmu_yuyuko": 1525,
+            "reimu": 1891,
+            "yukari": 1498
+          },
+          "label": "ボス通常４",
+          "description": "少し上で避けます。青弾は１つ前の隙間を塞ぐように飛んでくることが多いです。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1572,
+            "reimu": 1958,
+            "yukari": 1546
+          },
+          "label": "蓬莱の弾の枝　-虹色の弾幕-",
+          "description": "最初の自機狙い弾を除いて７回目の自機狙い弾が迫ってくる頃までは無敵です。攻撃が通るようになると同時に輝夜が撃つ小弾の列が変化します。それ以降も自機狙い弾の誘導をパターン化できます。１回目は「中央→右」，切り返して２回目は「右端→右」，３回目は「右→中央」，４回目は「中央→左」，切り返して５回目は「左端→左」，６回目は「左→中央」です。"
+        },
+        {
+          "time": {
+            "youmu_yuyuko": 1581
+          },
+          "label": "蓬莱の弾の枝　-虹色の弾幕-",
+          "description": "最初の自機狙い弾以降は敵の真下からやや横にずれた位置で避けます。「人妖ゲージとEnemyの間」が目安です。最初の自機狙い弾を除いて７回目の自機狙い弾が迫ってくる頃までは無敵です。６回目まで上に避け，切り返して７回目を下に避けます。攻撃が通るようになると同時に輝夜が撃つ小弾の列が変化します。それ以降も自機狙い弾の誘導はパターン化できます。小弾の間を右に抜けて１回目，左に抜けて２回目をそれぞれ下に避け，切り返して右に抜けて３回目，左に抜けて右に抜けて４回目をそれぞれ上に避け，切り返します。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1659,
+            "youmu_yuyuko": 1670,
+            "reimu": 2058,
+            "yukari": 1631
+          },
+          "label": "永夜返し　-子の二つ-",
+          "description": "<strong>準難所です。</strong>横移動で避けます。避ける高さは「当たり判定の印が台詞欄の下に外接する位置」が目安です。"
+        },
+        {
+          "time": {
+            "reimu_yukari": 1728,
+            "youmu_yuyuko": 1738,
+            "reimu": 2127,
+            "yukari": 1699
+          },
+          "label": "永夜返し　-夜明け-",
+          "description": "<strong class='red'>難所です。</strong>右を維持すると避けやすいです。"
+        }
+      ]
+    }
+  },
+  "reimu_yukari": {
+    "description": "ホーミング＆針（追尾＆前方集中ショット）機体です。当たり判定が小さいです。また，すべての使い魔に対して当たり判定がありません。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "ZqOzU8FFf6w",
+      "final_b": "56YTM7GKoyg"
+    }
+  },
+  "marisa_alice": {
+    "description": "ミサイル＆レーザー機体です。レーザーは貫通します。高速移動時において瞬間的に低速移動状態へ切り替えると，両方のショットを同時に撃っている状態になって攻撃力が上がります。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "sakuya_remilia": {
+    "description": "拡散＆設置オプションショット機体です。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "youmu_yuyuko": {
+    "description": "誘導オプション＆拡散ショット機体です。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "_RLD4iDwLSA",
+      "final_b": "R4uAAf8fMGM"
+    }
+  },
+  "reimu": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。また，すべての使い魔に対して当たり判定がありません。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "hP14N3ucRMI",
+      "final_b": "jp014tS8-vM"
+    }
+  },
+  "yukari": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "m83uDRJjICU",
+      "final_b": "3OOW9RFQDh4"
+    }
+  },
+  "marisa": {
+    "description": "ミサイル機体です。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "alice": {
+    "description": "レーザー機体です。レーザーは貫通します。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "sakuya": {
+    "description": "拡散ショット機体です。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "remilia": {
+    "description": "設置オプションショット機体です。４面ボスは霊夢です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "youmu": {
+    "description": "誘導オプションショット機体です。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  },
+  "yuyuko": {
+    "description": "拡散ショット機体です。４面ボスは魔理沙です。",
+    "videoIds": {
+      "final_a": "PLACEHOLDER_VIDEO_ID",
+      "final_b": "PLACEHOLDER_VIDEO_ID"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu": 0,
+            "marisa": 0,
+            "sanae": 0,
+            "reisen": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu": {
+    "description": "",
+    "videoId": "4M8g0xv0v_0",
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "marisa": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "sanae": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reisen": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  }
+}

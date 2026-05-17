@@ -1,0 +1,27 @@
+{
+  "title": "東方鬼形獣　～ Wily Beast and Weakest Creature.",
+  "shortTitle": "東方鬼形獣",
+  "description": "各機体の★の数は<strong>ノーミスノーボム ノー暴走 ノー霊撃 フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu_w", "label": "博麗 霊夢（オオカミ霊）", "shortLabel": "霊夢W", "rating": 4 },
+    { "character": "reimu_o", "label": "博麗 霊夢（カワウソ霊）", "shortLabel": "霊夢O", "rating": 4 },
+    { "character": "reimu_e", "label": "博麗 霊夢（オオワシ霊）", "shortLabel": "霊夢E", "rating": 4 },
+    { "character": "marisa_w", "label": "霧雨 魔理沙（オオカミ霊）", "shortLabel": "魔理沙W", "rating": 4 },
+    { "character": "marisa_o", "label": "霧雨 魔理沙（カワウソ霊）", "shortLabel": "魔理沙O", "rating": 4 },
+    { "character": "marisa_e", "label": "霧雨 魔理沙（オオワシ霊）", "shortLabel": "魔理沙E", "rating": 4 },
+    { "character": "youmu_w", "label": "魂魄 妖夢（オオカミ霊）", "shortLabel": "妖夢W", "rating": 3 },
+    { "character": "youmu_o", "label": "魂魄 妖夢（カワウソ霊）", "shortLabel": "妖夢O", "rating": 3 },
+    { "character": "youmu_e", "label": "魂魄 妖夢（オオワシ霊）", "shortLabel": "妖夢E", "rating": 4 }
+  ],
+  "extra": [
+    { "character": "reimu_w", "label": "博麗 霊夢（オオカミ霊）", "shortLabel": "霊夢W", "rating": 3 },
+    { "character": "reimu_o", "label": "博麗 霊夢（カワウソ霊）", "shortLabel": "霊夢O", "rating": 3 },
+    { "character": "reimu_e", "label": "博麗 霊夢（オオワシ霊）", "shortLabel": "霊夢E", "rating": 3 },
+    { "character": "marisa_w", "label": "霧雨 魔理沙（オオカミ霊）", "shortLabel": "魔理沙W", "rating": 3 },
+    { "character": "marisa_o", "label": "霧雨 魔理沙（カワウソ霊）", "shortLabel": "魔理沙O", "rating": 3 },
+    { "character": "marisa_e", "label": "霧雨 魔理沙（オオワシ霊）", "shortLabel": "魔理沙E", "rating": 3 },
+    { "character": "youmu_w", "label": "魂魄 妖夢（オオカミ霊）", "shortLabel": "妖夢W", "rating": 3 },
+    { "character": "youmu_o", "label": "魂魄 妖夢（カワウソ霊）", "shortLabel": "妖夢O", "rating": 3 },
+    { "character": "youmu_e", "label": "魂魄 妖夢（オオワシ霊）", "shortLabel": "妖夢E", "rating": 3 }
+  ]
+}

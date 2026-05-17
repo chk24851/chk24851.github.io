@@ -1,0 +1,17 @@
+{
+  "title": "東方神霊廟　～ Ten Desires.",
+  "shortTitle": "東方神霊廟",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム ノートランス フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu", "label": "博麗 霊夢", "shortLabel": "霊夢", "rating": 3 },
+    { "character": "marisa", "label": "霧雨 魔理沙", "shortLabel": "魔理沙", "rating": 3 },
+    { "character": "sanae", "label": "東風谷 早苗", "shortLabel": "早苗", "rating": 3 },
+    { "character": "youmu", "label": "魂魄 妖夢", "shortLabel": "妖夢", "rating": 3 }
+  ],
+  "extra": [
+    { "character": "reimu", "label": "博麗 霊夢", "shortLabel": "霊夢", "rating": 3 },
+    { "character": "marisa", "label": "霧雨 魔理沙", "shortLabel": "魔理沙", "rating": 3 },
+    { "character": "sanae", "label": "東風谷 早苗", "shortLabel": "早苗", "rating": 3 },
+    { "character": "youmu", "label": "魂魄 妖夢", "shortLabel": "妖夢", "rating": 3 }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_spring": 0,
+            "reimu_summer": 0,
+            "reimu_autumn": 0,
+            "reimu_winter": 0,
+            "cirno_spring": 0,
+            "cirno_summer": 0,
+            "cirno_autumn": 0,
+            "cirno_winter": 0,
+            "aya_spring": 0,
+            "aya_summer": 0,
+            "aya_autumn": 0,
+            "aya_winter": 0,
+            "marisa_spring": 0,
+            "marisa_summer": 0,
+            "marisa_autumn": 0,
+            "marisa_winter": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_spring": {
+    "description": "５面ボスの選択は<strong>「舞→里乃」</strong>の順です。",
+    "videoId": "kyKbDlCjAgA",
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_summer": {
+    "description": "",
+    "videoId": "QRBTPIubdp0",
+    "timestamps": {
+    }
+  },
+  "reimu_autumn": {
+    "description": "",
+    "videoId": "iit6ZW5ErpQ",
+    "timestamps": {
+    }
+  },
+  "reimu_winter": {
+    "description": "",
+    "videoId": "Uba3jUNRPMM",
+    "timestamps": {
+    }
+  },
+  "cirno_spring": {
+    "description": "",
+    "videoId": "wg_2LmpxrxI",
+    "timestamps": {
+    }
+  },
+  "cirno_summer": {
+    "description": "",
+    "videoId": "Dv84yXjaaHA",
+    "timestamps": {
+    }
+  },
+  "cirno_autumn": {
+    "description": "",
+    "videoId": "PoQzPrJqYwA",
+    "timestamps": {
+    }
+  },
+  "cirno_winter": {
+    "description": "",
+    "videoId": "rE26ijlOTd4",
+    "timestamps": {
+    }
+  },
+  "aya_spring": {
+    "description": "",
+    "videoId": "POSRWfHmYic",
+    "timestamps": {
+    }
+  },
+  "aya_summer": {
+    "description": "",
+    "videoId": "i37cECgC8bE",
+    "timestamps": {
+    }
+  },
+  "aya_autumn": {
+    "description": "",
+    "videoId": "kXkSzQUHS9k",
+    "timestamps": {
+    }
+  },
+  "aya_winter": {
+    "description": "",
+    "videoId": "9GProyggwXs",
+    "timestamps": {
+    }
+  },
+  "marisa_spring": {
+    "description": "",
+    "videoId": "rpYIW6K0wjw",
+    "timestamps": {
+    }
+  },
+  "marisa_summer": {
+    "description": "",
+    "videoId": "sfLfsXggJ0c",
+    "timestamps": {
+    }
+  },
+  "marisa_autumn": {
+    "description": "",
+    "videoId": "pcBe5HHw38U",
+    "timestamps": {
+    }
+  },
+  "marisa_winter": {
+    "description": "",
+    "videoId": "ld4XECnQneE",
+    "timestamps": {
+    }
+  }
+}

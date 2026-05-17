@@ -1,0 +1,108 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 158,
+          "reimu_b": 149,
+          "marisa_a": 153,
+          "marisa_b": 156,
+          "sakuya_a": 154,
+          "sakuya_b": 152
+        },
+        "label": "道中",
+        "description": "<strong class='red'>難所です。</strong>大量の高速ばらまき弾の中で自機狙い弾を避けます。敵の出現位置は固定です。ばらまき弾を撃つ妖精を優先して倒しましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 286,
+          "reimu_b": 269,
+          "marisa_a": 270,
+          "marisa_b": 283,
+          "sakuya_a": 271,
+          "sakuya_b": 272
+        },
+        "label": "動と静の均衡",
+        "description": "使い魔をまとまった位置に誘導しましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 330,
+          "reimu_b": 307,
+          "marisa_a": 310,
+          "marisa_b": 326,
+          "sakuya_a": 308,
+          "sakuya_b": 310
+        },
+        "label": "光と闇の網目",
+        "description": "<strong>準難所です。</strong>基本的には敵の正面で構え，レーザーの間の隙間が広い場所で弾を避けます。１回目のみ，敵の上に誘導することができます。なお，レーザーは実体化直後に判定がありません。"
+      },
+      {
+        "time": {
+          "reimu_a": 547,
+          "reimu_b": 505,
+          "marisa_a": 484,
+          "marisa_b": 515,
+          "sakuya_a": 520,
+          "sakuya_b": 488
+        },
+        "label": "二重黒死蝶",
+        "description": "<strong class='red'>難所です。</strong>時間発狂弾幕です。敵から離れて避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 716,
+          "sakuya_a": 676,
+          "sakuya_b": 641
+        },
+        "label": "生と死の境界",
+        "description": "<strong class='red'>難所です。</strong>安地が存在することがあります。敵を左右いずれかの端に誘導しましょう。特に，この機体は敵の正面を取れていなくても攻撃が当たれば問題ありません。最終的に安地を見つけられなかった場合は気合避けです。弾速差に気をつけながら避けましょう。大きく横に避けると自機外しの蝶弾に被弾する恐れがあるので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_b": 676,
+          "marisa_a": 637,
+          "marisa_b": 674
+        },
+        "label": "生と死の境界",
+        "description": "<strong class='red'>難所です。</strong>安地が存在することがあります。敵を左右いずれかの端に誘導しましょう。最終的に安地を見つけられなかった場合は気合避けです。弾速差に気をつけながら避けましょう。大きく横に避けると自機外しの蝶弾に被弾する恐れがあるので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 793,
+          "reimu_b": 729,
+          "marisa_a": 701,
+          "marisa_b": 726,
+          "sakuya_a": 740,
+          "sakuya_b": 710
+        },
+        "label": "弾幕結界",
+        "description": "固定弾幕です。避け方をパターン化しましょう。"
+      }
+    ]
+  },
+  "reimu_a": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。",
+    "videoId": "SJNnDMwxOHs"
+  },
+  "reimu_b": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "Dzwv1pIEwbQ"
+  },
+  "marisa_a": {
+    "description": "ミサイル機体です。高速状態での移動速度には慣れておきましょう。",
+    "videoId": "bdDk-loPHM4"
+  },
+  "marisa_b": {
+    "description": "レーザー機体です。レーザーは貫通します。高速状態での移動速度には慣れておきましょう。",
+    "videoId": "l4hV5KSXKdg"
+  },
+  "sakuya_a": {
+    "description": "高速移動時は拡散ショット，低速移動時は近距離追尾ショット機体です。低速移動時の速度には慣れておきましょう。",
+    "videoId": "5PsvRNhioG8"
+  },
+  "sakuya_b": {
+    "description": "高速移動時は自機依存ショット，低速移動時は固定ショット機体です。低速移動時の速度には慣れておきましょう。",
+    "videoId": "6FyDEpN1Aq8"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホーム</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/loader.js" defer></script>
+</head>
+<body>
+  <div class="container" id="container">
+    <h1>Chikoi's Nook</h1>
+    <p>プレ公開中／ブログ（th12-20）は制作中／星ランクは仮</p>
+    <p>仮不具合の報告や提案等はXのメッセージ（DM）までどうぞ</p>
+    <div class="button-group">
+      <a href="/about/index.html" class="btn btn-primary btn-hero">プロフィール</a>
+      <a href="/blog/index.html" class="btn btn-primary btn-hero">ブログ</a>
+    </div>
+    
+    <h2>実績（最新）</h2>
+    <ul id="recent-achievements">
+    </ul>
+  </div>
+  <script>
+    async function loadRecentAchievements() {
+      try {
+        const response = await fetch('./about/achievements/achievements.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const achievementsData = await response.json();
+        
+        const recentList = achievementsData.slice(-5).reverse();
+        const ul = document.getElementById('recent-achievements');
+        ul.innerHTML = '';
+        
+        const today = new Date(2026, 4, 13);
+        const sixMonthsAgo = new Date(today.getFullYear(), today.getMonth() - 6, today.getDate());
+        
+        recentList.forEach(item => {
+          const li = document.createElement('li');
+          const link = document.createElement('a');
+          
+          if (item.url) {
+            link.href = item.url;
+          } else {
+            link.style.cursor = 'default';
+            link.classList.add('no-link');
+            link.addEventListener('click', (e) => e.preventDefault());
+          }
+          
+          const itemDate = new Date(item.year, item.month - 1, item.day);
+          const isNew = itemDate >= sixMonthsAgo;
+          
+          const newBadge = isNew ? ' 【NEW】' : '';
+          link.textContent = `${item.year}年${item.month}月${item.day}日${newBadge}\n${item.content}`;
+          
+          if (isNew) {
+            link.classList.add('recent-achievement-new');
+          }
+          
+          li.appendChild(link);
+          ul.appendChild(li);
+        });
+      } catch (error) {
+        const ul = document.getElementById('recent-achievements');
+        ul.innerHTML = '<li>読み込みに失敗しました。ページをリロードしてください。</li>';
+      }
+    }
+    
+    document.addEventListener('DOMContentLoaded', loadRecentAchievements);
+  </script>
+</body>
+</html>

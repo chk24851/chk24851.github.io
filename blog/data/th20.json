@@ -1,0 +1,41 @@
+{
+  "title": "東方錦上京　～ Fossilized Wonders.",
+  "shortTitle": "東方錦上京",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム ノー霊撃 フルスペカ（コモン魔石固定）</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu_red", "label": "博麗 霊夢（スカーレットデビル）", "shortLabel": "霊夢（Red）", "rating": 0 },
+    { "character": "reimu_red2", "label": "博麗 霊夢（クリーチャーレッド）", "shortLabel": "霊夢（Red2）", "rating": 0 },
+    { "character": "reimu_blue", "label": "博麗 霊夢（スノーブロッサム）", "shortLabel": "霊夢（Blue）", "rating": 0 },
+    { "character": "reimu_blue2", "label": "博麗 霊夢（ブルーシーズン）", "shortLabel": "霊夢（Blue2）", "rating": 0 },
+    { "character": "reimu_yellow", "label": "博麗 霊夢（イエローサブタレイニアン）", "shortLabel": "霊夢（Yellow）", "rating": 0 },
+    { "character": "reimu_yellow2", "label": "博麗 霊夢（インペリシャブルムーン）", "shortLabel": "霊夢（Yellow2）", "rating": 0 },
+    { "character": "reimu_green", "label": "博麗 霊夢（ビーストハードネス）", "shortLabel": "霊夢（Green）", "rating": 0 },
+    { "character": "reimu_green2", "label": "博麗 霊夢（シントイズムウィンド）", "shortLabel": "霊夢（Green2）", "rating": 0 },
+    { "character": "marisa_red", "label": "霧雨 魔理沙（スカーレットデビル）", "shortLabel": "魔理沙（Red）", "rating": 0 },
+    { "character": "marisa_red2", "label": "霧雨 魔理沙（クリーチャーレッド）", "shortLabel": "魔理沙（Red2）", "rating": 0 },
+    { "character": "marisa_blue", "label": "霧雨 魔理沙（スノーブロッサム）", "shortLabel": "魔理沙（Blue）", "rating": 0 },
+    { "character": "marisa_blue2", "label": "霧雨 魔理沙（ブルーシーズン）", "shortLabel": "魔理沙（Blue2）", "rating": 0 },
+    { "character": "marisa_yellow", "label": "霧雨 魔理沙（イエローサブタレイニアン）", "shortLabel": "魔理沙（Yellow）", "rating": 0 },
+    { "character": "marisa_yellow2", "label": "霧雨 魔理沙（インペリシャブルムーン）", "shortLabel": "魔理沙（Yellow2）", "rating": 0 },
+    { "character": "marisa_green", "label": "霧雨 魔理沙（ビーストハードネス）", "shortLabel": "魔理沙（Green）", "rating": 0 },
+    { "character": "marisa_green2", "label": "霧雨 魔理沙（シントイズムウィンド）", "shortLabel": "魔理沙（Green2）", "rating": 0 }
+  ],
+  "extra": [
+    { "character": "reimu_red", "label": "博麗 霊夢（スカーレットデビル）", "shortLabel": "霊夢（Red）", "rating": 4 },
+    { "character": "reimu_red2", "label": "博麗 霊夢（クリーチャーレッド）", "shortLabel": "霊夢（Red2）", "rating": 4 },
+    { "character": "reimu_blue", "label": "博麗 霊夢（スノーブロッサム）", "shortLabel": "霊夢（Blue）", "rating": 4 },
+    { "character": "reimu_blue2", "label": "博麗 霊夢（ブルーシーズン）", "shortLabel": "霊夢（Blue2）", "rating": 4 },
+    { "character": "reimu_yellow", "label": "博麗 霊夢（イエローサブタレイニアン）", "shortLabel": "霊夢（Yellow）", "rating": 4 },
+    { "character": "reimu_yellow2", "label": "博麗 霊夢（インペリシャブルムーン）", "shortLabel": "霊夢（Yellow2）", "rating": 3 },
+    { "character": "reimu_green", "label": "博麗 霊夢（ビーストハードネス）", "shortLabel": "霊夢（Green）", "rating": 3 },
+    { "character": "reimu_green2", "label": "博麗 霊夢（シントイズムウィンド）", "shortLabel": "霊夢（Green2）", "rating": 3 },
+    { "character": "marisa_red", "label": "霧雨 魔理沙（スカーレットデビル）", "shortLabel": "魔理沙（Red）", "rating": 4 },
+    { "character": "marisa_red2", "label": "霧雨 魔理沙（クリーチャーレッド）", "shortLabel": "魔理沙（Red2）", "rating": 5 },
+    { "character": "marisa_blue", "label": "霧雨 魔理沙（スノーブロッサム）", "shortLabel": "魔理沙（Blue）", "rating": 4 },
+    { "character": "marisa_blue2", "label": "霧雨 魔理沙（ブルーシーズン）", "shortLabel": "魔理沙（Blue2）", "rating": 4 },
+    { "character": "marisa_yellow", "label": "霧雨 魔理沙（イエローサブタレイニアン）", "shortLabel": "魔理沙（Yellow）", "rating": 4 },
+    { "character": "marisa_yellow2", "label": "霧雨 魔理沙（インペリシャブルムーン）", "shortLabel": "魔理沙（Yellow2）", "rating": 3 },
+    { "character": "marisa_green", "label": "霧雨 魔理沙（ビーストハードネス）", "shortLabel": "魔理沙（Green）", "rating": 4 },
+    { "character": "marisa_green2", "label": "霧雨 魔理沙（シントイズムウィンド）", "shortLabel": "魔理沙（Green2）", "rating": 3 }
+  ]
+}

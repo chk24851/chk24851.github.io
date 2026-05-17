@@ -1,0 +1,17 @@
+{
+  "title": "東方紺珠伝　～ Legacy of Lunatic Kingdom.",
+  "shortTitle": "東方紺珠伝",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu", "label": "博麗 霊夢", "shortLabel": "霊夢", "rating": 5 },
+    { "character": "marisa", "label": "霧雨 魔理沙", "shortLabel": "魔理沙", "rating": 0 },
+    { "character": "sanae", "label": "東風谷 早苗", "shortLabel": "早苗", "rating": 0 },
+    { "character": "reisen", "label": "鈴仙・優曇華院・イナバ", "shortLabel": "鈴仙", "rating": 0 }
+  ],
+  "extra": [
+    { "character": "reimu", "label": "博麗 霊夢", "shortLabel": "霊夢", "rating": 5 },
+    { "character": "marisa", "label": "霧雨 魔理沙", "shortLabel": "魔理沙", "rating": 5 },
+    { "character": "sanae", "label": "東風谷 早苗", "shortLabel": "早苗", "rating": 5 },
+    { "character": "reisen", "label": "鈴仙・優曇華院・イナバ", "shortLabel": "鈴仙", "rating": 5 }
+  ]
+}

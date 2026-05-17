@@ -1,0 +1,84 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_a": {
+    "description": "",
+    "videoId": "-wfBEp4IaO8",
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_b": {
+    "description": "",
+    "videoId": "pQKs3HXDN8U",
+    "timestamps": {
+    }
+  },
+  "marisa_a": {
+    "description": "",
+    "videoId": "_kNJlGVX6PA",
+    "timestamps": {
+    }
+  },
+  "marisa_b": {
+    "description": "",
+    "videoId": "4jO1QI7DiQY",
+    "timestamps": {
+    }
+  },
+  "sakuya_a": {
+    "description": "",
+    "videoId": "n9Thukk243Y",
+    "timestamps": {
+    }
+  },
+  "sakuya_b": {
+    "description": "",
+    "videoId": "28gdp3hGoRk",
+    "timestamps": {
+    }
+  }
+}

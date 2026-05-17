@@ -1,0 +1,21 @@
+{
+  "title": "東方星蓮船　～ Undefined Fantastic Object.",
+  "shortTitle": "東方星蓮船",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム ノー霊撃 フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu_a", "label": "博麗 霊夢（一点集中攻撃力重視型）", "shortLabel": "霊夢A", "rating": 4 },
+    { "character": "reimu_b", "label": "博麗 霊夢（アンチパターン重視超誘導型）", "shortLabel": "霊夢B", "rating": 4 },
+    { "character": "marisa_a", "label": "霧雨 魔理沙（無限貫通＆常時攻撃型）", "shortLabel": "魔理沙A", "rating": 4 },
+    { "character": "marisa_b", "label": "霧雨 魔理沙（超攻撃範囲重視型）", "shortLabel": "魔理沙B", "rating": 4 },
+    { "character": "sanae_a", "label": "東風谷 早苗（一点集中＆誘導型）", "shortLabel": "早苗A", "rating": 4 },
+    { "character": "sanae_b", "label": "東風谷 早苗（高威力＆広範囲炸裂型）", "shortLabel": "早苗B", "rating": 4 }
+  ],
+  "extra": [
+    { "character": "reimu_a", "label": "博麗 霊夢（一点集中攻撃力重視型）", "shortLabel": "霊夢A", "rating": 3 },
+    { "character": "reimu_b", "label": "博麗 霊夢（アンチパターン重視超誘導型）", "shortLabel": "霊夢B", "rating": 3 },
+    { "character": "marisa_a", "label": "霧雨 魔理沙（無限貫通＆常時攻撃型）", "shortLabel": "魔理沙A", "rating": 3 },
+    { "character": "marisa_b", "label": "霧雨 魔理沙（超攻撃範囲重視型）", "shortLabel": "魔理沙B", "rating": 3 },
+    { "character": "sanae_a", "label": "東風谷 早苗（一点集中＆誘導型）", "shortLabel": "早苗A", "rating": 3 },
+    { "character": "sanae_b", "label": "東風谷 早苗（高威力＆広範囲炸裂型）", "shortLabel": "早苗B", "rating": 3 }
+  ]
+}

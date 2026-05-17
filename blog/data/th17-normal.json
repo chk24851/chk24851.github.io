@@ -1,0 +1,105 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_w": 0,
+            "reimu_o": 0,
+            "reimu_e": 0,
+            "marisa_w": 0,
+            "marisa_o": 0,
+            "marisa_e": 0,
+            "youmu_w": 0,
+            "youmu_o": 0,
+            "youmu_e": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_w": {
+    "description": "",
+    "videoId": "x_rVIbJhXc0",
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_o": {
+    "description": "",
+    "videoId": "X5uvobV_4cI",
+    "timestamps": {
+    }
+  },
+  "reimu_e": {
+    "description": "",
+    "videoId": "IodPhV3eY0s",
+    "timestamps": {
+    }
+  },
+  "marisa_w": {
+    "description": "",
+    "videoId": "Fbx40c39NUs",
+    "timestamps": {
+    }
+  },
+  "marisa_o": {
+    "description": "",
+    "videoId": "a8N0y727knQ",
+    "timestamps": {
+    }
+  },
+  "marisa_e": {
+    "description": "",
+    "videoId": "xrqbYpM33k8",
+    "timestamps": {
+    }
+  },
+  "youmu_w": {
+    "description": "",
+    "videoId": "EJrBz9Y7WJw",
+    "timestamps": {
+    }
+  },
+  "youmu_o": {
+    "description": "",
+    "videoId": "d5lz6Xwmi-w",
+    "timestamps": {
+    }
+  },
+  "youmu_e": {
+    "description": "",
+    "videoId": "t8C6MdAPvKU",
+    "timestamps": {
+    }
+  }
+}

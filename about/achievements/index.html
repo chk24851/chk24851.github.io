@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>実績</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/loader.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>実績</h1>
+    <p style="text-align: center; margin-bottom: 20px;"><a href="/about/index.html" class="btn btn-primary">プロフィールに戻る</a></p>
+    <div class="filter-container">
+      <div class="filter-group">
+        <select id="year-select">
+          <option value="all">すべての年</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <input type="text" id="search-input" placeholder="キーワードで検索...">
+      </div>
+    </div>
+    <div id="no-results" class="no-results" style="display: none;">
+      <p>検索条件に一致する実績が見つかりません。</p>
+    </div>
+    <table class="achievements">
+      <thead>
+        <tr>
+          <th colspan="2" class="date-header">日付</th>
+          <th class="content-header">内容</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    let sortAscending = false;
+    let achievementsData = [];
+    let originalAchievementsData = [];
+
+    async function generateAchievementsTable(data = null) {
+      try {
+        if (data === null) {
+          const response = await fetch('./achievements.json');
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          originalAchievementsData = await response.json();
+          
+          const sorted = [...originalAchievementsData].sort((a, b) => {
+            const dateA = new Date(a.year, a.month - 1, a.day);
+            const dateB = new Date(b.year, b.month - 1, b.day);
+            return sortAscending ? dateA - dateB : dateB - dateA;
+          });
+          achievementsData = sorted;
+        } else {
+          achievementsData = data;
+        }
+
+        const tbody = document.querySelector('.achievements tbody');
+        const noResults = document.getElementById('no-results');
+        if (!tbody) return;
+
+        tbody.innerHTML = '';
+
+        if (achievementsData.length === 0) {
+          noResults.style.display = 'block';
+          document.querySelector('.achievements').style.display = 'none';
+          return;
+        } else {
+          noResults.style.display = 'none';
+          document.querySelector('.achievements').style.display = '';
+        }
+
+        achievementsData.forEach((item, index) => {
+          const isMobile = window.innerWidth <= 768;
+          const row = document.createElement('tr');
+          const yearCell = document.createElement('td');
+          const monthDayCell = document.createElement('td');
+          const contentCell = document.createElement('td');
+          const link = document.createElement('a');
+
+          if (item.url) {
+            link.href = item.url;
+            link.textContent = item.content + ' >';
+          } else {
+            link.textContent = item.content;
+            link.style.pointerEvents = 'none';
+            link.style.cursor = 'default';
+            link.addEventListener('click', (e) => e.preventDefault());
+          }
+
+          contentCell.appendChild(link);
+
+          if (index > 0 && achievementsData[index - 1].year === item.year) {
+            yearCell.textContent = '';
+          } else {
+            yearCell.textContent = isMobile ? item.year : item.year + '年';
+          }
+
+          if (index > 0 && achievementsData[index - 1].month === item.month && achievementsData[index - 1].day === item.day) {
+            monthDayCell.textContent = '';
+          } else {
+            monthDayCell.textContent = isMobile ? `${item.month}/${item.day}` : item.month + '月' + item.day + '日';
+          }
+
+          if (index < achievementsData.length - 1) {
+            const nextItem = achievementsData[index + 1];
+
+            if (item.year === nextItem.year) {
+              yearCell.classList.add('no-border');
+            }
+
+            if (item.month === nextItem.month && item.day === nextItem.day) {
+              monthDayCell.classList.add('no-border');
+            }
+          }
+
+          row.appendChild(yearCell);
+          row.appendChild(monthDayCell);
+          row.appendChild(contentCell);
+          tbody.appendChild(row);
+        });
+      } catch (error) {
+      }
+    }
+
+    function updateDateHeaderArrow() {
+      const dateHeader = document.querySelector('.date-header');
+      if (dateHeader) {
+        dateHeader.textContent = sortAscending ? '日付 ▼' : '日付 ▲';
+      }
+    }
+
+    function toggleDateSort() {
+      sortAscending = !sortAscending;
+      updateDateHeaderArrow();
+      applyFilters();
+    }
+
+    function populateYearDropdown() {
+      const yearSelect = document.getElementById('year-select');
+      const years = [...new Set(originalAchievementsData.map(item => item.year))].sort((a, b) => b - a);
+      
+      years.forEach(year => {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        yearSelect.appendChild(option);
+      });
+    }
+
+    function applyFilters() {
+      const yearSelect = document.getElementById('year-select');
+      const searchInput = document.getElementById('search-input');
+      const selectedYear = yearSelect.value;
+      const searchKeyword = searchInput.value.toLowerCase();
+
+      let filtered = originalAchievementsData.filter(item => {
+        const yearMatch = selectedYear === 'all' || item.year === selectedYear;
+        const contentMatch = item.content.toLowerCase().includes(searchKeyword);
+        return yearMatch && contentMatch;
+      });
+
+      const sorted = filtered.sort((a, b) => {
+        const dateA = new Date(a.year, a.month - 1, a.day);
+        const dateB = new Date(b.year, b.month - 1, b.day);
+        return sortAscending ? dateA - dateB : dateB - dateA;
+      });
+
+      generateAchievementsTable(sorted);
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      await generateAchievementsTable();
+      populateYearDropdown();
+
+      const dateHeader = document.querySelector('.date-header');
+      if (dateHeader) {
+        dateHeader.style.cursor = 'pointer';
+        updateDateHeaderArrow();
+        dateHeader.addEventListener('click', toggleDateSort);
+      }
+
+      const yearSelect = document.getElementById('year-select');
+      const searchInput = document.getElementById('search-input');
+      if (yearSelect) yearSelect.addEventListener('change', applyFilters);
+      if (searchInput) searchInput.addEventListener('input', applyFilters);
+
+      window.addEventListener('resize', applyFilters);
+    });
+  </script>
+</body>
+</html>

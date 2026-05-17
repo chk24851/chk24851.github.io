@@ -1,0 +1,29 @@
+{
+  "title": "東方天空璋　～ Hidden Star in Four Seasons.",
+  "shortTitle": "東方天空璋",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム ノー解放 フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "character": "reimu_spring", "label": "博麗 霊夢（春装備）", "shortLabel": "霊夢春", "rating": 4 },
+    { "character": "reimu_summer", "label": "博麗 霊夢（夏装備）", "shortLabel": "霊夢夏", "rating": 4 },
+    { "character": "reimu_autumn", "label": "博麗 霊夢（秋装備）", "shortLabel": "霊夢秋", "rating": 3 },
+    { "character": "reimu_winter", "label": "博麗 霊夢（冬装備）", "shortLabel": "霊夢冬", "rating": 4 },
+    { "character": "cirno_spring", "label": "チルノ（春装備）", "shortLabel": "チルノ春", "rating": 4 },
+    { "character": "cirno_summer", "label": "チルノ（夏装備）", "shortLabel": "チルノ夏", "rating": 4 },
+    { "character": "cirno_autumn", "label": "チルノ（秋装備）", "shortLabel": "チルノ秋", "rating": 3 },
+    { "character": "cirno_winter", "label": "チルノ（冬装備）", "shortLabel": "チルノ冬", "rating": 4 },
+    { "character": "aya_spring", "label": "射命丸 文（春装備）", "shortLabel": "文春", "rating": 4 },
+    { "character": "aya_summer", "label": "射命丸 文（夏装備）", "shortLabel": "文夏", "rating": 4 },
+    { "character": "aya_autumn", "label": "射命丸 文（秋装備）", "shortLabel": "文秋", "rating": 4 },
+    { "character": "aya_winter", "label": "射命丸 文（冬装備）", "shortLabel": "文冬", "rating": 3 },
+    { "character": "marisa_spring", "label": "霧雨 魔理沙（春装備）", "shortLabel": "魔理沙春", "rating": 4 },
+    { "character": "marisa_summer", "label": "霧雨 魔理沙（夏装備）", "shortLabel": "魔理沙夏", "rating": 4 },
+    { "character": "marisa_autumn", "label": "霧雨 魔理沙（秋装備）", "shortLabel": "魔理沙秋", "rating": 3 },
+    { "character": "marisa_winter", "label": "霧雨 魔理沙（冬装備）", "shortLabel": "魔理沙冬", "rating": 3 }
+  ],
+  "extra": [
+    { "character": "reimu", "label": "博麗 霊夢（土用装備）", "shortLabel": "霊夢", "rating": 3 },
+    { "character": "cirno", "label": "チルノ（土用装備）", "shortLabel": "チルノ", "rating": 4 },
+    { "character": "aya", "label": "射命丸 文（土用装備）", "shortLabel": "文", "rating": 4 },
+    { "character": "marisa", "label": "霧雨 魔理沙（土用装備）", "shortLabel": "魔理沙", "rating": 4 }
+  ]
+}

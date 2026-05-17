@@ -1,0 +1,264 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_yukari": 205,
+          "reimu": 220,
+          "yukari": 208
+        },
+        "label": "道中",
+        "description": "安地です。「左下の隅」が目安です。また，ほかの機体と同様に「左下の隅からやや右上の位置」も目安です。"
+      },
+      {
+        "time": {
+          "marisa_alice": 207,
+          "sakuya_remilia": 198,
+          "youmu_yuyuko": 215,
+          "marisa": 211,
+          "alice": 221,
+          "sakuya": 235,
+          "remilia": 198,
+          "youmu": 199,
+          "yuyuko": 214
+        },
+        "label": "道中",
+        "description": "安地です。「左下の隅からやや右上の位置」が目安です。右上から飛んでくる紫弾と青弾の間に挟まることを意識すると入りやすいです。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 236,
+          "marisa_alice": 267,
+          "sakuya_remilia": 227,
+          "youmu_yuyuko": 246,
+          "reimu": 254,
+          "yukari": 238,
+          "marisa": 243,
+          "alice": 252,
+          "sakuya": 275,
+          "remilia": 227,
+          "youmu": 227,
+          "yuyuko": 247
+        },
+        "label": "月のいはかさの呪い",
+        "description": "<strong>準難所です。</strong>中央と右端を反復すると避けやすいです。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 318,
+          "marisa_alice": 306,
+          "sakuya_remilia": 295,
+          "youmu_yuyuko": 330,
+          "reimu": 348,
+          "yukari": 321,
+          "marisa": 330,
+          "alice": 332,
+          "sakuya": 378,
+          "remilia": 294,
+          "youmu": 293,
+          "yuyuko": 328
+        },
+        "label": "滅罪寺院傷",
+        "description": "使い魔に重なると弾封じできるので，弾を避ける必要がなくなります。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 357,
+          "reimu": 393,
+          "yukari": 361
+        },
+        "label": "徐福時空",
+        "description": "最下段で赤札弾の隙間に入るようにして避けましょう。"
+      },
+      {
+        "time": {
+          "marisa_alice": 347,
+          "sakuya_remilia": 328,
+          "youmu_yuyuko": 371,
+          "marisa": 373,
+          "alice": 368,
+          "sakuya": 427,
+          "remilia": 327,
+          "youmu": 327,
+          "yuyuko": 370
+        },
+        "label": "徐福時空",
+        "description": "近くに設置される札弾や上から飛んでくる札弾に当たらない高さがあります。開始直後，まずはその高さに合わせます。高さは「当たり判定の印が人妖ゲージの小数点以下の桁の数値の上側に外接する位置」が目安です。その高さで，上に飛んでくる赤札弾の隙間に入るようにして避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 425,
+          "marisa_alice": 401,
+          "sakuya_remilia": 387,
+          "youmu_yuyuko": 440,
+          "reimu": 481,
+          "yukari": 429,
+          "marisa": 448,
+          "alice": 426,
+          "sakuya": 517,
+          "remilia": 384,
+          "youmu": 388,
+          "yuyuko": 440
+        },
+        "label": "ボス通常６",
+        "description": "<strong>準難所です。</strong>赤弾の少ないところで紫弾を避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 439,
+          "marisa_alice": 411,
+          "sakuya_remilia": 398,
+          "youmu_yuyuko": 455,
+          "reimu": 496,
+          "yukari": 442,
+          "marisa": 461,
+          "alice": 437,
+          "sakuya": 531,
+          "remilia": 395,
+          "youmu": 398,
+          "yuyuko": 453
+        },
+        "label": "ウー",
+        "description": "<strong>準難所です。</strong>３回で１セットの攻撃です。１回目は下方向に弾を１回設置します。２回目は自機方向に弾を１回設置します。３回目は動きながら自機方向に弾を４回設置します。敵の移動に合わせて弾の設置方向を誘導しましょう。敵の上に誘導すると弾数を減らすことができます。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 469,
+          "marisa_alice": 442,
+          "sakuya_remilia": 429,
+          "youmu_yuyuko": 484,
+          "reimu": 538,
+          "yukari": 473,
+          "marisa": 495,
+          "alice": 471,
+          "sakuya": 564,
+          "remilia": 425,
+          "youmu": 425,
+          "yuyuko": 481
+        },
+        "label": "ボス通常７",
+        "description": "<strong>準難所です。</strong>通常６よりも弾速差が顕著です。赤弾の少ないところで紫弾を避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 483,
+          "marisa_alice": 450,
+          "sakuya_remilia": 440,
+          "youmu_yuyuko": 498,
+          "reimu": 552,
+          "yukari": 486,
+          "marisa": 507,
+          "alice": 481,
+          "sakuya": 578,
+          "remilia": 436,
+          "youmu": 436,
+          "yuyuko": 494
+        },
+        "label": "フェニックスの尾",
+        "description": "<strong>準難所です。</strong>炎弾が密集しているところや中弾のあるところへ近づかないようにしましょう。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 512,
+          "marisa_alice": 473,
+          "sakuya_remilia": 465,
+          "youmu_yuyuko": 527,
+          "reimu": 595,
+          "yukari": 515,
+          "marisa": 543,
+          "alice": 506,
+          "sakuya": 614,
+          "remilia": 461,
+          "youmu": 464,
+          "yuyuko": 523
+        },
+        "label": "ボス通常８",
+        "description": "<strong class='red'>難所です。</strong>敵の初期位置が移動範囲のうちのやや下なので，最初に敵が動くまでの隙間が一番狭いことが多いです。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 525,
+          "marisa_alice": 482,
+          "sakuya_remilia": 477,
+          "youmu_yuyuko": 541,
+          "reimu": 610,
+          "yukari": 528,
+          "marisa": 556,
+          "alice": 519,
+          "sakuya": 628,
+          "remilia": 472,
+          "youmu": 474,
+          "yuyuko": 537
+        },
+        "label": "凱風快晴　-フジヤマヴォルケイノ-",
+        "description": "<strong>準難所です。</strong>３回で１セットの攻撃です。１回目は使い魔を１回，２回目は３回，３回目は６回撃ってきます。使い魔は自機狙いなので，大きく誘導しながら避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_yukari": 685,
+          "marisa_alice": 630,
+          "sakuya_remilia": 629,
+          "youmu_yuyuko": 696,
+          "reimu": 786,
+          "yukari": 684,
+          "marisa": 725,
+          "alice": 673,
+          "sakuya": 799,
+          "remilia": 619,
+          "youmu": 621,
+          "yuyuko": 694
+        },
+        "label": "インペリシャブルシューティング",
+        "description": "<strong>準難所です。</strong>全方位弾は弾の広がり幅が少ない隙間を抜けましょう。緑弾は最初に正面へ飛んでくる列の右の隙間に入ると，すべての弾列が広がりきるまで不動で避けられます。鱗弾は青弾が停止する位置よりも上に入り，青弾が画面外へ飛んでいくのに合わせて下に動きながら赤弾を避けます。"
+      }
+    ]
+  },
+  "reimu_yukari": {
+    "description": "ホーミング＆針（追尾＆前方集中ショット）機体です。当たり判定が小さいです。また，すべての使い魔に対して当たり判定がありません。",
+    "videoId": "GtiBnVZzIuE"
+  },
+  "marisa_alice": {
+    "description": "ミサイル＆レーザー機体です。レーザーは貫通します。高速移動時において瞬間的に低速移動状態へ切り替えると，両方のショットを同時に撃っている状態になって攻撃力が上がります。",
+    "videoId": "woYIFbdZ_Hc"
+  },
+  "sakuya_remilia": {
+    "description": "拡散＆設置オプションショット機体です。",
+    "videoId": "Zliv_apam3A"
+  },
+  "youmu_yuyuko": {
+    "description": "誘導オプション＆拡散ショット機体です。",
+    "videoId": "zcY6C9lMyGw"
+  },
+  "reimu": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。また，すべての使い魔に対して当たり判定がありません。",
+    "videoId": "tuLFdHFVb4c"
+  },
+  "yukari": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "hOJdEtPINxA"
+  },
+  "marisa": {
+    "description": "ミサイル機体です。",
+    "videoId": "sS_U3l4CwzY"
+  },
+  "alice": {
+    "description": "レーザー機体です。レーザーは貫通します。",
+    "videoId": "h0aHbXOClCc"
+  },
+  "sakuya": {
+    "description": "拡散ショット機体です。",
+    "videoId": "SU2gV4EQ2-E"
+  },
+  "remilia": {
+    "description": "設置オプションショット機体です。",
+    "videoId": "sozg0c4oXB8"
+  },
+  "youmu": {
+    "description": "誘導オプションショット機体です。",
+    "videoId": "0gNZQNwdj7Y"
+  },
+  "yuyuko": {
+    "description": "拡散ショット機体です。",
+    "videoId": "3AV4OM3hEOs"
+  }
+}

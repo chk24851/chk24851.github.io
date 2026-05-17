@@ -1,0 +1,16 @@
+{
+  "title": "妖精大戦争　～ 東方三月精",
+  "shortTitle": "妖精大戦争",
+  "description": "各ルートの★の数は<strong>ノーミス ノーボム フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "route": "a1", "label": "ルート　A1", "shortLabel": "A1", "rating": 2 },
+    { "route": "a2", "label": "ルート　A2", "shortLabel": "A2", "rating": 2 },
+    { "route": "b1", "label": "ルート　B1", "shortLabel": "B1", "rating": 2 },
+    { "route": "b2", "label": "ルート　B2", "shortLabel": "B2", "rating": 2 },
+    { "route": "c1", "label": "ルート　C1", "shortLabel": "C1", "rating": 2 },
+    { "route": "c2", "label": "ルート　C2", "shortLabel": "C2", "rating": 2 }
+  ],
+  "extra": [
+    { "route": "extra", "label": "ルート　EX", "shortLabel": "EX", "rating": 4 }
+  ]
+}
