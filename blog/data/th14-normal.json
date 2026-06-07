@@ -1,0 +1,269 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "3": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "ストレンジロア",
+          "description": "<strong>準難所です。</strong>弾の隙間の広い場所を瞬時に見極める必要があります。弾速は速くないので落ち着いて避けましょう。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "道中１",
+          "description": "安地です。「左上または右上の端」が目安です。"
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_b": 0,
+            "sakuya_b": 0
+          },
+          "label": "中ボス通常１",
+          "description": "大きく誘導して避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "marisa_a": 0,
+            "sakuya_a": 0
+          },
+          "label": "中ボス通常２",
+          "description": ""
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_b": 0,
+            "sakuya_b": 0
+          },
+          "label": "中ボス通常２",
+          "description": "休符弾と音符弾を同時に相手しないようにしましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "marisa_a": 0,
+            "sakuya_a": 0
+          },
+          "label": "ボス通常１",
+          "description": "<strong>準難所です。</strong>赤弾は大きく誘導して避けましょう。速攻を心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_b": 0,
+            "sakuya_b": 0
+          },
+          "label": "諸行無常の琴の音",
+          "description": "敵の周りを回って避けます。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "marisa_a": 0,
+            "sakuya_a": 0
+          },
+          "label": "ボス通常２",
+          "description": "速攻を心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_b": 0,
+            "sakuya_b": 0
+          },
+          "label": "平安の残響",
+          "description": "縦移動を駆使して避けましょう。複数方向からの弾を同時に相手しないようにしましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "marisa_a": 0,
+            "sakuya_a": 0
+          },
+          "label": "ボス通常３",
+          "description": "<strong class='red'>難所です。</strong>青弾の少ない場所で赤弾を避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "marisa_a": 0,
+            "sakuya_a": 0
+          },
+          "label": "邪悪な五線譜",
+          "description": "<strong class='red'>難所です。</strong>青弾の少ない場所で赤弾を避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_b": 0,
+            "sakuya_b": 0
+          },
+          "label": "下克上送筝曲",
+          "description": "<strong>準難所です。</strong>できるだけ速攻を心がけましょう。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "逆針撃",
+          "description": "<strong class='red'>難所です。</strong>"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "天壌夢弓",
+          "description": "<strong class='red'>難所です。</strong>"
+        }
+      ],
+      "6": [
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "小人の道",
+          "description": "<strong class='red'>難所です。</strong>"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "ボス通常２",
+          "description": ""
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "大きくなあれ",
+          "description": "時間発狂弾幕です。自機狙い弾を大きく誘導し，速攻を心がけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "ボス通常３",
+          "description": "中央下と右下を反復して避けます。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "ボス通常４",
+          "description": "レーザーは速度が速くて角度が大きいので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 0,
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "進撃の小人",
+          "description": "青光弾は近づくと赤光弾に変化し，しばらくすると自機を狙って飛んできます。ある程度離れると再度青光弾に変化して静止します。適度に光弾へ近づいたり離れたりし，常に敵のそばへ弾を固めると避けやすいです。"
+        },
+        {
+          "time": {
+            "reimu_b": 0,
+            "marisa_a": 0,
+            "marisa_b": 0,
+            "sakuya_a": 0,
+            "sakuya_b": 0
+          },
+          "label": "ポップオマイサムセブン",
+          "description": "<strong class='red'>難所です。</strong>光弾同士は重なると見づらくなります。また，第３段階で追加される青光弾の列は弾の隙間が狭いので抜けることが難しいです。弾の列を塊として避けましょう。"
+        }
+      ]
+    }
+  },
+  "reimu_a": {
+    "description": "高速移動時はホーミング（追尾ショット），低速移動時は近距離追尾ショット機体です。当たり判定が小さいです。低速移動時に一瞬高速移動へ切り替えることで，低速移動時のショットを撃ちながら高速移動時のショットを撃てます。また，左右の端で高速移動時のショットから素早く低速移動時のショットに複数回切り替えることで，低速移動時の追尾ショットを分裂させられます。",
+    "videoId": "",
+    "timestamps": {
+      "6": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ]
+    }
+  },
+  "reimu_b": {
+    "description": "高速移動時はホーミング（追尾ショット），低速移動時は針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "pQKs3HXDN8U"
+  },
+  "marisa_a": {
+    "description": "高速移動時はレーザー（前方集中ショット），低速移動時は前方集中ショット（高速移動時とは異なる）機体です。低速移動時のショットは敵に近づくほど攻撃力が上がります。",
+    "videoId": "_kNJlGVX6PA"
+  },
+  "marisa_b": {
+    "description": "高速移動時はレーザー，低速移動時はミサイル機体です。",
+    "videoId": "4jO1QI7DiQY"
+  },
+  "sakuya_a": {
+    "description": "高速移動時は拡散ショット，低速移動時は追尾＆炸裂ショット機体です。低速移動時のショットは一定数以上敵に撃ち込んだ後，しばらく経つか高速移動に切り替えると炸裂します。多く撃ち込むほど炸裂の規模が段々大きくなります。したがって，低速移動時に適切なタイミングで一瞬高速移動へ切り替えることで，効率的に撃ち込めます。また，敵に撃ち込んでから炸裂するまでの間，敵の行動時間を遅くできます。",
+    "videoId": "n9Thukk243Y"
+  },
+  "sakuya_b": {
+    "description": "高速移動時は拡散ショット，低速移動時は前方集中ショット機体です。",
+    "videoId": "28gdp3hGoRk"
+  }
+}

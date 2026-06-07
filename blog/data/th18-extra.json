@@ -1,0 +1,45 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 0,
+          "marisa": 0,
+          "sakuya": 0,
+          "sanae": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu": {
+    "description": "",
+    "videoId": "sub_Bv4A8fo",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "marisa": {
+    "description": "",
+    "videoId": "8hcsUMXLLwk",
+    "timestamps": [
+    ]
+  },
+  "sakuya": {
+    "description": "",
+    "videoId": "Hx_VJ2JLLvo",
+    "timestamps": [
+    ]
+  },
+  "sanae": {
+    "description": "",
+    "videoId": "ewMlHEMIRNw",
+    "timestamps": [
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu": 3,
+          "marisa": 3,
+          "sanae": 3,
+          "youmu": 3
+        },
+        "label": "道中１",
+        "description": "開幕の敵は中央またはそれよりも右にいれば右端から，中央よりも左にいれば左端から現れます。"
+      },
+      {
+        "time": {
+          "reimu": 11,
+          "marisa": 11,
+          "sanae": 11,
+          "youmu": 12
+        },
+        "label": "道中２",
+        "description": "道中のひまわり妖精は速攻することで攻撃を完封できます。"
+      },
+      {
+        "time": {
+          "reimu": 58,
+          "marisa": 58,
+          "sanae": 58,
+          "youmu": 58
+        },
+        "label": "軌道不明の鬼火",
+        "description": "<strong>準難所です。</strong>弾の軌道が不安定です。隙間の広い場所で避けましょう。弾速は変化しません。"
+      },
+      {
+        "time": {
+          "reimu": 78,
+          "marisa": 78,
+          "sanae": 81,
+          "youmu": 77
+        },
+        "label": "姿態不明の空魚",
+        "description": "<strong class='red'>難所です。</strong>弾速差に気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu": 262,
+          "marisa": 268,
+          "sanae": 279,
+          "youmu": 251
+        },
+        "label": "延羽化弾幕変化",
+        "description": "<strong>準難所です。</strong>上で縦移動を駆使して避けましょう。"
+      },
+      {
+        "time": {
+          "reimu": 328,
+          "marisa": 338,
+          "sanae": 355,
+          "youmu": 310
+        },
+        "label": "鳥獣戯画",
+        "description": "<strong>準難所です。</strong>縦移動を駆使して避けましょう。米粒弾を下に移動しながら避けましょう。"
+      },
+      {
+        "time": {
+          "reimu": 414,
+          "marisa": 439,
+          "sanae": 454,
+          "youmu": 396
+        },
+        "label": "野生の離島",
+        "description": "<strong>準難所です。</strong>犬弾の最後と，それとは逆方向からの鳥弾の最初が重なります。鳥弾は弾の軌道や速度がランダムなので，それを避ける方に集中しましょう。また，できるだけ中央で避けることを意識しましょう。"
+      },
+      {
+        "time": {
+          "reimu": 454,
+          "marisa": 475,
+          "sanae": 500,
+          "youmu": 434
+        },
+        "label": "まぬけ巫女の偽調伏",
+        "description": "敵の移動に合わせて避けます。蛙弾の少ない場所で自機狙い弾を切り返しましょう。"
+      },
+      {
+        "time": {
+          "reimu": 573,
+          "marisa": 615,
+          "sanae": 645,
+          "youmu": 558
+        },
+        "label": "満月のポンポコリン",
+        "description": "<strong class='red'>難所です。</strong>光弾は判定や角度が大きいので気をつけましょう。自機狙い弾を誘導する場所と光弾を避ける場所はできるだけ離しましょう。"
+      }
+    ]
+  },
+  "reimu": {
+    "description": "高速移動時はホーミング（追尾ショット），低速移動時は針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "PyKPE7vE8kY"
+  },
+  "marisa": {
+    "description": "高速移動時はレーザー（前方集中ショット），低速移動時はミサイル（前方集中ショット）機体です。",
+    "videoId": "eJtoxUxTnzM"
+  },
+  "sanae": {
+    "description": "高速移動時は拡散ショット，低速移動時は前方集中ショット機体です。",
+    "videoId": "y4vN8WPQqDQ"
+  },
+  "youmu": {
+    "description": "高速移動時は誘導オプションショット，溜め時は斬撃ショット機体です。低速移動時は溜めないと攻撃できません。当たり判定がとても小さいです。",
+    "videoId": "UCVL27Z35cE"
+  }
+}

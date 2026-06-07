@@ -1,0 +1,77 @@
+[
+  {
+    "title": "霊夢",
+    "images": ["./images/reimu.png", "./images/reimu_1.png"],
+    "labels": ["うしのすがた", "うしのすがた２"]
+  },
+  {
+    "title": "魔理沙",
+    "images": ["./images/marisa.png", "./images/marisa_1.png"],
+    "labels": ["うしのすがた", "うしのすがた２"]
+  },
+  {
+    "title": "チルノ",
+    "images": ["./images/cirno.png", "./images/cirno_1.png"],
+    "labels": ["うしのすがた", "いぬのすがた"]
+  },
+  {
+    "title": "フランドール",
+    "images": ["./images/flandre.png", "./images/flandre_1.png"],
+    "labels": ["うしのすがた", "もちのすがた"]
+  },
+  {
+    "title": "アリス",
+    "images": ["./images/alice.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "お燐",
+    "images": ["./images/orin.png", "./images/orin_1.png"],
+    "labels": ["うしのすがた", "ばけねこのすがた"]
+  },
+  {
+    "title": "こいし",
+    "images": ["./images/koishi.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "小傘",
+    "images": ["./images/kogasa.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "ぬえ",
+    "images": ["./images/nue.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "響子",
+    "images": ["./images/kyouko.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "神子",
+    "images": ["./images/miko.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "神妙丸",
+    "images": ["./images/shinmyoumaru.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "純狐",
+    "images": ["./images/junko.png"],
+    "labels": ["うしのすがた"]
+  },
+  {
+    "title": "ラルバ",
+    "images": ["./images/larva.png", "./images/larva_1.png"],
+    "labels": ["うしのすがた", "うしのすがた２"]
+  },
+  {
+    "title": "イカ",
+    "images": ["./images/squid.png", "./images/squid_1.png", "./images/squid_2.png", "./images/squid_3.png", "./images/squid_4.png"],
+    "labels": ["イカのすがた", "うしのすがた", "うしのすがた２", "うしのすがた３", "うしのすがた４"]
+  }
+]

@@ -1,0 +1,192 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu": 26,
+            "marisa": 0,
+            "sanae": 26,
+            "youmu": 26
+          },
+          "label": "道中１",
+          "description": "中央上から現れる妖精は速攻することで攻撃を完封できます。"
+        },
+        {
+          "time": {
+            "reimu": 31,
+            "marisa": 0,
+            "sanae": 31,
+            "youmu": 31
+          },
+          "label": "道中２",
+          "description": "道中の左右から現れる妖精は速攻することで攻撃を完封できます。"
+        }
+      ],
+      "3": [
+        {
+          "time": {
+            "reimu": 438,
+            "marisa": 0,
+            "sanae": 455,
+            "youmu": 414
+          },
+          "label": "道中",
+          "description": "道中のひまわり妖精は倒すとすぐに次の個体が現れるので，最初に現れる２体を倒した後は倒さずにやり過ごしましょう。"
+        },
+        {
+          "time": {
+            "reimu": 543,
+            "marisa": 0,
+            "sanae": 677,
+            "youmu": 527
+          },
+          "label": "ボス通常３",
+          "description": "弾がかなり下に出現することがあります。下を維持して避けましょう。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu": 721,
+            "marisa": 0,
+            "sanae": 769,
+            "youmu": 709
+          },
+          "label": "道中",
+          "description": "道中前半のひまわり妖精は速攻することで攻撃を完封できます。"
+        },
+        {
+          "time": {
+            "reimu": 938,
+            "marisa": 0,
+            "sanae": 1002,
+            "youmu": 899
+          },
+          "label": "タオ胎動",
+          "description": "プラズマ弾は粗い自機狙いです。中央と左右に大きく移動して誘導しましょう。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu": 967,
+            "marisa": 0,
+            "sanae": 1041,
+            "youmu": 923
+          },
+          "label": "道中１",
+          "description": "道中のひまわり妖精は速攻することで攻撃を完封できます。"
+        },
+        {
+          "time": {
+            "reimu": 992,
+            "marisa": 0,
+            "sanae": 1066,
+            "youmu": 948
+          },
+          "label": "道中２",
+          "description": "道中の左上から現れる妖精は速攻することで攻撃を完封できます。"
+        }
+      ],
+      "6": [
+        {
+          "time": {
+            "reimu": 1264,
+            "marisa": 0,
+            "sanae": 1354,
+            "youmu": 1204
+          },
+          "label": "道中",
+          "description": "道中のひまわり妖精は速攻することで攻撃を完封できます。"
+        },
+        {
+          "time": {
+            "reimu": 1379,
+            "marisa": 0,
+            "sanae": 1468,
+            "youmu": 1318
+          },
+          "label": "ボス通常２",
+          "description": "<strong>準難所です。</strong>弾が重なるうえにその色が背景の色と似ていているので，より一層弾が見づらいです。"
+        },
+        {
+          "time": {
+            "reimu": 1413,
+            "marisa": 0,
+            "sanae": 1511,
+            "youmu": 1355
+          },
+          "label": "ボス通常３",
+          "description": "<strong class='red'>難所です。</strong>弾が重なるうえにその色が背景の色と似ていているので，より一層弾が見づらいです。"
+        },
+        {
+          "time": {
+            "reimu": 1431,
+            "marisa": 0,
+            "sanae": 1530,
+            "youmu": 1375
+          },
+          "label": "豪族乱舞",
+          "description": "右の敵を右端に誘導することで，一部の攻撃を無効化できます。"
+        },
+        {
+          "time": {
+            "reimu": 1497,
+            "marisa": 0,
+            "sanae": 1615,
+            "youmu": 1443
+          },
+          "label": "救世観音の光後光",
+          "description": "<strong>準難所です。</strong>「水弾と緑弾の間を右に避ける」，「黄弾と紫弾の間を左に避ける」，「黄弾と水弾間を右に避ける」の繰り返しです。弾の判定が大きいので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu": 1522,
+            "marisa": 0,
+            "sanae": 1641,
+            "youmu": 1466
+          },
+          "label": "十七条のレーザー",
+          "description": "<strong class='red'>難所です。</strong>弾は途中で加速するので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu": 1558,
+            "marisa": 0,
+            "sanae": 1679,
+            "youmu": 1503
+          },
+          "label": "星降る神霊廟",
+          "description": "一斉に飛んでくる自機狙い弾は上に避けることでやり過ごしましょう。"
+        }
+      ]
+    }
+  },
+  "reimu": {
+    "description": "高速移動時はホーミング（追尾ショット），低速移動時は針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "xB8b333Evcg"
+  },
+  "marisa": {
+    "description": "高速移動時はレーザー（前方集中ショット），低速移動時はミサイル（前方集中ショット）機体です。",
+    "videoId": "5C_ByMQy_Q0"
+  },
+  "sanae": {
+    "description": "高速移動時は拡散ショット，低速移動時は前方集中ショット機体です。",
+    "videoId": "jqbnd4hsk0s"
+  },
+  "youmu": {
+    "description": "高速移動時は誘導オプションショット，溜め時は斬撃ショット機体です。低速移動時は溜めないと攻撃できません。当たり判定がとても小さいです。",
+    "videoId": "ZJSZo0ojWx8",
+    "timestamps": {
+      "3": [
+        {
+          "time": 565,
+          "label": "ヒールバイデザイア",
+          "description": "低速移動時に溜めすぎないよう，気をつけましょう。幽霊を倒してボスが回復する恐れがあります。"
+        }
+      ]
+    }
+  }
+}

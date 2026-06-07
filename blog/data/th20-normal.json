@@ -1,0 +1,154 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "1": [
+        {
+          "time": {
+            "reimu_red": 0,
+            "reimu_red2": 0,
+            "reimu_blue": 0,
+            "reimu_blue2": 0,
+            "reimu_yellow": 0,
+            "reimu_yellow2": 0,
+            "reimu_green": 0,
+            "reimu_green2": 0,
+            "marisa_red": 0,
+            "marisa_red2": 0,
+            "marisa_blue": 0,
+            "marisa_blue2": 0,
+            "marisa_yellow": 0,
+            "marisa_yellow2": 0,
+            "marisa_green": 0,
+            "marisa_green2": 0
+          },
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_red": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+      "1": [
+        {
+          "time": 0,
+          "label": "",
+          "description": ""
+        }
+      ],
+      "2": [
+      ],
+      "3": [
+      ],
+      "4": [
+      ],
+      "5": [
+      ],
+      "6": [
+      ]
+    }
+  },
+  "reimu_red2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_blue": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_blue2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_yellow": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_yellow2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_green": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "reimu_green2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_red": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_red2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_blue": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_blue2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_yellow": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_yellow2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_green": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  },
+  "marisa_green2": {
+    "description": "",
+    "videoId": "PLACEHOLDER_VIDEO_ID",
+    "timestamps": {
+    }
+  }
+}

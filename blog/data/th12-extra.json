@@ -1,0 +1,246 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_a": 89,
+          "reimu_b": 88,
+          "marisa_a": 89,
+          "marisa_b": 89,
+          "sanae_a": 89,
+          "sanae_b": 89
+        },
+        "label": "大粒の涙雨",
+        "description": "<strong>準難所です。</strong>弾の速度差や重なりに気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 128,
+          "reimu_b": 132,
+          "marisa_a": 131,
+          "marisa_b": 132,
+          "sanae_a": 131,
+          "sanae_b": 129
+        },
+        "label": "からかさ驚きフラッシュ",
+        "description": "時間発狂弾幕です。レーザーは予告線の回転が止まった瞬間に実体化します。止まる直前の隙間に合わせて避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 164,
+          "reimu_b": 170,
+          "marisa_a": 170,
+          "marisa_b": 169,
+          "sanae_a": 172,
+          "sanae_b": 168
+        },
+        "label": "道中１",
+        "description": "ひまわり妖精は倒すとすぐに新しい個体が現れます。１体目の出現位置は中央，２体目以降はランダムです。弾の壁に挟まれないよう，気をつけましょう。また，上に避けるとき，ベントラーへ近づく恐れがあることにも気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 225,
+          "reimu_b": 231,
+          "marisa_a": 230,
+          "marisa_b": 230,
+          "sanae_a": 233,
+          "sanae_b": 229
+        },
+        "label": "道中２",
+        "description": "上へ移動するときにベントラーへ近づく恐れがあるので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 251,
+          "reimu_b": 260,
+          "marisa_a": 257,
+          "marisa_b": 259,
+          "sanae_a": 261,
+          "sanae_b": 259
+        },
+        "label": "平安のダーククラウド",
+        "description": "レーザーの隙間は狭くなる恐れがあるので気をつけましょう。２回目以降のレーザーは水滴弾の残っていない位置で避けましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 279,
+          "reimu_b": 293,
+          "marisa_a": 286,
+          "marisa_b": 291,
+          "sanae_a": 296,
+          "sanae_b": 293
+        },
+        "label": "忿怒のレッドＵＦＯ襲来",
+        "description": "２回で１セットの攻撃です。左右の端で高さが「東方星蓮船」の上の位置に飛んでくる個体を倒すと中央で避けられます。なお，ＵＦＯは撃破時に周辺の弾消し効果があります。"
+      },
+      {
+        "time": {
+          "reimu_a": 299,
+          "reimu_b": 320,
+          "marisa_a": 306,
+          "marisa_b": 316,
+          "sanae_a": 321,
+          "sanae_b": 311
+        },
+        "label": "ボス通常３",
+        "description": "<strong>準難所です。</strong>弾速差に気をつけつつ，密度の低い隙間を抜けましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 313,
+          "reimu_b": 332,
+          "marisa_a": 319,
+          "marisa_b": 326,
+          "sanae_a": 336,
+          "sanae_b": 325
+        },
+        "label": "鵺的スネークショー",
+        "description": "色の薄いレーザーが一度戻るので，その下が先に飛んでくるレーザーの隙間になります。"
+      },
+      {
+        "time": {
+          "reimu_a": 345,
+          "reimu_b": 367,
+          "marisa_a": 349,
+          "marisa_b": 359,
+          "sanae_a": 371,
+          "sanae_b": 358
+        },
+        "label": "哀愁のブルーＵＦＯ襲来",
+        "description": "<strong>準難所です。</strong>敵の左右に現れるＵＦＯを倒しましょう。倒すほどレーザーの数が減りますが，倒すことに集中するとＵＦＯに近づかれたときの対処が難しくなる恐れがあるので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 375,
+          "reimu_b": 401,
+          "marisa_a": 377,
+          "marisa_b": 393,
+          "sanae_a": 405,
+          "sanae_b": 389
+        },
+        "label": "弾幕キメラ",
+        "description": "小弾の隙間の高さは左右にあるものと同じなので，一方向に避けるときは横移動だけでできます。敵の体力が多いので，気を抜かないようにしましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 407,
+          "reimu_b": 435,
+          "marisa_a": 408,
+          "marisa_b": 423,
+          "sanae_a": 439,
+          "sanae_b": 419
+        },
+        "label": "ボス通常６",
+        "description": "左右の端に移動するほど弾速が上がるので，中央を維持して避けましょう。敵が左右の端に移動しても無理して追いかける必要はありません。"
+      },
+      {
+        "time": {
+          "reimu_a": 421,
+          "reimu_b": 448,
+          "marisa_a": 418,
+          "marisa_b": 437,
+          "sanae_a": 451,
+          "sanae_b": 433
+        },
+        "label": "義心のグリーンＵＦＯ襲来",
+        "description": "２回で１セットの攻撃です。レーザーが重なる横の隙間で米粒弾の塊を避けます。隙間の高さは「Undefined Fantastic Object」が目安です。緑レーザーの判定は見た目通りに大きいので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 447,
+          "reimu_b": 474,
+          "marisa_a": 441,
+          "marisa_b": 463,
+          "sanae_a": 477,
+          "sanae_b": 459
+        },
+        "label": "ボス通常７",
+        "description": "<strong>準難所です。</strong>弾の速度差や角度に気をつけましょう。左右の端に移動するほど速い弾が増えるので，中央を維持して避けましょう。敵が左右の端に移動しても無理して追いかける必要はありません。"
+      },
+      {
+        "time": {
+          "reimu_a": 459,
+          "reimu_b": 486,
+          "marisa_a": 455,
+          "marisa_b": 474,
+          "sanae_a": 490,
+          "sanae_b": 472
+        },
+        "label": "アンディファインドダークネス",
+        "description": "時間発狂弾幕です。できるだけ敵を上に誘導しましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 482,
+          "reimu_b": 510,
+          "marisa_a": 481,
+          "marisa_b": 498,
+          "sanae_a": 515,
+          "sanae_b": 495
+        },
+        "label": "ボス通常８",
+        "description": "左右の端に移動するほど速い弾が増えるので，中央を維持して避けましょう。敵が左右の端に移動しても無理して追いかける必要はありません。"
+      },
+      {
+        "time": {
+          "reimu_a": 495,
+          "reimu_b": 527,
+          "marisa_a": 501,
+          "marisa_b": 517,
+          "sanae_a": 530,
+          "sanae_b": 509
+        },
+        "label": "恐怖の虹色ＵＦＯ襲来",
+        "description": "<strong class='red'>難所です。</strong>ＵＦＯは１回につき５体現れます。出現する高さや時間間隔は固定ですが，左右の位置はランダムです。弾が画面外から飛んでくることはないので，両方から近づいてきたときは左右いずれか近い方の端に向かって避けましょう。なお，ＵＦＯは撃破時に周辺の弾消し効果があります。"
+      },
+      {
+        "time": {
+          "reimu_a": 523,
+          "reimu_b": 553,
+          "marisa_a": 537,
+          "marisa_b": 547,
+          "sanae_a": 563,
+          "sanae_b": 534
+        },
+        "label": "平安京の悪夢",
+        "description": "各段階の最初にある予告線付きのレーザーは実体化が早いので気をつけましょう。"
+      },
+      {
+        "time": {
+          "reimu_a": 595,
+          "reimu_b": 626,
+          "marisa_a": 609,
+          "marisa_b": 619,
+          "sanae_a": 635,
+          "sanae_b": 606
+        },
+        "label": "源三位頼政の弓",
+        "description": "<strong>準難所です。</strong>縦移動を駆使して避けましょう。"
+      }
+    ]
+  },
+  "reimu_a": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "SNiSDP-OCmM"
+  },
+  "reimu_b": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。",
+    "videoId": "g2wIi_ENEEs"
+  },
+  "marisa_a": {
+    "description": "レーザー（前方集中ショット）機体です。レーザーは貫通します。",
+    "videoId": "Yp8tu5czvxg"
+  },
+  "marisa_b": {
+    "description": "拡散ショット機体です。",
+    "videoId": "wG3ekONn9UA"
+  },
+  "sanae_a": {
+    "description": "前方追尾ショット機体です。",
+    "videoId": "ji5Kt35LGlI"
+  },
+  "sanae_b": {
+    "description": "炸裂ショット機体です。",
+    "videoId": "fE_tIpl0x7I"
+  }
+}

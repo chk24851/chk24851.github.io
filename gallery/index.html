@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ギャラリー</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+      }
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      aspect-ratio: 1;
+      cursor: pointer;
+      background-color: rgba(232, 153, 127, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(232, 160, 100, 0.3);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .gallery-item {
+        background-color: rgba(228, 128, 80, 0.1);
+        border: 1px solid rgba(228, 128, 80, 0.2);
+      }
+    }
+
+    .gallery-item:not(.image-broken):hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(232, 153, 127, 0.3);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .gallery-item:not(.image-broken):hover {
+        box-shadow: 0 4px 12px rgba(228, 128, 80, 0.25);
+      }
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery-item.image-broken {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(232, 153, 127, 0.2);
+      cursor: default;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .gallery-item.image-broken {
+        background: rgba(228, 128, 80, 0.15);
+      }
+    }
+
+    .gallery-item.image-broken .broken-icon {
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+
+    .gallery-item.image-broken .broken-text {
+      font-size: 0.85em;
+      color: #999;
+      font-weight: 500;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .gallery-item.image-broken .broken-text {
+        color: #aaa;
+      }
+    }
+
+    .gallery-item.image-broken img {
+      display: none;
+    }
+
+    .gallery-item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: 15px;
+      transition: background 0.3s ease;
+      font-size: 0.9em;
+      color: white;
+      font-weight: 600;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-item:not(.image-broken):hover .gallery-item-overlay {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox.closing .lightbox-content {
+      animation: zoomOut 0.3s ease forwards;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90vh;
+      position: relative;
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes zoomOut {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .lightbox-info {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 15px;
+      border-radius: 4px;
+    }
+
+    .lightbox-fullscreen {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-fullscreen:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-close:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-nav:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .lightbox-prev {
+      left: 20px;
+    }
+
+    .lightbox-next {
+      right: 20px;
+    }
+
+    .empty-message {
+      text-align: center;
+      padding: 40px;
+      color: #999;
+    }
+  </style>
+  <script src="/loader.js" defer></script>
+</head>
+<body>
+  <div class="container" id="container">
+    <h1>ギャラリー</h1>
+    <p>配信中に描いた絵たちです。</p>
+    
+    <div class="gallery-grid" id="gallery-grid">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-fullscreen" id="lightbox-fullscreen">⛶</button>
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">❮</button>
+        <div>
+          <img class="lightbox-image" id="lightbox-image" src="" alt="">
+          <div class="lightbox-info">
+            <div id="lightbox-title"></div>
+            <div id="lightbox-label" style="font-size: 0.9em; margin-top: 8px; font-weight: 600;"></div>
+            <div id="lightbox-counter" style="font-size: 0.85em; margin-top: 5px; opacity: 0.8;"></div>
+          </div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">❯</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let artworks = [];
+    let currentArtIndex = 0;
+    let currentImageIndex = 0;
+
+    const lightboxImage = document.getElementById('lightbox-image');
+    lightboxImage.addEventListener('contextmenu', (e) => e.preventDefault());
+    lightboxImage.addEventListener('dragstart', (e) => e.preventDefault());
+
+    async function loadGallery() {
+      try {
+        const response = await fetch('./gallery.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        artworks = await response.json();
+        
+        const gallery = document.getElementById('gallery-grid');
+        gallery.innerHTML = '';
+        
+        if (artworks.length === 0) {
+          gallery.innerHTML = '<div class="empty-message">まだ絵が登録されていません</div>';
+          return;
+        }
+
+        artworks.forEach((art, index) => {
+          const item = document.createElement('div');
+          item.className = 'gallery-item';
+          const img = document.createElement('img');
+          img.src = art.images[0];
+          img.alt = art.title;
+          img.addEventListener('contextmenu', (e) => e.preventDefault());
+          img.addEventListener('dragstart', (e) => e.preventDefault());
+          img.addEventListener('error', () => {
+            item.classList.add('image-broken');
+            img.remove();
+            const icon = document.createElement('div');
+            icon.className = 'broken-icon';
+            icon.textContent = '🐮';
+            const text = document.createElement('div');
+            text.className = 'broken-text';
+            text.textContent = 'No image';
+            item.insertBefore(icon, item.firstChild);
+            item.insertBefore(text, item.firstChild.nextSibling);
+          });
+          const overlay = document.createElement('div');
+          overlay.className = 'gallery-item-overlay';
+          overlay.textContent = art.title;
+          item.appendChild(img);
+          item.appendChild(overlay);
+          item.addEventListener('click', () => {
+            if (!item.classList.contains('image-broken')) {
+              openLightbox(index);
+            }
+          });
+          gallery.appendChild(item);
+        });
+      } catch (error) {
+        document.getElementById('gallery-grid').innerHTML = 
+          '<div class="empty-message">ギャラリーの読み込みに失敗しました</div>';
+      }
+    }
+
+    function openLightbox(artIndex) {
+      currentArtIndex = artIndex;
+      currentImageIndex = 0;
+      updateLightbox();
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.add('closing');
+      setTimeout(() => {
+        lightbox.classList.remove('active', 'closing');
+      }, 300);
+    }
+
+    function updateLightbox() {
+      const art = artworks[currentArtIndex];
+      const totalImages = art.images.length;
+      
+      document.getElementById('lightbox-image').src = art.images[currentImageIndex];
+      document.getElementById('lightbox-title').textContent = art.title;
+      
+      const label = art.labels ? art.labels[currentImageIndex] : '';
+      document.getElementById('lightbox-label').textContent = label || '';
+      
+      if (totalImages > 1) {
+        document.getElementById('lightbox-counter').textContent = `${currentImageIndex + 1}/${totalImages}`;
+      } else {
+        document.getElementById('lightbox-counter').textContent = '';
+      }
+    }
+
+    function prevImage() {
+      const art = artworks[currentArtIndex];
+      currentImageIndex = (currentImageIndex - 1 + art.images.length) % art.images.length;
+      updateLightbox();
+    }
+
+    function nextImage() {
+      const art = artworks[currentArtIndex];
+      currentImageIndex = (currentImageIndex + 1) % art.images.length;
+      updateLightbox();
+    }
+
+    document.getElementById('lightbox').addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox') closeLightbox();
+    });
+
+    document.getElementById('lightbox-fullscreen').addEventListener('click', () => {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        document.getElementById('lightbox-image').requestFullscreen();
+      }
+    });
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-prev').addEventListener('click', prevImage);
+    document.getElementById('lightbox-next').addEventListener('click', nextImage);
+
+    loadGallery();
+  </script>
+</body>
+</html>

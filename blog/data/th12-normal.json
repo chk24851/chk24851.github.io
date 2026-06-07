@@ -1,0 +1,356 @@
+{
+  "stageLabels": ["Stage 1", "Stage 2", "Stage 3", "Stage 4", "Stage 5", "Stage 6"],
+  "common": {
+    "timestamps": {
+      "2": [
+        {
+          "time": {
+            "reimu_a": 291,
+            "reimu_b": 303,
+            "marisa_a": 287,
+            "marisa_b": 294,
+            "sanae_a": 299,
+            "sanae_b": 296
+          },
+          "label": "パラソルスターシンフォニー",
+          "description": "しばらくすると下から傘弾が飛んでくることがあるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 330,
+            "reimu_b": 351,
+            "marisa_a": 324,
+            "marisa_b": 344,
+            "sanae_a": 351,
+            "sanae_b": 348
+          },
+          "label": "忘れ傘の夜行列車",
+          "description": "奇数回目の自機狙い弾は中央やや横，偶数回目は中央に誘導しましょう。"
+        }
+      ],
+      "3": [
+        {
+          "time": {
+            "reimu_a": 492,
+            "reimu_b": 519,
+            "marisa_a": 489,
+            "marisa_b": 515,
+            "sanae_a": 520,
+            "sanae_b": 526
+          },
+          "label": "天網サンドバッグ",
+          "description": "<strong>準難所です。</strong>１セットにつき拳が３回飛んできます。敵の移動に合わせて避けますが，２回目の拳が着弾した瞬間に移動し始めると効率よく敵に攻撃できます。小弾の速度差に気をつけましょう。小弾の密度が高いときは無理して敵を追いかけず，避けに専念しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 543,
+            "reimu_b": 578,
+            "marisa_a": 541,
+            "marisa_b": 572,
+            "sanae_a": 577,
+            "sanae_b": 594
+          },
+          "label": "時代親父大目玉",
+          "description": "拳を上に誘導し，下に移動して避けましょう。"
+        }
+      ],
+      "4": [
+        {
+          "time": {
+            "reimu_a": 591,
+            "marisa_a": 590,
+            "sanae_a": 628
+          },
+          "label": "道中１",
+          "description": "道中のひまわり妖精は使い魔を展開する前に速攻することで攻撃を完封できます。"
+        },
+        {
+          "time": {
+            "reimu_a": 620,
+            "marisa_a": 619,
+            "sanae_a": 657
+          },
+          "label": "道中２",
+          "description": "妖精と同じ回転方向に避けましょう。つまり，奇数回目は左（右回り），偶数回目は右（左回り）です。"
+        },
+        {
+          "time": {
+            "reimu_b": 659,
+            "marisa_b": 649,
+            "sanae_b": 674
+          },
+          "label": "道中",
+          "description": "妖精と同じ回転方向に避けましょう。つまり，奇数回目は左（右回り），偶数回目は右（左回り）です。"
+        },
+        {
+          "time": {
+            "reimu_a": 750,
+            "reimu_b": 795,
+            "marisa_a": 756,
+            "marisa_b": 787,
+            "sanae_a": 792,
+            "sanae_b": 814
+          },
+          "label": "ディープヴォーテックス",
+          "description": "上に向かって避けましょう。ただし，敵よりも上に移動すると弾が横から飛んでくるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 779,
+            "reimu_b": 829,
+            "marisa_a": 787,
+            "marisa_b": 814,
+            "sanae_a": 829,
+            "sanae_b": 849
+          },
+          "label": "ファントムシップハーバー",
+          "description": "<strong>準難所です。</strong>錨弾の間で交差弾を避ける必要があります。なお，錨弾の判定は錨自体ではなく，背面の弾にあります。"
+        },
+        {
+          "time": {
+            "reimu_a": 806,
+            "reimu_b": 856,
+            "marisa_a": 808,
+            "marisa_b": 844,
+            "sanae_a": 861,
+            "sanae_b": 886
+          },
+          "label": "シンカーゴースト",
+          "description": "開幕以降は四隅へ順に誘導しましょう。"
+        }
+      ],
+      "5": [
+        {
+          "time": {
+            "reimu_a": 908,
+            "reimu_b": 957,
+            "marisa_a": 910,
+            "marisa_b": 945,
+            "sanae_a": 963,
+            "sanae_b": 987
+          },
+          "label": "道中",
+          "description": "画面全体を回転して避けていると，ひまわり妖精を倒したときに出現するベントラーへ中ボス直前に右端で近づくので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 929,
+            "reimu_b": 978,
+            "marisa_a": 931,
+            "marisa_b": 966,
+            "sanae_a": 984,
+            "sanae_b": 1008
+          },
+          "label": "中ボス通常",
+          "description": "平行なレーザーの隙間に入らないようにしましょう。レーザーは飛んでくる直前，敵の方に戻りながら交差します。その延長線上にいれば入ることはありません。"
+        },
+        {
+          "time": {
+            "reimu_a": 929,
+            "reimu_b": 994,
+            "marisa_a": 949,
+            "marisa_b": 987,
+            "sanae_a": 1003,
+            "sanae_b": 1021
+          },
+          "label": "グレイテストトレジャー",
+          "description": "<strong>準難所です。</strong>縦移動を駆使して避けましょう。レーザーの判定は見た目通りに大きいので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1014,
+            "reimu_b": 1065,
+            "marisa_a": 1016,
+            "marisa_b": 1051,
+            "sanae_a": 1072,
+            "sanae_b": 1098
+          },
+          "label": "レイディアントトレジャー",
+          "description": "レーザーの判定は見た目通りに大きいので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1038,
+            "reimu_b": 1089,
+            "marisa_a": 1041,
+            "marisa_b": 1076,
+            "sanae_a": 1095,
+            "sanae_b": 1132
+          },
+          "label": "ボス通常２",
+          "description": "２回目のレーザーと中弾が重なり，隙間が狭くなることがあるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1055,
+            "reimu_b": 1109,
+            "marisa_a": 1057,
+            "marisa_b": 1093,
+            "sanae_a": 1112,
+            "sanae_b": 1151
+          },
+          "label": "アブソリュートジャスティス",
+          "description": "<strong>準難所です。</strong>早めに弾の隙間を上へ抜けましょう。敵が頻繁に移動して撃破まで時間がかかるので，気を抜かないようにしましょう。レーザーの判定は見た目通りに大きいので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1094,
+            "reimu_b": 1134,
+            "marisa_a": 1078,
+            "marisa_b": 1117,
+            "sanae_a": 1136,
+            "sanae_b": 1178
+          },
+          "label": "ボス通常３",
+          "description": "紫レーザーの飛んでこない場所で縦移動を駆使して避けましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1107,
+            "reimu_b": 1151,
+            "marisa_a": 1096,
+            "marisa_b": 1137,
+            "sanae_a": 1153,
+            "sanae_b": 1194
+          },
+          "label": "至宝の独鈷杵",
+          "description": "できるだけ敵寄りに誘導しましょう。ただし，レーザーの判定は見た目通りに大きいので，近づきすぎないように気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1131,
+            "reimu_b": 1172,
+            "marisa_a": 1120,
+            "marisa_b": 1168,
+            "sanae_a": 1184,
+            "sanae_b": 1225
+          },
+          "label": "浄化の魔",
+          "description": "複数方向からの弾を同時に相手しないように一方向へ避けましょう。レーザーの判定は見た目通りに大きいので気をつけましょう。"
+        }
+      ],
+      "6": [
+        {
+          "time": {
+            "reimu_a": 1237,
+            "reimu_b": 1283,
+            "marisa_a": 1224,
+            "marisa_b": 1271,
+            "sanae_a": 1293,
+            "sanae_b": 1338
+          },
+          "label": "道中",
+          "description": "妖精と同じ回転方向に避けましょう。つまり，奇数回目は左（右回り），偶数回目は右（左回り）です。"
+        },
+        {
+          "time": {
+            "reimu_a": 1285,
+            "reimu_b": 1334,
+            "marisa_a": 1275,
+            "marisa_b": 1318,
+            "sanae_a": 1342,
+            "sanae_b": 1388
+          },
+          "label": "紫雲のオーメン",
+          "description": "<strong>準難所です。</strong>弾速差に気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1331,
+            "reimu_b": 1393,
+            "marisa_a": 1327,
+            "marisa_b": 1371,
+            "sanae_a": 1400,
+            "sanae_b": 1438
+          },
+          "label": "ボス通常３",
+          "description": "<strong>準難所です。</strong>縦移動を駆使して避けましょう。弾速が速いので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1344,
+            "reimu_b": 1407,
+            "marisa_a": 1339,
+            "marisa_b": 1383,
+            "sanae_a": 1414,
+            "sanae_b": 1450
+          },
+          "label": "スターメイルシュトロム",
+          "description": "<strong class='red'>難所です。</strong>自機狙いの星弾は横移動で避け，縦移動は真横からレーザーが飛んできたときだけにしましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1363,
+            "reimu_b": 1428,
+            "marisa_a": 1358,
+            "marisa_b": 1402,
+            "sanae_a": 1435,
+            "sanae_b": 1466
+          },
+          "label": "ボス通常４",
+          "description": "これ以降は敵の当たり判定がありません。"
+        },
+        {
+          "time": {
+            "reimu_a": 1390,
+            "reimu_b": 1459,
+            "marisa_a": 1386,
+            "marisa_b": 1429,
+            "sanae_a": 1472,
+            "sanae_b": 1481
+          },
+          "label": "魔人復誦",
+          "description": "<strong class='red'>難所です。</strong>自機狙い弾＋ランダム弾の攻撃です。第２段階で追加されるランダム弾の中で弾速差があるので気をつけましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1425,
+            "reimu_b": 1501,
+            "marisa_a": 1423,
+            "marisa_b": 1465,
+            "sanae_a": 1514,
+            "sanae_b": 1516
+          },
+          "label": "聖尼公のエア巻物",
+          "description": "<strong>準難所です。</strong>弾幕の設置場所と展開の方法は固定ですが，隙間の位置はランダムです。敵を追いかけつつ，狭い隙間が飛んできたときは横移動で対処しましょう。"
+        },
+        {
+          "time": {
+            "reimu_a": 1457,
+            "reimu_b": 1535,
+            "marisa_a": 1456,
+            "marisa_b": 1498,
+            "sanae_a": 1546,
+            "sanae_b": 1549
+          },
+          "label": "フライングファンタスティカ",
+          "description": "<strong class='red'>難所です。</strong>縦移動を駆使して弾の隙間を上に抜けましょう。複数方向から飛んでくる弾をできるだけ同時に相手しないようにしましょう。第５段階になると弾の数が一気に増えて重なりやすくなります。弾は重なるほど見づらくなるので気をつけましょう。"
+        }
+      ]
+    }
+  },
+  "reimu_a": {
+    "description": "針（前方集中ショット）機体です。当たり判定が小さいです。",
+    "videoId": "K92TZ4wWI5c"
+  },
+  "reimu_b": {
+    "description": "ホーミング（追尾ショット）機体です。当たり判定が小さいです。",
+    "videoId": "3QilLXLjDSs"
+  },
+  "marisa_a": {
+    "description": "レーザー（前方集中ショット）機体です。レーザーは貫通します。",
+    "videoId": "_VJzsa5qoio"
+  },
+  "marisa_b": {
+    "description": "拡散ショット機体です。",
+    "videoId": "5_gg1bC4Flc"
+  },
+  "sanae_a": {
+    "description": "前方追尾ショット機体です。",
+    "videoId": "OKkfQDviwnI"
+  },
+  "sanae_b": {
+    "description": "炸裂ショット機体です。",
+    "videoId": "sJU2UUffldg"
+  }
+}

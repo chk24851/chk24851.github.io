@@ -1,0 +1,80 @@
+{
+  "common": {
+    "timestamps": [
+      {
+        "time": {
+          "reimu_w": 0,
+          "reimu_o": 0,
+          "reimu_e": 0,
+          "marisa_w": 0,
+          "marisa_o": 0,
+          "marisa_e": 0,
+          "youmu_w": 0,
+          "youmu_o": 0,
+          "youmu_e": 0
+        },
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_w": {
+    "description": "",
+    "videoId": "gHUANkE29sU",
+    "timestamps": [
+      {
+        "time": 0,
+        "label": "",
+        "description": ""
+      }
+    ]
+  },
+  "reimu_o": {
+    "description": "",
+    "videoId": "f_lpjvXHMvE",
+    "timestamps": [
+    ]
+  },
+  "reimu_e": {
+    "description": "",
+    "videoId": "Dpe_S0DvemM",
+    "timestamps": [
+    ]
+  },
+  "marisa_w": {
+    "description": "",
+    "videoId": "K0bC-A3xrAc",
+    "timestamps": [
+    ]
+  },
+  "marisa_o": {
+    "description": "",
+    "videoId": "iyQAIqDq-Hw",
+    "timestamps": [
+    ]
+  },
+  "marisa_e": {
+    "description": "",
+    "videoId": "mE5Gatg_THI",
+    "timestamps": [
+    ]
+  },
+  "youmu_w": {
+    "description": "",
+    "videoId": "LoSNadDkb54",
+    "timestamps": [
+    ]
+  },
+  "youmu_o": {
+    "description": "",
+    "videoId": "QJMQemtnXUU",
+    "timestamps": [
+    ]
+  },
+  "youmu_e": {
+    "description": "",
+    "videoId": "aol85j-KI2Y",
+    "timestamps": [
+    ]
+  }
+}

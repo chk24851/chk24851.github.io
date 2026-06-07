@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ガイド</title>
+  <style>
+    body { display: none; }
+  </style>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/loader.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ガイド</h1>
+    <p style="text-align: center; margin-bottom: 20px;"><a href="#" id="back-button" class="btn btn-primary">戻る</a></p>
+
+    <h2>クリア達成難易度の評価</h2>
+
+    <p>STG（東方Project）のブログでは，各ゲームの縛りプレイについて，その達成難易度を機体ごとに★の数で５段階評価しています。縛りの内容は各ゲームのトップページをご覧ください。評価の目安は次の通りです。</p>
+
+    <div>
+      <strong><span class="stars" data-rating="1"></span>やさしい</strong>
+      <p>特別な練習はほぼ不要です。</p>
+
+      <strong><span class="stars" data-rating="2"></span>すこしやさしい</strong>
+      <p>パターンを安定させて難所を中心に練習しましょう。</p>
+
+      <strong><span class="stars" data-rating="3"></span>ふつう</strong>
+      <p>パターンを確実にして難所や準難所を中心に練習しましょう。</p>
+
+      <strong><span class="stars" data-rating="4"></span>すこしむずかしい</strong>
+      <p>凡ミスしないことを心がけましょう。</p>
+
+      <strong><span class="stars" data-rating="5"></span>むずかしい</strong>
+      <p>根気よくやりましょう。</p>
+    </div>
+
+    <div class="note">
+        <p><strong>注意</strong>: </p>
+        <ul>
+          <li>この評価や難所，準難所は主観によるものです。参考程度にしてください。</li>
+        </ul>
+      </div>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.style.display = 'block';
+      
+      const backButton = document.getElementById('back-button');
+      if (backButton) {
+        backButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (document.referrer === '' || !document.referrer.includes(window.location.hostname)) {
+            window.location.href = '/blog/index.html';
+          } else {
+            window.history.back();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

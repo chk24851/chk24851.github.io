@@ -1,0 +1,29 @@
+{
+  "title": "東方天空璋　～ Hidden Star in Four Seasons.",
+  "shortTitle": "東方天空璋",
+  "description": "各機体の★の数は<strong>ノーミス ノーボム ノー解放 フルスペカ</strong>の達成難易度を表しています。詳細は<a href=\"/blog/guide/index.html\">ガイド</a>をご覧ください。",
+  "normal": [
+    { "shottype": "reimu_spring", "label": "博麗 霊夢（春装備）", "shortLabel": "霊夢（春）", "rating": 0 },
+    { "shottype": "reimu_summer", "label": "博麗 霊夢（夏装備）", "shortLabel": "霊夢（夏）", "rating": 0 },
+    { "shottype": "reimu_autumn", "label": "博麗 霊夢（秋装備）", "shortLabel": "霊夢（秋）", "rating": 0 },
+    { "shottype": "reimu_winter", "label": "博麗 霊夢（冬装備）", "shortLabel": "霊夢（冬）", "rating": 0 },
+    { "shottype": "cirno_spring", "label": "チルノ（春装備）", "shortLabel": "チルノ（春）", "rating": 0 },
+    { "shottype": "cirno_summer", "label": "チルノ（夏装備）", "shortLabel": "チルノ（夏）", "rating": 0 },
+    { "shottype": "cirno_autumn", "label": "チルノ（秋装備）", "shortLabel": "チルノ（秋）", "rating": 0 },
+    { "shottype": "cirno_winter", "label": "チルノ（冬装備）", "shortLabel": "チルノ（冬）", "rating": 0 },
+    { "shottype": "aya_spring", "label": "射命丸 文（春装備）", "shortLabel": "文（春）", "rating": 0 },
+    { "shottype": "aya_summer", "label": "射命丸 文（夏装備）", "shortLabel": "文（夏）", "rating": 0 },
+    { "shottype": "aya_autumn", "label": "射命丸 文（秋装備）", "shortLabel": "文（秋）", "rating": 0 },
+    { "shottype": "aya_winter", "label": "射命丸 文（冬装備）", "shortLabel": "文（冬）", "rating": 0 },
+    { "shottype": "marisa_spring", "label": "霧雨 魔理沙（春装備）", "shortLabel": "魔理沙（春）", "rating": 0 },
+    { "shottype": "marisa_summer", "label": "霧雨 魔理沙（夏装備）", "shortLabel": "魔理沙（夏）", "rating": 0 },
+    { "shottype": "marisa_autumn", "label": "霧雨 魔理沙（秋装備）", "shortLabel": "魔理沙（秋）", "rating": 0 },
+    { "shottype": "marisa_winter", "label": "霧雨 魔理沙（冬装備）", "shortLabel": "魔理沙（冬）", "rating": 0 }
+  ],
+  "extra": [
+    { "shottype": "reimu", "label": "博麗 霊夢（土用装備）", "shortLabel": "霊夢（土用）", "rating": 0 },
+    { "shottype": "cirno", "label": "チルノ（土用装備）", "shortLabel": "チルノ（土用）", "rating": 0 },
+    { "shottype": "aya", "label": "射命丸 文（土用装備）", "shortLabel": "文（土用）", "rating": 0 },
+    { "shottype": "marisa", "label": "霧雨 魔理沙（土用装備）", "shortLabel": "魔理沙（土用）", "rating": 0 }
+  ]
+}
